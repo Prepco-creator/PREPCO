@@ -12,7 +12,9 @@ import meditation from './gifs/meditation.gif';
 import reading from './gifs/reading.gif';
 import walk from './gifs/walk.gif';
 
-// WEBP
+// SVG
+
+import logo from './svg/Logo.svg'
 
 const gifs = {
     drink,
@@ -28,4 +30,8 @@ const gifs = {
     walk
 };
 
-export { gifs };
+const svgs = {
+    logo
+}
+
+export { gifs, svgs };

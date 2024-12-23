@@ -10,7 +10,7 @@ const MarqueeTags: React.FC<MarqueeTagsProps> = ({ tags }) => {
         {/* First set of tags */}
         {tags.map((tag, index) => (
           <span key={`first-${index}`} className="glass-morph-effect rounded-full gap-4 mx-4 p-1 flex flex-row items-center space-x-2">
-            <Image width={32} height={32} src={tag.gifRoute} alt={tag.name} className="h-8 w-8 rounded-full" />
+            <Image width={32} height={32} unoptimized src={tag.gifRoute} alt={tag.name} className="h-8 w-8 rounded-full" />
             <span>{tag.name}</span>
           </span>
         ))}

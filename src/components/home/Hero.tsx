@@ -39,21 +39,25 @@ const Hero: React.FC = () => {
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
         {/* Heading */}
         <h1 className="text-4xl sm:text-6xl font-bold mb-6 text-center">
-          Welcome to Our Platform
+          Have you ever had a healthcare plan, or are you living dangerously?
         </h1>
 
         {/* Buttons */}
         <div className="flex space-x-4 mb-6">
+          {/* First Button: Glass effect, No Background Color, Left-Bottom */}
           <button
-            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition duration-300"
+            className="px-6 py-3 text-primary font-semibold rounded-tr-3xl rounded-bl-3xl shadow-md glass-morph-effect border-tl-3xl border-br-3xl transition duration-300"
           >
-            Get Started
+            No, I like to keep things interesting.
           </button>
+
+          {/* Second Button: bg-primary, Left-Bottom */}
           <button
-            className="px-6 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-black text-white font-semibold rounded-lg transition duration-300"
+            className="px-6 py-3 text-white font-semibold rounded-tl-3xl rounded-br-3xl bg-gradient-to-r from-primary to-secondary border-bl-3xl border-tr-3xl transition duration-300"
           >
-            Learn More
+            Yes, I would like to try.
           </button>
+
         </div>
       </div>
 
