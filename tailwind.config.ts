@@ -13,22 +13,6 @@ export default {
         foreground: "var(--foreground)",
       },
     },
-    animation: {
-      marquee: 'marquee 20s linear infinite', // Define animation with a smooth loop
-    },
-    keyframes: {
-      marquee: {
-        '0%': {
-          transform: 'translateX(100%)', // Start from right
-        },
-        '50%': {
-          transform: 'translateX(-50%)', // Scroll left halfway
-        },
-        '100%': {
-          transform: 'translateX(-100%)', // Scroll completely to left
-        },
-      }
-    },
     colors: {
       primary: '#018380',
       secondary: '#00DAD4',

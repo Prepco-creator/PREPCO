@@ -9,6 +9,7 @@
   --foreground: #171717;
 }
 
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,4 +20,12 @@
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+.glass-morph-effect {
+  background: #ffffffb5;
+  box-shadow: 0 8px 32px #1f26875e;
+  backdrop-filter: blur(117px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid #ffffff2e;
 }

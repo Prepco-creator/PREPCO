@@ -1,6 +1,6 @@
 import React from 'react';
 import MarqueeTags from './MarqueeTags';
-import { images } from '../../../public/assets';
+import { images, videos } from '../../../public/assets';
 
 const Hero: React.FC = () => {
   const tags = [
@@ -21,6 +21,7 @@ const Hero: React.FC = () => {
     <section className="relative w-full h-screen">
       {/* Video background */}
       <video
+        src={videos.hero}
         className="absolute inset-0 w-full h-full object-cover brightness-50"
         autoPlay
         loop
