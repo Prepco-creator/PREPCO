@@ -11,10 +11,20 @@ import family from './gifs/family.gif';
 import meditation from './gifs/meditation.gif';
 import reading from './gifs/reading.gif';
 import walk from './gifs/walk.gif';
-
+import hollowCircles from './gifs/hollow-circles.gif'
+import bulb from './gifs/bulb.gif'
+import tabletGuy from './gifs/tablet-guy.gif'
+import innovationBulb from './gifs/innovation-bulb.gif'
+import threeGuys from './gifs/three-guys.gif'
+import twoGuys from './gifs/two-guys.gif'
 // SVG
 
 import logo from './svg/Logo.svg'
+
+
+// png
+
+import aboutHero from './pngs/about-hero.png'
 
 const gifs = {
     drink,
@@ -27,11 +37,21 @@ const gifs = {
     family,
     meditation,
     reading,
-    walk
+    walk,
+    bulb,
+    hollowCircles,
+    tabletGuy,
+    twoGuys,
+    threeGuys,
+    innovationBulb
 };
 
 const svgs = {
     logo
 }
 
-export { gifs, svgs };
+const pngs = {
+    aboutHero
+}
+
+export { gifs, svgs, pngs };

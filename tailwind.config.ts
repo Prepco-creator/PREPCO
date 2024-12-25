@@ -17,12 +17,10 @@ export default {
           3: "#F0FFFF",
         },
         background: "#F8FFFF",
-        text: {
-          primaryDark: "#121212",
-          secondaryDark: "#505050",
-          primaryLight: "#FAF9F6",
-          secondaryLight: "#EEEEEE",
-        },
+        primaryDark: "#121212",
+        secondaryDark: "#505050",
+        primaryLight: "#FAF9F6",
+        secondaryLight: "#EEEEEE"
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -58,6 +56,12 @@ export default {
       gradientColorStops: {
         primary: "#00ADA9",
         secondary: "#00807D",
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(270deg, #00ADA9 0%, #00807D 100%)',
+      },
+      boxShadow: {
+        'double-inset': '-12px -12px 48px 0px #022C2B inset, 16px 16px 24px 0px #00DAD4 inset',
       },
     },
   },
