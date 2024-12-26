@@ -10,12 +10,14 @@ export default {
     extend: {
       colors: {
         primary: "#018380",
+        primary1: "#00ADA9",
         secondary: "#00DAD4",
         accent: {
           1: "#D0F2F3",
           2: "#E3FFFE",
           3: "#F0FFFF",
         },
+        gray: "#D9D9D9",
         background: "#F8FFFF",
         primaryDark: "#121212",
         secondaryDark: "#505050",
@@ -62,6 +64,13 @@ export default {
       },
       boxShadow: {
         'double-inset': '-12px -12px 48px 0px #022C2B inset, 16px 16px 24px 0px #00DAD4 inset',
+        'multi-layer': `
+          0px 7px 15px 0px #0000001A,
+          0px 28px 28px 0px #00000017,
+          0px 62px 37px 0px #0000000D,
+          0px 110px 44px 0px #00000003,
+          0px 172px 48px 0px #00000000
+        `,
       },
     },
   },

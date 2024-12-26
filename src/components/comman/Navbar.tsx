@@ -34,7 +34,7 @@ const Navbar = () => {
                     } rounded-br-3xl rounded-bl-3xl fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600`}
             >
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <Link href="/contact" passHref>
+                    <Link href="/" passHref>
                         <div className="flex items-center space-x-3 rtl:space-x-reverse">
                             <Image
                                 src={images.svgs.logo}
@@ -46,12 +46,14 @@ const Navbar = () => {
                         </div>
                     </Link>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                        <button
-                            type="button"
-                            className="p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset brightness-150"
-                        >
-                            Contact us
-                        </button>
+                        <Link href='/contact' passHref>
+                            <button
+                                type="button"
+                                className="p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset brightness-150"
+                            >
+                                Contact us
+                            </button>
+                        </Link>
                         <button
                             onClick={toggleMenu} // Toggle mobile menu
                             type="button"

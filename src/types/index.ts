@@ -19,9 +19,42 @@ interface CardProps {
     pClassName?: string;
 }
 
+interface InputFieldProps {
+    id: string;
+    label: string;
+    placeholder: string;
+    required?: boolean;
+    type?: string;
+    error?: string;
+    register: any; // From React Hook Form's `register`
+}
+
+
+interface FormValues {
+    name: string,
+    phone: string,
+    email?: string,
+}
+
+interface Testimonial {
+    testimonial: string; // The testimonial text
+    testimonee: string;  // The name of the person providing the testimonial
+    position?: string;   // The optional position or role of the person
+}
+
+interface SwiperComponent1Props {
+    testimonials: Testimonial[]
+}
+
+
+
 
 export type {
     MarqueeTagsProps,
     BannerProps,
-    CardProps
+    CardProps,
+    InputFieldProps,
+    FormValues,
+    Testimonial,
+    SwiperComponent1Props
 }

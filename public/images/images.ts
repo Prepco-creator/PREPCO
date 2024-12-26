@@ -20,9 +20,17 @@ import twoGuys from './gifs/two-guys.gif'
 // SVG
 
 import logo from './svg/Logo.svg'
+import doubleQuote from './svg/Quotes.svg'
+import logoIcon from './svg/LogoIcon.svg'
 
 
 // png
+
+
+import testimonialImage from './jpgs/indian_testimonial_1.jpg'
+import testimonialImage2 from './jpgs/indian_testimonial_2.jpg'
+
+// jpgs
 
 import aboutHero from './pngs/about-hero.png'
 
@@ -47,11 +55,18 @@ const gifs = {
 };
 
 const svgs = {
-    logo
+    logo,
+    doubleQuote,
+    logoIcon
 }
 
 const pngs = {
     aboutHero
 }
 
-export { gifs, svgs, pngs };
+const jpgs = {
+    testimonialImage,
+    testimonialImage2,
+}
+
+export { gifs, svgs, pngs, jpgs };

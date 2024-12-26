@@ -1,8 +1,9 @@
+import Testimonials from '@/components/testimonials/Testimonials'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <Testimonials />
   )
 }
 
