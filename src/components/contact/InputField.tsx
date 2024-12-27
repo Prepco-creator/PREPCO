@@ -1,7 +1,7 @@
 import { InputFieldProps } from '@/types';
 import React from 'react';
 
-const InputField = <TFormValues extends Record<string, any>>({
+const InputField = <TFormValues extends Record<string, unknown>>({
   id,
   label,
   placeholder,
