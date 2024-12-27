@@ -4,13 +4,12 @@ import { PlanProps } from '@/types'
 
 
 const PlanCardGrid: React.FC<{ plans: PlanProps[] }> = ({ plans }) => {
+
+  console.log(plans)
+
   return (
     <section>
-      {/* 
-            filterComponent ( const filters [] = plans.categories )
-            filteredPlans using react useState
-            gridComponent ( passs the filteredPlans )
-        */}
+      plan page
     </section>
   )
 }
