@@ -1,6 +1,6 @@
 import React from 'react';
 import MarqueeTags from '../comman/MarqueeTags';
-import { images, videos } from '../../../public/assets';
+import { videos } from '../../../public/assets';
 import tags from '@/data/tags';
 
 const Hero: React.FC = () => {
