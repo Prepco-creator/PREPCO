@@ -26,17 +26,24 @@ import peopleDuo from './svg/peopleduo.svg'
 import dummyHero from './svg/dummyHeroImage.svg'
 
 
-// png
-
-
+// JPG
 import testimonialImage from './jpgs/indian_testimonial_1.jpg'
 import testimonialImage2 from './jpgs/indian_testimonial_2.jpg'
 
-
-// jpgs
-
+//PNG
 import aboutHero from './pngs/about-hero.png'
 import walkingCouple from './pngs/walking-couple.png'
+import doctorConsultation from './pngs/doctor-consultaion.png';
+import microscope from './pngs/microscope.png';
+import virtualConsultation from './pngs/virtual-consultation.png';
+import dentalInsurance from './pngs/dental-inusrance.png';
+import heartBeatCheck from './pngs/heart-beat-check.png';
+import offer from './pngs/offer.png';
+import dietian from './pngs/dietian.png';
+import medicineTablet from './pngs/medicine-tablet.png';
+import physicalTherapy from './pngs/physical-therapy.png';
+import zumbaSession from './pngs/zumba-session.png';
+
 
 const gifs = {
     drink,
@@ -68,7 +75,17 @@ const svgs = {
 
 const pngs = {
     aboutHero,
+    doctorConsultation,
+    microscope,
+    virtualConsultation,
+    dentalInsurance,
+    heartBeatCheck,
+    offer,
     walkingCouple,
+    dietian,
+    medicineTablet,
+    physicalTherapy,
+    zumbaSession
 }
 
 const jpgs = {

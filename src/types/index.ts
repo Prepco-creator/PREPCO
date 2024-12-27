@@ -15,6 +15,13 @@ interface MarqueeTagsProps {
     tagClassName?: string;
 }
 
+interface HealthPackageDetails {
+    id: string;
+    title: string;
+    description: string;
+    iconSrc: string | StaticImageData
+}
+
 interface BannerProps {
     title: string;
 }
@@ -71,6 +78,7 @@ interface PlanProps {
     discountPricing: number;
     isSpecial: boolean; // e.g., true for featured or premium plans
     features: PlanFeature[];
+    bigDescription?: string
 }
 
 
@@ -89,6 +97,12 @@ interface FeaturesProps {
     features: PlanFeature[];
 }
 
+interface PlanDetailProps {
+    title: string,
+    bigDescription: string
+    healthPackages: HealthPackageDetails[]
+}
+
 export type {
     MarqueeTagsProps,
     BannerProps,
@@ -103,4 +117,6 @@ export type {
     PlanTitleProps,
     FeaturesProps,
     Tags,
+    HealthPackageDetails,
+    PlanDetailProps,
 }

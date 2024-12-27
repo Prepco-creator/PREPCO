@@ -11,6 +11,7 @@ import Features from './Features'
 import MarqueeTags from '../comman/MarqueeTags'
 import tags from '@/data/tags'
 import PlanDetail from './PlanDetail'
+import healthPackageDetails from '@/data/healthPackageDetails'
 
 const Plan: React.FC<{ planName: string }> = ({ planName }) => {
 
@@ -33,7 +34,7 @@ const Plan: React.FC<{ planName: string }> = ({ planName }) => {
             <PlanTitle title={plan.title} />
             <Features duration={plan.duration} features={plan.features} />
             <MarqueeTags tagClassName='bg-accent-2 px-2' className='py-16' tags={tags} />
-            <PlanDetail />
+            <PlanDetail title={plan.title} bigDescription={plan.bigDescription as string} healthPackages={healthPackageDetails} />
         </section>
     );
 }
