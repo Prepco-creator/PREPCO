@@ -22,6 +22,8 @@ import twoGuys from './gifs/two-guys.gif'
 import logo from './svg/Logo.svg'
 import doubleQuote from './svg/Quotes.svg'
 import logoIcon from './svg/LogoIcon.svg'
+import peopleDuo from './svg/peopleduo.svg'
+import dummyHero from './svg/dummyHeroImage.svg'
 
 
 // png
@@ -30,9 +32,11 @@ import logoIcon from './svg/LogoIcon.svg'
 import testimonialImage from './jpgs/indian_testimonial_1.jpg'
 import testimonialImage2 from './jpgs/indian_testimonial_2.jpg'
 
+
 // jpgs
 
 import aboutHero from './pngs/about-hero.png'
+import walkingCouple from './pngs/walking-couple.png'
 
 const gifs = {
     drink,
@@ -57,11 +61,14 @@ const gifs = {
 const svgs = {
     logo,
     doubleQuote,
-    logoIcon
+    logoIcon,
+    peopleDuo,
+    dummyHero
 }
 
 const pngs = {
-    aboutHero
+    aboutHero,
+    walkingCouple,
 }
 
 const jpgs = {

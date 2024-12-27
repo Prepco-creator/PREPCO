@@ -1,21 +1,10 @@
 import React from 'react';
-import MarqueeTags from './MarqueeTags';
+import MarqueeTags from '../comman/MarqueeTags';
 import { images, videos } from '../../../public/assets';
+import tags from '@/data/tags';
 
 const Hero: React.FC = () => {
-  const tags = [
-    { name: 'Waking up early', gifRoute: images.gifs.morning },
-    { name: 'Be hydrated', gifRoute: images.gifs.drink },
-    { name: 'Yoga', gifRoute: images.gifs.meditation },
-    { name: 'Breakfast', gifRoute: images.gifs.englishBreakfast },
-    { name: 'Focused Study', gifRoute: images.gifs.reading },
-    { name: 'Work life balance', gifRoute: images.gifs.family },
-    { name: 'Regular Exercise', gifRoute: images.gifs.exercise },
-    { name: 'Healthy food', gifRoute: images.gifs.lunchBox },
-    { name: 'Walking', gifRoute: images.gifs.walk },
-    { name: 'Healthy family', gifRoute: images.gifs.family },
-    { name: 'Enough Sleep', gifRoute: images.gifs.sleep },
-  ];
+
 
   return (
     <section className="relative w-full h-screen">
@@ -62,7 +51,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Marquee Tags Component */}
-      <MarqueeTags tags={tags} />
+      <MarqueeTags tagClassName='glass-morph-effect gap-1 px-2' className='absolute bottom-10' tags={tags} />
     </section>
   );
 };

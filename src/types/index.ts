@@ -3,8 +3,16 @@
 import { StaticImageData } from "next/image";
 import { FieldValues, Path, UseFormRegister } from "react-hook-form";
 
+
+interface Tags {
+    name: string;
+    gifRoute: StaticImageData;
+}
+
 interface MarqueeTagsProps {
-    tags: { name: string; gifRoute: StaticImageData }[];
+    tags: Tags[];
+    className?: string;
+    tagClassName?: string;
 }
 
 interface BannerProps {
@@ -49,7 +57,7 @@ interface SwiperComponent1Props {
 
 interface PlanFeature {
     id: string;
-    icon: StaticImageData;
+    icon?: string;
     content: string;
 }
 
@@ -58,14 +66,28 @@ interface PlanProps {
     title: string;
     description: string;
     category: string;
-    duration: string; // e.g., "1 month", "1 year"
+    duration: number; // e.g., "1 month", "1 year"
     pricing: number; // e.g., 199.99
+    discountPricing: number;
     isSpecial: boolean; // e.g., true for featured or premium plans
     features: PlanFeature[];
 }
 
 
+interface PlanHeroProps {
+    title: string;
+    duration: number;
+    pricing: number;
+}
 
+interface PlanTitleProps {
+    title: string;
+}
+
+interface FeaturesProps {
+    duration: number;
+    features: PlanFeature[];
+}
 
 export type {
     MarqueeTagsProps,
@@ -76,4 +98,9 @@ export type {
     Testimonial,
     SwiperComponent1Props,
     PlanProps,
+    PlanFeature,
+    PlanHeroProps,
+    PlanTitleProps,
+    FeaturesProps,
+    Tags,
 }

@@ -1,9 +1,53 @@
-import React from 'react'
+import { PlanFeature, PlanProps } from '@/types';
+import Image from 'next/image';
+import React from 'react';
+import { images } from '../../../public/assets';
+import formatToHyphenated from '@/utils/fomatPathName';
+import Link from 'next/link';
 
-const PlanCard = () => {
+const PlanCard: React.FC<PlanProps> = ({
+  title,
+  description,
+  duration,
+  pricing,
+  discountPricing,
+  isSpecial,
+  features,
+}) => {
+
+
+  const timeline = duration === 12 ? 'year' : duration === 6 ? "6-months" : "not-defined";
+
+  const planName = formatToHyphenated(title)
+
   return (
-    <div>PlanCard</div>
-  )
-}
+    <div className={`rounded-3xl border-[1px] border-solid border-primary p-4 flex flex-col gap-4 ${isSpecial ? 'bg-accent-1' : 'bg-transparent'}`}>
+      <h1 className='text-custom-24 text-primary'>{title}</h1>
+      <p className='text-custom-14 text-secondaryDark'>{description}</p>
+      <div className='flex flex-row justify-between items-center'>
+        <div className='flex flex-col gap-1'>
+          <h6 className='text-custom-16 text-black'>&#8377;<span className='line-through'>{pricing}</span><span className='text-custom-14 text-dark'>/{timeline}</span></h6>
+          <h1 className='text-custom-32 text-primary'>&#8377;{discountPricing}<span className='text-custom-14 text-dark'>/{timeline}</span></h1>
+        </div>
+        <p className='flex flex-row gap-2'><Image alt='people-2' width={20} height={20} src={images.svgs.peopleDuo} /><span className='text-custom-14 text-secondaryDark'>3 persons </span></p>
+      </div>
+      <Link href={`/plans/${planName}`} className='w-full' passHref>
+        <button className='w-full bg-primary text-white p-3 shadow-double-inset rounded-tl-br-30'>
+          Buy Now
+        </button>
+      </Link>
+      <div>
+        {
+          features?.slice(0, 4).map((feature: PlanFeature, index: number) => (
+            <div key={index} className='flex flex-row gap-2 mb-2'>
+              <Image width={24} height={24} className='object-contain' src={images.pngs.walkingCouple} alt={feature.id} />
+              <p className='text-secondaryDark text-custom-14'>{feature.content}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  );
+};
 
-export default PlanCard
+export default PlanCard;
