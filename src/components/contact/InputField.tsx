@@ -1,7 +1,7 @@
 import { InputFieldProps } from '@/types';
 import React from 'react';
 
-const InputField: React.FC<InputFieldProps> = ({
+const InputField = <TFormValues extends Record<string, any>>({
   id,
   label,
   placeholder,
@@ -9,14 +9,14 @@ const InputField: React.FC<InputFieldProps> = ({
   type = 'text',
   error,
   register,
-}) => {
+}: InputFieldProps<TFormValues>) => {
   return (
     <div className="mb-4">
-      <label htmlFor={id} className="block text-sm font-medium text-custom-14 text-black">
+      <label htmlFor={id as string} className="block text-sm font-medium text-custom-14 text-black">
         {label} {required && <span className="text-red-500">*</span>}
       </label>
       <input
-        id={id}
+        id={id as string}
         type={type}
         placeholder={placeholder}
         {...register(id, { required })}

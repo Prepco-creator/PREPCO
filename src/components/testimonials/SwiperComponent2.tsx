@@ -1,8 +1,6 @@
 'use client'
 
 import React from 'react';
-import { images } from '../../../public/assets';
-import Image from 'next/image';
 import { SwiperComponent1Props, Testimonial } from '@/types';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
