@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="bg-accent-2 flex flex-col-reverse gap-6 lg:flex-row items-center lg:items-start lg:gap-12 px-8 lg:px-16 py-12 lg:h-screen">
       {/* Left Image */}
-      <div className="w-full lg:w-2/5">
+      <div className="w-full lg:w-2/5 relative">
         <Image
           width={undefined}
           height={undefined}
@@ -14,6 +14,26 @@ const HeroSection = () => {
           alt="Hero Image"
           className="w-full h-auto object-cover"
         />
+
+        <div className="absolute top-20 right-52 bg-white rounded-full">
+          <Image
+            src={images.gifs.yogaUpDown}
+            width={65}
+            height={65}
+            alt="yoga-gif"
+            unoptimized
+          />
+        </div>
+        <div className="absolute bottom-0 right-10 bg-white rounded-full">
+          <Image
+            src={images.gifs.runningWoman}
+            width={65}
+            height={65}
+            alt="yoga-gif"
+            unoptimized
+          />
+        </div>
+
       </div>
 
       {/* Right Content */}

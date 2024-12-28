@@ -1,6 +1,8 @@
 import React from 'react'
 import ContactForm from './ContactForm'
 import CTA from '../comman/CTA'
+import { images } from '../../../public/assets'
+import Image from 'next/image'
 
 const HeroSection = () => {
     return (
@@ -18,14 +20,14 @@ const HeroSection = () => {
                 <h1 className='text-custom-48-bold capitalize bg-custom-gradient bg-clip-text text-transparent'>
                     Feel free to get in touch with exrperts
                 </h1>
-                <div>
-                    <div>
-                        <img src="" alt="" />
+                <div className='space-y-4'>
+                    <div className='flex flex-row gap-2 items-center'>
+                        <Image width={48} height={48} src={images.pngs.phoneIcon} alt="prepco-phone" />
                         <p className='text-custom-20 text-primary'>+98 928 82 929</p>
                     </div>
 
-                    <div>
-                        <img src="" alt="" />
+                    <div className='flex flex-row gap-2 items-center'>
+                        <Image width={48} height={48} src={images.pngs.mailIcon} alt="prepco-mail" />
                         <p className='text-custom-20 text-primary'>xyz@company.com</p>
                     </div>
 
@@ -37,7 +39,7 @@ const HeroSection = () => {
             <section className='flex-1'>
                 <ContactForm />
             </section>
-            <CTA className='bg-white absolute w-11/12 bottom-[-11%] left-1/2 transform -translate-x-1/2' />
+            <CTA className='bg-white absolute w-11/12 bottom-[-20%] left-1/2 transform -translate-x-1/2' />
         </section>
     )
 }

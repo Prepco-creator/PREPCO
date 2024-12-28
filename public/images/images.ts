@@ -17,6 +17,11 @@ import tabletGuy from './gifs/tablet-guy.gif'
 import innovationBulb from './gifs/innovation-bulb.gif'
 import threeGuys from './gifs/three-guys.gif'
 import twoGuys from './gifs/two-guys.gif'
+import yogaUpDown from './gifs/yoga-up-down.gif'
+import runningWoman from './gifs/running-woman.gif'
+import lovingFamily from './gifs/loving-family.gif'
+import coupleWalking from './gifs/couple-walking.gif'
+import drinkWater from './gifs/drink-water.gif'
 // SVG
 
 import logo from './svg/Logo.svg'
@@ -24,6 +29,7 @@ import doubleQuote from './svg/Quotes.svg'
 import logoIcon from './svg/LogoIcon.svg'
 import peopleDuo from './svg/peopleduo.svg'
 import dummyHero from './svg/dummyHeroImage.svg'
+import LogoWhite from './svg/LogoWhite.svg'
 
 
 // JPG
@@ -43,6 +49,12 @@ import dietian from './pngs/dietian.png';
 import medicineTablet from './pngs/medicine-tablet.png';
 import physicalTherapy from './pngs/physical-therapy.png';
 import zumbaSession from './pngs/zumba-session.png';
+import youtubeIcon from './pngs/youtube-icon.png'
+import whatsappIcon from './pngs/whatsapp-icon.png'
+import twitterIcon from './pngs/twitter-icon.png'
+import instagramIcon from './pngs/instagram-icon.png'
+import phoneIcon from './pngs/phone.png'
+import mailIcon from './pngs/mail.png'
 
 
 const gifs = {
@@ -62,7 +74,12 @@ const gifs = {
     tabletGuy,
     twoGuys,
     threeGuys,
-    innovationBulb
+    innovationBulb,
+    yogaUpDown,
+    runningWoman,
+    lovingFamily,
+    coupleWalking,
+    drinkWater
 };
 
 const svgs = {
@@ -70,7 +87,8 @@ const svgs = {
     doubleQuote,
     logoIcon,
     peopleDuo,
-    dummyHero
+    dummyHero,
+    LogoWhite,
 }
 
 const pngs = {
@@ -85,7 +103,13 @@ const pngs = {
     dietian,
     medicineTablet,
     physicalTherapy,
-    zumbaSession
+    zumbaSession,
+    youtubeIcon,
+    whatsappIcon,
+    twitterIcon,
+    instagramIcon,
+    phoneIcon,
+    mailIcon,
 }
 
 const jpgs = {

@@ -25,8 +25,45 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing }) => {
                     <p className='text-center underline text-custom-16 text-secondaryDark'>Here it from our client testimonials</p>
                 </Link>
             </div>
-            <div>
+            <div className='relative'>
                 <Image width={529} height={529} src={images.svgs.dummyHero} alt="hero-image" />
+
+                <div className="absolute top-3 left-10 bg-white shadow-md rounded-full">
+                    <Image
+                        src={images.gifs.yogaUpDown}
+                        width={65}
+                        height={65}
+                        alt="yoga-gif"
+                        unoptimized
+                    />
+                </div>
+                <div className="absolute top-20 right-0 bg-white shadow-md rounded-full">
+                    <Image
+                        src={images.gifs.runningWoman}
+                        width={65}
+                        height={65}
+                        alt="yoga-gif"
+                        unoptimized
+                    />
+                </div>
+                <div className="absolute bottom-40 -left-11 bg-white shadow-md rounded-full">
+                    <Image
+                        src={images.gifs.lovingFamily}
+                        width={65}
+                        height={65}
+                        alt="yoga-gif"
+                        unoptimized
+                    />
+                </div>
+                <div className="absolute bottom-10 right-10 bg-white shadow-md rounded-full">
+                    <Image
+                        src={images.gifs.drinkWater}
+                        width={65}
+                        height={65}
+                        alt="yoga-gif"
+                        unoptimized
+                    />
+                </div>
             </div>
         </section>
     )

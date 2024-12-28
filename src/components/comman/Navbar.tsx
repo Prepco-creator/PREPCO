@@ -10,10 +10,12 @@ const Navbar = () => {
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage mobile menu toggle
 
+
+
     const navLinks = [
         { title: 'Home', route: '/' },
         { title: 'About', route: '/about' },
-        { title: 'Services', route: '/services' },
+        // { title: 'Services', route: '/services' },
         { title: 'plans', route: '/plans' },
         { title: 'testimonials', route: '/testimonials' },
     ];
@@ -23,10 +25,12 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+
+
     return (
         <>
             {/* Dummy spacer to prevent content overlap */}
-            <div className="h-[72px] w-full"></div> {/* Adjust the height to match your navbar's height */}
+            {pathname !== '/' && <div className="h-[72px] w-full"></div>} {/* Adjust the height to match your navbar's height */}
 
             {/* Navbar */}
             <nav
