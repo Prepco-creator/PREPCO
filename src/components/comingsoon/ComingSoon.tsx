@@ -9,8 +9,9 @@ const ComingSoon: React.FC = () => {
             <div className="text-center">
                 <h1 className="text-5xl font-bold text-primary-dark">Page Under Construction</h1>
                 <p className="mt-4 text-lg text-secondary-dark">
-                    We're working hard to bring this page to life. Stay tuned for updates!
+                    We&#39;re working hard to bring this page to life. Stay tuned for updates!
                 </p>
+
                 <div className="mt-6">
                     <p className="text-sm text-secondary-dark">
                         Follow us on social media for the latest news:
