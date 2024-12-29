@@ -14,9 +14,9 @@ import './testimonials.css'
 
 const SwiperComponent1: React.FC<SwiperComponent1Props> = ({ testimonials }) => {
     return (
-        <section className='p-16'>
+        <section className='px-4 py-8 lg:p-16'>
             <Swiper
-                modules={[Pagination, Navigation,Autoplay]}
+                modules={[Pagination, Navigation, Autoplay]}
                 pagination={{
                     clickable: true,
                 }}
@@ -33,19 +33,19 @@ const SwiperComponent1: React.FC<SwiperComponent1Props> = ({ testimonials }) => 
                 {testimonials.map((testimonial: Testimonial, index: number) => (
                     <SwiperSlide key={index}>
                         <div
-                            style={{ borderRadius: '100px 100px 0px 100px' }}
-                            className="bg-primary1 text-primaryDark w-3/4 flex flex-row gap-4 items-start px-16 py-12 mx-auto"
+                            
+                            className="bg-primary1 text-primaryDark w-11/12 rounded-[30px] rounded-br-[0px] lg:rounded-[100px] lg:rounded-br-[0px] lg:w-3/4 flex flex-row gap-4 items-start px-2 lg:px-16 py-12 mx-auto"
                         >
-                            <Image width={73} height={96} src={images.svgs.logoIcon} alt="logo" />
+                            <Image width={73} height={96} className='w-[39px] h-[52px] lg:w-[73px] lg:h-[96px]' src={images.svgs.logoIcon} alt="logo" />
                             <div className="flex flex-col gap-4 flex-1">
-                                <h1 className="text-custom-48-bold">Our Client Says</h1>
-                                <p className="text-custom-16">{testimonial.testimonial}</p>
+                                <h1 className="text-custom-24 lg:text-custom-48-bold">Our Client Says</h1>
+                                <p className="text-custom-14 lg:text-custom-16">{testimonial.testimonial}</p>
                                 <div>
-                                    <h4 className="text-custom-20-bold">{testimonial.testimonee}</h4>
-                                    <p className="text-custom-14">{testimonial.position || 'Customer'}</p>
+                                    <h4 className="text-custom-16-bold lg:text-custom-20-bold">{testimonial.testimonee}</h4>
+                                    <p className="text-custom-14 lg:text-custom-14">{testimonial.position || 'Customer'}</p>
                                 </div>
                             </div>
-                            <Image width={64} height={64} src={images.svgs.doubleQuote} alt="double-quote" />
+                            <Image width={64} height={64} className='w-[32px] h-[32px] lg:w-[64px] lg:h-[64px]' src={images.svgs.doubleQuote} alt="double-quote" />
                         </div>
                     </SwiperSlide>
                 ))}

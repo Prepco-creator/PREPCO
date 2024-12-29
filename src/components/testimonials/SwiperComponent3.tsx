@@ -14,7 +14,7 @@ import './testimonials.css'
 
 const SwiperComponent3: React.FC<SwiperComponent1Props> = ({ testimonials }) => {
     return (
-        <section className='py-16'>
+        <section className='py-8 lg:py-16'>
             <Swiper
                 modules={[Pagination, Navigation, Autoplay, EffectCreative]}
                 pagination={false}
@@ -40,11 +40,11 @@ const SwiperComponent3: React.FC<SwiperComponent1Props> = ({ testimonials }) => 
             >
                 {testimonials.map((testimonial: Testimonial, index: number) => (
                     <SwiperSlide key={index}>
-                        <section className='flex flex-row items-center bg-white'>
+                        <section className='flex flex-col lg:flex-row items-center bg-white p-4 lg:p-0'>
                             <div className='flex-1 h-full'>
                                 <Image width={720} height={382} src={images.jpgs.testimonialImage} alt="testimonial" />
                             </div>
-                            <div className='flex-1 p-12 flex flex-col gap-8 items-start justify-start'>
+                            <div className='flex-1 py-4 lg:p-12 flex flex-col gap-8 items-start justify-start'>
                                 <Image width={40} height={40} src={images.svgs.doubleQuote} alt='double-quote' />
                                 <div className='text-left'>
                                     <h4 className="text-custom-20-bold bg-custom-gradient bg-clip-text text-transparent">{testimonial.testimonee}</h4>

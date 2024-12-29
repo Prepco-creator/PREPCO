@@ -13,7 +13,7 @@ const Testimonials = () => {
       <SwiperComponent1 testimonials={testimonials1} />
       <SwiperComponent2 testimonials={testimonials2} />
       <SwiperComponent3 testimonials={testimonials2} />
-      <CTA className='w-11/12 mx-auto my-8 bg-accent-2 rounded-full shadow-none'/>
+      <CTA className='w-11/12 mx-auto my-8 bg-accent-2 rounded-[40px] lg:rounded-full shadow-none' />
     </section>
   )
 }
