@@ -10,12 +10,9 @@ const Navbar = () => {
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage mobile menu toggle
 
-
-
     const navLinks = [
         { title: 'Home', route: '/' },
         { title: 'About', route: '/about' },
-        // { title: 'Services', route: '/services' },
         { title: 'plans', route: '/plans' },
         { title: 'testimonials', route: '/testimonials' },
     ];
@@ -25,23 +22,21 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-
-
     return (
         <>
             {/* Dummy spacer to prevent content overlap */}
-            {pathname !== '/' && <div className="h-[72px] w-full"></div>} {/* Adjust the height to match your navbar's height */}
+            {pathname !== '/' && <div className="h-[72px] w-full"></div>}
 
             {/* Navbar */}
             <nav
-                className={`${isMenuOpen ? 'bg-primary text-white' : 'glass-morph-effect'
+                className={`transition-[background] duration-500 ease-in-out ${isMenuOpen ? 'bg-primary text-white' : 'glass-morph-effect'
                     } rounded-br-3xl rounded-bl-3xl fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600`}
             >
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="/" passHref>
                         <div className="flex items-center space-x-3 rtl:space-x-reverse">
                             <Image
-                                src={images.svgs.logo}
+                                src={isMenuOpen ? images.svgs.LogoWhite : images.svgs.logo}
                                 alt="Flowbite Logo"
                                 width={133}
                                 height={43}
@@ -84,22 +79,27 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div
-                        className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? 'block' : 'hidden'
-                            }`}
+                        className={`transition-all duration-500 ease-in-out transform md:transition-none ${isMenuOpen
+                            ? 'max-h-screen translate-y-0 opacity-100'
+                            : 'max-h-0 -translate-y-10 opacity-0'
+                            } items-center overflow-hidden justify-between w-full md:flex md:w-auto md:order-1 lg:static lg:opacity-100 lg:max-h-full lg:translate-y-0`}
                         id="navbar-sticky"
                     >
+
+
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium bg-transparent rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                             {navLinks.map(({ title, route }) => (
                                 <li key={route}>
                                     <Link href={route} passHref>
                                         <div
-                                            className={`capitalize block py-2 px-3 rounded md:bg-transparent md:p-0 hover:text-primary ${pathname === route
-                                                ? 'text-primary'
+                                            className={`capitalize block py-2 px-3 rounded md:bg-transparent md:p-0 hover:md:text-primary ${pathname === route
+                                                ? 'text-gray-900 md:text-primary'
                                                 : 'text-gray-900'
                                                 }`}
                                             aria-current={
                                                 pathname === route ? 'page' : undefined
                                             }
+                                            onClick={() => setIsMenuOpen(false)}
                                         >
                                             {title}
                                         </div>
@@ -111,7 +111,6 @@ const Navbar = () => {
                 </div>
             </nav>
         </>
-
     );
 };
 
