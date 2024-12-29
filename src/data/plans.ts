@@ -8,7 +8,7 @@ const mockData: PlanProps[] = [
     title: 'Full Package Plan',
     description: 'All-in-one access to all our premium features and tools.',
     bigDescription: 'Unlock everything with our Full Package Plan, offering complete access to all our premium features and tools. This plan is designed for those who want to experience the full range of services we offer. With exclusive tools, advanced features, and expert support, you’ll have everything you need to reach your goals. Enjoy unlimited possibilities with this all-in-one package that provides you the most comprehensive and seamless experience available.',
-    category: 'fullpackage',
+    category: 'full_package',
     duration: 12,
     pricing: 9999,
     discountPricing: 8999, // 10% discount
