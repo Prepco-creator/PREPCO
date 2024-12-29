@@ -15,7 +15,7 @@ const HeroSection = () => {
           className="w-full h-auto object-cover"
         />
 
-        <div className="absolute top-20 right-52 bg-white rounded-full">
+        <div className="absolute top-0 right-40 lg:top-20 lg:right-52 bg-white rounded-full shadow-md">
           <Image
             src={images.gifs.yogaUpDown}
             width={65}
@@ -24,7 +24,7 @@ const HeroSection = () => {
             unoptimized
           />
         </div>
-        <div className="absolute bottom-0 right-10 bg-white rounded-full">
+        <div className="absolute right-0 bottom-24 lg:bottom-0 lg:right-10 bg-white rounded-full shadow-md">
           <Image
             src={images.gifs.runningWoman}
             width={65}
@@ -38,13 +38,13 @@ const HeroSection = () => {
 
       {/* Right Content */}
       <div className="w-full lg:w-3/5 lg:text-right">
-        <h1 className="text-4xl lg:text-[32px] font-bold mb-6">
+        <h1 className="text-custom-20 lg:text-custom-32 text-primary font-bold mb-6">
           At Prepco, we’re not just in the business of healthcare—we’re in the business of simplifying it for you.
         </h1>
-        <p className="text-lg lg:text-[20px] leading-relaxed mb-6">
+        <p className="text-custom-14 lg:text-custom-20-2 leading-relaxed mb-6">
           Say goodbye to complex processes and hello to a smarter, easier way to stay healthy. Our mission? To empower individuals and families with personalized, comprehensive services that fit seamlessly into your life.
         </p>
-        <p className="text-lg lg:text-[20px] leading-relaxed">
+        <p className="text-custom-14 lg:text-[20px] leading-relaxed">
           With a team of seasoned healthcare professionals and a sprinkle of innovation, we’re here to make preventive care feel less like a chore and more like a choice.
         </p>
       </div>

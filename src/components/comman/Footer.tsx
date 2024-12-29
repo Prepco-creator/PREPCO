@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="flex flex-col sm:flex-row gap-8">
                     <div className="flex-[2] mb-8 flex flex-col gap-8">
                         <Image src={images.svgs.LogoWhite} alt="prepco" width={172} height={43} />
-                        <p className="mt-2 text-custom-20-2 text-white">
+                        <p className="mt-2 lg:text-custom-20-2 text-white">
                             At Prepco, we make wellness a lifestyle with proactive, practical, and accessible healthcare for a healthier, smarter future.
                         </p>
                         <div className="flex justify-start gap-4 mt-4">

@@ -30,7 +30,7 @@ const WhyChoosePrepco = () => {
 
 
     return (
-        <section className='p-16'>
+        <section className='px-8 py-16 lg:px-16'>
             <header className='mb-6'>
                 <h3 className='text-center text-custom-40 bg-custom-gradient bg-clip-text text-transparent'>Why Choose Prepco?</h3>
             </header>

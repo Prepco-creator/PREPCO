@@ -4,7 +4,7 @@ import Card from './Card'
 
 const MissionAndVision = () => {
     return (
-        <section className='bg-accent-3 gap-8 p-4 flex flex-row px-8 lg:px-16 py-12'>
+        <section className='bg-accent-3 gap-8 p-4 flex flex-col lg:flex-row px-8 lg:px-16 py-12'>
             <Card
                 title='Our Vision'
                 icon={images.gifs.bulb}
