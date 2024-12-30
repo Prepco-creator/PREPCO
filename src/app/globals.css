@@ -58,25 +58,59 @@ body {
 
 .plan-grid {
   display: grid;
-  grid-template-columns: repeat(1, auto); /* Default for small screens (phone) */
+  grid-template-columns: repeat(1, auto);
+  /* Default for small screens (phone) */
 }
 
-@media (min-width: 600px) { /* Tablet */
+@media (min-width: 600px) {
+
+  /* Tablet */
   .plan-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
   }
 }
 
-@media (min-width: 1024px) { /* Laptop-small */
+@media (min-width: 1024px) {
+
+  /* Laptop-small */
   .plan-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
   }
 }
 
-@media (min-width: 1440px) { /* Laptop-large */
+@media (min-width: 1440px) {
+
+  /* Laptop-large */
   .plan-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
   }
 }
 
+
+/* Sheen Effect */
+.sheen::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+/* Activate the sheen effect when hovered */
+.sheen:hover::after,
+button:focus::after {
+  animation: sheen 1s forwards;
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
 
