@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,6 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -22,8 +21,6 @@ body {
   background: var(--background);
 }
 
-
-
 .glass-morph-effect {
   background: #ffffffb5;
   box-shadow: 0 8px 32px #1f26875e;
@@ -31,7 +28,6 @@ body {
   -webkit-backdrop-filter: blur(7px);
   border: 1px solid #ffffff2e;
 }
-
 
 .custom-border-radius {
   border-radius: 30px 0px 30px 0px;
@@ -54,4 +50,68 @@ body {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #018380;
 }
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
 
+.text-gradient-animate {
+  background: linear-gradient(to right, #ffffff, #979694, #cfcfcd, #faf9f6);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-move 5s linear infinite;
+}
+/* Add the following custom CSS to your global styles or in a separate stylesheet */
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotateY(10deg) rotateX(10deg); /* Adjust as needed */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1); /* Shadow to enhance the 3D effect */
+}
+
+/* Add the following custom CSS to your global styles or in a separate stylesheet */
+
+.card4 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  transform-style: preserve-3d; /* Ensures 3D effect */
+}
+
+.card4:hover {
+  transform: translateY(-15px) rotateX(15deg) rotateY(15deg) scale(1.05); /* Larger scale and rotation */
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  filter: brightness(1.1); /* Slight brightness increase */
+}
+/* Add this to your CSS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add the animation class that gets applied when visible */
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.cta-button,
+.cta-text,
+video,
+h5,
+p {
+  opacity: 0; /* Initially, they are invisible */
+  transition: opacity 0.3s ease-out;
+}
