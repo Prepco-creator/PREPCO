@@ -121,7 +121,7 @@ const mockData: PlanProps[] = [
     description: "Essential features tailored for shorter commitment.",
     bigDescription: 'The 6-Month Basic Plan offers a compact, affordable solution for those who prefer a shorter commitment while still enjoying essential features. This plan provides core modules, standard support, and access to basic resources, making it ideal for users who need a foundation to get started without a long-term obligation. Additionally, you’ll benefit from regular feature updates, introductory tutorials, and discounts on future long-term plans. Perfect for individuals who want to test out the platform and access essential tools without a lengthy subscription.',
     category: 'normal',
-    duration: 1,
+    duration: 12,
     pricing: 1299,
     discountPricing: 1169, // 10% discount
     isSpecial: false,
@@ -144,7 +144,7 @@ const mockData: PlanProps[] = [
     description: 'Designed for advanced users seeking more depth.',
     bigDescription: 'The Advanced Yearly Plan is crafted for users who are ready to dive deeper into the platform’s offerings. This plan provides access to in-depth tutorials, mentorship programs, advanced certifications, and customizable learning paths. You’ll also have opportunities to network with experts, use advanced tools, and gain exclusive learning resources. Whether you’re aiming to enhance your skills, progress your career, or deepen your knowledge, the Advanced Yearly Plan ensures you have the tools and support to achieve your professional goals.',
     category: 'normal',
-    duration: 2,
+    duration: 12,
     pricing: 4999,
     discountPricing: 4499, // 10% discount
     isSpecial: false,
@@ -167,7 +167,7 @@ const mockData: PlanProps[] = [
     description: 'Comprehensive fitness plan for a healthier you.',
     bigDescription: 'The 1-Year Fitness Plan is your all-in-one solution for a healthier, more active lifestyle. It offers a wide range of features, including personalized workout plans, dietary guidance, and access to a supportive fitness community. With this plan, you can track your progress, participate in weekly fitness challenges, and enjoy virtual coaching sessions. Additionally, milestone rewards and detailed workout analytics will keep you motivated and on track throughout the year. Whether you’re looking to lose weight, gain muscle, or improve overall fitness, this plan provides the tools and support to help you achieve your fitness goals.',
     category: 'normal',
-    duration: 3,
+    duration: 6,
     pricing: 2999,
     discountPricing: 2699, // 10% discount
     isSpecial: true,

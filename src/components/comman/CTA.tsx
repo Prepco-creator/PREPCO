@@ -10,7 +10,7 @@ const CTA: React.FC<CTAProps> = ({ className }) => {
 
 
     return (
-        <section className={`p-6 shadow-multi-layer flex flex-col lg:flex-row items-start lg:items-center justify-center gap-4 lg:gap-12 rounded-full ${className}`}>
+        <section className={`p-6 shadow-multi-layer flex flex-col lg:flex-row items-start lg:items-center justify-center gap-4 lg:gap-12 ${className}`}>
             <h1 className='flex-[3] text-custom-16 lg:text-custom-24 font-medium text-primary'>Find a local insurance agent</h1>
             <div className='flex flex-row gap-2 items-center text-custom-14'>
                 <Image width={48} height={48} className='w-[32px] h-[32px] lg:w-[48px] lg:h-[48px]' src={images.pngs.phoneIcon} alt="" />
