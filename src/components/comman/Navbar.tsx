@@ -48,7 +48,7 @@ const Navbar = () => {
                         <Link href='/contact' passHref>
                             <button
                                 type="button"
-                                className="p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset brightness-150"
+                                className="p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset"
                             >
                                 Contact us
                             </button>
