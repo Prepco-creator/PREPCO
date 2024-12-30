@@ -171,6 +171,6 @@ button:focus::after {
 video,
 h5,
 p {
-  opacity: 0; /* Initially, they are invisible */
+  opacity: 1; /* Initially, they are invisible */
   transition: opacity 0.3s ease-out;
 }
