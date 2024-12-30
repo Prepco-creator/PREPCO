@@ -6,8 +6,8 @@ const HealthPackage: React.FC<{ healthPackage: HealthPackageDetails }> = ({ heal
     return (
         <div className='p-5 bg-primary1 rounded-[30px] flex flex-col items-center justify-center gap-2'>
             <Image src={healthPackage.iconSrc} alt={healthPackage.id} width={60} height={60} />
-            <h5 className='text-custom-20 font-extrabold text-primaryDark'>{healthPackage.title}</h5>
-            <p className='text-custom-16 text-primaryDark'>{healthPackage.description}</p>
+            <h5 className='text-custom-16-bold lg:text-custom-20 lg:font-extrabold text-primaryDark'>{healthPackage.title}</h5>
+            <p className='text-custom-14 lg:text-custom-16 text-primaryDark'>{healthPackage.description}</p>
         </div>
     )
 }

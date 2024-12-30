@@ -1,8 +1,12 @@
+'use client'
+
 import React from "react";
 import Image from "next/image"; // Importing for Next.js Image component
 import { images } from "../../../public/assets";
+import { useRouter } from "next/navigation"; // For navigation
 
 const ComingSoon: React.FC = () => {
+    const router = useRouter();
 
     return (
         <section className="bg-primary1 flex items-center justify-center min-h-screen">
@@ -54,6 +58,16 @@ const ComingSoon: React.FC = () => {
                             />
                         </a>
                     </div>
+                </div>
+
+                {/* Go Back Button */}
+                <div className="mt-8">
+                    <button
+                        onClick={() => router.back()}
+                        className="bg-primary text-white py-2 px-6 rounded-lg shadow-md hover:bg-primary-dark transition duration-300 ease-in-out"
+                    >
+                        Go Back
+                    </button>
                 </div>
             </div>
         </section>

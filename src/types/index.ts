@@ -79,6 +79,7 @@ interface PlanProps {
     isSpecial: boolean; // e.g., true for featured or premium plans
     features: PlanFeature[];
     bigDescription?: string
+    membersCount?: number;
 }
 
 
@@ -95,6 +96,8 @@ interface PlanTitleProps {
 interface FeaturesProps {
     duration: number;
     features: PlanFeature[];
+    description: string;
+    membersCount?: number;
 }
 
 interface PlanDetailProps {

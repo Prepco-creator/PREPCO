@@ -47,3 +47,11 @@ body {
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #018380;
 }
+
+.text-stroke-primary-m {
+  color: #018380;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #018380;
+}
+

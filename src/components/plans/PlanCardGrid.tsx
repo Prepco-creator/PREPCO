@@ -7,7 +7,9 @@ import PlanCard from './PlanCard'
 const PlanCardGrid: React.FC<{ plans: PlanProps[] }> = ({ plans }) => {
 
   return (
-    <section className='p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
+    <section className='p-8 grid grid-cols-1 md:grid-cols-2 grid-cols-auto-fit gap-3'
+      style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}
+    >
       {
         plans?.map((plan: PlanProps, index: number) => (
           <PlanCard

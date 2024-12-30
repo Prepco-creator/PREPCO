@@ -22,6 +22,8 @@ import runningWoman from './gifs/running-woman.gif'
 import lovingFamily from './gifs/loving-family.gif'
 import coupleWalking from './gifs/couple-walking.gif'
 import drinkWater from './gifs/drink-water.gif'
+import oneMemberPlan from './gifs/one-member.gif';
+import threeMemberPlan from './gifs/three-members-plan.gif'
 // SVG
 
 import logo from './svg/Logo.svg'
@@ -79,7 +81,9 @@ const gifs = {
     runningWoman,
     lovingFamily,
     coupleWalking,
-    drinkWater
+    drinkWater,
+    oneMemberPlan,
+    threeMemberPlan
 };
 
 const svgs = {

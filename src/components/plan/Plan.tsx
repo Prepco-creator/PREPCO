@@ -32,7 +32,7 @@ const Plan: React.FC<{ planName: string }> = ({ planName }) => {
                 pricing={plan.pricing}
             />
             <PlanTitle title={plan.title} />
-            <Features duration={plan.duration} features={plan.features} />
+            <Features membersCount={plan.membersCount} description={plan.description} duration={plan.duration} features={plan.features} />
             <MarqueeTags tagClassName='bg-accent-2 px-2' className='py-16' tags={tags} />
             <PlanDetail title={plan.title} bigDescription={plan.bigDescription as string} healthPackages={healthPackageDetails} />
         </section>

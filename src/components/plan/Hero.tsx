@@ -9,24 +9,24 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing }) => {
     const timeline = duration === 12 ? "One Year" : duration === 6 ? "6 Month" : "Not - Defined"
 
     return (
-        <section className='p-16 flex flex-row gap-4 justify-between items-center'>
+        <section className='p-8 lg:p-16 flex flex-col lg:flex-row gap-6 lg:gap-4 justify-between items-start lg:items-center'>
             <div className='flex flex-col gap-4'>
                 <div>
-                    <h2 className='bg-custom-gradient bg-clip-text text-transparent text-custom-48-bold'>{title}</h2>
-                    <p className='text-custom-24 font-normal text-secondaryDark'>Plan Validation {timeline} - 2 Members</p>
+                    <h2 className='bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold'>{title}</h2>
+                    <p className='text-custom-16 lg:text-custom-24 font-normal text-secondaryDark'>Plan Validation {timeline} - 2 Members</p>
                 </div>
-                <h2 className='bg-custom-gradient bg-clip-text text-transparent text-custom-48-bold'>
+                <h2 className='bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold'>
                     &#8377;{pricing.toFixed(2)}
                 </h2>
-                <button className='w-full text-custom-24 bg-primary text-white p-5 shadow-double-inset rounded-tl-br-30'>
+                <button className='w-full text-custom-16-bold lg:text-custom-24 bg-primary text-white p-5 shadow-double-inset rounded-tl-br-30'>
                     Buy Now
                 </button>
                 <Link href='/testimonials' passHref >
-                    <p className='text-center underline text-custom-16 text-secondaryDark'>Here it from our client testimonials</p>
+                    <p className='text-center underline text-custom-14 lg:text-custom-16 text-secondaryDark'>Here it from our client testimonials</p>
                 </Link>
             </div>
-            <div className='relative'>
-                <Image width={529} height={529} src={images.svgs.dummyHero} alt="hero-image" />
+            <div className='relative self-center'>
+                <Image width={529} height={529} className='w-[281px] h-[281px] lg:w-[529px] lg:h-[529px]' src={images.svgs.dummyHero} alt="hero-image" />
 
                 <div className="absolute top-3 left-10 bg-white shadow-md rounded-full">
                     <Image
@@ -34,6 +34,7 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing }) => {
                         width={65}
                         height={65}
                         alt="yoga-gif"
+                        className='max-[1024px]:w-[40px] max-[1024px]:h-[40px]'
                         unoptimized
                     />
                 </div>
@@ -43,15 +44,17 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing }) => {
                         width={65}
                         height={65}
                         alt="yoga-gif"
+                        className='max-[1024px]:w-[40px] max-[1024px]:h-[40px]'
                         unoptimized
                     />
                 </div>
-                <div className="absolute bottom-40 -left-11 bg-white shadow-md rounded-full">
+                <div className="absolute bottom-20 -left-3 bg-white shadow-md rounded-full">
                     <Image
                         src={images.gifs.lovingFamily}
                         width={65}
                         height={65}
                         alt="yoga-gif"
+                        className='max-[1024px]:w-[40px] max-[1024px]:h-[40px]'
                         unoptimized
                     />
                 </div>
@@ -61,6 +64,7 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing }) => {
                         width={65}
                         height={65}
                         alt="yoga-gif"
+                        className='max-[1024px]:w-[40px] max-[1024px]:h-[40px]'
                         unoptimized
                     />
                 </div>

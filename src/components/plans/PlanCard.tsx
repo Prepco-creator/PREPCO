@@ -31,7 +31,7 @@ const PlanCard: React.FC<PlanProps> = ({
         </div>
         <p className='flex flex-row gap-2'><Image alt='people-2' width={20} height={20} src={images.svgs.peopleDuo} /><span className='text-custom-14 text-secondaryDark'>3 persons </span></p>
       </div>
-      <Link href={`/plans/${planName}`} className='w-full' passHref>
+      <Link href="/coming-soon" passHref>
         <button className='w-full bg-primary text-white p-3 shadow-double-inset rounded-tl-br-30'>
           Buy Now
         </button>
@@ -46,6 +46,11 @@ const PlanCard: React.FC<PlanProps> = ({
           ))
         }
       </div>
+      <Link href={`/plans/${planName}`} className='w-full grid place-items-center' passHref>
+        <button className='bg-transparent mx-auto w-1/2 rounded-lg border-[1px] border-solid border-primary text-primary text-custom-14 p-4 hover:bg-primary hover:shadow-md hover:text-white transition duration-300 ease-in-out'>
+          To Know More
+        </button>
+      </Link>
     </div>
   );
 };
