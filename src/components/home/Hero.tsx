@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import MarqueeTags from "../comman/MarqueeTags";
 import { videos } from "../../../public/assets";
 import tags from "@/data/tags";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   // Track hover state for both buttons
@@ -48,33 +49,36 @@ const Hero: React.FC = () => {
         {/* Buttons */}
         <div className="flex flex-col-reverse md:flex-row gap-4 w-[95%] lg:w-3/5">
           {/* First Button */}
-          
-          <button
-            onMouseEnter={() => handleMouseEnter(1)}
-            onMouseLeave={handleMouseLeave}
-            onClick={() => handleClick(1)}
-            className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tr-[50px] rounded-bl-[50px] shadow-md transition-all duration-300 w-full lg:w-1/2 ${clickedButton === 1 ? "opacity-70" : ""
-              } ${hoveredButton === 1
-                ? "bg-primary text-white transform scale-105"
-                : "bg-white text-primary"
-              }`}
-          >
-            No, I like to keep things interesting.
-          </button>
+          <Link href={'/plans'} passHref className="w-full lg:w-1/2">
+            <button
+              onMouseEnter={() => handleMouseEnter(1)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(1)}
+              className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tr-[50px] rounded-bl-[50px] shadow-md transition-all duration-300 w-full ${clickedButton === 1 ? "opacity-70" : ""
+                } ${hoveredButton === 1
+                  ? "bg-primary text-white transform scale-105"
+                  : "bg-white text-primary"
+                }`}
+            >
+              No, I like to keep things interesting.
+            </button>
+          </Link>
 
           {/* Second Button */}
-          <button
-            onMouseEnter={() => handleMouseEnter(2)}
-            onMouseLeave={handleMouseLeave}
-            onClick={() => handleClick(2)}
-            className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tl-[50px] rounded-br-[50px] shadow-double-inset transition-all duration-300 w-full lg:w-1/2 ${clickedButton === 2 ? "opacity-70" : ""
-              } ${hoveredButton === 2
-                ? "bg-white text-primary transform scale-105 shadow-none"
-                : "bg-primary text-white"
-              }`}
-          >
-            Yes, I would like to try.
-          </button>
+          <Link href={'/plans'} passHref className="w-full lg:w-1/2">
+            <button
+              onMouseEnter={() => handleMouseEnter(2)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(2)}
+              className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tl-[50px] rounded-br-[50px] shadow-double-inset transition-all duration-300 w-full ${clickedButton === 2 ? "opacity-70" : ""
+                } ${hoveredButton === 2
+                  ? "bg-white text-primary transform scale-105 shadow-none"
+                  : "bg-primary text-white"
+                }`}
+            >
+              Yes, I would like to try.
+            </button>
+          </Link>
         </div>
       </div>
 
