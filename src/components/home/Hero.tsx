@@ -51,11 +51,11 @@ const Hero: React.FC = () => {
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={handleMouseLeave}
             onClick={() => handleClick(1)}
-            className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tr-[50px] rounded-bl-[50px] shadow-md glass-morph-effect border-tl-3xl border-br-3xl transition-all duration-300 w-full lg:w-1/2 ${
+            className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tr-[50px] rounded-bl-[50px] shadow-md transition-all duration-300 w-full lg:w-1/2 ${
               clickedButton === 1 ? "opacity-70" : ""
             } ${
               hoveredButton === 1
-                ? "bg-primary text-white shadow-none"
+                ? "bg-primary text-white transform scale-105"
                 : "bg-white text-primary"
             }`}
           >
@@ -71,8 +71,8 @@ const Hero: React.FC = () => {
               clickedButton === 2 ? "opacity-70" : ""
             } ${
               hoveredButton === 2
-                ? "bg-white text-primary shadow-none"
-                : "bg-primary text-white "
+                ? "bg-white text-primary transform scale-105 shadow-none"
+                : "bg-primary text-white"
             }`}
           >
             Yes, I would like to try.

@@ -174,3 +174,17 @@ p {
   opacity: 1; /* Initially, they are invisible */
   transition: opacity 0.3s ease-out;
 }
+
+/* Add to your global styles or the component-specific CSS */
+.hover\:shadow-3d:hover {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2); /* Inset shadow for 3D effect */
+  transform: translateY(-4px); /* Lift effect on hover */
+}
+
+.hover\:transform:hover {
+  transform: translateY(-4px) scale(1.05); /* Slightly lift and scale the component */
+}
+
+.transition-all {
+  transition: all 0.3s ease-in-out; /* Smooth transition for transform and shadow */
+}
