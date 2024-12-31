@@ -4,10 +4,12 @@ import HeroSection from './HeroSection'
 import MissionAndVision from './MissionAndVision'
 import WhyChoosePrepco from './WhyChoosePrepco'
 import AboutCTA from './AboutCTA'
+import PopupModal from '../comman/PopupModal'
 
 const About = () => {
     return (
         <>
+            <PopupModal />
             <Banner title='About' />
             <HeroSection />
             <MissionAndVision />

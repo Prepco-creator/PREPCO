@@ -33,6 +33,7 @@ import peopleDuo from './svg/peopleduo.svg'
 import dummyHero from './svg/dummyHeroImage.svg'
 import LogoWhite from './svg/LogoWhite.svg'
 import whiteLogoIcon from './svg/whiteLogoIcon.svg'
+import xmark from './svg/xmark.svg'
 
 
 // JPG
@@ -58,6 +59,7 @@ import twitterIcon from './pngs/twitter-icon.png'
 import instagramIcon from './pngs/instagram-icon.png'
 import phoneIcon from './pngs/phone.png'
 import mailIcon from './pngs/mail.png'
+import popupImage from './pngs/popup-1.png'
 
 
 const gifs = {
@@ -94,7 +96,8 @@ const svgs = {
     peopleDuo,
     dummyHero,
     LogoWhite,
-    whiteLogoIcon
+    whiteLogoIcon,
+    xmark
 }
 
 const pngs = {
@@ -116,6 +119,7 @@ const pngs = {
     instagramIcon,
     phoneIcon,
     mailIcon,
+    popupImage,
 }
 
 const jpgs = {
