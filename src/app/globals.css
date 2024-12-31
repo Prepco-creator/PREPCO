@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Baumans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Baumans&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -37,9 +37,6 @@ body {
   border-radius: 30px 0px 30px 0;
 }
 
-
-
-
 .text-stroke-primary {
   color: #018380;
   -webkit-text-fill-color: white;
@@ -61,7 +58,6 @@ body {
 }
 
 @media (min-width: 600px) {
-
   /* Tablet */
   .plan-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -70,7 +66,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-
   /* Laptop-small */
   .plan-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -79,7 +74,6 @@ body {
 }
 
 @media (min-width: 1440px) {
-
   /* Laptop-large */
   .plan-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -95,10 +89,12 @@ body {
   right: -50%;
   bottom: -50%;
   left: -50%;
-  background: linear-gradient(to bottom,
-      rgba(229, 172, 142, 0),
-      rgba(255, 255, 255, 0.5) 50%,
-      rgba(229, 172, 142, 0));
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 172, 142, 0),
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(229, 172, 142, 0)
+  );
   transform: rotateZ(60deg) translate(-5em, 7.5em);
 }
 
@@ -123,7 +119,6 @@ button:focus::after {
     background-position: 200% 50%;
   }
 }
-
 
 /* Main container with fade-out transition */
 .preloader-container {
@@ -194,7 +189,7 @@ button:focus::after {
 
 /* PREPCO text animation */
 .logo-text {
-  font-family: 'Baumans', serif;
+  font-family: "Baumans", serif;
   font-size: 36px;
   font-weight: 700;
   color: white;
@@ -222,7 +217,7 @@ button:focus::after {
 
 /* Bottom-line text animation */
 .bottom-line-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: white;
   margin-top: 20px;
@@ -244,7 +239,6 @@ button:focus::after {
     /* Settle in position */
   }
 }
-
 
 .cta-button,
 .cta-text,
@@ -273,8 +267,6 @@ p {
   transition: all 0.3s ease-in-out;
   /* Smooth transition for transform and shadow */
 }
-
-
 
 /* Main container */
 .spl-loader-container {
@@ -326,7 +318,7 @@ p {
 /* Tagline text styling */
 .spl-tagline-text {
   margin-top: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: white;
   opacity: 0;
@@ -346,4 +338,89 @@ p {
     transform: translateY(0);
     /* Settles in position */
   }
+}
+/* General styles for the container */
+.heart-rate {
+  position: relative;
+  margin: 20px auto;
+}
+
+/* Fade-in animation */
+.fade-in {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #018380;
+  top: 0;
+  right: 0;
+  animation: heartRateIn 2.5s linear infinite;
+}
+
+/* Fade-out animation */
+.fade-out {
+  position: absolute;
+  width: 120%; /* Adjusted width to ensure animation space */
+  height: 100%;
+  background-color: #018380;
+  top: 0;
+  right: -120%;
+  animation: heartRateOut 2.5s linear infinite;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes heartRateIn {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Keyframes for fade-out animation */
+@keyframes heartRateOut {
+  0% {
+    right: -120%;
+  }
+  30% {
+    right: -120%;
+  }
+  100% {
+    right: 0;
+  }
+}
+/* Disable scrolling */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Enable scrolling */
+.scroll-enabled {
+  overflow: auto;
+}
+/* Fade-in and Scale-up animation */
+@keyframes fade-in-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply animation to the tagline */
+.animate-fade-in-scale {
+  animation: fade-in-scale 3s ease-out;
 }
