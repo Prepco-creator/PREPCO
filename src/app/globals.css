@@ -9,7 +9,6 @@
   --foreground: #171717;
 }
 
-
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -22,8 +21,6 @@ body {
   background: var(--background);
 }
 
-
-
 .glass-morph-effect {
   background: #ffffffb5;
   box-shadow: 0 8px 32px #1f26875e;
@@ -31,7 +28,6 @@ body {
   -webkit-backdrop-filter: blur(7px);
   border: 1px solid #ffffff2e;
 }
-
 
 .custom-border-radius {
   border-radius: 30px 0px 30px 0px;
@@ -55,7 +51,6 @@ body {
   -webkit-text-stroke-color: #018380;
 }
 
-
 .plan-grid {
   display: grid;
   grid-template-columns: repeat(1, auto);
@@ -63,7 +58,6 @@ body {
 }
 
 @media (min-width: 600px) {
-
   /* Tablet */
   .plan-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -72,7 +66,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-
   /* Laptop-small */
   .plan-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -81,7 +74,6 @@ body {
 }
 
 @media (min-width: 1440px) {
-
   /* Laptop-large */
   .plan-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -89,16 +81,20 @@ body {
   }
 }
 
-
 /* Sheen Effect */
 .sheen::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   right: -50%;
   bottom: -50%;
   left: -50%;
-  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 172, 142, 0),
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(229, 172, 142, 0)
+  );
   transform: rotateZ(60deg) translate(-5em, 7.5em);
 }
 
@@ -111,6 +107,14 @@ button:focus::after {
 @keyframes sheen {
   100% {
     transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
   }
 }
 
@@ -221,3 +225,73 @@ button:focus::after {
   font-style: normal;
 }
 
+.text-gradient-animate {
+  background: linear-gradient(to right, #ffffff, #979694, #cfcfcd, #faf9f6);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-move 5s linear infinite;
+}
+/* Add the following custom CSS to your global styles or in a separate stylesheet */
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotateY(10deg) rotateX(10deg); /* Adjust as needed */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1); /* Shadow to enhance the 3D effect */
+}
+
+/* Add the following custom CSS to your global styles or in a separate stylesheet */
+
+.card4 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  transform-style: preserve-3d; /* Ensures 3D effect */
+}
+
+.card4:hover {
+  transform: translateY(-15px) rotateX(15deg) rotateY(15deg) scale(1.05); /* Larger scale and rotation */
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  filter: brightness(1.1); /* Slight brightness increase */
+}
+/* Add this to your CSS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add the animation class that gets applied when visible */
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.cta-button,
+.cta-text,
+video,
+h5,
+p {
+  opacity: 1; /* Initially, they are invisible */
+  transition: opacity 0.3s ease-out;
+}
+
+/* Add to your global styles or the component-specific CSS */
+.hover\:shadow-3d:hover {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2); /* Inset shadow for 3D effect */
+  transform: translateY(-4px); /* Lift effect on hover */
+}
+
+.hover\:transform:hover {
+  transform: translateY(-4px) scale(1.05); /* Slightly lift and scale the component */
+}
+
+.transition-all {
+  transition: all 0.3s ease-in-out; /* Smooth transition for transform and shadow */
+}
