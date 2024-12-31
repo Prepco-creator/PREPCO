@@ -24,14 +24,14 @@ const Hero: React.FC = () => {
       {/* Video background */}
       <video
         src={videos.hero}
-        className="absolute inset-0 w-full h-full object-cover brightness-50"
+        className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         loop
         muted
         controls={false}
         preload="auto"
       >
-        <source src={videos.hero} type="video/mp4" />
+        <source src={videos.hero} type="video/webm" />
         Your browser does not support the video tag.
       </video>
 
