@@ -58,6 +58,7 @@ body {
 }
 
 @media (min-width: 600px) {
+
   /* Tablet */
   .plan-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -66,6 +67,7 @@ body {
 }
 
 @media (min-width: 1024px) {
+
   /* Laptop-small */
   .plan-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -74,6 +76,7 @@ body {
 }
 
 @media (min-width: 1440px) {
+
   /* Laptop-large */
   .plan-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -89,12 +92,10 @@ body {
   right: -50%;
   bottom: -50%;
   left: -50%;
-  background: linear-gradient(
-    to bottom,
-    rgba(229, 172, 142, 0),
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(229, 172, 142, 0)
-  );
+  background: linear-gradient(to bottom,
+      rgba(229, 172, 142, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(229, 172, 142, 0));
   transform: rotateZ(60deg) translate(-5em, 7.5em);
 }
 
@@ -117,126 +118,6 @@ button:focus::after {
 
   100% {
     background-position: 200% 50%;
-  }
-}
-
-/* Main container with fade-out transition */
-.preloader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #018380;
-  /* bg-primary */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  overflow: hidden;
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
-}
-
-.preloader-container.loaded {
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* Logo container */
-.logo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-/* Logo wrapper and animations */
-.logo-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  animation: logoMoveLeft 2s ease-out 2s forwards;
-  /* Adjust logo position after shrink */
-}
-
-.logo {
-  animation: logoShrink 2s ease-out forwards;
-}
-
-@keyframes logoShrink {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0.5);
-  }
-}
-
-@keyframes logoMoveLeft {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100px);
-    /* Adjust as needed */
-  }
-}
-
-/* PREPCO text animation */
-.logo-text {
-  font-family: "Baumans", serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  animation: textSlideIn 2s ease-out 2s forwards;
-}
-
-@keyframes textSlideIn {
-  0% {
-    opacity: 0;
-    transform: translate(-100px, -50%);
-    /* Slide in from left */
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0, -50%);
-    /* Settle in position */
-  }
-}
-
-/* Bottom-line text animation */
-.bottom-line-text {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  color: white;
-  margin-top: 20px;
-  opacity: 0;
-  animation: bottomLineAppear 1.5s ease-out 3.5s forwards;
-  /* Delay to start after text settles */
-}
-
-@keyframes bottomLineAppear {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-    /* Appear from above */
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    /* Settle in position */
   }
 }
 
@@ -267,6 +148,76 @@ p {
   transition: all 0.3s ease-in-out;
   /* Smooth transition for transform and shadow */
 }
+
+
+/* Keyframes for fade-in animation */
+@keyframes heartRateIn {
+  0% {
+    width: 100%;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+/* Keyframes for fade-out animation */
+@keyframes heartRateOut {
+  0% {
+    right: -120%;
+  }
+
+  30% {
+    right: -120%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+/* Disable scrolling */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Enable scrolling */
+.scroll-enabled {
+  overflow: auto;
+}
+
+/* Fade-in and Scale-up animation */
+@keyframes fade-in-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  75% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply animation to the tagline */
+.animate-fade-in-scale {
+  animation: fade-in-scale 3s ease-out;
+}
+
+
 
 /* Main container */
 .spl-loader-container {
@@ -339,6 +290,7 @@ p {
     /* Settles in position */
   }
 }
+
 /* General styles for the container */
 .heart-rate {
   position: relative;
@@ -359,68 +311,11 @@ p {
 /* Fade-out animation */
 .fade-out {
   position: absolute;
-  width: 120%; /* Adjusted width to ensure animation space */
+  width: 120%;
+  /* Adjusted width to ensure animation space */
   height: 100%;
   background-color: #018380;
   top: 0;
   right: -120%;
   animation: heartRateOut 2.5s linear infinite;
-}
-
-/* Keyframes for fade-in animation */
-@keyframes heartRateIn {
-  0% {
-    width: 100%;
-  }
-  50% {
-    width: 0;
-  }
-  100% {
-    width: 0;
-  }
-}
-
-/* Keyframes for fade-out animation */
-@keyframes heartRateOut {
-  0% {
-    right: -120%;
-  }
-  30% {
-    right: -120%;
-  }
-  100% {
-    right: 0;
-  }
-}
-/* Disable scrolling */
-.no-scroll {
-  overflow: hidden;
-}
-
-/* Enable scrolling */
-.scroll-enabled {
-  overflow: auto;
-}
-/* Fade-in and Scale-up animation */
-@keyframes fade-in-scale {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  75% {
-    transform: scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* Apply animation to the tagline */
-.animate-fade-in-scale {
-  animation: fade-in-scale 3s ease-out;
 }

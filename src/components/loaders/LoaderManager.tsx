@@ -2,19 +2,17 @@
 
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import HeartRate from '../comman/HeartBeat';
 import SimplePrepcoLoader from '../comman/SimplePrepcoLoader';
 
 export default function LoaderManager({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [isPreloading, setIsPreloading] = useState(true); // Tracks initial preloading state
-  const [isInAppLoading, setIsInAppLoading] = useState(false); // Tracks in-app navigation loader state
+  const [isLoading, setIsLoading] = useState(true); // Tracks loading state for both preloading and navigation
   const [initialLoadComplete, setInitialLoadComplete] = useState(false); // Tracks whether the initial page load has completed
 
   // Effect for handling the preloading state
   useEffect(() => {
     const preloadTimeout = setTimeout(() => {
-      setIsPreloading(false); // End preloading after timeout
+      setIsLoading(false); // End loading after timeout
       setInitialLoadComplete(true); // Mark initial load as complete
     }, 3000); // Simulated preload delay
 
@@ -23,34 +21,23 @@ export default function LoaderManager({ children }: { children: React.ReactNode 
 
   // Handle the internal navigation state
   useEffect(() => {
-    const isFirstVisit = localStorage.getItem('firstVisit') === null;
-    
-    if (isFirstVisit) {
-      // Set to localStorage so that subsequent reloads don't show preloader
-      localStorage.setItem('firstVisit', 'false');
-      return; // Skip on the first visit
-    }
+    if (initialLoadComplete) {
+      setIsLoading(true); // Start loader for internal navigation
+      const navTimeout = setTimeout(() => {
+        setIsLoading(false); // Stop loader after navigation delay
+      }, 3000); // Adjust delay based on your needs
 
-    // Only show in-app loader if we are not preloading
-    if (!isPreloading && initialLoadComplete) {
-      setIsInAppLoading(true); // Start in-app loader on navigation
-      setTimeout(() => {
-        setIsInAppLoading(false); // Stop in-app loader after delay
-      }, 2000); // Adjust delay based on your needs
+      return () => clearTimeout(navTimeout); // Cleanup on navigation change
     }
-  }, [pathname, isPreloading, initialLoadComplete]); // Re-run only when pathname or initial load state changes
+  }, [pathname, initialLoadComplete]);
 
   return (
     <>
-      {/* Show Preloader until initial page load is complete */}
-      {isPreloading && <SimplePrepcoLoader />}
+      {/* Show loader during both preloading and internal navigation */}
+      {isLoading && <SimplePrepcoLoader />}
 
-      {/* Show In-App Loader only after preloading and during internal page navigation */}
-      {!isPreloading && isInAppLoading && <HeartRate />}
-
-      {/* Render main content once preloading and in-app loader are both complete */}
-      {!isPreloading && !isInAppLoading && children}
+      {/* Render main content once loading is complete */}
+      {!isLoading && children}
     </>
   );
 }
-
