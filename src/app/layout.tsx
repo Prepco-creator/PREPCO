@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/comman/Navbar";
 import Footer from "@/components/comman/Footer";
-import PrepcoPreloader from "@/components/comman/PrepcoPreloader";
+import SimplePrepcoLoader from "@/components/comman/SimplePrepcoLoader";
 
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-poppins">
-        <PrepcoPreloader />
+        <SimplePrepcoLoader />
         <Navbar />
         {children}
         <Footer />

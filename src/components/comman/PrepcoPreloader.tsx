@@ -20,15 +20,15 @@ const PrepcoPreloader = () => {
             <div className="logo-container">
                 <div className="logo-wrapper">
                     <Image
-                        src={images.svgs.logoIcon}
+                        src={images.svgs.whiteLogoIcon}
                         alt="logo"
                         width={120}
                         height={157}
                         className="logo"
                     />
-                    <div className="logo-text baumans-regular text-custom-32 lg:text-custom-48">PREPCO</div>
+                    <div className="logo-text">PREPCO</div>
                 </div>
-                <div className="bottom-line text-custom-14 lg:text-custom-20">this comes under it</div>
+                <div className="bottom-line-text">The Right Choice for Real Peace of Mind.</div>
             </div>
         </div>
     );

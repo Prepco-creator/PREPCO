@@ -32,6 +32,7 @@ import logoIcon from './svg/LogoIcon.svg'
 import peopleDuo from './svg/peopleduo.svg'
 import dummyHero from './svg/dummyHeroImage.svg'
 import LogoWhite from './svg/LogoWhite.svg'
+import whiteLogoIcon from './svg/whiteLogoIcon.svg'
 
 
 // JPG
@@ -93,6 +94,7 @@ const svgs = {
     peopleDuo,
     dummyHero,
     LogoWhite,
+    whiteLogoIcon
 }
 
 const pngs = {
