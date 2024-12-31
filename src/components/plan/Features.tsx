@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { images, videos } from "../../../public/assets";
 import { FeaturesProps, PlanFeature } from "@/types";
 import Image from "next/image";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Register ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const Features: React.FC<FeaturesProps> = ({
   membersCount,
@@ -20,28 +20,28 @@ const Features: React.FC<FeaturesProps> = ({
   const featureIcon =
     membersCount == 1 ? images.gifs.oneMemberPlan : images.gifs.threeMemberPlan;
 
-  useEffect(() => {
-    gsap.utils.toArray(".feature-item").forEach((item) => {
-      gsap.fromTo(
-        item,
-        { opacity: 0, x: -200 }, // Start from left and invisible
-        {
-          opacity: 1,
-          x: 0,
-          stagger: 0.2,
-          duration: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: item, // The item itself
-            start: "top 80%", // When the top of the item is 80% from the top of the viewport
-            end: "top 30%", // End the animation when the top of the item reaches 30% of the viewport
-            scrub: true, // Smooth scrubbing of the animation
-            toggleActions: "play none none reverse", // Play when entering and reverse when leaving
-          },
-        }
-      );
-    });
-  }, [features]);
+  // useEffect(() => {
+  //   gsap.utils.toArray(".feature-item").forEach((item: ) => {
+  //     return gsap.fromTo(
+  //       item,
+  //       { opacity: 0, x: -200 }, // Start from left and invisible
+  //       {
+  //         opacity: 1,
+  //         x: 0,
+  //         stagger: 0.2,
+  //         duration: 1,
+  //         ease: "power2.out",
+  //         scrollTrigger: {
+  //           trigger: item, // The item itself
+  //           start: "top 80%", // When the top of the item is 80% from the top of the viewport
+  //           end: "top 30%", // End the animation when the top of the item reaches 30% of the viewport
+  //           scrub: true, // Smooth scrubbing of the animation
+  //           toggleActions: "play none none reverse",
+  //         },
+  //       }
+  //     );
+  //   });
+  // }, [features]);
 
   return (
     <section className="px-4 py-8 lg:p-16 bg-accent-1">
