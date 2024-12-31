@@ -51,7 +51,7 @@ const ContactForm = () => {
 
       <button
         type="submit"
-        className="w-full py-3 px-6 bg-custom-gradient shadow-double-inset text-white font-semibold text-lg custom-border-radius"
+        className="w-full py-3 px-6 bg-custom-gradient shadow-double-inset text-white font-semibold text-lg custom-border-radius hover:bg-none hover:text-primary hover:shadow-none border-primary border-[2px] transition-all duration-300 ease-in-out"
       >
         Send a Message
       </button>

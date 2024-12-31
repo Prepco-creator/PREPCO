@@ -29,8 +29,8 @@ const Navbar = () => {
 
       {/* Navbar */}
       <nav
-        className={`transition-[background] duration-500 ease-in-out ${isMenuOpen ? "bg-primary text-white" : "glass-morph-effect"
-          } rounded-br-3xl rounded-bl-3xl fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600`}
+        className={`transition-[background] shadow-md duration-500 ease-in-out ${isMenuOpen ? "bg-primary text-white" : "bg-white"
+          } rounded-br-3xl rounded-bl-3xl fixed w-full z-20 top-0 start-0 border-none`}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/" passHref>
@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link href="/contact" passHref>
               <button
                 type="button"
-                className="p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset hover:opacity-70 "
+                className="p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset hover:bg-none hover:text-primary hover:shadow-none border-primary border-[2px] transition-all duration-300 ease-in-out"
               >
                 Contact us
               </button>
@@ -80,8 +80,8 @@ const Navbar = () => {
           </div>
           <div
             className={`transition-all duration-500 ease-in-out transform md:transition-none ${isMenuOpen
-                ? "max-h-screen translate-y-0 opacity-100"
-                : "max-h-0 -translate-y-10 opacity-0"
+              ? "max-h-screen translate-y-0 opacity-100"
+              : "max-h-0 -translate-y-10 opacity-0"
               } items-center overflow-hidden justify-between w-full md:flex md:w-auto md:order-1 lg:static lg:opacity-100 lg:max-h-full lg:translate-y-0`}
             id="navbar-sticky"
           >
@@ -91,8 +91,8 @@ const Navbar = () => {
                   <Link href={route} passHref>
                     <div
                       className={`capitalize block py-2 px-3 rounded md:bg-transparent md:p-0 hover:md:text-primary ${pathname === route
-                          ? "text-gray-900 md:text-primary"
-                          : "text-gray-900"
+                        ? "text-gray-900 md:text-primary"
+                        : "text-gray-900"
                         }`}
                       aria-current={pathname === route ? "page" : undefined}
                       onClick={() => setIsMenuOpen(false)}

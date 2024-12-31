@@ -22,12 +22,12 @@ const HeroSection = () => {
                 </h1>
                 <div className='space-y-4'>
                     <div className='flex flex-row gap-2 items-center'>
-                        <Image width={48} height={48} src={images.pngs.phoneIcon} alt="prepco-phone" />
+                        <Image width={48} height={48} src={images.pngs.phoneIcon} alt="prepco-phone" className="hover:-translate-y-2 transition-transform duration-200" />
                         <p className='text-custom-16 lg:text-custom-20 text-primary'>+98 928 82 929</p>
                     </div>
 
                     <div className='flex flex-row gap-2 items-center'>
-                        <Image width={48} height={48} src={images.pngs.mailIcon} alt="prepco-mail" />
+                        <Image width={48} height={48} src={images.pngs.mailIcon} alt="prepco-mail" className="hover:-translate-y-2 transition-transform duration-200" />
                         <p className='text-custom-16 lg:text-custom-20 text-primary'>xyz@company.com</p>
                     </div>
 
