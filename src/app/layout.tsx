@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/comman/Navbar";
 import Footer from "@/components/comman/Footer";
-import PreloaderWrapper from "@/components/loaders/PreloaderWrapper";
-import InAppLoaderWrapper from "@/components/loaders/InAppLoaderWrapper";
+import LoaderManager from "@/components/loaders/LoaderManager";
 
 
 export const metadata: Metadata = {
@@ -19,13 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-poppins">
-        <InAppLoaderWrapper>
-          <PreloaderWrapper>
-            <Navbar />
-            {children}
-            <Footer />
-          </PreloaderWrapper>
-        </InAppLoaderWrapper>
+        <LoaderManager>
+          <Navbar />
+          {children}
+          <Footer />
+        </LoaderManager>
+
       </body>
     </html>
   );
