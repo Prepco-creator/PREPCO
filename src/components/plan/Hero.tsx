@@ -4,41 +4,30 @@ import Image from "next/image";
 import Link from "next/link";
 import { PlanHeroProps } from "@/types";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Register ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
 
 const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing }) => {
   const timeline =
     duration === 12 ? "One Year" : duration === 6 ? "6 Month" : "Not - Defined";
 
   useEffect(() => {
-    // Left content animation (slide from left)
-    gsap.from(".left-content", {
-      x: -200,
-      opacity: 0,
-      duration: 1.5,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".hero-section",
-        start: "top 80%", // Trigger when the section is 80% in view
-        toggleActions: "play none none none",
-      },
-    });
+    // Ensure animations only run on the client side (after mounting)
+    if (typeof window !== "undefined") {
+      // Left content animation (slide from left)
+      gsap.fromTo(
+        ".left-content",
+        { x: "-100%", opacity: 0 },
+        { x: "0%", opacity: 1, duration: 1, ease: "power3.out" }
+      );
 
-    // Right content animation (slide from right)
-    gsap.from(".right-content", {
-      x: 200,
-      opacity: 0,
-      duration: 1.5,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".hero-section",
-        start: "top 80%", // Trigger when the section is 80% in view
-        toggleActions: "play none none none",
-      },
-    });
+      // Right content animation (slide from right)
+      gsap.fromTo(
+        ".right-content",
+        { x: "100%", opacity: 0 },
+        { x: "0%", opacity: 1, duration: 1, ease: "power3.out" }
+      );
+    }
   }, []);
 
   return (

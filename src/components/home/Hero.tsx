@@ -24,13 +24,14 @@ const Hero: React.FC = () => {
       {/* Video background */}
       <video
         src={videos.hero}
-        className="absolute inset-0 w-full h-full object-cover brightness-50"
+        className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         loop
         muted
+        controls={false}
         preload="auto"
       >
-        <source src={videos.hero} type="video/mp4" />
+        <source src={videos.hero} type="video/webm" />
         Your browser does not support the video tag.
       </video>
 
@@ -47,17 +48,16 @@ const Hero: React.FC = () => {
         {/* Buttons */}
         <div className="flex flex-col-reverse md:flex-row gap-4 w-[95%] lg:w-3/5">
           {/* First Button */}
+          
           <button
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={handleMouseLeave}
             onClick={() => handleClick(1)}
-            className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tr-[50px] rounded-bl-[50px] shadow-md transition-all duration-300 w-full lg:w-1/2 ${
-              clickedButton === 1 ? "opacity-70" : ""
-            } ${
-              hoveredButton === 1
+            className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tr-[50px] rounded-bl-[50px] shadow-md transition-all duration-300 w-full lg:w-1/2 ${clickedButton === 1 ? "opacity-70" : ""
+              } ${hoveredButton === 1
                 ? "bg-primary text-white transform scale-105"
                 : "bg-white text-primary"
-            }`}
+              }`}
           >
             No, I like to keep things interesting.
           </button>
@@ -67,13 +67,11 @@ const Hero: React.FC = () => {
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={handleMouseLeave}
             onClick={() => handleClick(2)}
-            className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tl-[50px] rounded-br-[50px] shadow-double-inset transition-all duration-300 w-full lg:w-1/2 ${
-              clickedButton === 2 ? "opacity-70" : ""
-            } ${
-              hoveredButton === 2
+            className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tl-[50px] rounded-br-[50px] shadow-double-inset transition-all duration-300 w-full lg:w-1/2 ${clickedButton === 2 ? "opacity-70" : ""
+              } ${hoveredButton === 2
                 ? "bg-white text-primary transform scale-105 shadow-none"
                 : "bg-primary text-white"
-            }`}
+              }`}
           >
             Yes, I would like to try.
           </button>

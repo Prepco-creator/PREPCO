@@ -3,7 +3,7 @@ import React from 'react'
 
 const page = () => {
     return (
-        <section>
+        <section className='overflow-x-hidden'>
             <About />
         </section>
     )

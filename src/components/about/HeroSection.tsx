@@ -25,7 +25,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="bg-accent-2 flex flex-col-reverse gap-6 lg:flex-row items-center lg:items-start lg:gap-12 px-8 lg:px-16 py-12 lg:h-screen">
+    <section className="bg-white flex flex-col-reverse gap-6 lg:flex-row items-center lg:items-start lg:gap-12 px-8 lg:px-16 py-12 lg:h-screen">
       {/* Left Image */}
       <div className="w-full lg:w-2/5 relative left-content">
         <Image
