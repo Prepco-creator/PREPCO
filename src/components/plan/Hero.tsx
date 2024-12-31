@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { PlanHeroProps } from "@/types";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Register ScrollTrigger plugin
 
