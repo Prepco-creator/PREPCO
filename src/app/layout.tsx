@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/comman/Navbar";
 import Footer from "@/components/comman/Footer";
-import SimplePrepcoLoader from "@/components/comman/SimplePrepcoLoader";
 import LoaderManager from "@/components/loaders/LoaderManager";
 
 
