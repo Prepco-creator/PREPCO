@@ -66,3 +66,27 @@ export const testimonials2: Testimonial[] = [
         position: 'Team Lead',
     },
 ];
+
+
+export const testimonials3: Testimonial[] = [
+    {
+        testimonial: "Before Prepco, keeping track of my family’s health felt like a full-time job. Now, with everything in one place—check-ups, consultations, and even discounts on lab services—it’s like having a personal health assistant for all of us. My family feels more cared for, and I finally feel stress-free!",
+        testimonee: "Ananya Sharma",
+        position: "Family Wellness Plan Subscriber",
+    },
+    {
+        testimonial: "Honestly, I wasn’t sure I needed a health plan until I tried Prepco. The yoga guides and nutrition consultations helped me transform my lifestyle, and I love how easy it is to schedule appointments. It feels like they really understand what people need to stay healthy and happy.",
+        testimonee: "Sneha Patel",
+        position: "Healthy Lifestyle Plan User",
+    },
+    {
+        testimonial: "Prepco has been a lifesaver for my family! Scheduling check-ups and managing consultations used to be a hassle, but now it’s all so simple. My kids love the wellness tips, and I love the peace of mind knowing our health is in great hands. Thank you, Prepco!",
+        testimonee: "Arun Subramanian",
+        position: "Family Wellness Plan Subscriber",
+    },
+    {
+        testimonial: "I never thought I’d enjoy using a health plan, but Prepco changed my mind. The virtual consultations are a blessing, and the fitness guides are so easy to follow. It’s like having a personal health assistant who gets my busy lifestyle. Highly recommend it!",
+        testimonee: "Nithin Menon",
+        position: "Solo Care Plan Member",
+    },
+];

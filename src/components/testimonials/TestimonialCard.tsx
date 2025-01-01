@@ -5,12 +5,12 @@ import Image from 'next/image'
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
     return (
-        <div className="p-12 testimonial-card relative bg-white shadow-lg rounded-xl flex flex-col items-start text-start">
+        <div className="p-12 overflow-hidden testimonial-card relative bg-white shadow-lg rounded-3xl flex flex-col items-start text-start transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl group">
             <Image
                 width={200}
                 height={173}
-                className="absolute top-0 right-0"
-                src={images.webp.testimonialClipImage}
+                className="absolute -top-7 -right-8  grayscale transition-all duration-300 group-hover:grayscale-0"
+                src={images.pngs.pattern}
                 alt={'clip-img'}
             />
 
@@ -28,8 +28,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
                     </div>
                 </div>
                 <div className="testimonial-card__details ml-4">
-                    <h3 className="text-lg font-bold text-gray-800">Hallen Smith</h3>
-                    <p className="text-sm text-blue-500 uppercase tracking-wide">Director</p>
+                    <h3 className="text-lg font-bold text-gray-800">{testimonial.testimonee}</h3>
+                    <p className="text-sm text-primary uppercase tracking-wide">{testimonial.position}</p>
                 </div>
             </div>
             <div className="testimonial-card__review mt-4">
@@ -40,8 +40,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
                     ))}
                 </div>
                 <p className="mt-4 text-gray-600 text-custom-20 font-normal text-secondaryDark">
-                    Pellentesque habitant morbi tristique senectus netus et malesuada fames ac turp egestas. Aliquam
-                    viverra arcu. Donec aliquet blandit enim feugiat mattis.
+                    {testimonial.testimonial}
                 </p>
             </div>
         </div>

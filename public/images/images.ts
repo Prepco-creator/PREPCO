@@ -60,11 +60,8 @@ import instagramIcon from './pngs/instagram-icon.png'
 import phoneIcon from './pngs/phone.png'
 import mailIcon from './pngs/mail.png'
 import popupImage from './pngs/popup-1.png'
+import pattern from './pngs/pattern-removebg-preview.png'
 
-
-// Webp
-
-import testimonialClipImage from './webp/testimonial-one-shape-1-green.webp'
 
 
 const gifs = {
@@ -102,7 +99,7 @@ const svgs = {
     dummyHero,
     LogoWhite,
     whiteLogoIcon,
-    xmark
+    xmark,
 }
 
 const pngs = {
@@ -125,6 +122,7 @@ const pngs = {
     phoneIcon,
     mailIcon,
     popupImage,
+    pattern
 }
 
 const jpgs = {
@@ -132,8 +130,5 @@ const jpgs = {
     testimonialImage2,
 }
 
-const webp = {
-    testimonialClipImage
-}
 
-export { gifs, svgs, pngs, jpgs, webp };
+export { gifs, svgs, pngs, jpgs };
