@@ -51,8 +51,8 @@ const Features: React.FC<FeaturesProps> = ({
       <p className="text-custom-14 lg:text-custom-20-2 text-secondaryDark text-center mb-10">
         {description}
       </p>
-      <section className="flex flex-col lg:flex-row gap-4 justify-between items-start lg:items-end">
-        <div>
+      <section className="flex flex-col lg:flex-row gap-8 justify-between items-start">
+        <div className="flex-1 lg:max-w-[45%]">
           {features.map((feature: PlanFeature, index: number) => (
             <div
               key={index}
@@ -71,10 +71,10 @@ const Features: React.FC<FeaturesProps> = ({
             </div>
           ))}
         </div>
-        <div>
+        <div className="flex-1 lg:self-center lg:max-w-[50%]">
           <video
             src={videos.hero}
-            className="inset-0 aspect-square w-full h-full object-cover border-none rounded-[30px]"
+            className="inset-0 w-full max-w-full h-auto lg:h-screen object-cover border-none rounded-[30px]"
             autoPlay
             loop
             muted
@@ -86,6 +86,7 @@ const Features: React.FC<FeaturesProps> = ({
         </div>
       </section>
     </section>
+
   );
 };
 

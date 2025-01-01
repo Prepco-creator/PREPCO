@@ -37,7 +37,7 @@ const MissionAndVision = () => {
       <Card
         title="Our Mission"
         icon={images.gifs.hollowCircles}
-        content="To create a world where wellness isn’t a luxury but a lifestyle. At Prepco, we’re rethinking healthcare by making it proactive, practical, and accessible for everyone."
+        content="To keep you a step ahead—whether it’s through personalized care, innovative solutions, or a little nudge toward better health. Prevention isn’t just smart; it’s life-changing, and we’re here to make it happen."
         className="flex-1 card-vision" // Add 'card' class here
         hClassName="text-custom-20 lg:text-custom-40"
       />

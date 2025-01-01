@@ -6,7 +6,7 @@ import Footer from "@/components/comman/Footer";
 
 
 export const metadata: Metadata = {
-  title: "PREPCO | Prevention is better than cure",
+  title: "PREPCO | Where Care Meets Convenience",
   description: "A medical insurance pvt ltd",
 };
 
