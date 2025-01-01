@@ -45,6 +45,10 @@ interface InputFieldProps<TFormValues extends FieldValues> {
     register: UseFormRegister<TFormValues>;
 }
 
+interface TestimonialCardProps {
+    testimonial: Testimonial;
+}
+
 
 interface FormValues {
     name: string,
@@ -122,4 +126,5 @@ export type {
     Tags,
     HealthPackageDetails,
     PlanDetailProps,
+    TestimonialCardProps,
 }

@@ -12,6 +12,7 @@ import MarqueeTags from '../comman/MarqueeTags'
 import tags from '@/data/tags'
 import PlanDetail from './PlanDetail'
 import healthPackageDetails from '@/data/healthPackageDetails'
+import LoadingAnimation from '../loaders/LoadingAnimation'
 
 const Plan: React.FC<{ planName: string }> = ({ planName }) => {
 
@@ -25,6 +26,7 @@ const Plan: React.FC<{ planName: string }> = ({ planName }) => {
 
     return (
         <section>
+            <LoadingAnimation />
             <Banner title={plan.title} />
             <Hero
                 title={plan.title}

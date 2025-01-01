@@ -9,10 +9,10 @@ const PopupModal = () => {
     const [hasScrolled, setHasScrolled] = useState(false);
 
     useEffect(() => {
-        // Timeout for 6 seconds
-        const timeout = setTimeout(() => {
-            if (!hasScrolled) setShowPopup(true);
-        }, 6000);
+        // Timeout for 12 seconds
+        // const timeout = setTimeout(() => {
+        //     if (!hasScrolled) setShowPopup(true);
+        // }, 12000);
 
         // Show popup after scrolling down 100px
         const handleScroll = () => {
@@ -26,7 +26,6 @@ const PopupModal = () => {
         window.addEventListener("scroll", handleScroll);
 
         return () => {
-            clearTimeout(timeout);
             window.removeEventListener("scroll", handleScroll);
         };
     }, [hasScrolled]);

@@ -5,6 +5,7 @@ import Banner from '../comman/Banner';
 import PlanCardGrid from './PlanCardGrid';
 import mockData from '@/data/plans';
 import FilterPlans from './FilterPlans';
+import LoadingAnimation from '../loaders/LoadingAnimation';
 
 const Plans = () => {
   const [filteredPlans, setFilteredPlans] = useState(mockData);
@@ -16,6 +17,7 @@ const Plans = () => {
 
   return (
     <section>
+      <LoadingAnimation />
       <Banner title="Our Plans" />
       <FilterPlans onFilterChange={handleFilterChange} />
       <PlanCardGrid plans={filteredPlans} />

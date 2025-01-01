@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/comman/Navbar";
 import Footer from "@/components/comman/Footer";
-import LoaderManager from "@/components/loaders/LoaderManager";
+
 
 
 export const metadata: Metadata = {
@@ -18,11 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-poppins">
-        <LoaderManager>
           <Navbar />
           {children}
           <Footer />
-        </LoaderManager>
       </body>
     </html>
   );

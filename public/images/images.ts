@@ -62,6 +62,11 @@ import mailIcon from './pngs/mail.png'
 import popupImage from './pngs/popup-1.png'
 
 
+// Webp
+
+import testimonialClipImage from './webp/testimonial-one-shape-1-green.webp'
+
+
 const gifs = {
     drink,
     exercise,
@@ -127,4 +132,8 @@ const jpgs = {
     testimonialImage2,
 }
 
-export { gifs, svgs, pngs, jpgs };
+const webp = {
+    testimonialClipImage
+}
+
+export { gifs, svgs, pngs, jpgs, webp };
