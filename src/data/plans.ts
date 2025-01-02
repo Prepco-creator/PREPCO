@@ -217,7 +217,7 @@ export const mockData: PlanProps[] = [
     duration: 6,
     pricing: 3999,
     discountPricing: 3599, // Example discount (optional)
-    isSpecial: false,
+    isSpecial: true,
     membersCount: 2,
     features: [
       { id: 'feature_8', content: 'Master Health Check-ups: 2' },
@@ -387,7 +387,7 @@ export const mockData: PlanProps[] = [
     duration: 12,
     pricing: 11111,
     discountPricing: 9999, // Example discount (optional)
-    isSpecial: false,
+    isSpecial: true,
     membersCount: 5,
     features: [
       { id: 'feature_94', content: 'Master Health Check-ups: 5' },
