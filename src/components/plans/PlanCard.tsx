@@ -21,7 +21,7 @@ const PlanCard: React.FC<PlanProps> = ({
 
   return (
     <div
-      className={`rounded-3xl border-[1px] border-solid border-primary p-4 flex flex-col gap-4 transition-all duration-300 ease-in-out hover:scale-105 ${
+      className={`rounded-3xl border-[1px] border-solid border-primary p-4 flex flex-col gap-4 transition-all duration-300 ease-in-out hover:-translate-y-2 ${
         isSpecial ? "bg-accent-1" : "bg-transparent"
       }`}
     >
