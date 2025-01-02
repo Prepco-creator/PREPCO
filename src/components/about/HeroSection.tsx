@@ -6,8 +6,7 @@ import gsap from "gsap";
 
 const HeroSection = () => {
   useEffect(() => {
-    // Ensure animations only run on the client side (after mounting)
-    if (typeof window !== "undefined") {
+    const timeout = setTimeout(() => {
       // Left content animation (slide from left)
       gsap.fromTo(
         ".left-content",
@@ -21,7 +20,11 @@ const HeroSection = () => {
         { x: "100%", opacity: 0 },
         { x: "0%", opacity: 1, duration: 1, ease: "power3.out" }
       );
-    }
+    }, 5300); // 5000 milliseconds = 5 seconds
+
+    // Cleanup the timeout if the component unmounts before the animation starts
+    return () => clearTimeout(timeout);
+
   }, []);
 
   return (
