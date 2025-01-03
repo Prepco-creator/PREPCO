@@ -6,7 +6,6 @@ import LoadingAnimation from '../loaders/LoadingAnimation'
 const Home = () => {
     return (
         <>
-            <LoadingAnimation/>
             <PopupModal />
             <Hero />
         </>

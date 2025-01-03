@@ -6,7 +6,7 @@ const HealthPackage: React.FC<{ healthPackage: HealthPackageDetails }> = ({
   healthPackage,
 }) => {
   return (
-    <div className="p-5 bg-primary1 shadow-double-inset rounded-[30px] flex flex-col items-center justify-center gap-2 hover:shadow-3d hover:transform hover:scale-105 transition-all">
+    <div className="p-5 overflow-hidden bg-primary1 shadow-double-inset rounded-[30px] flex flex-col items-center justify-center gap-2 hover:transform hover:-translate-y-2 transition-all">
       <Image
         src={healthPackage.iconSrc}
         alt={healthPackage.id}

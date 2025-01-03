@@ -9,24 +9,22 @@ const PopupModal = () => {
     const [hasScrolled, setHasScrolled] = useState(false);
 
     useEffect(() => {
-        // Timeout for 12 seconds
-        // const timeout = setTimeout(() => {
-        //     if (!hasScrolled) setShowPopup(true);
-        // }, 12000);
-
-        // Show popup after scrolling down 100px
-        const handleScroll = () => {
-            if (window.scrollY > 100) {
+        const handleScrollAttempt = (event: WheelEvent | TouchEvent) => {
+            if (!hasScrolled) {
                 setShowPopup(true);
                 setHasScrolled(true);
-                window.removeEventListener("scroll", handleScroll);
+                window.removeEventListener("wheel", handleScrollAttempt);
+                window.removeEventListener("touchmove", handleScrollAttempt);
             }
         };
 
-        window.addEventListener("scroll", handleScroll);
+        // Attach event listeners for wheel and touchmove
+        window.addEventListener("wheel", handleScrollAttempt);
+        window.addEventListener("touchmove", handleScrollAttempt);
 
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("wheel", handleScrollAttempt);
+            window.removeEventListener("touchmove", handleScrollAttempt);
         };
     }, [hasScrolled]);
 

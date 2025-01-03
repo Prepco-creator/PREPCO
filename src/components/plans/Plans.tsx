@@ -17,7 +17,6 @@ const Plans = () => {
 
   return (
     <section>
-      <LoadingAnimation />
       <Banner title="Our Plans" />
       <FilterPlans onFilterChange={handleFilterChange} />
       <PlanCardGrid plans={filteredPlans} />

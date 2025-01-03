@@ -4,17 +4,17 @@ import HeroSection from './HeroSection'
 import MissionAndVision from './MissionAndVision'
 import WhyChoosePrepco from './WhyChoosePrepco'
 import AboutCTA from './AboutCTA'
-import LoadingAnimation from '../loaders/LoadingAnimation'
+import Footer from '../comman/Footer'
 
 const About = () => {
     return (
         <>
-            <LoadingAnimation />
             <Banner title='About' />
             <HeroSection />
             <MissionAndVision />
             <WhyChoosePrepco />
             <AboutCTA />
+            <Footer/>
         </>
         // our mission & vision
         // why choose prepco

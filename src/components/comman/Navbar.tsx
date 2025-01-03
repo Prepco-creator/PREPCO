@@ -12,9 +12,10 @@ const Navbar = () => {
 
   const navLinks = [
     { title: "Home", route: "/" },
-    { title: "About", route: "/about" },
+    { title: "About Us", route: "/about" },
     { title: "plans", route: "/plans" },
     { title: "testimonials", route: "/testimonials" },
+    { title: "Contact", route: "/contact" }
   ];
 
   // Toggle menu function
@@ -45,14 +46,14 @@ const Navbar = () => {
             </div>
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <Link href="/contact" passHref>
+            <a href="#">
               <button
                 type="button"
                 className="p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset hover:bg-none hover:text-primary hover:shadow-none border-primary border-[2px] transition-all duration-300 ease-in-out"
               >
-                Contact us
+                Get a Quote
               </button>
-            </Link>
+            </a>
             <button
               onClick={toggleMenu} // Toggle mobile menu
               type="button"

@@ -13,6 +13,7 @@ import tags from '@/data/tags'
 import PlanDetail from './PlanDetail'
 import healthPackageDetails from '@/data/healthPackageDetails'
 import LoadingAnimation from '../loaders/LoadingAnimation'
+import Footer from '../comman/Footer'
 
 const Plan: React.FC<{ planName: string }> = ({ planName }) => {
 
@@ -26,7 +27,6 @@ const Plan: React.FC<{ planName: string }> = ({ planName }) => {
 
     return (
         <section>
-            <LoadingAnimation />
             <Banner title={plan.title} />
             <Hero
                 title={plan.title}
@@ -37,6 +37,7 @@ const Plan: React.FC<{ planName: string }> = ({ planName }) => {
             <Features membersCount={plan.membersCount} description={plan.description} duration={plan.duration} features={plan.features} />
             <MarqueeTags tagClassName='bg-accent-2 px-2' className='py-16' tags={tags} />
             <PlanDetail title={plan.title} bigDescription={plan.bigDescription as string} healthPackages={healthPackageDetails} />
+            <Footer/>
         </section>
     );
 }

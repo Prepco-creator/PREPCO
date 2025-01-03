@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/comman/Navbar";
-import Footer from "@/components/comman/Footer";
-
-
+import LoadingAnimation from "@/components/loaders/LoadingAnimation";
 
 export const metadata: Metadata = {
   title: "PREPCO | Where Care Meets Convenience",
@@ -15,12 +13,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body className="font-poppins">
-          <Navbar />
-          {children}
-          <Footer />
+        <LoadingAnimation />
+        <Navbar />
+        {children}
       </body>
     </html>
   );
