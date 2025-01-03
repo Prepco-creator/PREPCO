@@ -326,3 +326,43 @@ p {
   right: -120%;
   animation: heartRateOut 2.5s linear infinite;
 }
+
+
+/* External CSS */
+.flip-card {
+  perspective: 1000px; /* Enables 3D effect */
+  width: 100%; /* Ensure it fills the container */
+  height: 250px; /* Ensure it fills the container */
+}
+
+.flip-card-inner {
+  position: relative; /* Ensure inner content is positioned relative */
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; /* Necessary for 3D transformations */
+  transition: transform 0.6s ease-in-out; /* Smooth transition for flip */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Rotate 180 degrees on hover */
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the mirrored back face */
+  display: flex; /* Make sure content is aligned correctly */
+  justify-content: center; /* Center the content */
+  align-items: center; /* Center the content */
+}
+
+.flip-card-front {
+  z-index: 2; /* Ensure front is on top */
+}
+
+.flip-card-back {
+  transform: rotateY(180deg); /* Flip the back face */
+  z-index: 1; /* Ensure back is behind front face */
+}
