@@ -9,7 +9,7 @@ const PopupModal = () => {
     const [hasScrolled, setHasScrolled] = useState(false);
 
     useEffect(() => {
-        const handleScrollAttempt = (event: WheelEvent | TouchEvent) => {
+        const handleScrollAttempt = () => {
             if (!hasScrolled) {
                 setShowPopup(true);
                 setHasScrolled(true);
