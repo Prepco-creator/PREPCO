@@ -12,7 +12,6 @@ import MarqueeTags from '../comman/MarqueeTags'
 import tags from '@/data/tags'
 import PlanDetail from './PlanDetail'
 import healthPackageDetails from '@/data/healthPackageDetails'
-import LoadingAnimation from '../loaders/LoadingAnimation'
 import Footer from '../comman/Footer'
 
 const Plan: React.FC<{ planName: string }> = ({ planName }) => {
