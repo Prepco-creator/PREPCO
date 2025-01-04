@@ -6,10 +6,14 @@ const HealthPackage: React.FC<{ healthPackage: HealthPackageDetails }> = ({
   healthPackage,
 }) => {
   return (
-    <div className="flip-card">
-      <div className="flip-card-inner">
-        {/* Front Face */}
-        <div className="flip-card-front p-5 bg-primary1 shadow-double-inset rounded-[30px] flex flex-col items-center justify-center gap-2 card-rotation">
+    <div className="relative group min-h-[271px]">
+      {/* Stacked Card (background card) */}
+      <div className="absolute inset-0 -z-10 translate-y-2 bg-secondary rounded-[4px] w-11/12 mx-auto"></div>
+
+      {/* Main Card */}
+      <div className="p-5 h-full bg-custom-gradient shadow-md rounded-[4px] flex flex-col items-center justify-center gap-2 transition-all">
+        {/* Icon */}
+        <div className="relative transition-transform group-hover:-translate-y-2">
           <Image
             src={healthPackage.iconSrc}
             alt={healthPackage.id}
@@ -17,30 +21,17 @@ const HealthPackage: React.FC<{ healthPackage: HealthPackageDetails }> = ({
             height={60}
             className="stroke-white"
           />
-          <h5 className="text-custom-16-bold lg:text-custom-20 lg:font-extrabold text-white">
-            {healthPackage.title}
-          </h5>
-          <p className="text-custom-14 lg:text-custom-16 text-white">
-            {healthPackage.description}
-          </p>
         </div>
 
-        {/* Back Face */}
-        <div className="flip-card-back p-5 bg-primary1 shadow-double-inset rounded-[30px] flex flex-col items-center justify-center gap-2">
-          <Image
-            src={healthPackage.iconSrc}
-            alt={healthPackage.id}
-            width={60}
-            height={60}
-            className="stroke-white"
-          />
-          <h5 className="text-custom-16-bold lg:text-custom-20 lg:font-extrabold text-white">
-            {healthPackage.title}
-          </h5>
-          <p className="text-custom-14 lg:text-custom-16 text-white">
-            {healthPackage.description}
-          </p>
-        </div>
+        {/* Title */}
+        <h5 className="text-custom-16-bold lg:text-custom-20 lg:font-extrabold text-white">
+          {healthPackage.title}
+        </h5>
+
+        {/* Description */}
+        <p className="text-custom-14 lg:text-custom-16 text-white">
+          {healthPackage.description}
+        </p>
       </div>
     </div>
   );

@@ -51,7 +51,7 @@ const Navbar = () => {
                 type="button"
                 className="p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset hover:bg-none hover:text-primary hover:shadow-none border-primary border-[2px] transition-all duration-300 ease-in-out"
               >
-                Get a Quote
+                Book a consultant
               </button>
             </a>
             <button
