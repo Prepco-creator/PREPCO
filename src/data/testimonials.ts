@@ -70,23 +70,23 @@ export const testimonials2: Testimonial[] = [
 
 export const testimonials3: Testimonial[] = [
     {
-        testimonial: "Before Prepco, keeping track of my family’s health felt like a full-time job. Now, with everything in one place—check-ups, consultations, and even discounts on lab services—it’s like having a personal health assistant for all of us. My family feels more cared for, and I finally feel stress-free!",
-        testimonee: "Ananya Sharma",
-        position: "Family Wellness Plan Subscriber",
+        testimonial: "As an IT professional, I was always on top of the latest technology trends, but somehow lost sight of what truly mattered- my health. Despite knowing about Prepco and their services, I kept putting off taking care of myself, thinking I'd never find the time. Then I discovered their virtual consultations, and realized that taking care of my health was literally just a few clicks away. Sometimes the best solutions are the simplest ones.",
+        testimonee: "Rajesh Kannan",
+        position: "IT Professional",
     },
     {
-        testimonial: "Honestly, I wasn’t sure I needed a health plan until I tried Prepco. The yoga guides and nutrition consultations helped me transform my lifestyle, and I love how easy it is to schedule appointments. It feels like they really understand what people need to stay healthy and happy.",
-        testimonee: "Sneha Patel",
-        position: "Healthy Lifestyle Plan User",
+        testimonial: "Balancing work and family life has always been challenging, but coming home to my aging parents makes dealing with my demanding boss worth it. Since discovering Prepco, while my boss hasn't stopped being demanding, I've found peace of mind knowing my parents are staying active through virtual consultations even when I'm at work. It's like having a partner in caring for them, and that's made all the difference.",
+        testimonee: "Priya Ramesh",
+        position: "Working Professional",
     },
     {
-        testimonial: "Prepco has been a lifesaver for my family! Scheduling check-ups and managing consultations used to be a hassle, but now it’s all so simple. My kids love the wellness tips, and I love the peace of mind knowing our health is in great hands. Thank you, Prepco!",
-        testimonee: "Arun Subramanian",
-        position: "Family Wellness Plan Subscriber",
+        testimonial: "After our wedding celebrations settled down, we turned our focus to our future together. We realized that the key to lasting happiness is good health. Just as fate brought us together, we found Prepco at the perfect time. Without hesitation, we enrolled in their plan, and it's been transformative. We've even turned our virtual yoga sessions into our favorite couple activity- who knew staying healthy could be so much fun together!",
+        testimonee: "Mohammed Faisal & Zainab Rahman",
+        position: "Newlywed Couple",
     },
     {
-        testimonial: "I never thought I’d enjoy using a health plan, but Prepco changed my mind. The virtual consultations are a blessing, and the fitness guides are so easy to follow. It’s like having a personal health assistant who gets my busy lifestyle. Highly recommend it!",
-        testimonee: "Nithin Menon",
-        position: "Solo Care Plan Member",
+        testimonial: "Being a woman in the corporate world comes with its unique set of challenges. While the perks are great, the stress that comes with the salary package is real. Previously, I'd come home so exhausted that even reading a few pages felt like a chore. Prepco changed that completely. Starting with their Master Health check-up, I finally understood exactly what my body needed. Combined with personalized yoga sessions and dietary guidance, I've bounced back stronger than ever. It's amazing how taking care of yourself can transform your entire perspective.",
+        testimonee: "Rachel D'Souza",
+        position: "Corporate Executive",
     },
 ];
