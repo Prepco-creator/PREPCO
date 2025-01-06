@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
         {/* Heading */}
         <h1 className="text-custom-24 font-semibold lg:text-custom-48 lg:font-bold mb-6 text-center text-gradient-animate">
           Did you know taking care of your health doesn’t have to break the
-          bank?"
+          bank?&quot;
         </h1>
 
         {/* Buttons */}
