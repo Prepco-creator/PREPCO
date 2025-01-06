@@ -7,12 +7,14 @@ import Link from "next/link";
 
 const PlanCard: React.FC<PlanProps> = ({
   title,
+  tagline,
   description,
   duration,
   pricing,
   discountPricing,
   isSpecial,
   features,
+  membersCount,
 }) => {
   const timeline =
     duration === 12 ? "year" : duration === 6 ? "6-months" : "not-defined";
@@ -26,16 +28,17 @@ const PlanCard: React.FC<PlanProps> = ({
       }`}
     >
       <h1 className="text-custom-24 text-primary">{title}</h1>
+      <p className="text-base font-medium text-secondaryDark">{tagline}</p>
       <p className="text-custom-14 text-secondaryDark">{description}</p>
       <div className="flex flex-row justify-between items-center">
         <div className="flex flex-col gap-1">
-          <h6 className="text-custom-16 text-black">
+          <h6 className="text-3xl font-bold text-slate-700">
             &#8377;<span className="line-through">{pricing}</span>
-            <span className="text-custom-14 text-dark">/{timeline}</span>
+            <span className="text-xl text-dark font-medium">/{timeline}</span>
           </h6>
-          <h1 className="text-custom-32 text-primary">
+          <h1 className="text-xl font-bold text-primary">
             &#8377;{discountPricing}
-            <span className="text-custom-14 text-dark">/{timeline}</span>
+            <span className="text-base text-dark">/{timeline}</span>
           </h1>
         </div>
         <p className="flex flex-row gap-2">
@@ -45,7 +48,9 @@ const PlanCard: React.FC<PlanProps> = ({
             height={20}
             src={images.svgs.peopleDuo}
           />
-          <span className="text-custom-14 text-secondaryDark">3 persons </span>
+          <span className="text-custom-14 text-secondaryDark">
+            {membersCount}persons{" "}
+          </span>
         </p>
       </div>
       <Link href="/coming-soon" passHref>

@@ -75,6 +75,7 @@ interface PlanFeature {
 interface PlanProps {
     id: string; // e.g., plan_1, plan_2
     title: string;
+    tagline:string;
     description: string;
     category: string;
     duration: number; // e.g., "1 month", "1 year"

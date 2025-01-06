@@ -15,7 +15,6 @@
   font-style: normal;
 }
 
-
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -65,7 +64,6 @@ body {
 }
 
 @media (min-width: 600px) {
-
   /* Tablet */
   .plan-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -74,7 +72,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-
   /* Laptop-small */
   .plan-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -83,7 +80,6 @@ body {
 }
 
 @media (min-width: 1440px) {
-
   /* Laptop-large */
   .plan-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -99,10 +95,12 @@ body {
   right: -50%;
   bottom: -50%;
   left: -50%;
-  background: linear-gradient(to bottom,
-      rgba(229, 172, 142, 0),
-      rgba(255, 255, 255, 0.5) 50%,
-      rgba(229, 172, 142, 0));
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 172, 142, 0),
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(229, 172, 142, 0)
+  );
   transform: rotateZ(60deg) translate(-5em, 7.5em);
 }
 
@@ -155,7 +153,6 @@ p {
   transition: all 0.3s ease-in-out;
   /* Smooth transition for transform and shadow */
 }
-
 
 /* Keyframes for fade-in animation */
 @keyframes heartRateIn {
@@ -223,8 +220,6 @@ p {
 .animate-fade-in-scale {
   animation: fade-in-scale 3s ease-out;
 }
-
-
 
 /* Main container */
 .spl-loader-container {
@@ -327,7 +322,6 @@ p {
   animation: heartRateOut 2.5s linear infinite;
 }
 
-
 /* External CSS */
 .flip-card {
   perspective: 1000px; /* Enables 3D effect */
@@ -365,4 +359,13 @@ p {
 .flip-card-back {
   transform: rotateY(180deg); /* Flip the back face */
   z-index: 1; /* Ensure back is behind front face */
+}
+/* Hide scrollbar for horizontal scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
 }

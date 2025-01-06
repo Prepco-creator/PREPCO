@@ -24,7 +24,6 @@ const HeroSection = () => {
 
     // Cleanup the timeout if the component unmounts before the animation starts
     return () => clearTimeout(timeout);
-
   }, []);
 
   return (
@@ -68,13 +67,13 @@ const HeroSection = () => {
         <p className="text-custom-14 lg:text-custom-20-2 leading-relaxed mb-6">
           Say goodbye to complex processes and hello to a smarter, easier way to
           stay healthy. Our mission? To empower individuals and families with
-          personalized, comprehensive services that fit seamlessly into your
-          life.
+          personalized, comprehensive everyday essential services that fit
+          seamlessly into your life without a dent in your budget.
         </p>
         <p className="text-custom-14 lg:text-[20px] leading-relaxed">
-          With a team of seasoned healthcare professionals and a sprinkle of
+          With a team of seasoned wellness specialists and a sprinkle of
           innovation, we’re here to make preventive care feel less like a chore
-          and more like a choice.
+          and more like a healthy choice that can be accessed anytime anywhere.
         </p>
       </div>
     </section>

@@ -43,40 +43,45 @@ const Hero: React.FC = () => {
       <div className="relative p-4 lg:p-16 z-10 flex flex-col items-center justify-center h-full text-white">
         {/* Heading */}
         <h1 className="text-custom-24 font-semibold lg:text-custom-48 lg:font-bold mb-6 text-center text-gradient-animate">
-          Have you ever had a healthcare plan, or are you living dangerously?
+          Did you know taking care of your health doesn’t have to break the
+          bank?"
         </h1>
 
         {/* Buttons */}
         <div className="flex flex-col-reverse md:flex-row gap-4 w-[95%] lg:w-3/5">
           {/* First Button */}
-          <Link href={'/plans'} passHref className="w-full lg:w-1/2">
+          <Link href={"/plans"} passHref className="w-full lg:w-1/2">
             <button
               onMouseEnter={() => handleMouseEnter(1)}
               onMouseLeave={handleMouseLeave}
               onClick={() => handleClick(1)}
-              className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tr-[50px] rounded-bl-[50px] shadow-md transition-all duration-300 w-full ${clickedButton === 1 ? "opacity-70" : ""
-                } ${hoveredButton === 1
+              className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tr-[50px] rounded-bl-[50px] shadow-md transition-all duration-300 w-full ${
+                clickedButton === 1 ? "opacity-70" : ""
+              } ${
+                hoveredButton === 1
                   ? "bg-primary text-white transform scale-105"
                   : "bg-white text-primary"
-                }`}
+              }`}
             >
-              No, I like to keep things interesting.
+              Tell me how it can save me money
             </button>
           </Link>
 
           {/* Second Button */}
-          <Link href={'/plans'} passHref className="w-full lg:w-1/2">
+          <Link href={"/plans"} passHref className="w-full lg:w-1/2">
             <button
               onMouseEnter={() => handleMouseEnter(2)}
               onMouseLeave={handleMouseLeave}
               onClick={() => handleClick(2)}
-              className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tl-[50px] rounded-br-[50px] shadow-double-inset transition-all duration-300 w-full ${clickedButton === 2 ? "opacity-70" : ""
-                } ${hoveredButton === 2
+              className={`px-6 py-3 text-custom-16 font-bold lg:font-semibold rounded-tl-[50px] rounded-br-[50px] shadow-double-inset transition-all duration-300 w-full ${
+                clickedButton === 2 ? "opacity-70" : ""
+              } ${
+                hoveredButton === 2
                   ? "bg-white text-primary transform scale-105 shadow-none"
                   : "bg-primary text-white"
-                }`}
+              }`}
             >
-              Yes, I would like to try.
+              I’m ready for affordable health solutions
             </button>
           </Link>
         </div>
