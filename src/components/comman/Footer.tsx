@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <footer className="bg-primary py-4 text-secondaryLight">
       <div className="px-4 sm:px-6 lg:px-14 lg:py-7">
-
         {/* Links Section */}
         <div className="flex flex-col sm:flex-row gap-4 lg:gap-8">
           <div className="flex-[2] mb-8 flex flex-col gap-2 lg:gap-8">
@@ -36,7 +35,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.whatsApp.com"
+                href="https://wa.me/+9892882929"
                 aria-label="WhatsApp"
                 className="hover:-translate-y-2 transition-transform duration-200"
               >
@@ -48,6 +47,7 @@ const Footer = () => {
                   className=""
                 />
               </a>
+
               <a
                 href="https://www.instagram.com"
                 aria-label="Instagram"
