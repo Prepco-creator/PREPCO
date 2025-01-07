@@ -251,9 +251,62 @@ export const mockData: PlanProps[] = [
       { "id": "feature_125", "content": "Home-Based Treatments: 2" },
       { "id": "feature_126", "content": "Discounts on Home-Based Treatments: 2" }
     ]
+  },
+  {
+    "id": "plan_9",
+    "title": "Family Care Essentials",
+    "tagline": "Affordable wellness for your entire family.",
+    "description": "This plan ensures basic health and wellness coverage for families at an affordable price.",
+    "bigDescription": "Ideal for families looking for essential health benefits, offering value-for-money services.",
+    "category": "semi-annual",
+    "duration": 6,
+    "pricing": 9999,
+    "discountPricing": 7999,
+    "isSpecial": true,
+    "membersCount": 4,
+    "features": [
+      { "id": "feature_201", "content": "Master Health Check-up: 3" },
+      { "id": "feature_202", "content": "Dental OPD Consultations: 3" },
+      { "id": "feature_203", "content": "General OPD Consultations: 3" },
+      { "id": "feature_204", "content": "Virtual General OPD Consultations: 3" },
+      { "id": "feature_205", "content": "Virtual Physiotherapy Consultations: 3" },
+      { "id": "feature_206", "content": "Nutrition: 3-P-6M" },
+      { "id": "feature_207", "content": "Medicine Benefits Worth Rs. 300: 3" },
+      { "id": "feature_208", "content": "Recorded Yoga Sessions: 1" },
+      { "id": "feature_209", "content": "Recorded Fitness Sessions: 1" },
+      { "id": "feature_210", "content": "Discounts on Laboratory Tests: 1" },
+      { "id": "feature_211", "content": "Out-Patient Discounts: 1" }
+    ]
+  },
+  {
+    "id": "plan_10",
+    "title": "Premium Wellness Plan",
+    "tagline": "Exclusive health benefits tailored for you.",
+    "description": "A premium plan designed for those seeking top-notch health and wellness services.",
+    "bigDescription": "Perfect for individuals or families who want priority access to premium healthcare services.",
+    "category": "annual",
+    "duration": 12,
+    "pricing": 24999,
+    "discountPricing": 21999,
+    "isSpecial": true,
+    "membersCount": 6,
+    "features": [
+      { "id": "feature_301", "content": "Master Health Check-up: 6" },
+      { "id": "feature_302", "content": "Dental OPD Consultations: 6" },
+      { "id": "feature_303", "content": "General OPD Consultations: 6" },
+      { "id": "feature_304", "content": "Virtual General OPD Consultations: 6" },
+      { "id": "feature_305", "content": "Virtual Dental OPD Consultations: 6" },
+      { "id": "feature_306", "content": "Nutrition: Unlimited" },
+      { "id": "feature_307", "content": "Pest Control: Entire Home" },
+      { "id": "feature_308", "content": "Medicine Benefits Worth Rs. 1000: 6" },
+      { "id": "feature_309", "content": "Recorded Yoga Sessions: Unlimited" },
+      { "id": "feature_310", "content": "Priority Laboratory Discounts: 4" },
+      { "id": "feature_311", "content": "In-Patient Discounts: 4" },
+      { "id": "feature_312", "content": "Out-Patient Discounts: 4" },
+      { "id": "feature_313", "content": "Home-Based Treatments: Unlimited" },
+      { "id": "feature_314", "content": "Emergency Support: 24/7" }
+    ]
   }
-
-
 ];
 
 

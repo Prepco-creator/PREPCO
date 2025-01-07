@@ -13,7 +13,7 @@ const Plans = () => {
 
   const handleFilterChange = (
     filterType: "duration" | "special" | "fullCoverage" | null,
-    value?: number | string
+    value?: number | string | string[]
   ) => {
     if (!filterType) {
       // No filter selected, show all plans
@@ -26,9 +26,10 @@ const Plans = () => {
       newFilteredPlans = mockData.filter((plan) => plan.duration === value);
     } else if (filterType === "special") {
       newFilteredPlans = mockData.filter((plan) => plan.isSpecial);
-    } else if (filterType === "fullCoverage" && typeof value === "string") {
-      newFilteredPlans = mockData.filter((plan) => plan.id === value);
+    } else if (filterType === "fullCoverage" && Array.isArray(value)) {
+      newFilteredPlans = mockData.filter((plan) => value.includes(plan.id));
     }
+
     setFilteredPlans(newFilteredPlans);
   };
 
