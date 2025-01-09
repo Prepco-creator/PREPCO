@@ -2,11 +2,6 @@ import React from "react";
 import { images, videos } from "../../../public/assets";
 import { FeaturesProps, PlanFeature } from "@/types";
 import Image from "next/image";
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// Register ScrollTrigger plugin
-// gsap.registerPlugin(ScrollTrigger);
 
 const Features: React.FC<FeaturesProps> = ({
   membersCount,
@@ -15,66 +10,34 @@ const Features: React.FC<FeaturesProps> = ({
   description,
 }) => {
   const timeline =
-    duration === 12 ? "One Year" : duration === 6 ? "6 Month" : "Not - Defined";
+    duration === 12 ? "One Year" : duration === 6 ? "6 Months" : "Not Defined";
 
   const featureIcon =
-    membersCount == 1 ? images.gifs.oneMemberPlan : images.gifs.threeMemberPlan;
+    membersCount === 1
+      ? images.gifs.oneMemberPlan
+      : images.gifs.threeMemberPlan;
 
-  // useEffect(() => {
-  //   gsap.utils.toArray(".feature-item").forEach((item: ) => {
-  //     return gsap.fromTo(
-  //       item,
-  //       { opacity: 0, x: -200 }, // Start from left and invisible
-  //       {
-  //         opacity: 1,
-  //         x: 0,
-  //         stagger: 0.2,
-  //         duration: 1,
-  //         ease: "power2.out",
-  //         scrollTrigger: {
-  //           trigger: item, // The item itself
-  //           start: "top 80%", // When the top of the item is 80% from the top of the viewport
-  //           end: "top 30%", // End the animation when the top of the item reaches 30% of the viewport
-  //           scrub: true, // Smooth scrubbing of the animation
-  //           toggleActions: "play none none reverse",
-  //         },
-  //       }
-  //     );
-  //   });
-  // }, [features]);
+  // Split the features into two halves
+  const halfLength = Math.ceil(features.length / 2);
+  const leftFeatures = features.slice(0, halfLength);
+  const rightFeatures = features.slice(halfLength);
 
   return (
-    <section className="px-4 py-8 lg:p-16 bg-accent-1">
-      <h3 className="text-center text-custom-20-bold lg:text-custom-40-2 text-primary mb-2">
-        Plan Validation {timeline} - 2 Members
-      </h3>
-      <p className="text-custom-14 lg:text-custom-20-2 text-secondaryDark text-center mb-10">
-        {description}
-      </p>
-      <section className="flex flex-col lg:flex-row gap-8 justify-between items-start">
-        <div className="flex-1 lg:max-w-[45%]">
-          {features.map((feature: PlanFeature, index: number) => (
-            <div
-              key={index}
-              className="feature-item flex flex-row gap-2 mb-2 lg:mb-8 items-center"
-            >
-              <Image
-                unoptimized
-                width={32}
-                height={32}
-                src={featureIcon}
-                alt={feature.id}
-              />
-              <p className="text-custom-14 lg:text-custom-20-2 text-secondaryDark">
-                {feature.content}
-              </p>
-            </div>
-          ))}
-        </div>
-        <div className="flex-1 lg:self-center lg:max-w-[50%]">
+    <section className="px-6 py-16 bg-gradient-to-r from-teal-400 to-teal-700 shadow-double-inset">
+      <div className="container mx-auto text-center text-white">
+        <h3 className="text-3xl lg:text-5xl font-bold mb-4">
+          Plan Validation {timeline} - 2 Members
+        </h3>
+        <p className="text-lg lg:text-2xl mb-12 max-w-3xl mx-auto">
+          {description}
+        </p>
+      </div>
+      {/* Video Section */}
+      <div className="flex justify-center items-center mt-12">
+        <div className="overflow-hidden rounded-2xl shadow-lg w-full max-w-4xl">
           <video
             src={videos.hero}
-            className="inset-0 w-full max-w-full h-auto lg:h-screen object-cover border-none rounded-[30px]"
+            className="w-full h-full object-cover rounded-2xl shadow-md"
             autoPlay
             loop
             muted
@@ -84,9 +47,53 @@ const Features: React.FC<FeaturesProps> = ({
             Your browser does not support the video tag.
           </video>
         </div>
-      </section>
-    </section>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-10">
+        {/* Left Column: Features */}
+        <div className="flex flex-col space-y-6">
+          {leftFeatures.map((feature: PlanFeature, index: number) => (
+            <div
+              key={index}
+              className="feature-item bg-white p-6 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl flex items-center gap-4"
+            >
+              <Image
+                unoptimized
+                width={40}
+                height={40}
+                src={featureIcon}
+                alt={feature.id}
+                className="transition-all duration-300 hover:scale-110"
+              />
+              <p className="text-xl lg:text-2xl text-teal-700 font-semibold">
+                {feature.content}
+              </p>
+            </div>
+          ))}
+        </div>
 
+        {/* Right Column: Features */}
+        <div className="flex flex-col space-y-6">
+          {rightFeatures.map((feature: PlanFeature, index: number) => (
+            <div
+              key={index}
+              className="feature-item bg-white p-6 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl flex items-center gap-4"
+            >
+              <Image
+                unoptimized
+                width={40}
+                height={40}
+                src={featureIcon}
+                alt={feature.id}
+                className="transition-all duration-300 hover:scale-110"
+              />
+              <p className="text-xl lg:text-2xl text-teal-700 font-semibold">
+                {feature.content}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
