@@ -4,9 +4,10 @@ import React, { useState } from "react";
 import Banner from "../comman/Banner";
 import PlanCardGrid from "./PlanCardGrid";
 import mockData from "@/data/plans";
-import FilterPlans from "./FilterPlans";
+import dynamic from "next/dynamic";
 import { PlanProps } from "@/types";
 import Footer from "../comman/Footer";
+const FilterPlans = dynamic(() => import('./FilterPlans'), { ssr: false });
 
 const Plans = () => {
   const [filteredPlans, setFilteredPlans] = useState(mockData);
@@ -42,5 +43,6 @@ const Plans = () => {
     </section>
   );
 };
+
 
 export default Plans;
