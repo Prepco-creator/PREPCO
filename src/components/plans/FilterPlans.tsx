@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 interface FilterPlansProps {
   onFilterChange: (
@@ -8,7 +8,20 @@ interface FilterPlansProps {
 }
 
 const FilterPlans: React.FC<FilterPlansProps> = ({ onFilterChange }) => {
-  const [selectedFilter, setSelectedFilter] = useState<string | null>(null);
+  // Get the filter state from localStorage on component mount
+  const getStoredFilter = () => {
+    const storedFilter = localStorage.getItem("PREPCO-INSURANCE-FILTER");
+    return storedFilter ? storedFilter : "duration-6"; // default to 6 months plan
+  };
+
+  const [selectedFilter, setSelectedFilter] = useState<string | null>(getStoredFilter);
+
+  useEffect(() => {
+    if (selectedFilter) {
+      // Update localStorage when the filter changes
+      localStorage.setItem("PREPCO-INSURANCE-FILTER", selectedFilter);
+    }
+  }, [selectedFilter]);
 
   const handleSelect = (
     filterType: "duration" | "special" | "fullCoverage",
@@ -20,6 +33,7 @@ const FilterPlans: React.FC<FilterPlansProps> = ({ onFilterChange }) => {
       // Deselect the current filter
       setSelectedFilter(null);
       onFilterChange(null);
+      localStorage.removeItem("PREPCO-INSURANCE-FILTER");
     } else {
       // Apply the new filter
       setSelectedFilter(filterKey);
@@ -28,10 +42,9 @@ const FilterPlans: React.FC<FilterPlansProps> = ({ onFilterChange }) => {
   };
 
   const buttonClass = (isSelected: boolean) =>
-    `px-6 py-3 rounded-xl font-medium text-sm shadow-lg border-[2px] transition-all duration-300 transform ${
-      isSelected
-        ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white border-gray-700 shadow-double-inset scale-105"
-        : "bg-gray-200 text-primary border-teal-600"
+    `px-6 py-3 rounded-xl font-medium text-sm shadow-lg border-[2px] transition-all duration-300 transform ${isSelected
+      ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white border-gray-700 shadow-double-inset scale-105"
+      : "bg-gray-200 text-primary border-teal-600"
     }`;
 
   return (

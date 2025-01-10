@@ -34,7 +34,7 @@ const Navbar = () => {
           } rounded-br-3xl rounded-bl-3xl fixed w-full z-20 top-0 start-0 border-none`}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link href="/" passHref>
+          <Link href="/about" passHref>
             <div className="flex items-center space-x-3 rtl:space-x-reverse">
               <Image
                 src={isMenuOpen ? images.svgs.LogoWhite : images.svgs.logo}

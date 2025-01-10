@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
         </h1>
 
         {/* Buttons */}
-        <div className="flex flex-col-reverse md:flex-row gap-4 w-[95%] lg:w-3/5">
+        <div className="flex flex-col-reverse md:flex-row gap-4 w-[95%] lg:w-2/3 min-[1440px]:w-3/5">
           {/* First Button */}
           <Link href={"/plans"} passHref className="w-full lg:w-1/2">
             <button
