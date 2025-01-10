@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState, useEffect } from "react";
 
 interface FilterPlansProps {
@@ -10,17 +8,22 @@ interface FilterPlansProps {
 }
 
 const FilterPlans: React.FC<FilterPlansProps> = ({ onFilterChange }) => {
-  // Get the filter state from localStorage on component mount
-  const getStoredFilter = () => {
-    const storedFilter = localStorage.getItem("PREPCO-INSURANCE-FILTER");
-    return storedFilter ? storedFilter : "duration-6"; // default to 6 months plan
-  };
-
-  const [selectedFilter, setSelectedFilter] = useState<string | null>(getStoredFilter);
+  const [selectedFilter, setSelectedFilter] = useState<string | null>(null);
 
   useEffect(() => {
-    if (selectedFilter) {
-      // Update localStorage when the filter changes
+    // Check if we are in the client-side environment (browser)
+    if (typeof window !== "undefined") {
+      const storedFilter = localStorage.getItem("PREPCO-INSURANCE-FILTER");
+      if (storedFilter) {
+        setSelectedFilter(storedFilter);
+      } else {
+        setSelectedFilter("duration-6"); // Default filter
+      }
+    }
+  }, []); // This effect will only run once when the component mounts
+
+  useEffect(() => {
+    if (selectedFilter && typeof window !== "undefined") {
       localStorage.setItem("PREPCO-INSURANCE-FILTER", selectedFilter);
     }
   }, [selectedFilter]);
@@ -44,10 +47,13 @@ const FilterPlans: React.FC<FilterPlansProps> = ({ onFilterChange }) => {
   };
 
   const buttonClass = (isSelected: boolean) =>
-    `px-6 py-3 rounded-xl font-medium text-sm shadow-lg border-[2px] transition-all duration-300 transform ${isSelected
-      ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white border-gray-700 shadow-double-inset scale-105"
-      : "bg-gray-200 text-primary border-teal-600"
+    `px-6 py-3 rounded-xl font-medium text-sm shadow-lg border-[2px] transition-all duration-300 transform ${
+      isSelected
+        ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white border-gray-700 shadow-double-inset scale-105"
+        : "bg-gray-200 text-primary border-teal-600"
     }`;
+
+  if (selectedFilter === null) return null; // Return null until the client-side renders
 
   return (
     <div className="flex items-center justify-center py-4 gap-4 flex-wrap">
