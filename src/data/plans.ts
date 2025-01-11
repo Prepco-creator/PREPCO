@@ -12,14 +12,20 @@ export const mockData: PlanProps[] = [
     pricing: 5520,
     discountPricing: 3838, // Example discount (optional)
     isSpecial: false,
+    featuresDisplay: [
+      "Master Health Checkup at Home - 1",
+      "Virtual / Tele Consultation Services - 5",
+      "Nutritionist Online Session (Get Personalized Diet Plans For 6 Months)",
+      "Medicine Benefits Worth Rs. 500"
+    ],
     membersCount: 1,
     features: [
       { id: 'feature_1', content: 'Master Health Check-up: 1' },
       { id: 'feature_2', content: 'Virtual General OPD Consultations: 2' },
+      { id: 'feature_6', content: 'Medicine benefits worth Rs.500 ' },
       { id: 'feature_3', content: 'Virtual Dental OPD Consultations: 1' },
       { id: 'feature_4', content: 'Virtual Physiotherapy Consultations: 1' },
       { id: 'feature_5', content: 'Nutrition Consultation: 1- P- 6M' },
-      { id: 'feature_6', content: 'Medicine benefits worth Rs.500 ' },
       { id: 'feature_7', content: 'Virtual Dermatology OPD Consultations: 1' },
     ],
   },
@@ -35,6 +41,12 @@ export const mockData: PlanProps[] = [
     discountPricing: 4849, // Example discount (optional)
     isSpecial: false,
     membersCount: 2,
+    featuresDisplay: [
+      "Master Health Checkup at Home - 2",
+      "Virtual / Tele Consultation Services - 4",
+      "Yoga, Fitness and Nutritionist Online Session – 1 person/6 Months",
+      "Laboratory Discount"
+    ],
     "features": [
       { "id": "feature_8", "content": "Master Health Check-up: 2" },
       { "id": "feature_9", "content": "General OPD Consultations: 1" },
@@ -61,6 +73,12 @@ export const mockData: PlanProps[] = [
     discountPricing: 5858,
     isSpecial: false,
     membersCount: 3,
+    featuresDisplay: [
+      "Yoga, Fitness and Nutritionist Online Session – 1 person/6 Months",
+      "Master Health Checkup at Home - 3",
+      "Virtual / Tele Consultation Services - 6",
+      "Laboratory and Out-Patient Discounts"
+    ],
     features: [
       { "id": "feature_19", "content": "Master Health Check-up: 3" },
       { "id": "feature_20", "content": "Dental OPD Consultations: 1" },
@@ -91,6 +109,12 @@ export const mockData: PlanProps[] = [
     "discountPricing": 7777,
     "isSpecial": false,
     "membersCount": 4,
+    "featuresDisplay": [
+      "Physiotherapy Treatment at Home - 1",
+      "Virtual / Tele Consultation Services - 8",
+      "Online Session Zumba, Yoga, Fitness – 1 person/6 Months",
+      "Master Health Checkup at Home - 3 with Get Personalized Diet Plans for 1 person/1 year"
+    ],
     "features": [
       { "id": "feature_32", "content": "Master Health Check-up: 4" },
       { "id": "feature_33", "content": "Dental OPD Consultations: 2" },
@@ -127,6 +151,12 @@ export const mockData: PlanProps[] = [
     "discountPricing": 8888,
     "isSpecial": true,
     "membersCount": 1,
+    "featuresDisplay": [
+      "Fix Your Problem with Yoga: 1 (Ailment) - 3 Months and Online Session – 1 year",
+      "Home Based Treatment Service - 1 & Discounts at All Physiotherapy Treatments, Acupuncture, Varma",
+      "Virtual / Tele Consultation Services - 8",
+      "Master Health Checkup at Home - 3 with Get Personalized Diet Plans for 1 year"
+    ],
     "features": [
       { "id": "feature_50", "content": "Master Health Check-up: 3" },
       { "id": "feature_51", "content": "Virtual General OPD Consultations: 2" },
@@ -159,6 +189,11 @@ export const mockData: PlanProps[] = [
     "discountPricing": 9999,
     "isSpecial": false,
     "membersCount": 4,
+    "featuresDisplay": ["Home Based Treatment Services - 1 (All Physiotherapy, Acupuncture, Varma)",
+      "Virtual / Tele Consultation Services - 11",
+      "Fix Your Problem with Yoga: 1 - 6 Months and Online Session – 1 year",
+      "Master Health Checkup at Home - 4 with Get Personalized Diet Plans – 2 person/1 year"
+    ],
     "features": [
       { "id": "feature_67", "content": "Master Health Check-up: 4" },
       { "id": "feature_68", "content": "Dental OPD Consultations: 2" },
@@ -194,6 +229,10 @@ export const mockData: PlanProps[] = [
     "discountPricing": 12999,
     "isSpecial": false,
     "membersCount": 5,
+    "featuresDisplay": ["Fix Your Problem with Yoga: 2 (Ailment) and Online Session – 1 year",
+      "Home Based Treatment Services - 2 (All Physiotherapy, Acupuncture, Varma)",
+      "Virtual / Tele Consultation Services - 16",
+      "Master Health Checkup at Home - 4 with Get Personalized Diet Plans – 3 person/1 year"],
     "features": [
       { "id": "feature_87", "content": "Master Health Check-up: 4" },
       { "id": "feature_88", "content": "Dental OPD Consultations: 4" },
@@ -229,6 +268,12 @@ export const mockData: PlanProps[] = [
     "discountPricing": 14999,
     "isSpecial": false,
     "membersCount": 5,
+    "featuresDisplay": [
+      "Fix Your Problem with Yoga: 2 (Ailment) and Online Session – 1 year",
+      "Home Based Treatment Services - 3 (All Physiotherapy, Acupuncture, Varma)",
+      "Virtual / Tele Consultation Services - 20",
+      "Master Health Checkup at Home - 5 with Get Personalized Diet Plans for 1 year"
+    ],
     "features": [
       { "id": "feature_107", "content": "Master Health Check-up: 5" },
       { "id": "feature_108", "content": "Dental OPD Consultations: 5" },
@@ -264,6 +309,12 @@ export const mockData: PlanProps[] = [
     "discountPricing": 7999,
     "isSpecial": true,
     "membersCount": 4,
+    "featuresDisplay": [
+      "Master Health Check-up: 3",
+      "Dental OPD Consultations: 3",
+      "General OPD Consultations: 3",
+      "Virtual General OPD Consultations: 3",
+    ],
     "features": [
       { "id": "feature_201", "content": "Master Health Check-up: 3" },
       { "id": "feature_202", "content": "Dental OPD Consultations: 3" },
@@ -290,11 +341,17 @@ export const mockData: PlanProps[] = [
     "discountPricing": 21999,
     "isSpecial": true,
     "membersCount": 6,
+    "featuresDisplay": [
+      "Master Health Check-up: 6",
+      "Dental OPD Consultations: 6",
+      "General OPD Consultations: 6",
+      "Virtual General OPD Consultations: 6",
+    ],
     "features": [
-      { "id": "feature_301", "content": "Master Health Check-up: 6" },
-      { "id": "feature_302", "content": "Dental OPD Consultations: 6" },
-      { "id": "feature_303", "content": "General OPD Consultations: 6" },
-      { "id": "feature_304", "content": "Virtual General OPD Consultations: 6" },
+      { "id": "feature_301", "content": "Master Health Check-up: 6", },
+      { "id": "feature_302", "content": "Dental OPD Consultations: 6", },
+      { "id": "feature_303", "content": "General OPD Consultations: 6", },
+      { "id": "feature_304", "content": "Virtual General OPD Consultations: 6", },
       { "id": "feature_305", "content": "Virtual Dental OPD Consultations: 6" },
       { "id": "feature_306", "content": "Nutrition: Unlimited" },
       { "id": "feature_307", "content": "Pest Control: Entire Home" },

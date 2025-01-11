@@ -13,7 +13,7 @@ const PlanCard: React.FC<PlanProps> = ({
   pricing,
   discountPricing,
   isSpecial,
-  features,
+  featuresDisplay,
   membersCount,
 }) => {
   const timeline =
@@ -23,9 +23,8 @@ const PlanCard: React.FC<PlanProps> = ({
 
   return (
     <div
-      className={`rounded-3xl border-[1px] border-solid border-primary p-4 flex flex-col gap-4 transition-all duration-300 ease-in-out hover:-translate-y-2 ${
-        isSpecial ? "bg-accent-1" : "bg-transparent"
-      }`}
+      className={`rounded-3xl border-[1px] border-solid border-primary p-4 flex flex-col gap-4 transition-all duration-300 ease-in-out hover:-translate-y-2 ${isSpecial ? "bg-accent-1" : "bg-transparent"
+        }`}
     >
       <h1 className="text-custom-24 text-primary">{title}</h1>
       <p className="text-base font-medium text-secondaryDark">{tagline}</p>
@@ -59,17 +58,17 @@ const PlanCard: React.FC<PlanProps> = ({
         </button>
       </Link>
       <div>
-        {features?.slice(0, 4).map((feature: PlanFeature, index: number) => (
+        {featuresDisplay?.map((feature: string, index: number) => (
           <div key={index} className="flex flex-row gap-2 mb-2">
             <Image
               width={24}
               height={24}
               className="object-contain"
               src={images.pngs.walkingCouple}
-              alt={feature.id}
+              alt={'feature-gif'}
             />
             <p className="text-secondaryDark text-custom-14">
-              {feature.content}
+              {feature}
             </p>
           </div>
         ))}

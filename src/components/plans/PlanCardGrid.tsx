@@ -18,7 +18,7 @@ const PlanCardGrid: React.FC<{ plans: PlanProps[] }> = ({ plans }) => {
           pricing={plan.pricing}
           membersCount={plan.membersCount}
           duration={plan.duration}
-          features={plan.features}
+          featuresDisplay={plan.featuresDisplay}
         />
       ))}
     </section>

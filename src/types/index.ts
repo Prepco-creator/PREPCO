@@ -75,16 +75,17 @@ interface PlanFeature {
 interface PlanProps {
     id: string; // e.g., plan_1, plan_2
     title: string;
-    tagline:string;
+    tagline: string;
     description: string;
     category: string;
     duration: number; // e.g., "1 month", "1 year"
     pricing: number; // e.g., 199.99
     discountPricing: number;
     isSpecial: boolean; // e.g., true for featured or premium plans
-    features: PlanFeature[];
+    features?: PlanFeature[];
     bigDescription?: string
     membersCount?: number;
+    featuresDisplay?: string[];
 }
 
 
