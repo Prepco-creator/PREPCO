@@ -5,7 +5,7 @@ import { images } from "../../../public/assets";
 import formatToHyphenated from "@/utils/fomatPathName";
 import Link from "next/link";
 
-const PlanCard: React.FC<PlanProps> = ({
+const PlanCard: React.FC<Partial<PlanProps>> = ({
   title,
   tagline,
   description,
@@ -19,7 +19,7 @@ const PlanCard: React.FC<PlanProps> = ({
   const timeline =
     duration === 12 ? "year" : duration === 6 ? "6-months" : "not-defined";
 
-  const planName = formatToHyphenated(title);
+  const planName = formatToHyphenated(title as string);
 
   return (
     <div

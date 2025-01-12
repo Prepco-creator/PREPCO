@@ -82,10 +82,10 @@ interface PlanProps {
     pricing: number; // e.g., 199.99
     discountPricing: number;
     isSpecial: boolean; // e.g., true for featured or premium plans
-    features?: PlanFeature[];
+    features: PlanFeature[];
     bigDescription?: string
     membersCount?: number;
-    featuresDisplay?: string[];
+    featuresDisplay: string[];
 }
 
 
