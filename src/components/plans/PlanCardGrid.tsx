@@ -8,7 +8,7 @@ const PlanCardGrid: React.FC<{ plans: PlanProps[] }> = ({ plans }) => {
 
   return (
     <section
-      className={`w-[98%] mx-auto px-4 pb-2 grid grid-cols-auto-fit 
+      className={`w-[95%] mx-auto pb-2 grid grid-cols-auto-fit 
                   sm:grid-cols-1 gap-3 justify-center ${gridClasses}`}
     >
       {plans?.map((plan: PlanProps, index: number) => (

@@ -34,23 +34,14 @@ const FilterPlans: React.FC<FilterPlansProps> = ({ onFilterChange }) => {
   ) => {
     const filterKey = filterType === "duration" ? `duration-${value}` : filterType;
 
-    if (selectedFilter === filterKey) {
-      // Deselect the current filter
-      setSelectedFilter(null);
-      onFilterChange(null);
-      localStorage.removeItem("PREPCO-INSURANCE-FILTER");
-    } else {
-      // Apply the new filter
-      setSelectedFilter(filterKey);
-      onFilterChange(filterType, value);
-    }
+    setSelectedFilter(filterKey);
+    onFilterChange(filterType, value);
   };
 
   const buttonClass = (isSelected: boolean) =>
-    `px-6 py-3 rounded-xl font-medium text-sm shadow-lg border-[2px] transition-all duration-300 transform ${
-      isSelected
-        ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white border-gray-700 shadow-double-inset scale-105"
-        : "bg-gray-200 text-primary border-teal-600"
+    `px-6 py-3 rounded-xl font-medium text-sm shadow-lg border-[2px] transition-all duration-300 transform ${isSelected
+      ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white border-gray-700 shadow-double-inset scale-105"
+      : "bg-gray-200 text-primary border-teal-600"
     }`;
 
   if (selectedFilter === null) return null; // Return null until the client-side renders
