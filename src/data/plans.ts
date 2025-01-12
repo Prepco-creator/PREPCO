@@ -3,7 +3,7 @@ import { PlanProps } from "@/types";
 export const mockData: PlanProps[] = [
   {
     id: 'plan_1',
-    title: 'he Just For You Plan ',
+    title: 'The Just For You Plan ',
     tagline: 'Your health, your priority.',
     description: 'Perfect for individuals seeking to take control of their health.',
     bigDescription: 'This plan includes a comprehensive health package for individuals looking to prioritize their well-being. The Solo Care Plan offers personalized healthcare services to ensure you stay on top of your health.',
