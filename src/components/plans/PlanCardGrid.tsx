@@ -4,7 +4,7 @@ import PlanCard from "./PlanCard";
 
 const PlanCardGrid: React.FC<{ plans: PlanProps[] }> = ({ plans }) => {
 
-  const gridClasses = plans.length <= 2 ? 'md:grid-cols-2' : 'lg:grid-cols-3 xl:grid-cols-4';
+  const gridClasses = plans.length <= 2 ? 'md:grid-cols-2' : 'lg:grid-cols-3';
 
   return (
     <section
@@ -20,7 +20,6 @@ const PlanCardGrid: React.FC<{ plans: PlanProps[] }> = ({ plans }) => {
           tagline={plan.tagline}
           category={plan.category}
           description={plan.description}
-          isSpecial={plan.isSpecial}
           pricing={plan.pricing}
           membersCount={plan.membersCount}
           duration={plan.duration}

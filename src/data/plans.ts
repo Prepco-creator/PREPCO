@@ -32,7 +32,7 @@ export const mockData: PlanProps[] = [
   {
     id: 'plan_2',
     title: 'The Just for Two Plan ',
-    tagline: 'YCare starts with two',
+    tagline: 'Care starts with two',
     description: 'This plan is perfect for two people looking to prioritize their health together. It includes:',
     bigDescription: 'This plan offers a balanced healthcare service for two individuals. It includes a variety of health services, ensuring both members have access to essential care and personalized wellness plans.',
     category: 'semi-annual',

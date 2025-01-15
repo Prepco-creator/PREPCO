@@ -12,7 +12,6 @@ const PlanCard: React.FC<Partial<PlanProps>> = ({
   duration,
   pricing,
   discountPricing,
-  isSpecial,
   featuresDisplay,
   membersCount,
 }) => {
@@ -23,12 +22,11 @@ const PlanCard: React.FC<Partial<PlanProps>> = ({
 
   return (
     <div
-      className={`rounded-3xl border-[1px] border-solid border-primary p-4 flex flex-col gap-4 transition-all duration-300 ease-in-out hover:-translate-y-2 ${isSpecial ? "bg-accent-1" : "bg-transparent"
-        }`}
+      className={`rounded-3xl border-[1px] border-solid border-primary p-4 flex flex-col gap-4 transition-all duration-300 ease-in-out hover:-translate-y-2 bg-transparent`}
     >
       <h1 className="text-custom-24 text-primary">{title}</h1>
-      <p className="text-base font-medium text-secondaryDark">{tagline}</p>
-      <p className="text-custom-14 text-secondaryDark">{description}</p>
+      <p className="text-base font-medium text-secondaryDark md:min-h-[48px]">{tagline}</p>
+      <p className="text-custom-14 text-secondaryDark md:min-h-[63px]">{description}</p>
       <div className="flex flex-row justify-between items-center">
         <div className="flex flex-col gap-1">
           <h6 className="text-3xl font-bold text-slate-700">

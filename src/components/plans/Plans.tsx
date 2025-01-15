@@ -9,8 +9,16 @@ import { PlanProps } from "@/types";
 import Footer from "../comman/Footer";
 
 const Plans = () => {
+
+  const fullCoveragePlanIds = ["plan_7", "plan_8"];
+
   // Default to the 6-month plan
-  const defaultPlans = mockData.filter((plan) => plan.duration === 6);
+  const defaultPlans = mockData.filter(
+    (plan) =>
+      plan.duration === 6 &&
+      !plan.isSpecial &&
+      !fullCoveragePlanIds.includes(plan.id)
+  );
 
   const [filteredPlans, setFilteredPlans] = useState<PlanProps[]>(defaultPlans);
 
@@ -36,13 +44,20 @@ const Plans = () => {
       // No filter selected, show all plans
       newFilteredPlans = mockData;
     } else {
+
       if (filterType === "duration" && typeof value === "number") {
-        newFilteredPlans = mockData.filter((plan) => plan.duration === value);
+        newFilteredPlans = mockData.filter(
+          (plan) =>
+            plan.duration === value &&
+            !plan.isSpecial &&
+            !fullCoveragePlanIds.includes(plan.id)
+        );
       } else if (filterType === "special") {
         newFilteredPlans = mockData.filter((plan) => plan.isSpecial);
       } else if (filterType === "fullCoverage" && Array.isArray(value)) {
         newFilteredPlans = mockData.filter((plan) => value.includes(plan.id));
       }
+
     }
 
     setFilteredPlans(newFilteredPlans);
