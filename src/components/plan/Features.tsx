@@ -17,11 +17,6 @@ const Features: React.FC<FeaturesProps> = ({
       ? images.gifs.oneMemberPlan
       : images.gifs.threeMemberPlan;
 
-  // Split the features into two halves
-  const halfLength = Math.ceil(features.length / 2);
-  const leftFeatures = features.slice(0, halfLength);
-  const rightFeatures = features.slice(halfLength);
-
   // Manage feature toggle state
   const [showMore, setShowMore] = useState(false);
   const visibleFeatures = showMore ? features : features.slice(0, 6);
