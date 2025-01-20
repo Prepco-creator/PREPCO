@@ -12,6 +12,12 @@ const About = () => {
         <>
             <Banner title='About' />
             <HeroSection />
+            <AboutCTA
+                description=" From fitness guides that keep you moving to wellness plans that work for you, Prepco is your partner in living your healthiest, happiest life."
+                title="Let Prepco show you how easy taking care of yourself can really be. Because your health deserves the best—and so do you."
+                tamilVideo={videos.hero}
+                englishVideo={videos.hero2}
+            />
             <MissionAndVision />
             <AboutCTA
                 description="From fitness guides that keep you moving to wellness plans that work for you, Prepco is your
@@ -21,12 +27,6 @@ partner in living your healthiest, happiest life."
                 englishVideo={videos.hero2}
             />
             <WhyChoosePrepco />
-            <AboutCTA
-                description=" From fitness guides that keep you moving to wellness plans that work for you, Prepco is your partner in living your healthiest, happiest life."
-                title="Let Prepco show you how easy taking care of yourself can really be. Because your health deserves the best—and so do you."
-                tamilVideo={videos.hero}
-                englishVideo={videos.hero2}
-            />
 
             <Footer />
         </>

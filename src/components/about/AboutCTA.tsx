@@ -109,7 +109,7 @@ const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, eng
           </div>
         )}
         <video
-          key={isTamil ? tamilVideo : englishVideo}
+          key={isTamil ? tamilVideo : englishVideo} // Ensure video reloads when language changes
           className={`cta-video inset-0 w-full h-full object-cover border-none rounded-3xl ${isLoading ? "hidden" : "block"}`}
           autoPlay
           loop
