@@ -16,7 +16,6 @@ interface AboutCTAProps {
 
 const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, englishVideo }) => {
   const [isTamil, setIsTamil] = useState(false);
-  const [isLoading, setIsLoading] = useState(false); // Default to false to avoid loader on English video
 
   useEffect(() => {
     gsap.fromTo(
@@ -69,9 +68,6 @@ const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, eng
   }, []);
 
   const handleLanguageSwitch = (language: boolean) => {
-    if (language) {
-      setIsLoading(true); // Show loader only when switching to Tamil
-    }
     setIsTamil(language);
   };
 
