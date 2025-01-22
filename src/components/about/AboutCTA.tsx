@@ -1,8 +1,9 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ClipLoader } from "react-spinners";
+import ResponsiveYouTube from "../comman/ResponsiveYoutube";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,17 +86,15 @@ const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, eng
 
         <div className="flex w-full md:w-fit">
           <button
-            className={`px-6 py-3 font-medium text-sm shadow-lg border-[2px] border-teal-600 transition-all duration-300 transform ${
-              !isTamil ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white shadow-double-inset" : "bg-gray-200 text-primary"
-            } rounded-l-3xl border-r-0 w-1/2 md:w-fit`}
+            className={`px-6 py-3 font-medium text-sm shadow-lg border-[2px] border-teal-600 transition-all duration-300 transform ${!isTamil ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white shadow-double-inset" : "bg-gray-200 text-primary"
+              } rounded-l-3xl border-r-0 w-1/2 md:w-fit`}
             onClick={() => handleLanguageSwitch(false)}
           >
             English
           </button>
           <button
-            className={`px-6 py-3 font-medium text-sm shadow-lg border-[2px] border-teal-600 transition-all duration-300 transform ${
-              isTamil ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white shadow-double-inset" : "bg-gray-200 text-primary"
-            } rounded-r-3xl border-l-0 w-1/2 md:w-fit`}
+            className={`px-6 py-3 font-medium text-sm shadow-lg border-[2px] border-teal-600 transition-all duration-300 transform ${isTamil ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white shadow-double-inset" : "bg-gray-200 text-primary"
+              } rounded-r-3xl border-l-0 w-1/2 md:w-fit`}
             onClick={() => handleLanguageSwitch(true)}
           >
             தமிழ்
@@ -103,7 +102,7 @@ const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, eng
         </div>
       </div>
       <div className="relative">
-        {isLoading && (
+        {/* {isLoading && (
           <div className="absolute w-full h-full inset-0 flex items-center justify-center bg-gray-200 rounded-3xl">
             <ClipLoader color="#022c2b" />
           </div>
@@ -119,7 +118,10 @@ const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, eng
         >
           <source src={isTamil ? tamilVideo : englishVideo} type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
+        <ResponsiveYouTube
+          videoURL={isTamil ? tamilVideo : englishVideo}
+        />
       </div>
     </section>
   );

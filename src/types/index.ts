@@ -1,6 +1,7 @@
 // Home Page Props 
 
 import { StaticImageData } from "next/image";
+import React from "react";
 import { FieldValues, Path, UseFormRegister } from "react-hook-form";
 
 
@@ -112,6 +113,17 @@ interface PlanDetailProps {
     healthPackages: HealthPackageDetails[]
 }
 
+type YoutubeIframeProps = {
+    src: string;
+    width?: string;
+    height?: string;
+    title?: string;
+    allow?: string;
+    frameBorder?: string;
+    allowFullScreen?: boolean;
+    referrerPolicy?: React.HTMLAttributeReferrerPolicy;
+};
+
 export type {
     MarqueeTagsProps,
     BannerProps,
@@ -129,4 +141,6 @@ export type {
     HealthPackageDetails,
     PlanDetailProps,
     TestimonialCardProps,
+    YoutubeIframeProps,
 }
+
