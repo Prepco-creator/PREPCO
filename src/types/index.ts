@@ -17,7 +17,7 @@ interface MarqueeTagsProps {
 }
 
 interface HealthPackageDetails {
-    id: string;
+    id?: string;
     title: string;
     description: string;
     iconSrc: string | StaticImageData
@@ -124,6 +124,18 @@ type YoutubeIframeProps = {
     referrerPolicy?: React.HTMLAttributeReferrerPolicy;
 };
 
+
+interface PlanServices {
+    planId: string;
+    services: {
+        title: string;
+        description: string;
+        iconSrc: string | StaticImageData;
+    }[];
+}
+
+
+
 export type {
     MarqueeTagsProps,
     BannerProps,
@@ -142,5 +154,5 @@ export type {
     PlanDetailProps,
     TestimonialCardProps,
     YoutubeIframeProps,
+    PlanServices,
 }
-

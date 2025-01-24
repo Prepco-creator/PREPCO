@@ -38,7 +38,7 @@ export const mockData: PlanProps[] = [
     category: 'semi-annual',
     duration: 6,
     pricing: 6999,
-    discountPricing: 4849, // Example discount (optional)
+    discountPricing: 4848, // Example discount (optional)
     isSpecial: false,
     membersCount: 2,
     featuresDisplay: [

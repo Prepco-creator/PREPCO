@@ -60,6 +60,14 @@ import mailIcon from './pngs/mail.png';
 import popupImage from './pngs/popup-1.png';
 import pattern from './pngs/pattern-removebg-preview.png';
 
+import pharmacy from './pngs/pharmacy.png'
+import dermatology from './pngs/dermatology.png'
+import nutritionist from './pngs/nutrionist.png'
+import yogaSessions from './pngs/yoga.png'
+import yogaTherapy from './pngs/yoga-therapy.png'
+import fitness from './pngs/fitness.png'
+import healthCare from './pngs/healthcare.png'
+import pestControl from './pngs/pest.png'
 
 const gifs = {
     drink,
@@ -119,7 +127,15 @@ const pngs = {
     phoneIcon,
     mailIcon,
     popupImage,
-    pattern
+    pattern,
+    pharmacy,
+    dermatology,
+    nutritionist,
+    yogaSessions,
+    yogaTherapy,
+    fitness,
+    healthCare,
+    pestControl,
 }
 
 const jpgs = {

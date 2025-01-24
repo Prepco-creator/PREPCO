@@ -17,7 +17,7 @@ const HealthPackage: React.FC<{ healthPackage: HealthPackageDetails }> = ({
           <div className="flex items-center justify-center w-16 h-16 rounded-full bg-transparent group-hover:bg-white transition-all">
             <Image
               src={healthPackage.iconSrc}
-              alt={healthPackage.id}
+              alt={healthPackage.title}
               width={40}
               height={40}
               className="transition-all"
