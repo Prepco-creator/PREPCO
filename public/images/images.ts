@@ -69,6 +69,8 @@ import fitness from './pngs/fitness.png'
 import healthCare from './pngs/healthcare.png'
 import pestControl from './pngs/pest.png'
 
+import homeCare from './pngs/home.png'
+
 const gifs = {
     drink,
     exercise,
@@ -108,6 +110,7 @@ const svgs = {
 }
 
 const pngs = {
+    homeCare,
     aboutHero,
     doctorConsultation,
     microscope,

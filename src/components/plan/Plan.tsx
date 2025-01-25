@@ -38,6 +38,8 @@ const Plan: React.FC<{ planName: string }> = ({ planName }) => {
         title={plan.title}
         duration={plan.duration}
         pricing={plan.discountPricing}
+        memberType={plan.memberType}
+        membersCount={plan.membersCount}
       />
       <PlanTitle title={plan.title} />
       <Features
@@ -45,6 +47,7 @@ const Plan: React.FC<{ planName: string }> = ({ planName }) => {
         description={plan.description}
         duration={plan.duration}
         features={plan.features}
+        memberType={plan.memberType}
       />
       <MarqueeTags
         tagClassName="bg-accent-2 px-2"

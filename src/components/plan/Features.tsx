@@ -4,10 +4,11 @@ import { FeaturesProps, PlanFeature } from "@/types";
 import Image from "next/image";
 
 const Features: React.FC<FeaturesProps> = ({
-  membersCount,
   duration,
   features,
   description,
+  memberType = "Person",
+  membersCount = 1
 }) => {
   const timeline =
     duration === 12 ? "One Year" : duration === 6 ? "6 Months" : "Not Defined";
@@ -28,7 +29,7 @@ const Features: React.FC<FeaturesProps> = ({
     <section className="px-6 py-16 bg-gradient-to-r from-teal-400 to-teal-700 shadow-double-inset">
       <div className="container mx-auto text-center text-white">
         <h3 className="text-3xl lg:text-5xl font-bold mb-4">
-          Plan Validation {timeline} - 2 Members
+          Plan Validation {timeline} - {membersCount} {memberType}
         </h3>
         <p className="text-lg lg:text-2xl mb-12 max-w-3xl mx-auto">{description}</p>
       </div>

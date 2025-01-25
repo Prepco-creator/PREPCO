@@ -86,6 +86,7 @@ interface PlanProps {
     features: PlanFeature[];
     bigDescription?: string
     membersCount?: number;
+    memberType?: string;
     featuresDisplay: string[];
 }
 
@@ -94,6 +95,8 @@ interface PlanHeroProps {
     title: string;
     duration: number;
     pricing: number;
+    membersCount?: number;
+    memberType?: string;
 }
 
 interface PlanTitleProps {
@@ -105,6 +108,7 @@ interface FeaturesProps {
     features: PlanFeature[];
     description: string;
     membersCount?: number;
+    memberType?: string;
 }
 
 interface PlanDetailProps {

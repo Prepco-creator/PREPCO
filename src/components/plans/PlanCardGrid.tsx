@@ -24,6 +24,7 @@ const PlanCardGrid: React.FC<{ plans: PlanProps[] }> = ({ plans }) => {
           membersCount={plan.membersCount}
           duration={plan.duration}
           featuresDisplay={plan.featuresDisplay}
+          memberType={plan?.memberType}
         />
       ))}
     </section>

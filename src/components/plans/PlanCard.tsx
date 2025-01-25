@@ -13,7 +13,8 @@ const PlanCard: React.FC<Partial<PlanProps>> = ({
   pricing,
   discountPricing,
   featuresDisplay,
-  membersCount,
+  membersCount = 1,
+  memberType = "Person",
 }) => {
   const timeline =
     duration === 12 ? "year" : duration === 6 ? "6-months" : "not-defined";
@@ -46,7 +47,7 @@ const PlanCard: React.FC<Partial<PlanProps>> = ({
             src={images.svgs.peopleDuo}
           />
           <span className="text-custom-14 text-secondaryDark">
-            {membersCount}persons{" "}
+            {membersCount} {memberType}{" "}
           </span>
         </p>
       </div>

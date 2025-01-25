@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 
 // Register ScrollTrigger plugin
 
-const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing }) => {
+const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = "Person", membersCount = 1 }) => {
   const timeline =
     duration === 12 ? "One Year" : duration === 6 ? "6 Month" : "Not - Defined";
 
@@ -39,7 +39,7 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing }) => {
             {title}
           </h2>
           <p className="text-custom-16 lg:text-custom-24 font-normal text-secondaryDark">
-            Plan Validation {timeline} - 2 Members
+            Plan Validation {timeline} - {membersCount} {memberType}
           </p>
         </div>
         <h2 className="bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold">

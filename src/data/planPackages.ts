@@ -593,63 +593,43 @@ const planServices: PlanServices[] = [
         planId: "plan_9",
         services: [
             {
-                title: "MASTER HEALTHCHECKUP",
-                description: "Ultimately, a comprehensive health check-up for all members, with each package covering 84 test vouchers for complete health assessment.",
-                iconSrc: images.pngs.heartBeatCheck
+                title: "Nutritionist Consultation With Diet Plan",
+                description: "Experience remarkable improvements in your child’s health with customized meal plans and expert guidance, tailored to meet their specific needs for one year.",
+                iconSrc: images.pngs.nutritionist
             },
             {
                 title: "Virtual /Tele General Consultation",
-                description: "Unlock five exclusive Virtual/Tele OPD vouchers, offering consultations with expert general physicians, all from the comfort and convenience of your home.",
+                description: "Get access to ten exclusive Virtual/Tele OPD vouchers, offering monthly consultations with general physicians to support your kid’s healthcare.",
                 iconSrc: images.pngs.virtualConsultation
             },
             {
                 title: "Dental Consultation",
-                description: "Enhance your smile with our complimentary dental voucher, offering five in-person consultations, four professional cleanings, and five expert virtual consultations.",
+                description: "Enhance your kid’s smile with our complimentary dental voucher, one professional cleaning, and five expert virtual consultations.",
                 iconSrc: images.pngs.dentalInsurance
             },
             {
-                title: "Physiotherapy Consultation",
-                description: "Access five virtual consultations with a professional physiotherapist, delivering individualized care and tailored solutions to support your recovery.",
-                iconSrc: images.pngs.physicalTherapy
-            },
-            {
-                title: "Nutritionist Consultation",
-                description: "Take advantage of the ultimate offer—receive personalized diet plans and expert guidance for all members, with continuous follow-up support throughout the year.",
-                iconSrc: images.pngs.nutritionist
-            },
-            {
                 title: "Pharmacy Voucher",
-                description: "Get five pharmacy vouchers, each worth Rs. 500, to use for online medicine purchases.",
+                description: "Get one pharmacy voucher worth Rs. 500 to use for online medicine purchases.",
                 iconSrc: images.pngs.pharmacy
             },
             {
                 title: "Dermatologist Consultation",
-                description: "Unlock five free virtual consultations with an expert dermatologist and take advantage of the related benefits.",
+                description: "Take advantage of two complimentary virtual consultations with a dermatologist and access benefits for children.",
                 iconSrc: images.pngs.dermatology
             },
             {
-                title: "Pest Control",
-                description: "Receive a pest control consultation along with a general kitchen cleaning to ensure a clean, pest-free environment.",
-                iconSrc: images.pngs.pestControl
-            },
-            {
                 title: "Yoga Sessions",
-                description: "Enjoy a year of access to online or recorded yoga sessions, enhancing flexibility, strength, mental clarity, and supporting overall well-being.",
+                description: "Kids can enjoy a variety of benefits with one year of access to online or recorded yoga sessions, including enhancing flexibility, strength, and mental clarity.",
                 iconSrc: images.pngs.yogaSessions
             },
             {
-                title: "Yoga Therapy",
-                description: "A valuable opportunity to target and alleviate two specific ailments through these specialized yoga sessions.",
-                iconSrc: images.pngs.yogaTherapy
-            },
-            {
                 title: "Fitness Sessions",
-                description: "Enjoy one year of online/recorded fitness sessions, enhancing your health, strength, flexibility, and overall well-being.",
+                description: "Enjoy one year of online/recorded fitness sessions designed to improve your child's health, strength, flexibility, and overall well-being.",
                 iconSrc: images.pngs.fitness
             },
             {
                 title: "Zumba Sessions",
-                description: "Access one year of online Zumba sessions, improving fitness, endurance, coordination, mood, energy levels, and overall health.",
+                description: "Access one year of online Zumba sessions, boosting your child’s fitness, endurance, coordination, mood, energy levels, and overall health.",
                 iconSrc: images.pngs.zumbaSession
             },
             {
@@ -658,18 +638,8 @@ const planServices: PlanServices[] = [
                 iconSrc: images.pngs.microscope
             },
             {
-                title: "In-patient Discounts (Add on)",
-                description: "The discount of 5 to 20% on inpatient procedures is an optional benefit and isn't covered under the standard plan.",
-                iconSrc: images.pngs.offer
-            },
-            {
-                title: "Outpatient procedure discounts (Add on)",
-                description: "The discount of up to 25% on outpatient procedures is an add-on service and is not included as part of the standard plan.",
-                iconSrc: images.pngs.offer
-            },
-            {
                 title: "Health Care Annual Costs",
-                description: "Save up to 80% on your healthcare expenses.",
+                description: "Save up to 40% on your kid’s healthcare expenses.",
                 iconSrc: images.pngs.healthCare
             }
         ]
@@ -679,43 +649,33 @@ const planServices: PlanServices[] = [
         services: [
             {
                 title: "MASTER HEALTHCHECKUP",
-                description: "Ultimately, a comprehensive health check-up for all members, with each package covering 84 test vouchers for complete health assessment.",
+                description: "A comprehensive health check-up for two members, with each package covering 62 test vouchers for a complete health assessment.",
                 iconSrc: images.pngs.heartBeatCheck
             },
             {
                 title: "Virtual /Tele General Consultation",
-                description: "Unlock five exclusive Virtual/Tele OPD vouchers, offering consultations with expert general physicians, all from the comfort and convenience of your home.",
+                description: "Unlock four exclusive Virtual/Tele OPD vouchers, offering consultations with expert general physicians from the comfort of your home.",
                 iconSrc: images.pngs.virtualConsultation
             },
             {
                 title: "Dental Consultation",
-                description: "Enhance your smile with our complimentary dental voucher, offering five in-person consultations, four professional cleanings, and five expert virtual consultations.",
+                description: "Let your smile sparkle with the help of a virtual dental voucher, offering expert care and guidance to keep your teeth healthy and radiant.",
                 iconSrc: images.pngs.dentalInsurance
             },
             {
                 title: "Physiotherapy Consultation",
-                description: "Access five virtual consultations with a professional physiotherapist, delivering individualized care and tailored solutions to support your recovery.",
+                description: "Access four virtual consultations with a professional physiotherapist, delivering individualized care and tailored solutions to support your recovery.",
                 iconSrc: images.pngs.physicalTherapy
             },
             {
                 title: "Nutritionist Consultation",
-                description: "Take advantage of the ultimate offer—receive personalized diet plans and expert guidance for all members, with continuous follow-up support throughout the year.",
+                description: "Receive personalized diet plans and expert guidance for all members, with continuous follow-up support throughout the year.",
                 iconSrc: images.pngs.nutritionist
             },
             {
                 title: "Pharmacy Voucher",
-                description: "Get five pharmacy vouchers, each worth Rs. 500, to use for online medicine purchases.",
+                description: "Get two pharmacy vouchers, each worth Rs. 500, to use for online medicine purchases.",
                 iconSrc: images.pngs.pharmacy
-            },
-            {
-                title: "Dermatologist Consultation",
-                description: "Unlock five free virtual consultations with an expert dermatologist and take advantage of the related benefits.",
-                iconSrc: images.pngs.dermatology
-            },
-            {
-                title: "Pest Control",
-                description: "Receive a pest control consultation along with a general kitchen cleaning to ensure a clean, pest-free environment.",
-                iconSrc: images.pngs.pestControl
             },
             {
                 title: "Yoga Sessions",
@@ -723,19 +683,9 @@ const planServices: PlanServices[] = [
                 iconSrc: images.pngs.yogaSessions
             },
             {
-                title: "Yoga Therapy",
-                description: "A valuable opportunity to target and alleviate two specific ailments through these specialized yoga sessions.",
-                iconSrc: images.pngs.yogaTherapy
-            },
-            {
-                title: "Fitness Sessions",
-                description: "Enjoy one year of online/recorded fitness sessions, enhancing your health, strength, flexibility, and overall well-being.",
-                iconSrc: images.pngs.fitness
-            },
-            {
-                title: "Zumba Sessions",
-                description: "Access one year of online Zumba sessions, improving fitness, endurance, coordination, mood, energy levels, and overall health.",
-                iconSrc: images.pngs.zumbaSession
+                title: "Home-Based Treatments",
+                description: "Home-based treatment services offer convenience and comfort, including physiotherapy, acupuncture, and Varma therapy, to support recovery, pain relief, and overall well-being.",
+                iconSrc: images.pngs.homeCare
             },
             {
                 title: "Laboratory Discounts",
@@ -743,13 +693,8 @@ const planServices: PlanServices[] = [
                 iconSrc: images.pngs.microscope
             },
             {
-                title: "In-patient Discounts (Add on)",
-                description: "The discount of 5 to 20% on inpatient procedures is an optional benefit and isn't covered under the standard plan.",
-                iconSrc: images.pngs.offer
-            },
-            {
-                title: "Outpatient procedure discounts (Add on)",
-                description: "The discount of up to 25% on outpatient procedures is an add-on service and is not included as part of the standard plan.",
+                title: "Home-Based Treatment Discounts",
+                description: "Enjoy discounts on home-based physiotherapy treatments, providing convenience, personalized care, pain relief, and enhanced recovery in the comfort of your home.",
                 iconSrc: images.pngs.offer
             },
             {
@@ -758,7 +703,7 @@ const planServices: PlanServices[] = [
                 iconSrc: images.pngs.healthCare
             }
         ]
-    },
+    }
 
 ];
 
