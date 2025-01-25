@@ -32,7 +32,7 @@ const HeroSection = () => {
               className="hover:-translate-y-2 transition-transform duration-200"
             />
             <p className="text-custom-16 lg:text-custom-20 text-primary">
-              +98 928 82 929
+              +996 210 7102
             </p>
           </div>
 
@@ -45,7 +45,7 @@ const HeroSection = () => {
               className="hover:-translate-y-2 transition-transform duration-200"
             />
             <p className="text-custom-16 lg:text-custom-20 text-primary">
-              xyz@company.com
+              info@prepcohealthcare.com
             </p>
           </div>
         </div>
