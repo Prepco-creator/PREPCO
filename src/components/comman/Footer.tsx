@@ -105,12 +105,12 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Links</h3>
             <ul className="flex flex-col gap-2">
               <li>
-                <Link href="/coming-soon" className="hover:underline">
+                <Link href="/privacy-policy" className="hover:underline">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/coming-soon" className="hover:underline">
+                <Link href="/terms-and-conditions" className="hover:underline">
                   Terms and Conditions
                 </Link>
               </li>
@@ -135,21 +135,20 @@ const Footer = () => {
                     />
                   </div>
                   <span className="text-secondaryLight text-custom-16">
-                  +996 210 7102
+                    +996 210 7102
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="hover:-translate-y-2 transition-transform duration-200">
-                    <Image
-                      width={48}
-                      height={48}
-                      src={images.pngs.mailIcon}
-                      alt="Email"
-                    />
-                  </div>
-                  <span className="text-secondaryLight text-custom-16">
-                     info@prepcohealthcare.com
-                  </span>
+                  <Image
+                    width={48}
+                    height={48}
+                    src={images.pngs.mailIcon}
+                    alt="prepco-mail"
+                    className="hover:-translate-y-2 transition-transform duration-200"
+                  />
+                  <p className="text-secondaryLight text-custom-16">
+                    info@prepcohealthcare.com
+                  </p>
                 </li>
               </ul>
             </div>
