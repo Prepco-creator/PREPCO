@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
     return (
         <section>
             <Banner title='Privacy Policy' />
-            <section className='w-full p-6 lg:p-4 mx-auto lg:w-11/12'>
+            <section className='w-full p-4 lg:p-4 mx-auto lg:w-11/12'>
                 <p
                     style={{
                         marginTop: "0cm",
