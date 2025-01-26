@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 
 
@@ -45,9 +46,11 @@ const ResponsiveYouTube: React.FC<ResponsiveYoutubeProps> = ({ videoURL }) => {
         <div style={{ width: "100%", maxWidth: "100%", textAlign: "center" }}>
             {width && window.innerWidth >= 900 ? (
                 <div className="w-full select-none h-[500px] relative flex justify-center items-center">
-                    <img
+                    <Image
                         src={thumbnailURL}
                         alt="Video Thumbnail"
+                        width={1139}
+                        height={641}
                         className="rounded-lg brightness-50 absolute"
                         style={{ cursor: "pointer", width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
                         onClick={handleThumbnailClick}
