@@ -2,9 +2,10 @@
 
 import React, { useState } from "react";
 import MarqueeTags from "../comman/MarqueeTags";
-import { videos } from "../../../public/assets";
+import { images, videos } from "../../../public/assets";
 import tags from "@/data/tags";
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   // Track hover state for both buttons
@@ -23,7 +24,15 @@ const Hero: React.FC = () => {
   return (
     <section className="relative w-full h-screen">
       {/* Video background */}
-      <video
+      <Image
+        src={images.webp.homeHero}
+        alt="Hero Image"
+        className="absolute inset-0 w-full h-full object-cover object-top"
+        loading="eager"
+        width={600}
+        height={400}
+      />
+      {/* <video
         src={videos.hero}
         className="absolute inset-0 w-full h-full object-cover object-left"
         autoPlay
@@ -34,7 +43,7 @@ const Hero: React.FC = () => {
       >
         <source src={videos.hero} type="video/webm" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
 
       {/* Overlay Content */}
       <div className="absolute inset-0 bg-black opacity-50"></div>

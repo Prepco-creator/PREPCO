@@ -68,8 +68,13 @@ import yogaTherapy from './pngs/yoga-therapy.png'
 import fitness from './pngs/fitness.png'
 import healthCare from './pngs/healthcare.png'
 import pestControl from './pngs/pest.png'
-
 import homeCare from './pngs/home.png'
+import homeHero2 from './pngs/family-image-2.png'
+
+// WEBP
+
+import homeHero from './webp/family-image.webp'
+
 
 const gifs = {
     drink,
@@ -139,6 +144,11 @@ const pngs = {
     fitness,
     healthCare,
     pestControl,
+    homeHero2,
+}
+
+const webp = {
+    homeHero
 }
 
 const jpgs = {
@@ -147,4 +157,4 @@ const jpgs = {
 }
 
 
-export { gifs, svgs, pngs, jpgs };
+export { gifs, svgs, pngs, jpgs, webp };
