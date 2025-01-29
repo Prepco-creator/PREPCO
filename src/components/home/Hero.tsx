@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import MarqueeTags from "../comman/MarqueeTags";
-import { images, videos } from "../../../public/assets";
+import { images } from "../../../public/assets";
 import tags from "@/data/tags";
 import Link from "next/link";
 import Image from "next/image";
