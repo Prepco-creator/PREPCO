@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { images, videos } from "../../../public/assets";
+import { images } from "../../../public/assets";
 import { FeaturesProps, PlanFeature } from "@/types";
 import Image from "next/image";
 import ResponsiveYouTube from "../comman/ResponsiveYoutube";
