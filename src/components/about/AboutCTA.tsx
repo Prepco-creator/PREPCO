@@ -98,23 +98,7 @@ const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, eng
         </div>
       </div>
       <div className="relative">
-        {/* {isLoading && (
-          <div className="absolute w-full h-full inset-0 flex items-center justify-center bg-gray-200 rounded-3xl">
-            <ClipLoader color="#022c2b" />
-          </div>
-        )}
-        <video
-          key={isTamil ? tamilVideo : englishVideo} // Ensure video reloads when language changes
-          className={`cta-video inset-0 w-full h-full object-cover border-none rounded-3xl ${isLoading ? "hidden" : "block"}`}
-          autoPlay
-          loop
-          muted
-          preload="auto"
-          onLoadedData={() => setIsLoading(false)}
-        >
-          <source src={isTamil ? tamilVideo : englishVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
+
         <ResponsiveYouTube
           videoURL={isTamil ? tamilVideo : englishVideo}
         />

@@ -88,6 +88,7 @@ interface PlanProps {
     membersCount?: number;
     memberType?: string;
     featuresDisplay: string[];
+    videoLink: string;
 }
 
 
@@ -109,6 +110,8 @@ interface FeaturesProps {
     description: string;
     membersCount?: number;
     memberType?: string;
+    tamilVideo: string;
+    englishVideo: string;
 }
 
 interface PlanDetailProps {

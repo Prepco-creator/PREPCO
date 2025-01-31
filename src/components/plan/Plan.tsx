@@ -48,6 +48,8 @@ const Plan: React.FC<{ planName: string }> = ({ planName }) => {
         duration={plan.duration}
         features={plan.features}
         memberType={plan.memberType}
+        tamilVideo={plan.videoLink}
+        englishVideo={plan.videoLink}
       />
       <MarqueeTags
         tagClassName="bg-accent-2 px-2"

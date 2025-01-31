@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import { images, videos } from "../../../public/assets";
 import { FeaturesProps, PlanFeature } from "@/types";
 import Image from "next/image";
+import ResponsiveYouTube from "../comman/ResponsiveYoutube";
 
 const Features: React.FC<FeaturesProps> = ({
   duration,
   features,
   description,
   memberType = "Person",
-  membersCount = 1
+  membersCount = 1,
+  tamilVideo,
+  englishVideo
 }) => {
   const timeline =
     duration === 12 ? "One Year" : duration === 6 ? "6 Months" : "Not Defined";
@@ -20,34 +23,45 @@ const Features: React.FC<FeaturesProps> = ({
 
   // Manage feature toggle state
   const [showMore, setShowMore] = useState(false);
+  const [isTamil, setIsTamil] = useState(false);
   const visibleFeatures = showMore ? features : features.slice(0, 6);
   const midPoint = Math.ceil(visibleFeatures.length / 2);
   const leftVisible = visibleFeatures.slice(0, midPoint);
   const rightVisible = visibleFeatures.slice(midPoint);
 
+
+  const handleLanguageSwitch = (language: boolean) => {
+    setIsTamil(language);
+  };
   return (
     <section className="px-6 py-16 bg-gradient-to-r from-teal-400 to-teal-700 shadow-double-inset">
-      <div className="container mx-auto text-center text-white">
+      <div className="container mx-auto text-center text-white mb-12 space-y-4">
         <h3 className="text-3xl lg:text-5xl font-bold mb-4">
           Plan Validation {timeline} - {membersCount} {memberType}
         </h3>
-        <p className="text-lg lg:text-2xl mb-12 max-w-3xl mx-auto">{description}</p>
-      </div>
-      {/* Video Section */}
-      <div className="flex justify-center items-center mt-12">
-        <div className="overflow-hidden rounded-2xl shadow-lg w-full max-w-4xl">
-          <video
-            src={videos.hero}
-            className="w-full h-full object-cover rounded-2xl shadow-md"
-            autoPlay
-            loop
-            muted
-            preload="auto"
+        <p className="text-lg lg:text-2xl max-w-3xl mx-auto">{description}</p>
+        <div className="flex w-full justify-center">
+          <button
+            className={`px-6 py-3 font-medium text-sm shadow-lg border-[2px] border-teal-600 transition-all duration-300 transform ${!isTamil ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white shadow-double-inset" : "bg-white text-primary"
+              } rounded-l-3xl border-r-0 w-1/2 md:w-fit`}
+            onClick={() => handleLanguageSwitch(false)}
           >
-            <source src={videos.hero} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+            English
+          </button>
+          <button
+            className={`px-6 py-3 font-medium text-sm shadow-lg border-[2px] border-teal-600 transition-all duration-300 transform ${isTamil ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white shadow-double-inset" : "bg-white text-primary"
+              } rounded-r-3xl border-l-0 w-1/2 md:w-fit`}
+            onClick={() => handleLanguageSwitch(true)}
+          >
+            தமிழ்
+          </button>
         </div>
+      </div>
+
+      <div className="relative">
+        <ResponsiveYouTube
+          videoURL={isTamil ? tamilVideo : englishVideo}
+        />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-10">
         {/* Left Column: Features */}
