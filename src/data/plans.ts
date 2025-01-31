@@ -282,8 +282,8 @@ export const mockData: PlanProps[] = [
     "pricing": 37500,
     "discountPricing": 14999,
     "isSpecial": false,
-    videoLinkEnglish: videos.ultimateWellnessPlan_english,
-    videoLinkTamil: videos.ultimateWellnessPlan_tamil,
+    "videoLinkEnglish": videos.ultimateWellnessPlan_english,
+    "videoLinkTamil": videos.ultimateWellnessPlan_tamil,
     "membersCount": 5,
     "featuresDisplay": [
       "Fix Your Problem with Yoga: 2 (Ailment) and Online Session – 1 year",
