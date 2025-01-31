@@ -88,7 +88,8 @@ interface PlanProps {
     membersCount?: number;
     memberType?: string;
     featuresDisplay: string[];
-    videoLink: string;
+    videoLinkEnglish: string;
+    videoLinkTamil: string;
 }
 
 

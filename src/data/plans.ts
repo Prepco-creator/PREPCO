@@ -13,7 +13,8 @@ export const mockData: PlanProps[] = [
     pricing: 7500,
     discountPricing: 3838, // Example discount (optional)
     isSpecial: false,
-    videoLink: videos.justForYouPlan_english,
+    videoLinkEnglish: videos.justForYouPlan_english,
+    videoLinkTamil: videos.justForYouPlan_tamil,
     featuresDisplay: [
       "Master Health Checkup at Home - 1",
       "Virtual / Tele Consultation Services - 5",
@@ -42,7 +43,8 @@ export const mockData: PlanProps[] = [
     pricing: 9500,
     discountPricing: 4848, // Example discount (optional)
     isSpecial: false,
-    videoLink: videos.justForTwoPlan_english,
+    videoLinkEnglish: videos.justForTwoPlan_english,
+    videoLinkTamil: videos.justForTwoPlan_tamil,
     membersCount: 2,
     featuresDisplay: [
       "Master Health Checkup at Home - 2",
@@ -75,7 +77,8 @@ export const mockData: PlanProps[] = [
     pricing: 14500,
     discountPricing: 5858,
     isSpecial: false,
-    videoLink: videos.triMePlan_english,
+    videoLinkEnglish: videos.triMePlan_english,
+    videoLinkTamil: videos.triMePlan_tamil,
     membersCount: 3,
     featuresDisplay: [
       "Yoga, Fitness and Nutritionist Online Session – 1 person/6 Months",
@@ -112,7 +115,8 @@ export const mockData: PlanProps[] = [
     "pricing": 19500,
     "discountPricing": 7777,
     "isSpecial": false,
-    "videoLink": videos.quadPlan_english,
+    "videoLinkEnglish": videos.quadPlan_english,
+    "videoLinkTamil": videos.quadPlan_tamil,
     "membersCount": 4,
     "featuresDisplay": [
       "Physiotherapy Treatment at Home - 1",
@@ -155,7 +159,8 @@ export const mockData: PlanProps[] = [
     "pricing": 22222,
     "discountPricing": 8888,
     "isSpecial": true,
-    "videoLink": videos.sheroPlan_english,
+    "videoLinkEnglish": videos.sheroPlan_english,
+    "videoLinkTamil": videos.sheroPlan_tamil,
     "membersCount": 1,
     "featuresDisplay": [
       "Fix Your Problem with Yoga: 1 (Ailment) - 3 Months and Online Session – 1 year",
@@ -194,7 +199,8 @@ export const mockData: PlanProps[] = [
     "pricing": 25000,
     "discountPricing": 9999,
     "isSpecial": false,
-    "videoLink": videos.quadProPlan_english,
+    "videoLinkEnglish": videos.quadProPlan_english,
+    "videoLinkTamil": videos.quadProPlan_tamil,
     "membersCount": 4,
     "featuresDisplay": ["Home Based Treatment Services - 1 (All Physiotherapy, Acupuncture, Varma)",
       "Virtual / Tele Consultation Services - 11",
@@ -235,7 +241,8 @@ export const mockData: PlanProps[] = [
     "pricing": 32500,
     "discountPricing": 12999,
     "isSpecial": false,
-    videoLink: videos.completeWellnessPlan_english,
+    videoLinkEnglish: videos.completeWellnessPlan_english,
+    videoLinkTamil: videos.completeWellnessPlan_tamil,
     "membersCount": 5,
     "featuresDisplay": ["Fix Your Problem with Yoga: 2 (Ailment) and Online Session – 1 year",
       "Home Based Treatment Services - 2 (All Physiotherapy, Acupuncture, Varma)",
@@ -275,7 +282,8 @@ export const mockData: PlanProps[] = [
     "pricing": 37500,
     "discountPricing": 14999,
     "isSpecial": false,
-    videoLink: videos.ultimateWellnessPlan_english,
+    videoLinkEnglish: videos.ultimateWellnessPlan_english,
+    videoLinkTamil: videos.ultimateWellnessPlan_tamil,
     "membersCount": 5,
     "featuresDisplay": [
       "Fix Your Problem with Yoga: 2 (Ailment) and Online Session – 1 year",
@@ -317,7 +325,8 @@ export const mockData: PlanProps[] = [
     "pricing": 12500,
     "discountPricing": 4999,
     "isSpecial": true,
-    "videoLink": videos.miniMePlan_english,
+    "videoLinkEnglish": videos.miniMePlan_english,
+    "videoLinkTamil": videos.miniMePlan_tamil,
     "memberType": "kid",
     "membersCount": 1,
     "featuresDisplay": [
@@ -350,7 +359,8 @@ export const mockData: PlanProps[] = [
     "pricing": 25500,
     "discountPricing": 9999,
     "isSpecial": true,
-    "videoLink": videos.just50Plan_english,
+    "videoLinkEnglish": videos.just50Plan_english,
+    "videoLinkTamil": videos.just50Plan_tamil,
     "memberType": "Senior Citizen",
     "membersCount": 2,
     "featuresDisplay": [

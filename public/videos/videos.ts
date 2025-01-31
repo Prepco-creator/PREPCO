@@ -15,6 +15,18 @@ const videos = {
     ultimateWellnessPlan_english: "https://www.youtube.com/embed/m1ur1Vyaeks",
     miniMePlan_english: "https://www.youtube.com/embed/6-pafpdyINA",
     just50Plan_english: "https://www.youtube.com/embed/i7ufoYO-rQI",
+    justForYouPlan_tamil: "https://www.youtube.com/embed/ISSdpKBt0ho",
+    justForTwoPlan_tamil: "https://www.youtube.com/embed/xjEBrxNKdsU",
+    triMePlan_tamil: "https://www.youtube.com/embed/HIvNRbI4uAw",
+    quadPlan_tamil: "https://www.youtube.com/embed/5whm82h3Wys",
+    sheroPlan_tamil: "https://www.youtube.com/embed/QU8hJXPa3w8",
+    quadProPlan_tamil: "https://www.youtube.com/embed/kVLHx8AlJ_Q",
+    completeWellnessPlan_tamil: "https://www.youtube.com/embed/SN0bLSsdzRM",
+    ultimateWellnessPlan_tamil: "https://www.youtube.com/embed/IqjCVZ6pBxk",
+    miniMePlan_tamil: "https://www.youtube.com/embed/FhaeBvROnXc",
+    just50Plan_tamil: "https://www.youtube.com/embed/2Vl4wL4UdNo",
+    comprehensivePlans_tamil: "https://www.youtube.com/embed/vevAQbiVwqU",
 };
+
 
 export default videos;
