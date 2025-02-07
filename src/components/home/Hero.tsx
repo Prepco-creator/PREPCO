@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import { DollarSign, Heart, CheckCircle } from "lucide-react";
+import { DollarSign, Heart } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Tags } from "@/types";
 import { videos } from "../../../public/assets";
 
-const Hero: React.FC<{ tags: Tags[] }> = ({ tags }) => {
+const Hero: React.FC<{ tags: Tags[] }> = ({  }) => {
   return (
     <div className="relative w-full min-h-screen bg-gradient-to-br from-[#E8FDFD] via-[#D9FCFB] to-[#C0F8F7] flex items-center py-16 sm:py-14 md:py-20 overflow-hidden">
       <motion.div 
