@@ -47,6 +47,7 @@ import zumbaSession from './svg/zumba-session.svg';
 // JPG
 import testimonialImage from './jpgs/indian_testimonial_1.jpg';
 import testimonialImage2 from './jpgs/indian_testimonial_2.jpg';
+import minime from "./jpgs/minime.jpg"
 
 // PNG
 import aboutHero from './pngs/about-hero.png';
