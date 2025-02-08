@@ -46,7 +46,7 @@ const Navbar = () => {
             </div>
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <a href="#">
+          <a target='_blank' href="https://calendly.com/bdm-prepcohealthcare/30min">
               <button
                 type="button"
                 className="hidden min-[400px]:block p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset hover:bg-none hover:text-primary hover:shadow-none border-primary border-[2px] transition-all duration-300 ease-in-out"
@@ -104,7 +104,7 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <a href="#">
+              <a target='_blank' href="https://calendly.com/bdm-prepcohealthcare/30min">
                   <button
                     type="button"
                     className="block min-[400px]:hidden p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset hover:bg-none hover:text-primary hover:shadow-none border-primary border-[2px] transition-all duration-300 ease-in-out"

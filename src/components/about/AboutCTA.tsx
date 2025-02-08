@@ -76,10 +76,11 @@ const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, eng
       <h3 className="cta-text-h3 text-custom-20-bold lg:text-custom-32">{title}</h3>
       <p className="cta-text-p1 text-custom-14 lg:text-custom-20-2">{description}</p>
       <div className="flex flex-col gap-4 md:flex-row items-center justify-between">
-        <button className="cta-button w-full md:w-fit p-3 lg:py-3 lg:px-6 bg-custom-gradient shadow-double-inset text-white lg:font-semibold text-custom-16-bold lg:text-lg custom-border-radius">
-          Book a consultation
-        </button>
-
+        <a target='_blank' href="https://calendly.com/bdm-prepcohealthcare/30min">
+          <button className="cta-button w-full md:w-fit p-3 lg:py-3 lg:px-6 bg-custom-gradient shadow-double-inset text-white lg:font-semibold text-custom-16-bold lg:text-lg custom-border-radius">
+            Book a consultation
+          </button>
+        </a>
         <div className="flex w-full md:w-fit">
           <button
             className={`px-6 py-3 font-medium text-sm shadow-lg border-[2px] border-teal-600 transition-all duration-300 transform ${!isTamil ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white shadow-double-inset" : "bg-gray-200 text-primary"
