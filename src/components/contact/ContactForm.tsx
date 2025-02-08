@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useForm, SubmitHandler } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import InputField from './InputField';
@@ -12,15 +12,12 @@ type FormValues = z.infer<typeof contactFormSchema>;
 const ContactForm = () => {
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm<FormValues>({
     resolver: zodResolver(contactFormSchema),
   });
 
-  // const onSubmit: SubmitHandler<FormValues> = (data) => {
-  //   console.log('Form Data:', data);
-  // };
+
 
   return (
     <form
