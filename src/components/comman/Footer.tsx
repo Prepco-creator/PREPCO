@@ -135,7 +135,7 @@ const Footer = () => {
                     />
                   </div>
                   <span className="text-secondaryLight text-custom-16">
-                    +996 210 7102
+                    +988 455 5335
                   </span>
                 </li>
                 <li className="flex items-center gap-2">

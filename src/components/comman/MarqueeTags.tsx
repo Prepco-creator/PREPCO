@@ -6,14 +6,14 @@ import Marquee from 'react-fast-marquee';
 const MarqueeTags: React.FC<MarqueeTagsProps> = ({ tags, className, tagClassName }) => {
   return (
     <div className={`w-full bg-gradient-to-br from-[#E8FDFD] via-[#D9FCFB] to-[#C0F8F7] py-4 ${className}`}>
-      <Marquee 
-        gradient={false} 
+      <Marquee
+        gradient={false}
         speed={30}
         className="overflow-hidden"
       >
         {tags.map((tag, index) => (
-          <div 
-            key={`first-${index}`} 
+          <div
+            key={`first-${index}`}
             className={`
               group
               flex 
@@ -32,15 +32,16 @@ const MarqueeTags: React.FC<MarqueeTagsProps> = ({ tags, className, tagClassName
               hover:-translate-y-1 
               border 
               border-[#00ADA9]/10 
+                cursor-pointer
               ${tagClassName}
             `}
           >
-            <Image 
-              width={32} 
-              height={32} 
-              unoptimized 
-              src={tag.gifRoute} 
-              alt={tag.name} 
+            <Image
+              width={32}
+              height={32}
+              unoptimized
+              src={tag.gifRoute}
+              alt={tag.name}
               className="
                 h-8 
                 w-8 
@@ -49,7 +50,7 @@ const MarqueeTags: React.FC<MarqueeTagsProps> = ({ tags, className, tagClassName
                 border-[#00ADA9]/20 
                 group-hover:scale-110 
                 transition-transform
-              " 
+                "
             />
             <span className="
               text-[#017F7E] 
