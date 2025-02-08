@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { DollarSign, Heart } from "lucide-react";
+import { DollarSign, Heart, IndianRupee } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Tags } from "@/types";
@@ -122,7 +122,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({  }) => {
                 className="group w-full sm:w-auto px-8 sm:px-10 py-4 bg-[#017F7E] text-white rounded-xl hover:bg-[#00ADA9] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2"
               >
                 Tell me how to save
-                <DollarSign className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <IndianRupee className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </motion.button>
             </Link>
             <Link href="/plans" passHref>

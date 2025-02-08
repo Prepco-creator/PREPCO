@@ -60,6 +60,7 @@ import phoneIcon from './pngs/phone.png';
 import mailIcon from './pngs/mail.png';
 import popupImage from './pngs/popup-1.png';
 import pattern from './pngs/pattern-removebg-preview.png';
+import testimoneeProfile from './pngs/testimonee-profile.png'
 
 import completeWellnessPlan from './pngs/complete-wellness.png';
 import just50 from './pngs/Just_50.png';
@@ -168,6 +169,7 @@ const pngs = {
     healthCare,
     pestControl,
     homeHero2,
+    testimoneeProfile,
 }
 
 const webp = {

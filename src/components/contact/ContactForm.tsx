@@ -18,12 +18,17 @@ const ContactForm = () => {
     resolver: zodResolver(contactFormSchema),
   });
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log('Form Data:', data);
-  };
+  // const onSubmit: SubmitHandler<FormValues> = (data) => {
+  //   console.log('Form Data:', data);
+  // };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+    <form
+      action="https://formspree.io/f/xnnjzgyy"
+      method="POST"
+      className="space-y-6"
+    >
+
       {/* Form Inputs */}
       <InputField
         id="name"

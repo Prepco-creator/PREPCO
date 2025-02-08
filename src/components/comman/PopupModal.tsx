@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { images } from "../../../public/assets"; // Ensure this path is correct
+import Link from "next/link";
 
 const PopupModal = () => {
     const [showPopup, setShowPopup] = useState(false);
@@ -57,14 +58,15 @@ const PopupModal = () => {
                     />
 
                     {/* CTA Button */}
-                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
-                        <button
-                            onClick={() => alert("CTA Clicked")}
-                            className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark"
-                        >
-                            Call to Action
-                        </button>
-                    </div>
+                    <Link href={`/contact`}>
+                        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                            <button
+                                className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark"
+                            >
+                                Contact Us
+                            </button>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

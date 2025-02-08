@@ -21,7 +21,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
                         <Image
                             width={115}
                             height={115}
-                            src={images.jpgs.testimonialImage}
+                            src={images.pngs.testimoneeProfile}
                             alt="Client"
                             className="rounded-full bg-white aspect-square object-cover"
                         />
