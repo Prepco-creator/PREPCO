@@ -35,6 +35,7 @@ const Plan: React.FC<{ planName: string }> = ({ planName }) => {
     <section>
       <Banner title={plan.title} />
       <Hero
+        imageSrc={plan.imgSrc}
         title={plan.title}
         duration={plan.duration}
         pricing={plan.discountPricing}

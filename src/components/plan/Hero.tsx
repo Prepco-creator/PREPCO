@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 
 // Register ScrollTrigger plugin
 
-const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = "Person", membersCount = 1 }) => {
+const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = "Person", membersCount = 1,imageSrc }) => {
   const timeline =
     duration === 12 ? "One Year" : duration === 6 ? "6 Month" : "Not - Defined";
 
@@ -58,10 +58,10 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = 
       {/* right */}
       <div className="right-content relative self-center">
         <Image
-          width={529}
-          height={529}
-          className="w-[281px] h-[281px] lg:w-[529px] lg:h-[529px]"
-          src={images.svgs.dummyHero}
+          width={600}
+          height={600}
+          className="w-[281px] h-[281px] lg:w-[529px] lg:h-[529px] rounded-full object-cover"
+          src={imageSrc}
           alt="hero-image"
         />
 

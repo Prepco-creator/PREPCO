@@ -1,10 +1,11 @@
 import { PlanProps } from "@/types";
-import { videos } from "../../public/assets";
+import { images, videos } from "../../public/assets";
 
 export const mockData: PlanProps[] = [
   {
     id: 'plan_1',
     title: 'The Just For You Plan ',
+    imgSrc: images.pngs.justForYou,
     tagline: 'Your health, your priority.',
     description: 'Perfect for individuals seeking to take control of their health.',
     bigDescription: 'This plan includes a comprehensive health package for individuals looking to prioritize their well-being. The Solo Care Plan offers personalized healthcare services to ensure you stay on top of your health.',
@@ -35,6 +36,7 @@ export const mockData: PlanProps[] = [
   {
     id: 'plan_2',
     title: 'The Just for Two Plan ',
+    imgSrc: images.pngs.justForTwo,
     tagline: 'Care starts with two',
     description: 'This plan is perfect for two people looking to prioritize their health together. It includes:',
     bigDescription: 'This plan offers a balanced healthcare service for two individuals. It includes a variety of health services, ensuring both members have access to essential care and personalized wellness plans.',
@@ -69,6 +71,7 @@ export const mockData: PlanProps[] = [
   {
     id: "plan_3",
     title: "The Tri Me Plan ",
+    imgSrc: images.pngs.triMe,
     tagline: "Essential care for three.",
     description: "A balanced plan offering healthcare services for three members.",
     bigDescription: "A balanced plan offering healthcare services for three members. This plan includes a variety of consultations, check-ups, and wellness activities for families or small groups.",
@@ -107,6 +110,7 @@ export const mockData: PlanProps[] = [
   {
     "id": "plan_4",
     "title": "The Quad Plan ",
+    imgSrc: images.pngs.quadPlan,
     "tagline": "One family. One plan. Complete peace of mind.",
     "description": "A foundational plan designed to cater to families of four, offering essential healthcare services.",
     "bigDescription": "This foundational plan is designed for families of four. Offering essential healthcare services, this plan ensures your family receives the support they need for a healthier lifestyle.",
@@ -151,6 +155,7 @@ export const mockData: PlanProps[] = [
   {
     "id": "plan_5",
     "title": "The Shero Plan",
+    imgSrc: images.pngs.sheroPlan,
     "tagline": "Tailored care for women’s health.",
     "description": "A plan exclusively designed for individual women seeking personalized healthcare.",
     "bigDescription": "This plan offers comprehensive healthcare services for women, including consultations, wellness sessions, and discounts on various services.",
@@ -191,6 +196,7 @@ export const mockData: PlanProps[] = [
   {
     "id": "plan_6",
     "title": "The Quad Pro Plan",
+    imgSrc: images.pngs.quadPlanPro,
     "tagline": "Your everyday boost for a healthier, happier family.",
     "description": "This plan supports families in adopting a healthier lifestyle with added benefits like consultations, wellness kits, and more.",
     "bigDescription": "A comprehensive healthcare plan for families, offering extensive services including consultations, treatments, and wellness benefits.",
@@ -233,6 +239,7 @@ export const mockData: PlanProps[] = [
   {
     "id": "plan_7",
     "title": "The Complete Wellness Plan",
+    imgSrc: images.pngs.completeWellnessPlan,
     "tagline": "Premium care for the family that deserves the best.",
     "description": "This exclusive plan offers extensive healthcare services for families, ensuring optimal health and wellness.",
     "bigDescription": "A top-tier plan for families, covering extensive healthcare services including consultations, treatments, wellness kits, and much more.",
@@ -274,6 +281,7 @@ export const mockData: PlanProps[] = [
   {
     "id": "plan_8",
     "title": "The Ultimate Wellness Plan",
+    imgSrc: images.pngs.ultimateWellnessPlan,
     "tagline": "All your health essentials, wrapped in one perfect package.",
     "description": "This ultimate plan offers the best care for families, ensuring complete health and wellness coverage.",
     "bigDescription": "The most comprehensive plan for families seeking complete care, offering a wide range of benefits and services.",
@@ -317,6 +325,7 @@ export const mockData: PlanProps[] = [
   {
     "id": "plan_9",
     "title": "Mini Me Plan ",
+    imgSrc: images.pngs.miniMe,
     "tagline": "Big care for your little one!",
     "description": "A complete wellness plan to keep your child healthy, active, and thriving.",
     "bigDescription": "Designed specifically for kids, this plan ensures their well-being with essential healthcare services, expert consultations, and fun wellness activities.",
@@ -351,6 +360,7 @@ export const mockData: PlanProps[] = [
   {
     "id": "plan_10",
     "title": "Just 50 Plan",
+    imgSrc: images.pngs.just50,
     "tagline": "Care, comfort, and convenience for your golden years",
     "description": "A tailored health plan ensuring effortless care and well-being for seniors.",
     "bigDescription": "Specially crafted for senior citizens, this plan offers a combination of home-based treatments, comprehensive health checkups, and expert consultations for a hassle-free healthcare experience.",

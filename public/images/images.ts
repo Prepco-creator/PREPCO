@@ -60,6 +60,18 @@ import mailIcon from './pngs/mail.png';
 import popupImage from './pngs/popup-1.png';
 import pattern from './pngs/pattern-removebg-preview.png';
 
+import completeWellnessPlan from './pngs/complete-wellness.png';
+import just50 from './pngs/Just_50.png';
+import justForTwo from './pngs/just-for-two.png';
+import justForYou from './pngs/just-for-you.png';
+import miniMe from './pngs/mini-mi.png';
+import quadPlan from './pngs/Quad-plan.png';
+import quadPlanPro from './pngs/Quad-pro.png';
+import sheroPlan from './pngs/SHERO.png'
+import triMe from './pngs/Tri-me.png';
+import ultimateWellnessPlan from './pngs/ultimate-wellness-plan.png';
+
+
 import pharmacy from './pngs/pharmacy.png'
 import dermatology from './pngs/dermatology.png'
 import nutritionist from './pngs/nutrionist.png'
@@ -115,6 +127,16 @@ const svgs = {
 }
 
 const pngs = {
+    completeWellnessPlan,
+    just50,
+    justForTwo,
+    justForYou,
+    miniMe,
+    quadPlan,
+    quadPlanPro,
+    sheroPlan,
+    triMe,
+    ultimateWellnessPlan,
     homeCare,
     aboutHero,
     doctorConsultation,

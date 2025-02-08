@@ -20,11 +20,13 @@ const CTA: React.FC<CTAProps> = ({ className }) => {
                 <Image width={48} height={48} className='w-[32px] h-[32px] lg:w-[48px] lg:h-[48px] hover:-translate-y-2 transition-transform duration-200' src={images.pngs.mailIcon} alt="" />
                 <p className='text-primary text-custom-14 lg:text-custom-20'> info@prepcohealthcare.com</p>
             </div>
-            <button
-                className="sheen flex-[2] w-full px-1 text-custom-16-bold lg:text-custom-20 py-4 bg-custom-gradient shadow-double-inset text-white font-semibold custom-border-radius relative overflow-hidden"
-            >
-                Get a Quote
-            </button>
+            <a target='_blank' href="https://calendly.com/bdm-prepcohealthcare/30min">
+                <button
+                    className="sheen flex-[2] w-full px-1 text-custom-16-bold lg:text-custom-20 py-4 bg-custom-gradient shadow-double-inset text-white font-semibold custom-border-radius relative overflow-hidden"
+                >
+                    Get a Quote
+                </button>
+            </a>
 
         </section>
     )

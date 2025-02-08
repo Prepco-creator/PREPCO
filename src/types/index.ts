@@ -90,11 +90,13 @@ interface PlanProps {
     featuresDisplay: string[];
     videoLinkEnglish: string;
     videoLinkTamil: string;
+    imgSrc: string | StaticImageData;
 }
 
 
 interface PlanHeroProps {
     title: string;
+    imageSrc: string | StaticImageData
     duration: number;
     pricing: number;
     membersCount?: number;
