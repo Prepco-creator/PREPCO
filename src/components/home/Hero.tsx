@@ -51,13 +51,13 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
 
           {/* Floating Info Boxes */}
           <div className="hidden sm:block absolute -top-6 -right-6 bg-white p-5 rounded-2xl shadow-xl max-w-[220px] transform hover:-translate-y-1 transition-all duration-300">
-            <p className="text-[#017F7E] font-semibold text-lg"> Consultations Available</p>
+            <p className="text-[#017F7E] font-semibold text-lg">Free Consultations Available</p>
             {/* <p className="text-[#505050] text-sm mt-1">Available 24/7</p> */}
           </div>
 
           <div className="hidden sm:block absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl max-w-[220px] transform hover:-translate-y-1 transition-all duration-300">
-            <p className="text-[#017F7E] font-semibold text-lg">Free Medicines</p>
-            <p className="text-[#505050] text-sm mt-1">Schedule in seconds</p>
+            <p className="text-[#017F7E] font-semibold text-lg">Subsidized costings</p>
+            {/* <p className="text-[#505050] text-sm mt-1">Schedule in seconds</p> */}
           </div>
         </motion.div>
 
