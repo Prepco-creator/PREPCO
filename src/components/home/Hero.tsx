@@ -39,7 +39,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
             {/* Video Container */}
             <div className="absolute inset-0 bg-[#E3FFFE] rounded-3xl transform rotate-2 transition-transform hover:rotate-3 duration-300 shadow-lg overflow-hidden flex items-center justify-center">
               <video
-                src={videos.hero}
+                src={videos.hero3}
                 loop
                 autoPlay
                 playsInline
