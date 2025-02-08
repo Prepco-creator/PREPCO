@@ -98,7 +98,7 @@ const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, eng
           </button>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative overflow-x-hidden">
 
         <ResponsiveYouTube
           videoURL={isTamil ? tamilVideo : englishVideo}

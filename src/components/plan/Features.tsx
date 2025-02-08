@@ -58,7 +58,7 @@ const Features: React.FC<FeaturesProps> = ({
         </div>
       </div>
 
-      <div className="relative">
+      <div className="overflow-x-hidden relative">
         <ResponsiveYouTube
           videoURL={isTamil ? tamilVideo : englishVideo}
         />
