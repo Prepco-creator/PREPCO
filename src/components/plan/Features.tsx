@@ -34,7 +34,7 @@ const Features: React.FC<FeaturesProps> = ({
     setIsTamil(language);
   };
   return (
-    <section className="px-6 py-16 bg-gradient-to-r from-teal-400 to-teal-700 shadow-double-inset">
+    <section className="px-4 py-16 bg-gradient-to-r from-teal-400 to-teal-700 shadow-double-inset">
       <div className="container mx-auto text-center text-white mb-12 space-y-4">
         <h3 className="text-3xl lg:text-5xl font-bold mb-4">
           Plan Validation {timeline} - {membersCount} {memberType}

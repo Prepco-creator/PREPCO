@@ -72,7 +72,7 @@ const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, eng
   };
 
   return (
-    <section className="px-8 py-16 lg:px-16 flex flex-col gap-4 bg-accent-2 text-primaryDark">
+    <section className="px-4 py-16 lg:px-16 flex flex-col gap-4 bg-accent-2 text-primaryDark">
       <h3 className="cta-text-h3 text-custom-20-bold lg:text-custom-32">{title}</h3>
       <p className="cta-text-p1 text-custom-14 lg:text-custom-20-2">{description}</p>
       <div className="flex flex-col gap-4 md:flex-row items-center justify-between">
