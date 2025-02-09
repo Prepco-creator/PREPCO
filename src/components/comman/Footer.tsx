@@ -135,7 +135,7 @@ const Footer = () => {
                     />
                   </div>
                   <span className="text-secondaryLight text-custom-16">
-                    ++9884555335
+                    +91 9884555335
                   </span>
                 </li>
                 <li className="flex items-center gap-2">

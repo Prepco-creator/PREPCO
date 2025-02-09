@@ -32,7 +32,7 @@ const HeroSection = () => {
               className="hover:-translate-y-2 transition-transform duration-200"
             />
             <p className="text-custom-16 lg:text-custom-20 text-primary">
-              ++9884555335
+              +91 9884555335
             </p>
           </div>
 
