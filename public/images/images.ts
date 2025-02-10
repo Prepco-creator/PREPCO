@@ -71,7 +71,7 @@ import quadPlan from './pngs/Quad-plan.png';
 import quadPlanPro from './pngs/Quad-pro.png';
 import sheroPlan from './pngs/SHERO.png'
 import triMe from './pngs/Tri-me.png';
-import ultimateWellnessPlan from './pngs/ultimate-wellness-plan.png';
+import ultimateWellnessPlan from './pngs/ultimatewellness.png';
 
 
 import pharmacy from './pngs/pharmacy.png'
