@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="px-4 sm:px-4 lg:px-8 lg:py-7">
         {/* Links Section */}
         <div className="flex flex-col sm:flex-row gap-4 lg:gap-8">
-          <div className="flex-[2] mb-8 flex flex-col gap-2 lg:gap-8">
+          <div className="flex-[3] mb-8 flex flex-col gap-2 lg:gap-8">
             <Image
               src={images.svgs.LogoWhite}
               alt="prepco"
@@ -105,7 +105,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex-1 flex flex-col gap-2 lg:gap-8">
+          <div className="flex flex-col gap-2 lg:gap-8">
             <h3 className="text-lg font-semibold mb-4">Links</h3>
             <ul className="flex flex-col gap-2">
               <li>
@@ -125,7 +125,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex-1 flex flex-col gap-1 lg:gap-5 items-center">
+          <div className="flex-[2] flex flex-col gap-1 lg:gap-5 lg:items-center">
             <div className="space-y-3 lg:space-y-6">
               <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
               <ul className="flex flex-col gap-5">
