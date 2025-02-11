@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { images } from "../../../public/assets";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import { PlanHeroProps } from "@/types";
 import { gsap } from "gsap";
 
