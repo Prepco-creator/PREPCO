@@ -32,7 +32,8 @@ const ComingSoon: React.FC = () => {
                                     className=""
                                 />
                             </a>
-                            <a href="https://www.whatsapp.com" aria-label="WhatsApp">
+                            <a href="https://wa.me/+919962107102"
+                                aria-label="WhatsApp">
                                 <Image
                                     width={48}
                                     height={48}

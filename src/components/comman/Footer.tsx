@@ -36,7 +36,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://wa.me/+919884555335"
+                href="https://wa.me/+919962107102"
                 target="_blank"
                 aria-label="WhatsApp"
                 className="hover:-translate-y-2 transition-transform duration-200"
