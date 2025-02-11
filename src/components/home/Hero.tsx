@@ -8,7 +8,7 @@ import { videos } from "../../../public/assets";
 
 const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
   return (
-    <div className="relative w-full min-h-screen bg-gradient-to-br from-[#E8FDFD] via-[#D9FCFB] to-[#C0F8F7] flex items-center py-16 sm:py-14 md:py-20 overflow-hidden">
+    <div className="relative h-full w-full bg-gradient-to-br from-[#E8FDFD] via-[#D9FCFB] to-[#C0F8F7] flex items-center py-16 sm:py-14 md:pt-24 pb-36 overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -16,7 +16,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
         className="absolute inset-0 bg-[#00ADA9]/5 blur-3xl z-0"
       />
 
-      <div className="relative w-11/12 mx-auto px-6 sm:px-8 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-14 lg:gap-16 z-10 mt-14 ">
+      <div className="relative w-11/12 mx-auto px-6 sm:px-8 md:pb-20 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-14 lg:gap-16 z-10 mt-14 ">
 
         {/* Right Content (Video Section) - Now Moved to Left */}
         <motion.div
@@ -30,7 +30,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
           }}
           className="flex-1 relative w-full max-w-lg lg:max-w-none mx-auto"
         >
-          <div className="relative w-full pt-[100%] sm:pt-[80%] lg:pt-[100%]">
+          <div className="relative w-full pt-[100%] sm:pt-[80%] lg:pt-[61%]">
             {/* Decorative Circles */}
             <div className="absolute -top-10 -right-10 w-36 h-36 bg-[#D0F2F3] rounded-full blur-3xl opacity-40" />
             <div className="absolute -bottom-10 -left-10 w-36 h-36 bg-[#00ADA9] rounded-full blur-3xl opacity-30" />
@@ -98,7 +98,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
             doesn&apos;t have to break the bank?
           </h1>
 
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
@@ -107,7 +107,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
             Transform your health journey with affordable solutions that
             prioritize your well-being without compromising your financial
             stability.
-          </motion.p>
+          </motion.p> */}
 
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -119,7 +119,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group w-full sm:w-auto px-8 sm:px-10 py-4 bg-[#017F7E] text-white rounded-xl hover:bg-[#00ADA9] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2"
+                className="group text-white w-full sm:w-auto px-8 sm:px-10 py-4  rounded-xl bg-custom-gradient shadow-double-inset hover:bg-none hover:text-primary hover:shadow-none border-primary border-[2px] transition-all duration-300 ease-in-out flex items-center justify-center gap-2"
               >
                 Tell me how to save
                 <IndianRupee className="w-5 h-5 group-hover:scale-110 transition-transform" />
@@ -129,7 +129,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group w-full sm:w-auto px-8 sm:px-10 py-4 bg-white border-2 border-[#D0F2F3] text-[#017F7E] rounded-xl hover:bg-[#E3FFFE] transition-all duration-300 shadow-md flex items-center justify-center gap-2"
+                className="group w-full sm:w-auto px-8 sm:px-10 py-4  bg-white border-2 border-[#D0F2F3] text-[#017F7E] rounded-xl hover:bg-[#E3FFFE] transition-all duration-300 shadow-md flex items-center justify-center gap-2"
               >
                 Get Affordable Solutions
                 <Heart className="w-5 h-5 group-hover:text-red-500 transition-colors" />

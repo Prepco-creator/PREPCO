@@ -49,11 +49,11 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = 
           Buy Now
         </button>
 
-        <Link href="/testimonials" passHref>
+        {/* <Link href="/testimonials" passHref>
           <p className="text-center underline text-custom-14 lg:text-custom-16 text-secondaryDark">
             Here it from our client testimonials
           </p>
-        </Link>
+        </Link> */}
       </div>
       {/* right */}
       <div className="right-content relative self-center">

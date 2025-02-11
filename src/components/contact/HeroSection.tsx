@@ -23,7 +23,7 @@ const HeroSection = () => {
           Get in Touch with Prepco
         </h1>
         <div className="space-y-4">
-          <div className="flex flex-row gap-2 items-center">
+          <a href="tel:+919884555335" className="flex flex-row gap-2 items-center">
             <Image
               width={48}
               height={48}
@@ -34,9 +34,9 @@ const HeroSection = () => {
             <p className="text-custom-16 lg:text-custom-20 text-primary">
               +91 9884555335
             </p>
-          </div>
+          </a>
 
-          <div className="flex flex-row gap-2 items-center">
+          <a href="mailto:info@prepcohealthcare.com" className="flex flex-row gap-2 items-center">
             <Image
               width={48}
               height={48}
@@ -47,7 +47,7 @@ const HeroSection = () => {
             <p className="text-custom-16 lg:text-custom-20 text-primary">
               info@prepcohealthcare.com
             </p>
-          </div>
+          </a>
         </div>
         <p className="text-secondaryDark ztext-custom-16 lg:text-custom-20">
           Got questions? We’ve got answers. Let’s make health and wellness

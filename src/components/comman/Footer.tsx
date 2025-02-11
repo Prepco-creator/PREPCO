@@ -6,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-primary py-4 text-secondaryLight">
-      <div className="px-4 sm:px-6 lg:px-14 lg:py-7">
+      <div className="px-4 sm:px-4 lg:px-8 lg:py-7">
         {/* Links Section */}
         <div className="flex flex-col sm:flex-row gap-4 lg:gap-8">
           <div className="flex-[2] mb-8 flex flex-col gap-2 lg:gap-8">
@@ -23,6 +23,7 @@ const Footer = () => {
             <div className="flex justify-start gap-4 mt-4">
               <a
                 href="https://www.twitter.com"
+                target="_blank"
                 aria-label="Twitter"
                 className="hover:-translate-y-2 transition-transform duration-200"
               >
@@ -35,7 +36,8 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://wa.me/+9892882929"
+                href="https://wa.me/+919884555335"
+                target="_blank"
                 aria-label="WhatsApp"
                 className="hover:-translate-y-2 transition-transform duration-200"
               >
@@ -50,6 +52,7 @@ const Footer = () => {
 
               <a
                 href="https://www.instagram.com"
+                target="_blank"
                 aria-label="Instagram"
                 className="hover:-translate-y-2 transition-transform duration-200"
               >
@@ -62,7 +65,8 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.youTube.com"
+                href="https://youtube.com/@prepcohealthcarewebsite?si=Aio-ud3k2_VdHDju"
+                target="_blank"
                 aria-label="YouTube"
                 className="hover:-translate-y-2 transition-transform duration-200"
               >
@@ -89,11 +93,11 @@ const Footer = () => {
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/testimonials" className="hover:underline">
                   Testimonials
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/plans" className="hover:underline">
                   Plans
@@ -121,36 +125,43 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex-1 flex flex-col gap-1 lg:gap-10 items-start">
+          <div className="flex-1 flex flex-col gap-1 lg:gap-5 items-center">
             <div className="space-y-3 lg:space-y-6">
               <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
               <ul className="flex flex-col gap-5">
-                <li className="flex items-center gap-2">
-                  <div className="hover:-translate-y-2 transition-transform duration-200">
-                    <Image
-                      width={48}
-                      height={48}
-                      src={images.pngs.phoneIcon}
-                      alt="Phone"
-                    />
-                  </div>
-                  <span className="text-secondaryLight text-custom-16">
-                    +91 9884555335
-                  </span>
+                <li>
+                  <a className="flex items-center gap-2" href="mailto:info@prepcohealthcare.com">
+                    <div className="hover:-translate-y-2 transition-transform duration-200">
+                      <Image
+                        width={48}
+                        height={48}
+                        src={images.pngs.mailIcon}
+                        alt="Phone"
+                      />
+                    </div>
+                    <span className="text-secondaryLight text-custom-16">
+                      info@prepcohealthcare.com
+                    </span>
+                  </a>
                 </li>
-                <li className="flex items-center gap-2">
-                  <Image
-                    width={48}
-                    height={48}
-                    src={images.pngs.mailIcon}
-                    alt="prepco-mail"
-                    className="hover:-translate-y-2 transition-transform duration-200"
-                  />
-                  <p className="text-secondaryLight text-custom-16">
-                    info@prepcohealthcare.com
-                  </p>
+                <li>
+                  <a className="flex items-center gap-2" href="tel:+919884555335">
+                    <div className="hover:-translate-y-2 transition-transform duration-200">
+                      <Image
+                        width={48}
+                        height={48}
+                        src={images.pngs.phoneIcon}
+                        alt="Phone"
+                      />
+                    </div>
+                    <span className="text-secondaryLight text-custom-16">
+                      +91 9884555335
+                    </span>
+                  </a>
                 </li>
+                
               </ul>
+
             </div>
             <div className="space-y-3 lg:space-y-6">
               <h3 className="text-lg font-semibold mt-6 mb-2">Open Hours</h3>
