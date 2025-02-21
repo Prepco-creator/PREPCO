@@ -23,7 +23,7 @@ const HeroSection = () => {
           Get in Touch with Prepco
         </h1>
         <div className="space-y-4">
-          <a href="tel:+919884555335" className="flex flex-row gap-2 items-center">
+          <a href="tel:+9118002022447" className="flex flex-row gap-2 items-center">
             <Image
               width={48}
               height={48}
@@ -32,7 +32,7 @@ const HeroSection = () => {
               className="hover:-translate-y-2 transition-transform duration-200"
             />
             <p className="text-custom-16 lg:text-custom-20 text-primary">
-              +91 9884555335
+              1800 202 2447
             </p>
           </a>
 

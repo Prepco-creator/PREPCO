@@ -145,7 +145,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="flex items-center gap-2" href="tel:+919884555335">
+                  <a className="flex items-center gap-2"  href="tel:+9118002022447">
                     <div className="hover:-translate-y-2 transition-transform duration-200">
                       <Image
                         width={48}
@@ -155,7 +155,7 @@ const Footer = () => {
                       />
                     </div>
                     <span className="text-secondaryLight text-custom-16">
-                      +91 9884555335
+                      1800 202 2447
                     </span>
                   </a>
                 </li>
