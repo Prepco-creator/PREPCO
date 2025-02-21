@@ -101,6 +101,7 @@ interface PlanHeroProps {
     pricing: number;
     membersCount?: number;
     memberType?: string;
+    planId:string;
 }
 
 interface PlanTitleProps {

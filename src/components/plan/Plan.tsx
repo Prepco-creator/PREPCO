@@ -42,6 +42,7 @@ const Plan = () => {
       <Banner title={plan.title} />
       <Hero
         imageSrc={plan.imgSrc}
+        planId={plan.id}
         title={plan.title}
         duration={plan.duration}
         pricing={plan.discountPricing}

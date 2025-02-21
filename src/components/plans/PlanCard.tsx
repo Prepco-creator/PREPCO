@@ -6,6 +6,7 @@ import formatToHyphenated from "@/utils/fomatPathName";
 import Link from "next/link";
 
 const PlanCard: React.FC<Partial<PlanProps>> = ({
+  id,
   title,
   tagline,
   description,
@@ -51,7 +52,7 @@ const PlanCard: React.FC<Partial<PlanProps>> = ({
           </span>
         </p>
       </div>
-      <Link href="/coming-soon" passHref>
+      <Link href={`/checkout?planId=${id}`}>
         <button className="w-full bg-primary text-white p-3 shadow-double-inset rounded-tl-br-30 transition-all duration-300 ease-in-out hover:bg-transparent hover:text-primary hover:border-primary hover:border-2 hover:shadow-none">
           Buy Now
         </button>
