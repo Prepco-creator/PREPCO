@@ -48,6 +48,19 @@ const HeroSection = () => {
               info@prepcohealthcare.com
             </p>
           </a>
+          <a href="https://maps.app.goo.gl/B4VYxVvLykajAbvBA" className="flex flex-row gap-2 items-center">
+            <Image
+              width={48}
+              height={48}
+              src={images.pngs.locationIcon}
+              alt="prepco-mail"
+              className="hover:-translate-y-2 transition-transform duration-200"
+            />
+            <p className="text-custom-16 lg:text-custom-20 text-primary">
+              No:50/22, Thirumangalam road, Anna nagar west,<br />
+              Chennai - 600040.
+            </p>
+          </a>
         </div>
         <p className="text-secondaryDark ztext-custom-16 lg:text-custom-20">
           Got questions? We’ve got answers. Let’s make health and wellness

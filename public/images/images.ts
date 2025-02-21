@@ -57,6 +57,7 @@ import whatsappIcon from './pngs/whatsapp-icon.png';
 import twitterIcon from './pngs/twitter-icon.png';
 import instagramIcon from './pngs/instagram-icon.png';
 import phoneIcon from './pngs/phone.png';
+import locationIcon from './pngs/location.png'
 import mailIcon from './pngs/mail.png';
 import popupImage from './pngs/popup-1.png';
 import pattern from './pngs/pattern-removebg-preview.png';
@@ -170,6 +171,7 @@ const pngs = {
     pestControl,
     homeHero2,
     testimoneeProfile,
+    locationIcon,
 }
 
 const webp = {

@@ -79,6 +79,11 @@ const Footer = () => {
                 />
               </a>
             </div>
+            <div className="space-y-3 lg:space-y-6">
+              <h3 className="text-lg font-semibold mt-6 mb-2">Open Hours</h3>
+              <p>Mon - Sat: 8.00 AM - 6.00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
           </div>
           <div className="flex-1 flex flex-col gap-2 lg:gap-8">
             <h3 className="text-lg font-semibold mb-4">Links</h3>
@@ -125,7 +130,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex-[2] flex flex-col gap-1 lg:gap-5 lg:items-center">
+          <div className="flex-[2] flex flex-col gap-4 lg:gap-5 lg:items-center justify-around">
             <div className="space-y-3 lg:space-y-6">
               <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
               <ul className="flex flex-col gap-5">
@@ -145,7 +150,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="flex items-center gap-2"  href="tel:+9118002022447">
+                  <a className="flex items-center gap-2" href="tel:+9118002022447">
                     <div className="hover:-translate-y-2 transition-transform duration-200">
                       <Image
                         width={48}
@@ -159,15 +164,29 @@ const Footer = () => {
                     </span>
                   </a>
                 </li>
-                
               </ul>
 
             </div>
-            <div className="space-y-3 lg:space-y-6">
-              <h3 className="text-lg font-semibold mt-6 mb-2">Open Hours</h3>
-              <p>Mon - Sat: 8.00 AM - 6.00 PM</p>
-              <p>Sunday: Closed</p>
-            </div>
+            <a href="https://maps.app.goo.gl/B4VYxVvLykajAbvBA">
+              <div className="flex items-center gap-2">
+                <div className="hover:-translate-y-2 transition-transform duration-200 lg:self-start">
+                  <Image
+                    width={48}
+                    height={48}
+                    src={images.pngs.locationIcon}
+                    alt="Phone"
+                  />
+                </div>
+                <div className="hidden lg:block space-y-3">
+                  <p>50/22, Thirumangalam road,</p>
+                  <p>Anna nagar west, </p>
+                  <p>Chennai - 600040.</p>
+                </div>
+                <div className="block lg:hidden space-y-3">
+                  <p>50/22, Thirumangalam road,<br />Anna nagar west, Chennai - 600040.</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -176,7 +195,7 @@ const Footer = () => {
           <p>&copy; 2024 Terms and Conditions • All Rights Reserved</p>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 
