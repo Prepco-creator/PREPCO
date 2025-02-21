@@ -14,8 +14,14 @@ import PlanDetail from "./PlanDetail";
 import Footer from "../comman/Footer";
 import planServices from "@/data/planPackages";
 import healthPackageDetails from "@/data/healthPackageDetails";
+import { useParams } from "next/navigation";
 
-const Plan: React.FC<{ planName: string }> = ({ planName }) => {
+const Plan = () => {
+
+  const params = useParams();
+
+  const { planName } = params;
+
   const plan = mockData?.find(
     (data: PlanProps) => planName === formatToHyphenated(data.title)
   );
