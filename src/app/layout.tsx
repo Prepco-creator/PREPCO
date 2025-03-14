@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/comman/Navbar";
 import LoadingAnimation from "@/components/loaders/LoadingAnimation";
 import Script from "next/script";
+import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   title: "PREPCO | Where Care Meets Convenience",
@@ -33,6 +34,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-poppins">
+        <ToastContainer />
         <LoadingAnimation />
         <Navbar />
         {children}

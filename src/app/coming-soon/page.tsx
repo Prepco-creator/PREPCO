@@ -1,4 +1,4 @@
-import ComingSoon from '@/components/comingsoon/ComingSoon'
+import ComingSoon from '@/components/extra-pages/ComingSoon'
 import React from 'react'
 
 const page = () => {

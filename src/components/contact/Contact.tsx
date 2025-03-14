@@ -10,7 +10,7 @@ const Contact = () => {
             <Banner title='Contact us' />
             <HeroSection />
             <GoogleMap />
-            <Footer/>
+            <Footer />
         </>
     )
 }
