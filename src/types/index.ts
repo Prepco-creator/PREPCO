@@ -44,6 +44,7 @@ interface InputFieldProps<TFormValues extends FieldValues> {
     type?: string;
     error?: string;
     register: UseFormRegister<TFormValues>;
+    className?:string;
 }
 
 interface TestimonialCardProps {

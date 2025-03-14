@@ -9,9 +9,10 @@ const InputField = <TFormValues extends Record<string, unknown>>({
   type = 'text',
   error,
   register,
+  className,
 }: InputFieldProps<TFormValues>) => {
   return (
-    <div className="mb-4">
+    <div className={`mb-4 ${className}`}>
       <label htmlFor={id as string} className="block text-sm font-medium text-custom-14 text-black">
         {label} {required && <span className="text-red-500">*</span>}
       </label>

@@ -3,15 +3,15 @@
 import React from "react";
 import Image from "next/image";
 import { images } from "../../../public/assets";
-import { useRouter } from "next/navigation";
 import Footer from "../comman/Footer";
+import { CircleCheck } from "lucide-react";
+import Link from "next/link";
 
 const PaymentSuccess: React.FC = () => {
-    const router = useRouter();
 
     return (
         <>
-            <section className="bg-primary1 flex items-center justify-center min-h-screen">
+            <section className="bg-primary1 text-white flex items-center justify-center min-h-screen">
                 <div className="text-center">
                     {/* <Image 
                         width={100} 
@@ -20,11 +20,13 @@ const PaymentSuccess: React.FC = () => {
                         alt="Success Icon" 
                         className="mx-auto mb-4"
                     /> */}
-                    <h1 className="text-5xl font-bold text-primary-dark">Payment Successful!</h1>
+
+                    <h1 className="text-5xl font-bold text-primary-dark">Thank you for Subcribing PREPCO</h1>
+                    <CircleCheck size={100} className="text-center block w-full my-8" />
                     <p className="mt-4 text-lg text-secondary-dark">
                         Thank you for purchasing a plan from Prepco. Your transaction was successful.
                     </p>
-                    
+
                     <div className="mt-6">
                         <p className="text-sm text-secondary-dark">
                             Follow us on social media for updates and support:
@@ -47,12 +49,13 @@ const PaymentSuccess: React.FC = () => {
 
                     {/* Go to Dashboard Button */}
                     <div className="mt-8">
-                        <button
-                            onClick={() => router.push("/dashboard")}
-                            className="bg-primary text-white py-2 px-6 rounded-lg shadow-md hover:bg-primary-dark transition duration-300 ease-in-out"
-                        >
-                            Go to Dashboard
-                        </button>
+                        <Link href="/plans">
+                            <button
+                                className="bg-primary text-white py-2 px-6 rounded-lg shadow-md hover:bg-primary-dark transition duration-300 ease-in-out"
+                            >
+                                Back to Plans
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>
