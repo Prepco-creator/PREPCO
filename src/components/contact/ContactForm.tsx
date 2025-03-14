@@ -55,7 +55,7 @@ const ContactForm = () => {
         <InputField
           id="Name_First"
           label="Name"
-          placeholder="Your Name"
+          placeholder="First Name"
           required={true}
           register={register}
           error={errors.Name_First?.message}
@@ -64,7 +64,7 @@ const ContactForm = () => {
         <InputField
           id="Name_Last"
           label="Name"
-          placeholder="Your Name"
+          placeholder="Last Name"
           required={true}
           register={register}
           error={errors.Name_Last?.message}
