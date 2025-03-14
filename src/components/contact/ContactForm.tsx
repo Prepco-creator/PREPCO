@@ -81,11 +81,11 @@ const ContactForm = () => {
         error={errors.PhoneNumber_countrycode?.message}
       />
       <InputField
-        id="email"
+        id="Email"
         label="Email Address"
         placeholder="Email Address (Optional)"
         register={register}
-        error={errors.email?.message}
+        error={errors.Email?.message}
       />
 
       <button

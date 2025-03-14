@@ -12,7 +12,7 @@ export const contactFormSchema = z.object({
   PhoneNumber_countrycode: z
     .string()
     .regex(/^\d{10}$/, 'Phone number must be 10 digits'),
-  email: z
+    Email: z
     .string()
     .email('Invalid email address')
     .optional(), // Optional field
