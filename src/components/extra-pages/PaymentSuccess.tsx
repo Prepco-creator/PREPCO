@@ -12,19 +12,15 @@ const PaymentSuccess: React.FC = () => {
     return (
         <>
             <section className="bg-primary1 text-white flex items-center justify-center min-h-screen">
-                <div className="text-center">
-                    {/* <Image 
-                        width={100} 
-                        height={100} 
-                        src={images.pngs.successIcon} 
-                        alt="Success Icon" 
-                        className="mx-auto mb-4"
-                    /> */}
-
-                    <h1 className="text-5xl font-bold text-primary-dark">Thank you for Subcribing PREPCO</h1>
+                <div className="text-center">zF
+                    <h1 className="text-5xl font-bold text-primary-dark">Thank You for Choosing Prepco Health Care !
+                    </h1>
                     <CircleCheck size={100} className="text-center block w-full my-8" />
                     <p className="mt-4 text-lg text-secondary-dark">
-                        Thank you for purchasing a plan from Prepco. Your transaction was successful.
+                        Congratulations on taking your first step towards a healthier lifestyle!``
+                    </p>
+                    <p className="mt-4 text-base text-secondary-dark">
+                        We are in this together! You will receive a welcome call from our Health Advisor within the next 24 to 48 hours.
                     </p>
 
                     <div className="mt-6">
