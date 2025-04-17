@@ -6,6 +6,7 @@ const PlanCardGrid: React.FC<{ plans: PlanProps[] }> = ({ plans }) => {
 
   const gridClasses = plans.length <= 2 ? 'md:grid-cols-2' : 'lg:grid-cols-3';
 
+
   return (
     <section
       className={`w-[95%] mx-auto pb-2 grid grid-cols-auto-fit 
@@ -25,6 +26,7 @@ const PlanCardGrid: React.FC<{ plans: PlanProps[] }> = ({ plans }) => {
           duration={plan.duration}
           featuresDisplay={plan.featuresDisplay}
           memberType={plan?.memberType}
+          paymentGatewayLink={plan.paymentGatewayLink}
         />
       ))}
     </section>

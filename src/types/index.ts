@@ -44,7 +44,7 @@ interface InputFieldProps<TFormValues extends FieldValues> {
     type?: string;
     error?: string;
     register: UseFormRegister<TFormValues>;
-    className?:string;
+    className?: string;
 }
 
 interface TestimonialCardProps {
@@ -92,6 +92,7 @@ interface PlanProps {
     videoLinkEnglish: string;
     videoLinkTamil: string;
     imgSrc: string | StaticImageData;
+    paymentGatewayLink: string;
 }
 
 
@@ -102,7 +103,8 @@ interface PlanHeroProps {
     pricing: number;
     membersCount?: number;
     memberType?: string;
-    planId:string;
+    planId: string;
+    paymentGatewayLink: string;
 }
 
 interface PlanTitleProps {

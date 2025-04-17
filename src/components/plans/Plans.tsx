@@ -23,16 +23,16 @@ const Plans = () => {
   const [filteredPlans, setFilteredPlans] = useState<PlanProps[]>(defaultPlans);
 
   useEffect(() => {
-    // Check if there are any previously stored filtered plans in localStorage
-    const storedPlans = localStorage.getItem("PREPCO-INSURANCE-PLANS");
     if (typeof window !== "undefined") {
+      const storedPlans = sessionStorage.getItem("PREPCO-INSURANCE-PLANS");
       if (storedPlans) {
-        setFilteredPlans(JSON.parse(storedPlans)); // Restore filtered plans from localStorage
+        setFilteredPlans(JSON.parse(storedPlans));
       }
     } else {
-      setFilteredPlans(defaultPlans)
+      setFilteredPlans(defaultPlans);
     }
   }, []);
+
 
   const handleFilterChange = (
     filterType: "duration" | "special" | "fullCoverage" | null,
@@ -62,9 +62,11 @@ const Plans = () => {
 
     setFilteredPlans(newFilteredPlans);
 
-    // Store the filtered plans in localStorage
-    localStorage.setItem("PREPCO-INSURANCE-PLANS", JSON.stringify(newFilteredPlans));
+    // Store the filtered plans in Session Storage
+    sessionStorage.setItem("PREPCO-INSURANCE-PLANS", JSON.stringify(newFilteredPlans));
+
   };
+
 
   return (
     <section>

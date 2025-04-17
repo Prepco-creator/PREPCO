@@ -8,7 +8,7 @@ import Link from "next/link";
 
 // Register ScrollTrigger plugin
 
-const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = "Person", membersCount = 1, imageSrc,planId }) => {
+const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = "Person", membersCount = 1, imageSrc, paymentGatewayLink }) => {
   const timeline =
     duration === 12 ? "One Year" : duration === 6 ? "6 Month" : "Not - Defined";
 
@@ -46,7 +46,7 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = 
         <h2 className="bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold">
           &#8377;{pricing.toFixed(2)}
         </h2>
-        <Link href={`/checkout?planId=${planId}`}>
+        <Link href={paymentGatewayLink}>
           <button className="w-full text-custom-16-bold lg:text-custom-24 bg-primary text-white p-5 shadow-double-inset rounded-tl-br-30 border-2 border-transparent hover:text-primary hover:border-primary hover:shadow-none hover:border-2 hover:bg-transparent active:opacity-70 transition-all">
             Buy Now
           </button>

@@ -13,7 +13,7 @@ const FilterPlans: React.FC<FilterPlansProps> = ({ onFilterChange }) => {
   useEffect(() => {
     // Check if we are in the client-side environment (browser)
     if (typeof window !== "undefined") {
-      const storedFilter = localStorage.getItem("PREPCO-INSURANCE-FILTER");
+      const storedFilter = sessionStorage.getItem("PREPCO-INSURANCE-FILTER");
       if (storedFilter) {
         setSelectedFilter(storedFilter);
       } else {
@@ -24,7 +24,7 @@ const FilterPlans: React.FC<FilterPlansProps> = ({ onFilterChange }) => {
 
   useEffect(() => {
     if (selectedFilter && typeof window !== "undefined") {
-      localStorage.setItem("PREPCO-INSURANCE-FILTER", selectedFilter);
+      sessionStorage.setItem("PREPCO-INSURANCE-FILTER", selectedFilter);
     }
   }, [selectedFilter]);
 

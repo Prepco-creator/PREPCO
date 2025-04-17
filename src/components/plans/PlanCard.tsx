@@ -6,7 +6,6 @@ import formatToHyphenated from "@/utils/fomatPathName";
 import Link from "next/link";
 
 const PlanCard: React.FC<Partial<PlanProps>> = ({
-  id,
   title,
   tagline,
   description,
@@ -16,11 +15,13 @@ const PlanCard: React.FC<Partial<PlanProps>> = ({
   featuresDisplay,
   membersCount = 1,
   memberType = "Person",
+  paymentGatewayLink,
 }) => {
   const timeline =
     duration === 12 ? "year" : duration === 6 ? "6-months" : "not-defined";
 
   const planName = formatToHyphenated(title as string);
+
 
   return (
     <div
@@ -52,11 +53,11 @@ const PlanCard: React.FC<Partial<PlanProps>> = ({
           </span>
         </p>
       </div>
-      <Link href={`/checkout?planId=${id}`}>
+      <a href={paymentGatewayLink}>
         <button className="w-full bg-primary text-white p-3 shadow-double-inset rounded-tl-br-30 transition-all duration-300 ease-in-out hover:bg-transparent hover:text-primary hover:border-primary hover:border-2 hover:shadow-none">
           Buy Now
         </button>
-      </Link>
+      </a>
       <div>
         {featuresDisplay?.map((feature: string, index: number) => (
           <div key={index} className="flex flex-row gap-2 mb-2">

@@ -48,6 +48,7 @@ const Plan = () => {
         pricing={plan.discountPricing}
         memberType={plan.memberType}
         membersCount={plan.membersCount}
+        paymentGatewayLink={plan.paymentGatewayLink}
       />
       <PlanTitle title={plan.title} />
       <Features
