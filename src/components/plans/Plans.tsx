@@ -15,10 +15,9 @@ const Plans = () => {
   // Default to the 6-month plan
   const defaultPlans = mockData.filter(
     (plan) =>
-      plan.duration === 6 &&
-      !plan.isSpecial &&
-      !fullCoveragePlanIds.includes(plan.id)
+      plan.isSpecial === true
   );
+
 
   const [filteredPlans, setFilteredPlans] = useState<PlanProps[]>(defaultPlans);
 
@@ -35,7 +34,7 @@ const Plans = () => {
 
 
   const handleFilterChange = (
-    filterType: "duration" | "special" | "fullCoverage" | null,
+    filterType: "duration" | "special" | "fullCoverage" | "all" | null,
     value?: number | string | string[]
   ) => {
     let newFilteredPlans: PlanProps[] = [];
@@ -56,6 +55,8 @@ const Plans = () => {
         newFilteredPlans = mockData.filter((plan) => plan.isSpecial);
       } else if (filterType === "fullCoverage" && Array.isArray(value)) {
         newFilteredPlans = mockData.filter((plan) => value.includes(plan.id));
+      } else if (filterType === "all") {
+        newFilteredPlans = [...mockData]
       }
 
     }

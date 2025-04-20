@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 interface FilterPlansProps {
   onFilterChange: (
-    filterType: "duration" | "special" | "fullCoverage" | null,
+    filterType: "duration" | "special" | "fullCoverage" | "all" | null,
     value?: number | string | string[]
   ) => void;
 }
@@ -17,7 +17,7 @@ const FilterPlans: React.FC<FilterPlansProps> = ({ onFilterChange }) => {
       if (storedFilter) {
         setSelectedFilter(storedFilter);
       } else {
-        setSelectedFilter("duration-6"); // Default filter
+        setSelectedFilter("special"); // Default filter
       }
     }
   }, []); // This effect will only run once when the component mounts
@@ -29,7 +29,7 @@ const FilterPlans: React.FC<FilterPlansProps> = ({ onFilterChange }) => {
   }, [selectedFilter]);
 
   const handleSelect = (
-    filterType: "duration" | "special" | "fullCoverage",
+    filterType: "duration" | "special" | "fullCoverage" | "all",
     value?: number | string | string[]
   ) => {
     const filterKey = filterType === "duration" ? `duration-${value}` : filterType;
@@ -49,29 +49,29 @@ const FilterPlans: React.FC<FilterPlansProps> = ({ onFilterChange }) => {
   return (
     <div className="flex items-center justify-center py-4 gap-4 flex-wrap">
       <button
-        className={buttonClass(selectedFilter === "duration-6")}
-        onClick={() => handleSelect("duration", 6)}
+        className={buttonClass(selectedFilter === "all")}
+        onClick={() => handleSelect("all")}
       >
-        6 Months Plan
+        All
       </button>
-      <button
+      {/* <button
         className={buttonClass(selectedFilter === "duration-12")}
         onClick={() => handleSelect("duration", 12)}
       >
         1 Year Plan
-      </button>
+      </button> */}
       <button
         className={buttonClass(selectedFilter === "special")}
         onClick={() => handleSelect("special")}
       >
-        Special Plan
+        Popular Plans
       </button>
-      <button
+      {/* <button
         className={buttonClass(selectedFilter === "fullCoverage")}
         onClick={() => handleSelect("fullCoverage", ["plan_8", "plan_7"])}
       >
         Full Coverage Plan
-      </button>
+      </button> */}
     </div>
   );
 };
