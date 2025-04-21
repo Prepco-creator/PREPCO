@@ -69,15 +69,9 @@ const PrivacyPolicy = () => {
                     We highly value the trust you place in us and recognize the critical
                     importance of safeguarding transactional integrity and ensuring data
                     privacy. This Privacy Policy outlines the methods by which&nbsp;
-                    <span style={{ fontSize: 16, lineHeight: "107%" }}>PREPCO Healthcare</span>
-                    processes, utilizes, and disseminates your personal data via the website
-                    www.
-                    <span style={{ fontSize: 16, lineHeight: "107%" }}>
-                        &nbsp;Prepcohealthcare.com
-                    </span>{" "}
-                    and mobile applications, which are owned, managed, and operated by&nbsp;
-                    <span style={{ fontSize: 16, lineHeight: "107%" }}>PREPCO Healthcare</span>
-                    Private Limited (hereinafter referred to as the "Platform").
+                    PREPCO Healthcare processes, utilizes, and disseminates your personal data via the website
+                    www.Prepcohealthcare.com and mobile applications, which are owned, managed, and operated by&nbsp;
+                    <span style={{ fontSize: 16, lineHeight: "107%" }}>PREPCO Healthcare</span> private limited (hereinafter referred to as the "Platform").
                 </p>
                 <p
                     style={{
@@ -559,64 +553,6 @@ const PrivacyPolicy = () => {
                         textAlign: "justify"
                     }}
                 >
-                    <span style={{ fontSize: 16 }}>&nbsp;</span>
-                </p>
-                <p
-                    style={{
-                        marginTop: "0cm",
-                        marginRight: "0cm",
-                        marginBottom: "8.0pt",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        textAlign: "justify"
-                    }}
-                >
-                    <strong>
-                        <span style={{ fontSize: 16, lineHeight: "107%" }}>&nbsp;</span>
-                    </strong>
-                </p>
-                <p
-                    style={{
-                        marginTop: "0cm",
-                        marginRight: "0cm",
-                        marginBottom: "8.0pt",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        textAlign: "justify"
-                    }}
-                >
-                    <strong>
-                        <span style={{ fontSize: 16, lineHeight: "107%" }}>&nbsp;</span>
-                    </strong>
-                </p>
-                <p
-                    style={{
-                        marginTop: "0cm",
-                        marginRight: "0cm",
-                        marginBottom: "8.0pt",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        textAlign: "justify"
-                    }}
-                >
-                    <strong>
-                        <span style={{ fontSize: 16, lineHeight: "107%" }}>&nbsp;</span>
-                    </strong>
-                </p>
-                <p
-                    style={{
-                        marginTop: "0cm",
-                        marginRight: "0cm",
-                        marginBottom: "8.0pt",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        textAlign: "justify"
-                    }}
-                >
                     <strong>
                         <span style={{ fontSize: 16, lineHeight: "107%" }}>
                             Dissemination of Personal Information
@@ -996,66 +932,6 @@ const PrivacyPolicy = () => {
                     }}
                 >
                     <strong>
-                        <span style={{ fontSize: 16, lineHeight: "107%" }}>&nbsp;</span>
-                    </strong>
-                </p>
-                <p
-                    style={{
-                        marginTop: "0cm",
-                        marginRight: "0cm",
-                        marginBottom: "8.0pt",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        textAlign: "justify"
-                    }}
-                >
-                    <strong>
-                        <span style={{ fontSize: 16, lineHeight: "107%" }}>&nbsp;</span>
-                    </strong>
-                </p>
-                <p
-                    style={{
-                        marginTop: "0cm",
-                        marginRight: "0cm",
-                        marginBottom: "8.0pt",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        textAlign: "justify"
-                    }}
-                >
-                    <strong>
-                        <span style={{ fontSize: 16, lineHeight: "107%" }}>&nbsp;</span>
-                    </strong>
-                </p>
-                <p
-                    style={{
-                        marginTop: "0cm",
-                        marginRight: "0cm",
-                        marginBottom: "8.0pt",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        textAlign: "justify"
-                    }}
-                >
-                    <strong>
-                        <span style={{ fontSize: 16, lineHeight: "107%" }}>&nbsp;</span>
-                    </strong>
-                </p>
-                <p
-                    style={{
-                        marginTop: "0cm",
-                        marginRight: "0cm",
-                        marginBottom: "8.0pt",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        textAlign: "justify"
-                    }}
-                >
-                    <strong>
                         <span style={{ fontSize: 16, lineHeight: "107%" }}>
                             Retention of Data
                         </span>
@@ -1179,7 +1055,7 @@ const PrivacyPolicy = () => {
                     to the purposes for which it is processed), we will take appropriate steps
                     to rectify or erase such data. You have the right to access, correct, and
                     update your personal information directly via the features available on the
-                    Platform.Alternatively, you may contact us using the details provided below
+                    Platform. Alternatively, you may contact us using the details provided below
                     for further assistance with these requests. We will make every effort to
                     address your inquiries promptly and accurately.
                 </p>

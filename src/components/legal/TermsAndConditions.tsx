@@ -81,28 +81,6 @@ const TermsAndConditions = () => {
                         fontSize: "11.0pt",
                         fontFamily: '"Calibri","sans-serif"',
                         marginTop: "0cm",
-                        marginBottom: "8.0pt"
-                    }}
-                >
-                    <strong>
-                        <span
-                            style={{
-                                fontSize: 16,
-                                lineHeight: "107%",
-                                fontFamily: '"Times New Roman","serif"'
-                            }}
-                        >
-                            &nbsp;
-                        </span>
-                    </strong>
-                </p>
-                <p
-                    style={{
-                        marginRight: "0cm",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        marginTop: "0cm",
                         marginBottom: "8.0pt",
                         textAlign: "justify"
                     }}
@@ -110,7 +88,7 @@ const TermsAndConditions = () => {
                     The Terms and Conditions outlined below, in conjunction with the Privacy
                     Policy available at{" "}
                     <a href="https://www.prepcohealthcare.com" target="_new">
-                        https://www.Prepcohealthcare.com
+                        https://www.prepcohealthcare.com
                     </a>{" "}
                     (referred to as the "Privacy Policy"), specific terms for vouchers ("Voucher
                     T&amp;Cs"), and any updates to policies and disclaimers published on{" "}
@@ -118,37 +96,11 @@ const TermsAndConditions = () => {
                         https://www.Prepcohealthcare.com
                     </a>
                     , together form the binding agreement (referred to as the "Agreement" or
-                    "Terms of Use") between PREPCO Healthcareopc private limited, with its
+                    "Terms of Use") between PREPCO Healthcare OPC private limited, with its
                     registered office at No. 50, Thirumangalam Road, Anna Nagar West, Chennai -
                     600040, and the user ("Member" or "you"). This Agreement governs the use of
                     services offered by PREPCO Healthcare, including those available to valid,
                     active members.
-                </p>
-                <p
-                    style={{
-                        marginRight: "0cm",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        marginTop: "0cm",
-                        marginBottom: "8.0pt",
-                        textAlign: "justify"
-                    }}
-                >
-                    <span style={{ fontFamily: '"Times New Roman","serif"' }}>&nbsp;</span>
-                </p>
-                <p
-                    style={{
-                        marginRight: "0cm",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        marginTop: "0cm",
-                        marginBottom: "8.0pt",
-                        textAlign: "justify"
-                    }}
-                >
-                    <span style={{ fontFamily: '"Times New Roman","serif"' }}>&nbsp;</span>
                 </p>
                 <p
                     style={{
@@ -836,7 +788,7 @@ const TermsAndConditions = () => {
                         is received by the Company no later than two weeks before the expiry date.
                         The Company shall not be held liable for any interruption or cessation of
                         service access resulting from delayed renewal payments, the inability to
-                        process or encash payment cheques, or dishonouredcheques, for which a
+                        process or encash payment cheques, or dishonoredcheques, for which a
                         penalty may be imposed. Service access will be suspended from the
                         membership card's expiration date until the Company has received full
                         payment for the subsequent membership term, and all service benefits will
@@ -941,7 +893,7 @@ const TermsAndConditions = () => {
                         Members should direct any complaints to our representatives through the
                         contact number or email on the Company’s website. If the response is
                         unsatisfactory, the matter can be escalated by writing to our registered
-                        office or emailing info@Prepcohealthcare.com. Members cannot assign or
+                        office or emailing info@prepcohealthcare.com. Members cannot assign or
                         transfer their rights or obligations under these Terms of Use without
                         prior written consent from the Company. The Company reserves the right to
                         modify these Terms of Use at its discretion without prior notice. Any
@@ -960,51 +912,6 @@ const TermsAndConditions = () => {
                         Prepcohealthcare
                     </span>
                     <span style={{ fontFamily: '"Times New Roman","serif"' }}>.com</span>
-                </p>
-                <p
-                    style={{
-                        marginRight: "0cm",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        marginTop: "0cm",
-                        marginBottom: "8.0pt",
-                        textAlign: "justify"
-                    }}
-                >
-                    <strong>
-                        <span style={{ fontFamily: '"Times New Roman","serif"' }}>&nbsp;</span>
-                    </strong>
-                </p>
-                <p
-                    style={{
-                        marginRight: "0cm",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        marginTop: "0cm",
-                        marginBottom: "8.0pt",
-                        textAlign: "justify"
-                    }}
-                >
-                    <strong>
-                        <span style={{ fontFamily: '"Times New Roman","serif"' }}>&nbsp;</span>
-                    </strong>
-                </p>
-                <p
-                    style={{
-                        marginRight: "0cm",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        marginTop: "0cm",
-                        marginBottom: "8.0pt",
-                        textAlign: "justify"
-                    }}
-                >
-                    <strong>
-                        <span style={{ fontFamily: '"Times New Roman","serif"' }}>&nbsp;</span>
-                    </strong>
                 </p>
                 <p
                     style={{
@@ -1125,10 +1032,10 @@ const TermsAndConditions = () => {
                             fontFamily: '"Times New Roman","serif"'
                         }}
                     >
-                        PREPCO Healthcare
+                        "PREPCO Healthcare"
                     </span>
                     <span style={{ fontFamily: '"Times New Roman","serif"' }}>
-                        " which are protected as trademarks and/or copyrights (or other
+                        which are protected as trademarks and/or copyrights (or other
                         intellectual property rights). Any unauthorized use of these marks or
                         intellectual property, unless explicitly authorized through a written
                         agreement, constitutes infringement and may result in legal action under
@@ -1661,7 +1568,6 @@ const TermsAndConditions = () => {
                 <p
                     style={{
                         marginRight: "0cm",
-                        marginLeft: "36.0pt",
                         fontSize: "11.0pt",
                         fontFamily: '"Calibri","sans-serif"',
                         marginTop: "0cm",
@@ -2398,6 +2304,19 @@ const TermsAndConditions = () => {
                         fontFamily: '"Calibri","sans-serif"',
                         marginTop: "0cm",
                         marginBottom: "8.0pt",
+                        textAlign: "justify"
+                    }}
+                >
+                    <span style={{ fontFamily: '"Times New Roman","serif"' }}>&nbsp;</span>
+                </p>
+                <p
+                    style={{
+                        marginRight: "0cm",
+                        marginLeft: "0cm",
+                        fontSize: "11.0pt",
+                        fontFamily: '"Calibri","sans-serif"',
+                        marginTop: "0cm",
+                        marginBottom: "8.0pt",
                         lineHeight: "normal"
                     }}
                 >
@@ -2433,6 +2352,19 @@ const TermsAndConditions = () => {
                         necessary, ensuring that I am able to safely participate in Zumba or
                         Online Fitness classes without any medical conditions posing a risk.
                     </span>
+                </p>
+                <p
+                    style={{
+                        marginRight: "0cm",
+                        marginLeft: "0cm",
+                        fontSize: "11.0pt",
+                        fontFamily: '"Calibri","sans-serif"',
+                        marginTop: "0cm",
+                        marginBottom: "8.0pt",
+                        textAlign: "justify"
+                    }}
+                >
+                    <span style={{ fontFamily: '"Times New Roman","serif"' }}>&nbsp;</span>
                 </p>
                 <p
                     style={{
@@ -2805,35 +2737,13 @@ const TermsAndConditions = () => {
                     <span style={{ fontFamily: '"Times New Roman","serif"' }}>
                         In the case of a cancellation, the Company's cancellation policy will
                         apply. If the cancellation request is approved, the Company will refund
-                        only the standard amount for the (
-                    </span>
-                    <span
-                        style={{
-                            fontSize: 16,
-                            lineHeight: "107%",
-                            fontFamily: '"Times New Roman","serif"'
-                        }}
-                    >
-                        Prepco Healthcareopc private limited)
+                        only the standard amount for the {"(Prepco Healthcare OPC private limited)"}
                     </span>
                     <span style={{ fontFamily: '"Times New Roman","serif"' }}>
                         Company product. However, the Company will not be liable for the reversal
                         or refund of any interest or processing fees charged by the credit card
                         holder's issuing bank.
                     </span>
-                </p>
-                <p
-                    style={{
-                        marginRight: "0cm",
-                        marginLeft: "0cm",
-                        fontSize: "11.0pt",
-                        fontFamily: '"Calibri","sans-serif"',
-                        marginTop: "0cm",
-                        marginBottom: "8.0pt",
-                        textAlign: "justify"
-                    }}
-                >
-                    <span style={{ fontFamily: '"Times New Roman","serif"' }}>&nbsp;</span>
                 </p>
                 <p
                     style={{
@@ -3035,8 +2945,7 @@ const TermsAndConditions = () => {
                 >
                     <strong>
                         <span style={{ fontFamily: '"Times New Roman","serif"' }}>
-                            Eligibility and Participation Guidelines for the PREPCO HEALTHCARE
-                            Referral Campaign
+                            Eligibility and Participation Guidelines for the PREPCO HEALTHCARE Referral Campaign
                         </span>
                     </strong>
                 </p>
@@ -3092,16 +3001,7 @@ const TermsAndConditions = () => {
                     <span style={{ fontFamily: '"Times New Roman","serif"' }}>
                         &nbsp;Members. Participants who secure the highest number of successful
                         conversions will qualify for Incentives. A "Qualified Referral" refers to
-                        any individual referred by a Participant who becomes an
-                    </span>
-                    <span
-                        style={{
-                            fontSize: 16,
-                            lineHeight: "107%",
-                            fontFamily: '"Times New Roman","serif"'
-                        }}
-                    >
-                        PREPCO Healthcare
+                        any individual referred by a Participant who becomes an PREPCO Healthcare
                     </span>
                     <span style={{ fontFamily: '"Times New Roman","serif"' }}>
                         &nbsp;Member during the Campaign Period and maintains membership beyond
