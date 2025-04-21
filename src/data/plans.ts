@@ -143,12 +143,13 @@ export const mockData: PlanProps[] = [
       { "id": "feature_40", "content": "Medicine Benefits Worth Rs. 500" },
       { "id": "feature_41", "content": "Virtual Dermatology OPD Consultations: 2" },
       { "id": "feature_42", "content": "Recorded Yoga Sessions: 1- 6M" },
-      { "id": "feature_43", "content": "Fix Your Problem with Yoga" },
+      // { "id": "feature_43", "content": "Fix Your Problem with Yoga" },
+      { "id": "feature_43", "content": "Lab Discount" },
       { "id": "feature_44", "content": "Recorded Fitness Sessions: 1- 6M" },
       { "id": "feature_45", "content": "Recorded Zumba Sessions: 1- 6M" },
-      { "id": "feature_46", "content": "In-Patient Discounts: 1" },
+      // { "id": "feature_46", "content": "In-Patient Discounts: 1" },
       { "id": "feature_47", "content": "Out-Patient Discounts: 1" },
-      { "id": "feature_48", "content": "Home-Based Treatments: 1" },
+      // { "id": "feature_48", "content": "Home-Based Treatments: 1" },
       { "id": "feature_49", "content": "Discounts on Home-Based Treatments" }
     ],
 
@@ -178,7 +179,7 @@ export const mockData: PlanProps[] = [
       "Master Health Checkup at Home - 3 with Get Personalized Diet Plans for 1 year"
     ],
     "features": [
-      { "id": "feature_50", "content": "Master Health Check-up: 3" },
+      { "id": "feature_50", "content": "Master health checkup – 3(split up)" },
       { "id": "feature_51", "content": "Virtual General OPD Consultations: 2" },
       { "id": "feature_52", "content": "Virtual Dental OPD Consultations: 1" },
       { "id": "feature_53", "content": "Virtual Physiotherapy Consultations: 3" },
@@ -307,7 +308,7 @@ export const mockData: PlanProps[] = [
       "Master Health Checkup at Home - 5 with Get Personalized Diet Plans for 1 year"
     ],
     "features": [
-      { "id": "feature_107", "content": "Master Health Check-up: 5" },
+      { "id": "feature_107", "content": "Master health checkup – 3(split up)" },
       { "id": "feature_108", "content": "Dental OPD Consultations: 5" },
       { "id": "feature_109", "content": "General OPD Consultations: 5" },
       { "id": "feature_110", "content": "Virtual General OPD Consultations: 5" },
@@ -320,13 +321,13 @@ export const mockData: PlanProps[] = [
       { "id": "feature_117", "content": "Virtual Dermatology OPD Consultations: 5" },
       { "id": "feature_118", "content": "Recorded Yoga Sessions: 1" },
       { "id": "feature_119", "content": "Fix Your Problem with Yoga: 2" },
-      { "id": "feature_120", "content": "Recorded Fitness Sessions: 2" },
-      { "id": "feature_121", "content": "Recorded Zumba Sessions: 2" },
-      { "id": "feature_122", "content": "Laboratory Discounts: 2" },
-      { "id": "feature_123", "content": "In-Patient Discounts: 2" },
-      { "id": "feature_124", "content": "Out-Patient Discounts: 2" },
-      { "id": "feature_125", "content": "Home-Based Treatments: 2" },
-      { "id": "feature_126", "content": "Discounts on Home-Based Treatments: 2" }
+      { "id": "feature_120", "content": "Live & recorded fitness session – 1" },
+      { "id": "feature_121", "content": "Live & recorded zumba session – 1" },
+      { "id": "feature_122", "content": "Lab Discounts: 1" },
+      { "id": "feature_123", "content": "In-Patient Discount: 1" },
+      { "id": "feature_124", "content": "Out-Patient Discount: 1" },
+      { "id": "feature_125", "content": "Home-Based Treatments: 3" },
+      { "id": "feature_126", "content": "Discount on Home-Based Treatments: 1" }
     ]
   },
   {
