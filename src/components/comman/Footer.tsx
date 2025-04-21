@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import { images } from "../../../public/assets";
 import Link from "next/link";
+import { socialMediaLinks } from "@/data/comman";
+import { socialMediaLinksType } from "@/types";
 
 const Footer = () => {
   return (
@@ -9,7 +11,7 @@ const Footer = () => {
       <div className="px-4 sm:px-4 lg:px-8 lg:py-7">
         {/* Links Section */}
         <div className="flex flex-col sm:flex-row gap-4 lg:gap-8">
-          <div className="flex-[3] mb-8 flex flex-col gap-2 lg:gap-8">
+          <div className="flex-[2] mb-8 flex flex-col gap-2 lg:gap-8">
             <Image
               src={images.svgs.LogoWhite}
               alt="prepco"
@@ -21,73 +23,28 @@ const Footer = () => {
               and accessible healthcare for a healthier, smarter future.
             </p>
             <div className="flex justify-start gap-4 mt-4">
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                aria-label="Twitter"
-                className="hover:-translate-y-2 transition-transform duration-200"
-              >
-                <Image
-                  width={48}
-                  height={48}
-                  src={images.pngs.twitterIcon}
-                  alt="Twitter"
-                  className=""
-                />
-              </a>
-              <a
-                href="https://wa.me/+919962107102"
-                target="_blank"
-                aria-label="WhatsApp"
-                className="hover:-translate-y-2 transition-transform duration-200"
-              >
-                <Image
-                  width={48}
-                  height={48}
-                  src={images.pngs.whatsappIcon}
-                  alt="WhatsApp"
-                  className=""
-                />
-              </a>
-
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                aria-label="Instagram"
-                className="hover:-translate-y-2 transition-transform duration-200"
-              >
-                <Image
-                  width={48}
-                  height={48}
-                  src={images.pngs.instagramIcon}
-                  alt="Instagram"
-                  className=""
-                />
-              </a>
-              <a
-                href="https://youtube.com/@prepcohealthcarewebsite?si=Aio-ud3k2_VdHDju"
-                target="_blank"
-                aria-label="YouTube"
-                className="hover:-translate-y-2 transition-transform duration-200"
-              >
-                <Image
-                  width={48}
-                  height={48}
-                  src={images.pngs.youtubeIcon}
-                  alt="YouTube"
-                  className=""
-                />
-              </a>
-            </div>
-            <div className="space-y-3 lg:space-y-6">
-              <h3 className="text-lg font-semibold mt-6 mb-2">Open Hours</h3>
-              <p>Mon - Sat: 8.00 AM - 6.00 PM</p>
-              <p>Sunday: Closed</p>
+              {socialMediaLinks.map((data: socialMediaLinksType, index: number) => (
+                <a
+                  key={index}
+                  href={data.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={data.name}
+                  className="hover:-translate-y-2 transition-transform duration-200"
+                >
+                  <Image
+                    width={48}
+                    height={48}
+                    src={data.iconSrc}
+                    alt={data.name}
+                  />
+                </a>
+              ))}
             </div>
           </div>
           <div className="flex-1 flex flex-col gap-2 lg:gap-8">
             <h3 className="text-lg font-semibold mb-4">Links</h3>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-4">
               <li>
                 <Link href="/" className="hover:underline">
                   Home
@@ -108,11 +65,6 @@ const Footer = () => {
                   Plans
                 </Link>
               </li>
-            </ul>
-          </div>
-          <div className="flex flex-col gap-2 lg:gap-8">
-            <h3 className="text-lg font-semibold mb-4">Links</h3>
-            <ul className="flex flex-col gap-2">
               <li>
                 <Link href="/privacy-policy" className="hover:underline">
                   Privacy Policy
@@ -130,7 +82,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex-[2] flex flex-col gap-4 lg:gap-5 lg:items-center justify-around">
+          <div className="flex-[2] flex flex-col gap-4 lg:gap-5 lg:items-center justify-start">
             <div className="space-y-3 lg:space-y-6">
               <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
               <ul className="flex flex-col gap-5">
@@ -164,29 +116,36 @@ const Footer = () => {
                     </span>
                   </a>
                 </li>
+                <a href="https://maps.app.goo.gl/B4VYxVvLykajAbvBA" target={'_blank'}>
+                  <div className="flex items-center gap-2">
+                    <div className="hover:-translate-y-2 transition-transform duration-200 lg:self-start">
+                      <Image
+                        width={48}
+                        height={48}
+                        src={images.pngs.locationIcon}
+                        alt="Phone"
+                      />
+                    </div>
+                    <div className="hidden lg:block space-y-3">
+                      <p>50/22, Thirumangalam road,</p>
+                      <p>Anna nagar west, </p>
+                      <p>Chennai - 600040.</p>
+                    </div>
+                    <div className="block lg:hidden space-y-3">
+                      <p>50/22, Thirumangalam road,<br />Anna nagar west, Chennai - 600040.</p>
+                    </div>
+                  </div>
+                </a>
               </ul>
-
             </div>
-            <a href="https://maps.app.goo.gl/B4VYxVvLykajAbvBA">
-              <div className="flex items-center gap-2">
-                <div className="hover:-translate-y-2 transition-transform duration-200 lg:self-start">
-                  <Image
-                    width={48}
-                    height={48}
-                    src={images.pngs.locationIcon}
-                    alt="Phone"
-                  />
-                </div>
-                <div className="hidden lg:block space-y-3">
-                  <p>50/22, Thirumangalam road,</p>
-                  <p>Anna nagar west, </p>
-                  <p>Chennai - 600040.</p>
-                </div>
-                <div className="block lg:hidden space-y-3">
-                  <p>50/22, Thirumangalam road,<br />Anna nagar west, Chennai - 600040.</p>
-                </div>
-              </div>
-            </a>
+          </div>
+          <div className="flex-1 flex flex-col lg:items-center justify-start">
+            <div className="space-y-3 lg:space-y-6">
+              <h3 className="text-lg font-semibold">Open Hours</h3>
+              <p>Mon - Sat</p>
+              <p>8.00 AM - 6.00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
           </div>
         </div>
 

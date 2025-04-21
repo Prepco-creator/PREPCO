@@ -170,3 +170,8 @@ export type {
     YoutubeIframeProps,
     PlanServices,
 }
+export interface socialMediaLinksType {
+    name: string;
+    link: string;
+    iconSrc: StaticImageData | string;
+}

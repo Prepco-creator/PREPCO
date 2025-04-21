@@ -56,6 +56,9 @@ import youtubeIcon from './pngs/youtube-icon.png';
 import whatsappIcon from './pngs/whatsapp-icon.png';
 import twitterIcon from './pngs/twitter-icon.png';
 import instagramIcon from './pngs/instagram-icon.png';
+import facebookIcon from './pngs/Facebook.png';
+import xIcon from './pngs/X.png';
+import threadsIcon from './pngs/Threads.png';
 import phoneIcon from './pngs/phone.png';
 import locationIcon from './pngs/location.png'
 import mailIcon from './pngs/mail.png';
@@ -157,6 +160,9 @@ const pngs = {
     whatsappIcon,
     twitterIcon,
     instagramIcon,
+    xIcon,
+    threadsIcon,
+    facebookIcon,
     phoneIcon,
     mailIcon,
     popupImage,
