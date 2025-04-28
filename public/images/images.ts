@@ -65,6 +65,7 @@ import mailIcon from './pngs/mail.png';
 import popupImage from './pngs/popup-1.png';
 import pattern from './pngs/pattern-removebg-preview.png';
 import testimoneeProfile from './pngs/testimonee-profile.png'
+import paymentDoneTick from './pngs/payment-done-icon.png';
 
 import completeWellnessPlan from './pngs/complete-wellness.png';
 import just50 from './pngs/Just_50.png';
@@ -133,6 +134,7 @@ const svgs = {
 }
 
 const pngs = {
+    paymentDoneTick,
     completeWellnessPlan,
     just50,
     justForTwo,

@@ -12,10 +12,10 @@ const PaymentSuccess: React.FC = () => {
     return (
         <>
             <section className="bg-primary1 text-white flex items-center justify-center min-h-screen">
-                <div className="text-center">
+                <div className="text-center space-y-8">
                     <h1 className="text-5xl font-bold text-primary-dark">Thank You for Choosing Prepco Health Care !
                     </h1>
-                    <CircleCheck size={100} className="text-center block w-full my-8" />
+                    <Image src={images.pngs.paymentDoneTick} alt="payment-done-icon" className="mx-auto" width={200} height={200} />
                     <p className="mt-4 text-lg text-secondary-dark">
                         Congratulations on taking your first step towards a healthier lifestyle!``
                     </p>
