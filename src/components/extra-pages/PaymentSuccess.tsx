@@ -6,6 +6,8 @@ import { images } from "../../../public/assets";
 import Footer from "../comman/Footer";
 import { CircleCheck } from "lucide-react";
 import Link from "next/link";
+import { socialMediaLinks } from "@/data/comman";
+import { socialMediaLinksType } from "@/types";
 
 const PaymentSuccess: React.FC = () => {
 
@@ -28,18 +30,23 @@ const PaymentSuccess: React.FC = () => {
                             Follow us on social media for updates and support:
                         </p>
                         <div className="flex justify-center gap-4 mt-4">
-                            <a href="https://www.twitter.com" aria-label="Twitter">
-                                <Image width={48} height={48} src={images.pngs.twitterIcon} alt="Twitter" />
-                            </a>
-                            <a href="https://wa.me/+919962107102" aria-label="WhatsApp">
-                                <Image width={48} height={48} src={images.pngs.whatsappIcon} alt="WhatsApp" />
-                            </a>
-                            <a href="https://www.instagram.com" aria-label="Instagram">
-                                <Image width={48} height={48} src={images.pngs.instagramIcon} alt="Instagram" />
-                            </a>
-                            <a href="https://www.youtube.com" aria-label="YouTube">
-                                <Image width={48} height={48} src={images.pngs.youtubeIcon} alt="YouTube" />
-                            </a>
+                            {socialMediaLinks.map((data: socialMediaLinksType, index: number) => (
+                                <a
+                                    key={index}
+                                    href={data.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={data.name}
+                                    className="hover:-translate-y-2 transition-transform duration-200"
+                                >
+                                    <Image
+                                        width={48}
+                                        height={48}
+                                        src={data.iconSrc}
+                                        alt={data.name}
+                                    />
+                                </a>
+                            ))}
                         </div>
                     </div>
 
