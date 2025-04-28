@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { images } from "../../../public/assets";
 import Footer from "../comman/Footer";
-import { CircleCheck } from "lucide-react";
 import Link from "next/link";
 import { socialMediaLinks } from "@/data/comman";
 import { socialMediaLinksType } from "@/types";
