@@ -1,6 +1,6 @@
 import React from "react";
 import ContactForm from "./ContactForm";
-import CTA from "../comman/CTA";
+// import CTA from "../comman/CTA";
 import { images } from "../../../public/assets";
 import Image from "next/image";
 
@@ -70,7 +70,7 @@ const HeroSection = () => {
       <section className="flex-1">
         <ContactForm />
       </section>
-      <CTA className="bg-white absolute w-11/12 bottom-[-25%] left-1/2 transform -translate-x-1/2 mx-auto my-8 rounded-[40px] lg:rounded-full shadow-xl" />
+      {/* <CTA className="bg-white absolute w-11/12 bottom-[-25%] left-1/2 transform -translate-x-1/2 mx-auto my-8 rounded-[40px] lg:rounded-full shadow-xl" /> */}
     </section>
   );
 };

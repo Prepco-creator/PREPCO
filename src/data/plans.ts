@@ -21,8 +21,8 @@ export const mockData: PlanProps[] = [
     featuresDisplay: [
       "Master Health Checkup at Home - 2",
       "Virtual / Tele Consultation Services - 4",
+      "Laboratory Discount",
       "Yoga, Fitness and Nutritionist Online Session – 1 person/6 Months",
-      "Laboratory Discount"
     ],
     "features": [
       { "id": "feature_8", "content": "Master Health Check-up: 2" },
@@ -55,10 +55,10 @@ export const mockData: PlanProps[] = [
     videoLinkTamil: videos.triMePlan_tamil,
     membersCount: 3,
     featuresDisplay: [
-      "Yoga, Fitness and Nutritionist Online Session – 1 person/6 Months",
       "Master Health Checkup at Home - 3",
       "Virtual / Tele Consultation Services - 6",
-      "Laboratory and Out-Patient Discounts"
+      "Laboratory and Out-Patient Discounts",
+      "Yoga, Fitness and Nutritionist Online Session – 1 person/6 Months",
     ],
     features: [
       { "id": "feature_19", "content": "Master Health Check-up: 3" },
@@ -128,8 +128,8 @@ export const mockData: PlanProps[] = [
     "featuresDisplay": [
       "Physiotherapy Treatment at Home - 1",
       "Virtual / Tele Consultation Services - 8",
+      "Master Health Checkup at Home - 3 with Get Personalized Diet Plans for 1 person/1 year",
       "Online Session Zumba, Yoga, Fitness – 1 person/6 Months",
-      "Master Health Checkup at Home - 3 with Get Personalized Diet Plans for 1 person/1 year"
     ],
     "features": [
       { "id": "feature_32", "content": "Master Health Check-up: 4" },
