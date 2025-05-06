@@ -19,24 +19,27 @@ export const mockData: PlanProps[] = [
     videoLinkTamil: videos.justForTwoPlan_tamil,
     membersCount: 2,
     featuresDisplay: [
-      "Master Health Checkup at Home - 2",
-      "Virtual / Tele Consultation Services - 4",
-      "Laboratory Discount",
-      "Yoga, Fitness and Nutritionist Online Session – 1 person/6 Months",
+      "Master Health Check-up @ Home",
+      "6 Expert Outpatient Consultations - Anytime, Anywhere",
+      "Nutritionist Consultation with a 6-Month Personalized Diet Plans",
+      "Unlimited Lab Tests & Outpatient Treatments – Your Health, Fully Covered",
+      "Live & Recorded Yoga and Fitness Sessions"
+    ]
+    ,
+    features: [
+      { id: "feature_9", content: "2 Master Health Check-Up – Cashless Voucher" },
+      { id: "feature_10", content: "1 General OPD Consultation - Cashless Voucher" },
+      { id: "feature_11", content: "2 Virtual General OPD Consultation - Cashless Vouchers" },
+      { id: "feature_12", content: "1 Virtual Dental OPD Consultation - Cashless Voucher" },
+      { id: "feature_13", content: "1 Virtual Physiotherapist Consultation - Cashless Voucher" },
+      { id: "feature_14", content: "1 Cashless Medicine Voucher - ₹500" },
+      { id: "feature_15", content: "Nutritionist Consultation + Diet Chart" },
+      { id: "feature_16", content: "Live & Recorded Yoga Sessions : 6-Months - 1 person" },
+      { id: "feature_17", content: "Live & Recorded Fitness Sessions : 6-Months - 1 person" },
+      { id: "feature_18", content: "Unlimited Laboratory Services - Up To 30% Discount" },
+      { id: "feature_19", content: "Unlimited Outpatient Services - Up To 25% Discount" }
     ],
-    "features": [
-      { "id": "feature_8", "content": "Master Health Check-up: 2" },
-      { "id": "feature_9", "content": "General OPD Consultations: 1" },
-      { "id": "feature_10", "content": "Virtual General OPD Consultations: 2" },
-      { "id": "feature_11", "content": "Virtual Dental OPD Consultations: 1" },
-      { "id": "feature_12", "content": "Virtual Physiotherapy Consultations: 1" },
-      { "id": "feature_13", "content": "Nutrition Consultation: 1- P- 6M" },
-      { "id": "feature_14", "content": "Medicine Benefits Worth Rs. 500" },
-      { "id": "feature_15", "content": "Recorded Yoga Sessions: 1- 6M" },
-      { "id": "feature_16", "content": "Recorded Fitness Sessions: 1- 6M" },
-      { "id": "feature_17", "content": "Laboratory Discounts: 1" },
-      { "id": "feature_18", "content": "Out-Patient Discounts: 1" }
-    ],
+    
   },
   {
     id: "plan_3",
@@ -55,26 +58,29 @@ export const mockData: PlanProps[] = [
     videoLinkTamil: videos.triMePlan_tamil,
     membersCount: 3,
     featuresDisplay: [
-      "Master Health Checkup at Home - 3",
-      "Virtual / Tele Consultation Services - 6",
-      "Laboratory and Out-Patient Discounts",
-      "Yoga, Fitness and Nutritionist Online Session – 1 person/6 Months",
+      "Master Health Check-up @ Home",
+      "8 Expert Outpatient Consultations - Anytime, Anywhere",
+      "Unlimited Outpatient Treatments — Expert Care without Limits",
+      "Diagnostic & Lab Services without Limits — Because Your Health Deserves",
+      "Live & Recorded Yoga and Fitness Sessions"
     ],
+    
     features: [
-      { "id": "feature_19", "content": "Master Health Check-up: 3" },
-      { "id": "feature_20", "content": "Dental OPD Consultations: 1" },
-      { "id": "feature_21", "content": "General OPD Consultations: 1" },
-      { "id": "feature_22", "content": "Virtual General OPD Consultations: 2" },
-      { "id": "feature_23", "content": "Virtual Dental OPD Consultations: 1" },
-      { "id": "feature_24", "content": "Virtual Physiotherapy Consultations: 1" },
-      { "id": "feature_25", "content": "Nutrition Consultation: 1- P- 6M" },
-      { "id": "feature_26", "content": "Medicine Benefits Worth Rs. 500" },
-      { "id": "feature_27", "content": "Virtual Dermatology OPD Consultations: 1" },
-      { "id": "feature_28", "content": "Recorded Yoga Sessions: 1- 6M" },
-      { "id": "feature_29", "content": "Recorded Fitness Sessions: 1- 6M" },
-      { "id": "feature_30", "content": "Laboratory Discounts: 1" },
-      { "id": "feature_31", "content": "Out-Patient Discounts: 1" }
-    ],
+      { id: "feature_19", content: "3 Master Health Check-Up – Cashless Voucher" },
+      { id: "feature_20", content: "1 Dental OPD Consultation : 1 Cashless Voucher" },
+      { id: "feature_21", content: "1 General OPD Consultation - Cashless Vouchers" },
+      { id: "feature_22", content: "2 Virtual General OPD Consultation - Cashless Vouchers" },
+      { id: "feature_23", content: "1 Virtual Dental OPD Consultation - Cashless Voucher" },
+      { id: "feature_24", content: "1 Virtual Physiotherapist Consultation - Cashless Voucher" },
+      { id: "feature_25", content: "Nutritionist Consultation + Diet Chart" },
+      { id: "feature_26", content: "1 Cashless Medicine Voucher - ₹500" },
+      { id: "feature_27", content: "1 Virtual Dermatologist Consultation - Cashless Voucher" },
+      { id: "feature_28", content: "Live & Recorded Yoga Sessions : 6-Months For 1person" },
+      { id: "feature_29", content: "Live & Recorded Fitness Sessions : 6-Months For 1person" },
+      { id: "feature_30", content: "Unlimited Laboratory Services - Up To 30% Discount" },
+      { id: "feature_31", content: "Unlimited Outpatient Services - Up To 25% Discount" }
+    ]
+    
 
   },
   {
@@ -93,21 +99,24 @@ export const mockData: PlanProps[] = [
     videoLinkEnglish: videos.justForYouPlan_english,
     videoLinkTamil: videos.justForYouPlan_tamil,
     featuresDisplay: [
-      "Master Health Checkup at Home - 1",
-      "Virtual / Tele Consultation Services - 5",
-      "Nutritionist Online Session (Get Personalized Diet Plans For 6 Months)",
-      "Medicine Benefits Worth Rs. 500"
-    ],
+      "Master Health Check-up @ Home",
+      "5 Expert Outpatient Consultations - Anytime, Anywhere",
+      "Nutritionist Consultation with Personalized Diet Plans – 6 Months",
+      "Medicine Benefits Worth ₹500 @ Door Step",
+      "Unlimited Diagnostic & Laboratory Services"
+    ],    
     membersCount: 1,
     features: [
-      { id: 'feature_1', content: 'Master Health Check-up: 1' },
-      { id: 'feature_2', content: 'Virtual General OPD Consultations: 2' },
-      { id: 'feature_6', content: 'Medicine benefits worth Rs.500 ' },
-      { id: 'feature_3', content: 'Virtual Dental OPD Consultations: 1' },
-      { id: 'feature_4', content: 'Virtual Physiotherapy Consultations: 1' },
-      { id: 'feature_5', content: 'Nutrition Consultation: 1- P- 6M' },
-      { id: 'feature_7', content: 'Virtual Dermatology OPD Consultations: 1' },
-    ],
+      { id: 'feature_1', content: '1 Master Health Check-Up – Cashless Voucher' },
+      { id: 'feature_2', content: '2 Virtual General OPD Consultation - Cashless Vouchers' },
+      { id: 'feature_3', content: '1 Virtual Dental OPD Consultation - Cashless Voucher' },
+      { id: 'feature_4', content: '1 Virtual Physiotherapist Consultation - Cashless Voucher' },
+      { id: 'feature_5', content: '1 Virtual Dermatologist Consultation - Cashless Voucher' },
+      { id: 'feature_6', content: '1 Cashless Medicine Voucher - ₹500' },
+      { id: 'feature_7', content: 'Nutritionist Consultation + Diet Chart' },
+      { id: 'feature_8', content: 'Unlimited Laboratory Services - Up To 30% Discount' },
+    ]
+    ,
   },
   {
     "id": "plan_4",
@@ -126,32 +135,29 @@ export const mockData: PlanProps[] = [
     "videoLinkTamil": videos.quadPlan_tamil,
     "membersCount": 4,
     "featuresDisplay": [
-      "Physiotherapy Treatment at Home - 1",
-      "Virtual / Tele Consultation Services - 8",
-      "Master Health Checkup at Home - 3 with Get Personalized Diet Plans for 1 person/1 year",
-      "Online Session Zumba, Yoga, Fitness – 1 person/6 Months",
+      "Master Health Check-up @ Home",
+      "12 Expert Outpatient Consultations - Anytime, Anywhere",
+      "Expert Nutritionist Consultation + Personalized Diet Plan for One",
+      "Unlimited Outpatient Services – Expert Treatment",
+      "Comprehensive Diagnostic & Lab Services – Unlimited Access"
     ],
-    "features": [
-      { "id": "feature_32", "content": "Master Health Check-up: 4" },
-      { "id": "feature_33", "content": "Dental OPD Consultations: 2" },
-      { "id": "feature_34", "content": "General OPD Consultations: 2" },
-      { "id": "feature_35", "content": "Virtual General OPD Consultations: 2" },
-      { "id": "feature_36", "content": "Virtual Dental OPD Consultations: 2" },
-      { "id": "feature_37", "content": "Virtual Physiotherapy Consultations: 2" },
-      { "id": "feature_38", "content": "Dental Cleaning: 1" },
-      { "id": "feature_39", "content": "Nutrition: 1- P- 1Y" },
-      { "id": "feature_40", "content": "Medicine Benefits Worth Rs. 500" },
-      { "id": "feature_41", "content": "Virtual Dermatology OPD Consultations: 2" },
-      { "id": "feature_42", "content": "Recorded Yoga Sessions: 1- 6M" },
-      // { "id": "feature_43", "content": "Fix Your Problem with Yoga" },
-      { "id": "feature_43", "content": "Lab Discount" },
-      { "id": "feature_44", "content": "Recorded Fitness Sessions: 1- 6M" },
-      { "id": "feature_45", "content": "Recorded Zumba Sessions: 1- 6M" },
-      // { "id": "feature_46", "content": "In-Patient Discounts: 1" },
-      { "id": "feature_47", "content": "Out-Patient Discounts: 1" },
-      // { "id": "feature_48", "content": "Home-Based Treatments: 1" },
-      { "id": "feature_49", "content": "Discounts on Home-Based Treatments" }
-    ],
+   "features": [
+  { "id": "feature_32", "content": "4 Master Health Check-Up – Cashless Voucher" },
+  { "id": "feature_33", "content": "2 Dental OPD Consultation – Cashless Voucher" },
+  { "id": "feature_34", "content": "2 General OPD Consultation – Cashless Vouchers" },
+  { "id": "feature_35", "content": "2 Virtual General OPD Consultation – Cashless Vouchers" },
+  { "id": "feature_36", "content": "2 Virtual Dental OPD Consultation – Cashless Voucher" },
+  { "id": "feature_37", "content": "2 Virtual Physiotherapist Consultation – Cashless Voucher" },
+  { "id": "feature_38", "content": "1 Personalized Nutritionist Consultation & Diet Plan" },
+  { "id": "feature_39", "content": "1 Cashless Medicine Voucher – ₹500" },
+  { "id": "feature_40", "content": "2 Virtual Dermatologist Consultation – Cashless Voucher" },
+  { "id": "feature_41", "content": "Live & Recorded Yoga Sessions – 6-Months for 1 person" },
+  { "id": "feature_42", "content": "Live & Recorded Fitness Sessions – 6-Months for 1 person" },
+  { "id": "feature_43", "content": "Live & Recorded Zumba Sessions – 6-Months for 1 person" },
+  { "id": "feature_44", "content": "Unlimited Laboratory Services – Up to 30% Discount" },
+  { "id": "feature_45", "content": "Unlimited Outpatient Services – Up to 25% Discount" }
+]
+,
 
   },
 
@@ -173,30 +179,31 @@ export const mockData: PlanProps[] = [
     "videoLinkTamil": videos.sheroPlan_tamil,
     "membersCount": 1,
     "featuresDisplay": [
-      "Fix Your Problem with Yoga: 1 (Ailment) - 3 Months and Online Session – 1 year",
-      "Home Based Treatment Service - 1 & Discounts at All Physiotherapy Treatments, Acupuncture, Varma",
-      "Virtual / Tele Consultation Services - 8",
-      "Master Health Checkup at Home - 3 with Get Personalized Diet Plans for 1 year"
-    ],
-    "features": [
-      { "id": "feature_50", "content": "Master health checkup – 3(split up)" },
-      { "id": "feature_51", "content": "Virtual General OPD Consultations: 2" },
-      { "id": "feature_52", "content": "Virtual Dental OPD Consultations: 1" },
-      { "id": "feature_53", "content": "Virtual Physiotherapy Consultations: 3" },
-      { "id": "feature_54", "content": "Dental Cleaning: 1" },
-      { "id": "feature_55", "content": "Nutrition: 1-P-1Y" },
-      { "id": "feature_56", "content": "Medicine Benefits Worth Rs. 500" },
-      { "id": "feature_57", "content": "Virtual Dermatology OPD Consultations: 2" },
-      { "id": "feature_58", "content": "Recorded Yoga Sessions: 1" },
-      { "id": "feature_59", "content": "Fix Your Problem with Yoga: 1-3M" },
-      { "id": "feature_60", "content": "Recorded Fitness Sessions: 1" },
-      { "id": "feature_61", "content": "Recorded Zumba Sessions: 1" },
-      { "id": "feature_62", "content": "Laboratory Discounts: 1" },
-      { "id": "feature_63", "content": "In-Patient Discounts: 1" },
-      { "id": "feature_64", "content": "Out-Patient Discounts: 1" },
-      { "id": "feature_65", "content": "Home-Based Treatments: 1" },
-      { "id": "feature_66", "content": "Discounts on Home-Based Treatments: 1" }
-    ]
+  "4 Master Health Check-up @ Home - Cashless",
+  "10 Expert Outpatient Consultations - Anytime, Anywhere",
+  "Avail Professional Dental Cleaning Service Today",
+  "Unlimited Access - Comprehensive Diagnostic & Lab Services",
+  "Unlock Unlimited Inpatient & Outpatient Treatments – Enjoy Great Discounts"
+],
+"features": [
+  { "id": "feature_46", "content": "3 Master Health Check-Up – Cashless Voucher" },
+  { "id": "feature_47", "content": "1 General OPD Consultation - Cashless Vouchers" },
+  { "id": "feature_48", "content": "2 Virtual General OPD Consultation - Cashless Vouchers" },
+  { "id": "feature_49", "content": "1 Virtual Dental OPD Consultation - Cashless Voucher" },
+  { "id": "feature_50", "content": "3 Virtual Physiotherapist Consultation - Cashless Voucher" },
+  { "id": "feature_51", "content": "1 Professional Dental Cleaning – For a Brighter, Healthier Smile" },
+  { "id": "feature_52", "content": "Personalized Nutritionist Consultation & Diet Plan" },
+  { "id": "feature_53", "content": "1 Cashless Medicine Voucher - ₹500" },
+  { "id": "feature_54", "content": "2 Virtual Dermatologist Consultation - Cashless Voucher" },
+  { "id": "feature_55", "content": "Live & Recorded Yoga Sessions" },
+  { "id": "feature_56", "content": "Live & Recorded Fitness Sessions" },
+  { "id": "feature_57", "content": "Live & Recorded Zumba Sessions" },
+  { "id": "feature_58", "content": "1 Home-Based Physiotherapy Treatment - Cashless Voucher" },
+  { "id": "feature_59", "content": "Unlimited Laboratory Services - Up To 30% Discount" },
+  { "id": "feature_60", "content": "Unlimited Outpatient Services - Up To 25% Discount" },
+  { "id": "feature_61", "content": "Unlimited Inpatient Services Up To 25% Discount" }
+]
+
   },
   {
     "id": "plan_6",
@@ -214,33 +221,33 @@ export const mockData: PlanProps[] = [
     "videoLinkEnglish": videos.quadProPlan_english,
     "videoLinkTamil": videos.quadProPlan_tamil,
     "membersCount": 4,
-    "featuresDisplay": ["Home Based Treatment Services - 1 (All Physiotherapy, Acupuncture, Varma)",
-      "Virtual / Tele Consultation Services - 11",
-      "Fix Your Problem with Yoga: 1 - 6 Months and Online Session – 1 year",
-      "Master Health Checkup at Home - 4 with Get Personalized Diet Plans – 2 person/1 year"
-    ],
-    "features": [
-      { "id": "feature_67", "content": "Master Health Check-up: 4" },
-      { "id": "feature_68", "content": "Dental OPD Consultations: 2" },
-      { "id": "feature_69", "content": "General OPD Consultations: 2" },
-      { "id": "feature_70", "content": "Virtual General OPD Consultations: 4" },
-      { "id": "feature_71", "content": "Virtual Dental OPD Consultations: 2" },
-      { "id": "feature_72", "content": "Virtual Physiotherapy Consultations: 3" },
-      { "id": "feature_73", "content": "Dental Cleaning: 2" },
-      { "id": "feature_74", "content": "Nutrition: 2-P-1Y" },
-      { "id": "feature_75", "content": "Pest Control: 1 KITCHEN" },
-      { "id": "feature_76", "content": "Medicine Benefits Worth Rs. 500: 2" },
-      { "id": "feature_77", "content": "Virtual Dermatology OPD Consultations: 2" },
-      { "id": "feature_78", "content": "Recorded Yoga Sessions: 1" },
-      { "id": "feature_79", "content": "Fix Your Problem with Yoga: 1-6M" },
-      { "id": "feature_80", "content": "Recorded Fitness Sessions: 1" },
-      { "id": "feature_81", "content": "Recorded Zumba Sessions: 1" },
-      { "id": "feature_82", "content": "Laboratory Discounts: 1" },
-      { "id": "feature_83", "content": "In-Patient Discounts: 1" },
-      { "id": "feature_84", "content": "Out-Patient Discounts: 1" },
-      { "id": "feature_85", "content": "Home-Based Treatments: 1" },
-      { "id": "feature_86", "content": "Discounts on Home-Based Treatments: 1" }
-    ]
+  "featuresDisplay": [
+  "4 Master Health Check-up @ Home - Cashless",
+  "16 Expert Outpatient Consultations - Anytime, Anywhere",
+  "Expert Nutritionist Consultation + Personalized Diet Plan for Two",
+  "Unlimited Access - Comprehensive Diagnostic & Lab Services",
+  "Unlimited Inpatient & Outpatient Treatments – Enjoy Great Discounts"
+],
+"features": [
+  { "id": "feature_62", "content": "4 Master Health Check-Up – Cashless Voucher" },
+  { "id": "feature_63", "content": "2 Dental OPD Consultation - Cashless Voucher" },
+  { "id": "feature_64", "content": "2 General OPD Consultation - Cashless Vouchers" },
+  { "id": "feature_65", "content": "4 Virtual General OPD Consultation - Cashless Vouchers" },
+  { "id": "feature_66", "content": "2 Virtual Dental OPD Consultation - Cashless Voucher" },
+  { "id": "feature_67", "content": "3 Virtual Physiotherapist Consultation - Cashless Voucher" },
+  { "id": "feature_68", "content": "2 Personalized Nutritionist Consultation & Diet Plan" },
+  { "id": "feature_69", "content": "Complete Kitchen Pest Control – Cashless Voucher" },
+  { "id": "feature_70", "content": "2 Cashless Medicine Voucher - ₹500" },
+  { "id": "feature_71", "content": "2 Virtual Dermatologist Consultation - Cashless Voucher" },
+  { "id": "feature_72", "content": "Live & Recorded Yoga Sessions" },
+  { "id": "feature_73", "content": "Live & Recorded Fitness Sessions" },
+  { "id": "feature_74", "content": "Live & Recorded Zumba Sessions" },
+  { "id": "feature_75", "content": "Unlimited Laboratory Services - Up to 30% Discount" },
+  { "id": "feature_76", "content": "Unlimited Outpatient Services - Up to 25% Discount" },
+  { "id": "feature_77", "content": "Unlimited Inpatient Services - Up to 25% Discount" }
+]
+
+
   },
   {
     "id": "plan_7",
@@ -258,32 +265,34 @@ export const mockData: PlanProps[] = [
     videoLinkEnglish: videos.completeWellnessPlan_english,
     videoLinkTamil: videos.completeWellnessPlan_tamil,
     "membersCount": 5,
-    "featuresDisplay": ["Fix Your Problem with Yoga: 2 (Ailment) and Online Session – 1 year",
-      "Home Based Treatment Services - 2 (All Physiotherapy, Acupuncture, Varma)",
-      "Virtual / Tele Consultation Services - 16",
-      "Master Health Checkup at Home - 4 with Get Personalized Diet Plans – 3 person/1 year"],
-    "features": [
-      { "id": "feature_87", "content": "Master Health Check-up: 4" },
-      { "id": "feature_88", "content": "Dental OPD Consultations: 4" },
-      { "id": "feature_89", "content": "General OPD Consultations: 4" },
-      { "id": "feature_90", "content": "Virtual General OPD Consultations: 4" },
-      { "id": "feature_91", "content": "Virtual Dental OPD Consultations: 4" },
-      { "id": "feature_92", "content": "Virtual Physiotherapy Consultations: 4" },
-      { "id": "feature_93", "content": "Dental Cleaning: 3" },
-      { "id": "feature_94", "content": "Nutrition: 3-P-1Y" },
-      { "id": "feature_95", "content": "Pest Control: 1 KITCHEN + CONSULTATION" },
-      { "id": "feature_96", "content": "Medicine Benefits Worth Rs. 500: 4" },
-      { "id": "feature_97", "content": "Virtual Dermatology OPD Consultations: 4" },
-      { "id": "feature_98", "content": "Recorded Yoga Sessions: 1" },
-      { "id": "feature_99", "content": "Fix Your Problem with Yoga: 2" },
-      { "id": "feature_100", "content": "Recorded Fitness Sessions: 1" },
-      { "id": "feature_101", "content": "Recorded Zumba Sessions: 1" },
-      { "id": "feature_102", "content": "Laboratory Discounts: 1" },
-      { "id": "feature_103", "content": "In-Patient Discounts: 1" },
-      { "id": "feature_104", "content": "Out-Patient Discounts: 1" },
-      { "id": "feature_105", "content": "Home-Based Treatments: 2" },
-      { "id": "feature_106", "content": "Discounts on Home-Based Treatments: 1" }
-    ]
+"featuresDisplay": [
+  "4 Master Health Check-up @ Home - Cashless",
+  "25 Expert Outpatient Consultations - Anytime, Anywhere",
+  "Unlimited - Comprehensive Diagnostic & Lab Services",
+  "Unlimited Inpatient & Outpatient Treatments – Enjoy Great Discounts",
+  "2 Home-Based Physiotherapy Services - Cashless Voucher"
+],
+"features": [
+  { "id": "feature_78", "content": "4 Master Health Check-Up – Cashless Voucher" },
+  { "id": "feature_79", "content": "4 Dental OPD Consultation - Cashless Voucher" },
+  { "id": "feature_80", "content": "4 General OPD Consultation - Cashless Vouchers" },
+  { "id": "feature_81", "content": "4 Virtual General OPD Consultation - Cashless Vouchers" },
+  { "id": "feature_82", "content": "4 Virtual Dental OPD Consultation - Cashless Voucher" },
+  { "id": "feature_83", "content": "4 Virtual Physiotherapist Consultation - Cashless Voucher" },
+  { "id": "feature_84", "content": "3 Personalized Nutritionist Consultation & Diet Plan" },
+  { "id": "feature_85", "content": "Complete Home Consultation + Kitchen Pest Control" },
+  { "id": "feature_86", "content": "4 Cashless Medicine Voucher - ₹500" },
+  { "id": "feature_87", "content": "4 Virtual Dermatologist Consultation - Cashless Voucher" },
+  { "id": "feature_88", "content": "Live & Recorded Yoga Sessions" },
+  { "id": "feature_89", "content": "Live & Recorded Fitness Sessions" },
+  { "id": "feature_90", "content": "Live & Recorded Zumba Sessions" },
+  { "id": "feature_91", "content": "Unlimited Laboratory Services - Up To 30% Discount" },
+  { "id": "feature_92", "content": "Unlimited Outpatient Services - Up To 25% Discount" },
+  { "id": "feature_93", "content": "Unlimited Inpatient Services Up To 25% Discount" },
+  { "id": "feature_94", "content": "2 Home-Based Physiotherapy Treatment - Cashless Voucher" }
+]
+
+
   },
   {
     "id": "plan_8",
@@ -301,34 +310,35 @@ export const mockData: PlanProps[] = [
     "videoLinkEnglish": videos.ultimateWellnessPlan_english,
     "videoLinkTamil": videos.ultimateWellnessPlan_tamil,
     "membersCount": 5,
-    "featuresDisplay": [
-      "Fix Your Problem with Yoga: 2 (Ailment) and Online Session – 1 year",
-      "Home Based Treatment Services - 3 (All Physiotherapy, Acupuncture, Varma)",
-      "Virtual / Tele Consultation Services - 20",
-      "Master Health Checkup at Home - 5 with Get Personalized Diet Plans for 1 year"
-    ],
-    "features": [
-      { "id": "feature_107", "content": "Master health checkup – 3(split up)" },
-      { "id": "feature_108", "content": "Dental OPD Consultations: 5" },
-      { "id": "feature_109", "content": "General OPD Consultations: 5" },
-      { "id": "feature_110", "content": "Virtual General OPD Consultations: 5" },
-      { "id": "feature_111", "content": "Virtual Dental OPD Consultations: 5" },
-      { "id": "feature_112", "content": "Virtual Physiotherapy Consultations: 5" },
-      { "id": "feature_113", "content": "Dental Cleaning: 4" },
-      { "id": "feature_114", "content": "Nutrition: 5-P-1Y" },
-      { "id": "feature_115", "content": "Pest Control: 1 KITCHEN + CONSULTATION" },
-      { "id": "feature_116", "content": "Medicine Benefits Worth Rs. 500: 5" },
-      { "id": "feature_117", "content": "Virtual Dermatology OPD Consultations: 5" },
-      { "id": "feature_118", "content": "Recorded Yoga Sessions: 1" },
-      { "id": "feature_119", "content": "Fix Your Problem with Yoga: 2" },
-      { "id": "feature_120", "content": "Live & recorded fitness session – 1" },
-      { "id": "feature_121", "content": "Live & recorded zumba session – 1" },
-      { "id": "feature_122", "content": "Lab Discounts: 1" },
-      { "id": "feature_123", "content": "In-Patient Discount: 1" },
-      { "id": "feature_124", "content": "Out-Patient Discount: 1" },
-      { "id": "feature_125", "content": "Home-Based Treatments: 3" },
-      { "id": "feature_126", "content": "Discount on Home-Based Treatments: 1" }
-    ]
+   "featuresDisplay": [
+  "Master Health Check-up @ Home – Cashless: 5",
+  "Expert Outpatient Consultations – Anytime, Anywhere: 35",
+  "Comprehensive Diagnostic & Lab Services – Unlimited",
+  "Inpatient & Outpatient Treatments – Unlimited with Great Discounts",
+  "Home-Based Physiotherapy Services – Cashless Voucher: 3"
+]
+,
+"features": [
+  { "id": "feature_95", "content": "5 Master Health Check-Up – Cashless Voucher" },
+  { "id": "feature_96", "content": "5 Dental OPD Consultation – Cashless Voucher" },
+  { "id": "feature_97", "content": "5 General OPD Consultation – Cashless Voucher" },
+  { "id": "feature_98", "content": "5 Virtual General OPD Consultation – Cashless Voucher" },
+  { "id": "feature_99", "content": "5 Virtual Dental OPD Consultation – Cashless Voucher" },
+  { "id": "feature_100", "content": "5 Virtual Physiotherapist Consultation – Cashless Voucher" },
+  { "id": "feature_101", "content": "5 Personalized Nutritionist Consultation & Diet Plan" },
+  { "id": "feature_102", "content": "Complete Home Consultation + Kitchen Pest Control" },
+  { "id": "feature_103", "content": "5 Cashless Medicine Voucher – ₹500" },
+  { "id": "feature_104", "content": "5 Virtual Dermatologist Consultation – Cashless Voucher" },
+  { "id": "feature_105", "content": "Live & Recorded Yoga Sessions" },
+  { "id": "feature_106", "content": "Live & Recorded Fitness Sessions" },
+  { "id": "feature_107", "content": "Live & Recorded Zumba Sessions" },
+  { "id": "feature_108", "content": "Unlimited Laboratory Services – Up To 30% Discount" },
+  { "id": "feature_109", "content": "Unlimited Outpatient Services – Up To 25% Discount" },
+  { "id": "feature_110", "content": "Unlimited Inpatient Services – Up To 25% Discount" },
+  { "id": "feature_111", "content": "3 Home-Based Physiotherapy Treatment – Cashless Voucher" }
+]
+
+
   },
   {
     "id": "plan_9",
@@ -347,25 +357,28 @@ export const mockData: PlanProps[] = [
     "videoLinkTamil": videos.miniMePlan_tamil,
     "memberType": "kid",
     "membersCount": 1,
-    "featuresDisplay": [
-      "1-year Nutrition consultations and diet plans",
-      "Virtual / Tele Consultation Services- 10",
-      "Virtual Dental Consultation Services -5",
-      "Online Session Zumba ,Yoga , Fitness ",
-    ],
-    "features": [
-      { "id": "feature_203", "content": "Virtual General OPD Consultations: 10" },
-      { "id": "feature_204", "content": "Virtual Dental OPD Consultations: 5" },
-      { "id": "feature_205", "content": "Dental Cleaning: 1" },
-      { "id": "feature_206", "content": "Nutrition: 1" },
-      { "id": "feature_207", "content": "Medicine Benefits Worth Rs. 500 - 1" },
-      { "id": "feature_208", "content": "Virtual Dermatology OPD Consultations: 2" },
-      { "id": "feature_209", "content": "Recorded Yoga Sessions: 1" },
-      { "id": "feature_210", "content": "Recorded Fitness Sessions: 1" },
-      { "id": "feature_211", "content": "Recorded Zumba Sessions: 1" }
-    ]
+   "featuresDisplay": [
+  "10 Virtual Paediatrician Consultations – Anytime, Anywhere",
+  "5 Dentist Consultations from Home – Hassle-Free & Professional",
+  "Fun & Energetic Kids’ Fitness Sessions – Keep Them Active and Healthy",
+  "Kids Nutritionist Consultation + Personalized Diet Chart for Healthy Growth",
+  "Expert Dermatologist Consultation for Kids' Skin Health"
+]
+,
+ "features": [
+  { "id": "feature_112", "content": "10 Virtual Paediatrician Consultation - Cashless Vouchers" },
+  { "id": "feature_113", "content": "5 Virtual Dental OPD Consultation - Cashless Voucher" },
+  { "id": "feature_114", "content": "1 Professional Dental Cleaning – For a Brighter, Healthier Smile" },
+  { "id": "feature_115", "content": "Nutritionist Consultation & Custom Diet Plan for Your Child" },
+  { "id": "feature_116", "content": "1 Cashless Medicine Voucher - ₹500" },
+  { "id": "feature_117", "content": "2 Virtual Dermatologist Consultation - Cashless Voucher" },
+  { "id": "feature_118", "content": "Live & Recorded Yoga Sessions for Kids" },
+  { "id": "feature_119", "content": "Live & Recorded Fitness Sessions for Kids" },
+  { "id": "feature_120", "content": "Live & Recorded Zumba Sessions for Kids" }
+]
 
-  },
+
+  },                                    
   {
     "id": "plan_10",
     "title": "Just 50 Plan",
@@ -383,25 +396,30 @@ export const mockData: PlanProps[] = [
     "videoLinkTamil": videos.just50Plan_tamil,
     "memberType": "Senior Citizen",
     "membersCount": 2,
-    "featuresDisplay": [
-      "Home Based Treatment Services -4 (All Physiotherapy, Acupuncture, Varma)",
-      "Master Health Checkup @ Home Services - 2 with Get Personalized Diet Plans for 1yr",
-      "Virtual Physiotherapy Consultations Services – 4",
-      "Online Yoga Session ",
-    ],
-    "features": [
-      { "id": "feature_212", "content": "Master Health Check-up: 4 - 2 comprehensive MHCs for each member and 2 follow-up MHCs for each member in the plan" },
-      { "id": "feature_213", "content": "Virtual General OPD Consultations: 4" },
-      { "id": "feature_214", "content": "Virtual Dental OPD Consultations: 2" },
-      { "id": "feature_215", "content": "Virtual Physiotherapy Consultations: 4" },
-      { "id": "feature_216", "content": "Nutrition: 2" },
-      { "id": "feature_217", "content": "Medicine Benefits Worth Rs. 500 - 2" },
-      { "id": "feature_218", "content": "Laboratory Discounts: 1" },
-      { "id": "feature_219", "content": "Live & Recorded Yoga Sessions: 1" },
-      { "id": "feature_220", "content": "Fix your problem with Yoga: 1" },
-      { "id": "feature_221", "content": "Home Based Treatments: 4" },
-      { "id": "feature_222", "content": "Discounts on Home Based Treatments: 1" }
-    ]
+   "featuresDisplay": [
+  "4 Master Health Check-up @ Home - Cashless",
+  "14 Expert Outpatient Consultations - Anytime, Anywhere",
+  "4 Home-Based Physiotherapy Services - Cashless Voucher",
+  "Unlimited Outpatient Treatments and Lab Services – Enjoy Great Discounts",
+  "In-Home Physiotherapy Sessions with Exclusive Discounts"
+],
+
+   "features": [
+  { "id": "feature_121", "content": "4 Master Health Check-Up – Cashless Voucher" },
+  { "id": "feature_122", "content": "2 Dental OPD Consultation - Cashless Voucher" },
+  { "id": "feature_123", "content": "2 General OPD Consultation - Cashless Vouchers" },
+  { "id": "feature_124", "content": "4 Virtual General OPD Consultation - Cashless Vouchers" },
+  { "id": "feature_125", "content": "2 Virtual Dental OPD Consultation - Cashless Voucher" },
+  { "id": "feature_126", "content": "4 Virtual Physiotherapist Consultation - Cashless Voucher" },
+  { "id": "feature_127", "content": "2 Personalized Nutritionist Consultation & Diet Plan" },
+  { "id": "feature_128", "content": "2 Cashless Medicine Voucher - ₹500" },
+  { "id": "feature_129", "content": "4 Home-Based Physiotherapy Treatment - Cashless Voucher" },
+  { "id": "feature_130", "content": "Live & Recorded Yoga Sessions" },
+  { "id": "feature_131", "content": "Unlimited Laboratory Services - Up To 30% Discount" },
+  { "id": "feature_132", "content": "Unlimited Outpatient Services - Up To 25% Discount" },
+  { "id": "feature_133", "content": "Unlimited Home-Based Physiotherapy - Exclusive Discounts" }
+]
+
 
   }
 ];

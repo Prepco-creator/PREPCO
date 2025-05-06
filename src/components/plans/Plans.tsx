@@ -30,7 +30,7 @@ const Plans = () => {
     } else {
       setFilteredPlans(defaultPlans);
     }
-  }, []);
+  }, [defaultPlans]);
 
 
   const handleFilterChange = (

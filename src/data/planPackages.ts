@@ -5,109 +5,130 @@ import { images } from "../../public/assets";
 const planServices: PlanServices[] = [
     {
         planId: "plan_1",
-        services: [
+        specialOffer: {
+            title: "Enjoy a Free Dental Cleaning Service",
+            code: "EMP555",
+           
+            validityInMinutes: 15,
+            cooldownInMinutes: 10
+          },
+          services: [
             {
-                title: "MASTER HEALTHCHECKUP",
-                description: "Delve deeper into your health with a 61-blood test package, including essential assessments like lipid profile, liver & kidney functions, thyroid, and CBC.",
-                iconSrc: images.pngs.heartBeatCheck
+              title: "Master Health Check-Up",
+              description: "Delve deeper into your health with a 61-blood test package, including essential assessments like lipid profile, liver & kidney functions, thyroid, and CBC.",
+              iconSrc: images.pngs.heartBeatCheck
             },
             {
-                title: "Virtual /Tele General Consultation",
-                description: "Unlock two Virtual/Tele OPD vouchers for consultations with expert general physicians from the comfort of your home.",
-                iconSrc: images.pngs.virtualConsultation
+              title: "General Outpatient Consultation",
+              description: "Unlock two Virtual/Tele OPD vouchers for consultations with expert general physicians from the comfort of your home.",
+              iconSrc: images.pngs.virtualConsultation
             },
             {
-                title: "Dental Consultation",
-                description: "Receive one dental voucher for a complimentary virtual/tele consultation with an expert dental professional.",
-                iconSrc: images.pngs.dentalInsurance
+              title: "Dental Outpatient Consultation",
+              description: "Receive one dental voucher for a complimentary virtual/tele consultation with an expert dental professional.",
+              iconSrc: images.pngs.dentalInsurance
             },
             {
-                title: "Physiotherapy Consultation",
-                description: "One virtual consultation with an expert physiotherapist for personalized care.",
-                iconSrc: images.pngs.physicalTherapy
+              title: "Physiotherapist Consultation",
+              description: "One virtual consultation with an expert physiotherapist for personalized care.",
+              iconSrc: images.pngs.physicalTherapy
             },
             {
-                title: "Nutrition Consultation",
-                description: "Transform your lifestyle with personalized diet strategies and ongoing support from a dedicated dietitian for six months, plus one virtual consultation for guidance.",
-                iconSrc: images.pngs.dietian
-            },
-
-            {
-                title: "Pharmacy Voucher",
-                description: "One pharmacy voucher worth Rs. 500 to order medicines online.",
-                iconSrc: images.pngs.pharmacy
+              title: "Nutritionist Consultation",
+              description: "Transform your lifestyle with personalized diet strategies and ongoing support from a dedicated dietitian for six months, plus one virtual consultation for guidance.",
+              iconSrc: images.pngs.dietian
             },
             {
-                title: "Dermatologist Consultation",
-                description: "Avail one free virtual consultation with an expert dermatologist.",
-                iconSrc: images.pngs.dermatology
+              title: "Cashless Medicine Voucher",
+              description: "One pharmacy voucher worth Rs. 500 to order medicines online.",
+              iconSrc: images.pngs.pharmacy
+            },
+            {
+              title: "Dermatologist Consultation",
+              description: "Avail one free virtual consultation with an expert dermatologist.",
+              iconSrc: images.pngs.dermatology
             }
-        ]
+          ]
+          
     },
     {
         planId: "plan_2",
+        specialOffer: {
+            title: "Plan Extended from 6 Months to 1 Year – Including Yoga and Fitness Sessions",
+            code: "EMP555",
+           
+            validityInMinutes: 15,
+            cooldownInMinutes: 10
+          },
+
         services: [
             {
-                title: "MASTER HEALTHCHECKUP",
-                description: "Two 62-test blood voucher encompassing a liver profile, thyroid function test, lipid profile, renal function test, complete hemogram (CBC), iron deficiency.",
-                iconSrc: images.pngs.heartBeatCheck
+              title: "Master Healthcheckup @ Home",
+              description: "Two 62-test blood vouchers including Liver Profile, Thyroid Function, Lipid Profile, Renal Function Test, CBC, Iron Deficiency Panel, and more — delivered to your home.",
+              iconSrc: images.pngs.heartBeatCheck
             },
             {
-                title: "General OPD Consultation",
-                description: "Receive an exclusive 1-OPD voucher to consult with top general physicians at our partner hospitals.",
-                iconSrc: images.pngs.doctorConsultation
+              title: "General Outpatient Consultation",
+              description: "Consult top general physicians at our partner hospitals using a hassle-free exclusive OPD voucher.",
+              iconSrc: images.pngs.doctorConsultation
             },
             {
-                title: "Virtual /Tele General Consultation",
-                description: "Seize the opportunity to consult with general physicians virtually using our exclusive Two OPD vouchers.",
-                iconSrc: images.pngs.virtualConsultation
+              title: "Virtual Outpatient Consultation",
+              description: "2 exclusive OPD vouchers for virtual consultations with top general physicians. Expert advice anytime, anywhere.",
+              iconSrc: images.pngs.virtualConsultation
             },
             {
-                title: "Dental Consultation",
-                description: "Receive one dental voucher for a complimentary virtual/tele consultation with an expert dental professional.",
-                iconSrc: images.pngs.dentalInsurance
+              title: "Dental Outpatient Consultation",
+              description: "1 exclusive OPD voucher for a virtual consultation with leading dental experts. Easy and convenient dental care at home.",
+              iconSrc: images.pngs.dentalInsurance
             },
             {
-                title: "Physiotherapy Consultation",
-                description: "One virtual consultation with an expert physiotherapist for personalized care.",
-                iconSrc: images.pngs.physicalTherapy
+              title: "Physiotherapist Consultation",
+              description: "Enjoy one personalized virtual consultation with an expert physiotherapist — tailored care for pain relief and recovery.",
+              iconSrc: images.pngs.physicalTherapy
             },
             {
-                title: "Nutritionist Consultation",
-                description: "Receive a personalized diet plan for six months and one virtual consultation with a professional nutritionist to achieve your health goals.",
-                iconSrc: images.pngs.nutritionist
-            },
-
-            {
-                title: "Pharmacy Voucher",
-                description: "One pharmacy voucher worth Rs. 500 to order medicines online.",
-                iconSrc: images.pngs.pharmacy
+              title: "Nutritionist Consultation",
+              description: "One-on-one virtual consultation plus a 6-month personalized diet plan with a professional nutritionist to help you reach your health goals.",
+              iconSrc: images.pngs.nutritionist
             },
             {
-                title: "Yoga Sessions",
-                description: "Get access to Online/Recorded Yoga sessions for 6 months for one person, along with numerous benefits including improved flexibility, reduced stress, and enhanced overall well-being.",
-                iconSrc: images.pngs.yogaSessions
+              title: "Cashless Medicine Voucher",
+              description: "Get a ₹500 voucher to order prescriptions online with free home delivery — convenience at your doorstep.",
+              iconSrc: images.pngs.pharmacy
             },
             {
-                title: "Fitness Sessions",
-                description: "Get access to online/recorded fitness sessions for 6 months, available for one person, with benefits including improved health, strength, and flexibility.",
-                iconSrc: images.pngs.fitness
-            },
-
-            {
-                title: "Laboratory Discounts",
-                description: "Enjoy discounts ranging from 10% to 30% on radiology and pathology services, offering significant savings on diagnostic tests.",
-                iconSrc: images.pngs.microscope
+              title: "Live & Recorded Yoga Sessions",
+              description: "Get access to Online/Recorded Yoga sessions for 6 months for one person, along with numerous benefits including improved flexibility, reduced stress, and enhanced overall well-being.",
+              iconSrc: images.pngs.yogaSessions
             },
             {
-                title: "Outpatient procedure discounts (Add on)",
-                description: "The discount of up to 25% on outpatient procedures is an add-on service and is not included as part of the standard plan.",
-                iconSrc: images.pngs.offer
+              title: "Live & Recorded Fitness Sessions",
+              description: "Get access to online/recorded fitness sessions for 6 months, available for one person, with benefits including improved health, strength, and flexibility.",
+              iconSrc: images.pngs.fitness
+            },
+            {
+              title: "Unlimited Laboratory Services",
+              description: "Enjoy discounts ranging from 10% to 30% on radiology and pathology services, offering significant savings on diagnostic tests.",
+              iconSrc: images.pngs.microscope
+            },
+            {
+              title: "Unlimited Outpatient Treatments",
+              description: "The discount of up to 25% on outpatient procedures is an add-on service and is not included as part of the standard plan.",
+              iconSrc: images.pngs.offer
             }
-        ]
+          ]
+          
     },
     {
         planId: "plan_3",
+        specialOffer: {
+            title: "Enjoy a Free Dental Cleaning",
+            code: "EMP555",
+           
+            validityInMinutes: 15,
+            cooldownInMinutes: 10
+          },
         services: [
             {
                 title: "MASTER HEALTHCHECKUP",
@@ -181,6 +202,13 @@ const planServices: PlanServices[] = [
     },
     {
         planId: "plan_4",
+        specialOffer: {
+            title: "Enjoy Two Free Dental Cleaning Service",
+            code: "EMP555",
+           
+            validityInMinutes: 15,
+            cooldownInMinutes: 10
+          },
         services: [
             {
                 title: "MASTER HEALTHCHECKUP",
@@ -256,10 +284,17 @@ const planServices: PlanServices[] = [
     },
     {
         planId: "plan_5",
+        specialOffer: {
+            title: "Add kitchen cleaning or pest control services.",
+            code: "EMP555",
+           
+            validityInMinutes: 15,
+            cooldownInMinutes: 10
+          },
         services: [
             {
-                title: "MASTER HEALTHCHECKUP",
-                description: "Take a deep dive into your health with three different blood test vouchers, available every 4 months throughout the year.",
+                title: "Master Health Check-Up",
+                description: "Stay on top of your health with 3 full-body check-ups and cashless blood test vouchers every 4 months – all year long",
                 iconSrc: images.pngs.heartBeatCheck
             },
             {
@@ -336,6 +371,13 @@ const planServices: PlanServices[] = [
     },
     {
         planId: "plan_6",
+        specialOffer: {
+            title: "Enjoy Two Free Dental Cleaning Service",
+            code: "EMP555",
+           
+            validityInMinutes: 15,
+            cooldownInMinutes: 10
+          },
         services: [
             {
                 title: "MASTER HEALTHCHECKUP",
@@ -368,13 +410,13 @@ const planServices: PlanServices[] = [
                 iconSrc: images.pngs.pharmacy
             },
             {
-                title: "Dermatologist Consultation",
-                description: "Receive two free virtual consultations with an expert dermatologist and take advantage of the related benefits.",
+                title: "Dental Outpatient Consultation ",
+                description: "Enhance your smile with our complimentary dental voucher, offering two in-person consultations and two expert virtual consultations",
                 iconSrc: images.pngs.dermatology
             },
             {
                 title: "Pest Control",
-                description: "Receive a pest control consultation along with a general kitchen cleaning to ensure a clean, pest-free environment.",
+                description: "Protect Your Kitchen from Pests – Cashless Pest Control Service Included",
                 iconSrc: images.pngs.pestControl
             },
             {
@@ -421,6 +463,13 @@ const planServices: PlanServices[] = [
     },
     {
         planId: "plan_7",
+        specialOffer: {
+            title: "Enjoy Three Free Dental Cleaning Service",
+            code: "EMP555",
+           
+            validityInMinutes: 15,
+            cooldownInMinutes: 10
+          },
         services: [
             {
                 title: "MASTER HEALTHCHECKUP",
@@ -433,8 +482,8 @@ const planServices: PlanServices[] = [
                 iconSrc: images.pngs.virtualConsultation
             },
             {
-                title: "Dental Consultation",
-                description: "Enhance your smile with our complimentary dental voucher, offering Four in-person consultations, three professional cleanings, and Four expert virtual consultations.",
+                title: "Dental Outpatient Consultation",
+                description: "Enhance your smile with our complimentary dental voucher, offering four in-person consultations and four expert virtual consultations",
                 iconSrc: images.pngs.dentalInsurance
             },
             {
@@ -506,6 +555,13 @@ const planServices: PlanServices[] = [
     },
     {
         planId: "plan_8",
+        specialOffer: {
+            title: "Enjoy Five Free Dental Cleaning Service",
+            code: "EMP555",
+           
+            validityInMinutes: 15,
+            cooldownInMinutes: 10
+          },
         services: [
             {
                 title: "MASTER HEALTHCHECKUP",
@@ -518,8 +574,8 @@ const planServices: PlanServices[] = [
                 iconSrc: images.pngs.virtualConsultation
             },
             {
-                title: "Dental Consultation",
-                description: "Enhance your smile with our complimentary dental voucher, offering five in-person consultations, four professional cleanings, and five expert virtual consultations.",
+                title: "Dental Outpatient Consultation",
+                description: "Achieve Your Perfect Smile – 5 In-Person & 5 Virtual Dental Consultations, Fully Cashless with Our Exclusive Voucher",
                 iconSrc: images.pngs.dentalInsurance
             },
             {
@@ -591,6 +647,13 @@ const planServices: PlanServices[] = [
     },
     {
         planId: "plan_9",
+        specialOffer: {
+            title: "Flat 1000rs offer on premium",
+            code: "EMP555",
+           
+            validityInMinutes: 15,
+            cooldownInMinutes: 10
+          },
         services: [
             {
                 title: "Nutritionist Consultation With Diet Plan",
@@ -646,10 +709,17 @@ const planServices: PlanServices[] = [
     },
     {
         planId: "plan_10",
+        specialOffer: {
+            title: "Unlimited Inpatient Treatments Up To 25% Discount",
+            code: "EMP555",
+           
+            validityInMinutes: 15,
+            cooldownInMinutes: 10
+          },
         services: [
             {
-                title: "MASTER HEALTHCHECKUP",
-                description: "A comprehensive health check-up for two members, with each package covering 62 test vouchers for a complete health assessment.",
+                title: "Master Health Check-Up ",
+                description: "Unlock Complete Health Coverage – 2 Comprehensive Health Check-Ups with 70+ Tests and 2 Follow-Up Tests (22+ Tests), All Cashless for Ultimate Convenience",
                 iconSrc: images.pngs.heartBeatCheck
             },
             {

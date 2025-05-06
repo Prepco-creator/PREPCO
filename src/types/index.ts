@@ -119,6 +119,7 @@ interface FeaturesProps {
     memberType?: string;
     tamilVideo: string;
     englishVideo: string;
+    planId:string;
 }
 
 interface PlanDetailProps {
@@ -141,6 +142,12 @@ type YoutubeIframeProps = {
 
 interface PlanServices {
     planId: string;
+    specialOffer: {
+        title: string;
+        code: string;
+        validityInMinutes: number;
+        cooldownInMinutes: number;
+      };
     services: {
         title: string;
         description: string;

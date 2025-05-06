@@ -23,7 +23,7 @@ const HeroSection = () => {
           Get in Touch with Prepco
         </h1>
         <div className="space-y-4">
-          <a href="tel:+9118002022447" className="flex flex-row gap-2 items-center">
+          <a href="tel:1800 202 2447" className="flex flex-row gap-2 items-center">
             <Image
               width={48}
               height={48}

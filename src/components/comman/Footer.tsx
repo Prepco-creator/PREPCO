@@ -102,7 +102,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="flex items-center gap-2" href="tel:+9118002022447">
+                  <a className="flex items-center gap-2" href="tel:1800 202 2447">
                     <div className="hover:-translate-y-2 transition-transform duration-200">
                       <Image
                         width={48}
