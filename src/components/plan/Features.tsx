@@ -214,7 +214,7 @@ const Features: React.FC<FeaturesProps> = ({
       {/* Special Feature Card (only shown when correct code is entered) */}
       {showSpecialFeature && currentPlan?.specialOffer && (
         <div ref={specialOfferRef} className="my-12 mx-auto max-w-2xl">
-          <div className="bg-white p-8 rounded-xl shadow-2xl transform transition-all duration-500 hover:scale-105 border-4 border-teal-400 relative overflow-hidden">
+          <div className="bg-white p-8 rounded-xl shadow-2xl transform transition-all duration-500 hover:scale-105 border-4 border-teal-400 relative overflow-hidden mx-4 sm:mx-0">
             {/* Decorative elements */}
             <div className="absolute -top-6 -right-6 w-24 h-24 bg-teal-400 opacity-20 rounded-full"></div>
             <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-teal-500 opacity-20 rounded-full"></div>
