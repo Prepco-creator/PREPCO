@@ -252,7 +252,7 @@ export const mockData: PlanProps[] = [
   {
     "id": "plan_7",
     "title": "The Complete Wellness Plan",
-    imgSrc: images.pngs.completeWellnessPlan,
+    imgSrc: images.jpgs.complete,
     "tagline": "Premium care for the family that deserves the best.",
     "description": "This exclusive plan offers extensive healthcare services for families, ensuring optimal health and wellness.",
     "bigDescription": "A top-tier plan for families, covering extensive healthcare services including consultations, treatments, wellness kits, and much more.",
@@ -297,7 +297,7 @@ export const mockData: PlanProps[] = [
   {
     "id": "plan_8",
     "title": "The Ultimate Wellness Plan",
-    imgSrc: images.pngs.ultimateWellnessPlan,
+    imgSrc: images.jpgs.ultimate,
     "tagline": "All your health essentials, wrapped in one perfect package.",
     "description": "This ultimate plan offers the best care for families, ensuring complete health and wellness coverage.",
     "bigDescription": "The most comprehensive plan for families seeking complete care, offering a wide range of benefits and services.",

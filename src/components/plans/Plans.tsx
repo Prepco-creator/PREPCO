@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Banner from "../comman/Banner";
 import PlanCardGrid from "./PlanCardGrid";
 import mockData from "@/data/plans";
@@ -9,29 +9,34 @@ import { PlanProps } from "@/types";
 import Footer from "../comman/Footer";
 
 const Plans = () => {
-
   const fullCoveragePlanIds = ["plan_7", "plan_8"];
 
-  // Default to the 6-month plan
-  const defaultPlans = mockData.filter(
-    (plan) =>
-      plan.isSpecial === true
-  );
-
+  // Use useMemo to ensure defaultPlans doesn't change on every render
+  const defaultPlans = useMemo(() => {
+    return mockData.filter((plan) => plan.isSpecial === true);
+  }, []); // Empty dependency array means this will only be calculated once
 
   const [filteredPlans, setFilteredPlans] = useState<PlanProps[]>(defaultPlans);
+  
+  // Track if initial data has been loaded
+  const [initialDataLoaded, setInitialDataLoaded] = useState(false);
 
+  // Load saved plans from sessionStorage only on component mount or client-side navigation
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (!initialDataLoaded && typeof window !== "undefined") {
       const storedPlans = sessionStorage.getItem("PREPCO-INSURANCE-PLANS");
       if (storedPlans) {
-        setFilteredPlans(JSON.parse(storedPlans));
+        try {
+          const parsedPlans = JSON.parse(storedPlans);
+          setFilteredPlans(parsedPlans);
+        } catch (error) {
+          console.error("Error parsing stored plans:", error);
+          setFilteredPlans(defaultPlans);
+        }
       }
-    } else {
-      setFilteredPlans(defaultPlans);
+      setInitialDataLoaded(true);
     }
-  }, [defaultPlans]);
-
+  }, [initialDataLoaded, defaultPlans]);
 
   const handleFilterChange = (
     filterType: "duration" | "special" | "fullCoverage" | "all" | null,
@@ -43,7 +48,6 @@ const Plans = () => {
       // No filter selected, show all plans
       newFilteredPlans = mockData;
     } else {
-
       if (filterType === "duration" && typeof value === "number") {
         newFilteredPlans = mockData.filter(
           (plan) =>
@@ -56,18 +60,20 @@ const Plans = () => {
       } else if (filterType === "fullCoverage" && Array.isArray(value)) {
         newFilteredPlans = mockData.filter((plan) => value.includes(plan.id));
       } else if (filterType === "all") {
-        newFilteredPlans = [...mockData]
+        newFilteredPlans = [...mockData];
       }
-
     }
 
     setFilteredPlans(newFilteredPlans);
 
     // Store the filtered plans in Session Storage
-    sessionStorage.setItem("PREPCO-INSURANCE-PLANS", JSON.stringify(newFilteredPlans));
-
+    // We don't need to wait for the state update to complete
+    try {
+      sessionStorage.setItem("PREPCO-INSURANCE-PLANS", JSON.stringify(newFilteredPlans));
+    } catch (error) {
+      console.error("Error storing filtered plans:", error);
+    }
   };
-
 
   return (
     <section>
