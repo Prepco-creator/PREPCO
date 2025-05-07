@@ -338,7 +338,8 @@ const Features: React.FC<FeaturesProps> = ({
               <p className="text-lg font-medium">Book a call with our health advisor & get the Coupon Code</p>
             </div>
             
-            <a href="tel:1800 202 2447" className="w-full md:w-auto">
+        
+            <a target='_blank' href="https://calendly.com/bdm-prepcohealthcare/30min" className="w-full md:w-auto">
               <button className="bg-white text-teal-700 py-4 px-8 rounded-lg font-bold shadow-lg transform transition hover:scale-105 hover:bg-teal-50 w-full md:w-auto text-lg flex items-center justify-center gap-2">
                 <span>Book Now</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
