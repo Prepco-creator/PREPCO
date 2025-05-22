@@ -8,7 +8,7 @@ import planServices from "@/data/planPackages";
 import mockData from "@/data/plans";
 
 const Features: React.FC<FeaturesProps> = ({
-  duration,
+  // duration,
   features,
   // description,
   // memberType = "Person",

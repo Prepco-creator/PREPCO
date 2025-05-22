@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Heart, IndianRupee } from "lucide-react";
+import { Heart } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Tags } from "@/types";

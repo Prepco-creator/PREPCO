@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import Banner from "../comman/Banner";
+// import Banner from "../comman/Banner";
 import formatToHyphenated from "@/utils/fomatPathName";
 import mockData from "@/data/plans";
 import { PlanProps, PlanServices } from "@/types";
 import Hero from "./Hero";
-import PlanTitle from "./PlanTitle";
+// import PlanTitle from "./PlanTitle";
 import Features from "./Features";
 import MarqueeTags from "../comman/MarqueeTags";
 import tags from "@/data/tags";
