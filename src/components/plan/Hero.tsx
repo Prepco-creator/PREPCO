@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = "Person", membersCount = 1, imageSrc, paymentGatewayLink }) => {
   const timeline =
-    duration === 12 ? "One Year" : duration === 6 ? "6 Month" : "Not - Defined";
+    duration === 12 ? "One Year" : duration === 6 ? "6 Months" : "Not - Defined";
 
   useEffect(() => {
     // Ensure animations only run on the client side (after mounting)
@@ -37,10 +37,10 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = 
       <div className="left-content flex flex-col gap-4">
         <div>
           <h2 className="bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold">
-            {title}
+            {title} - {membersCount} {memberType}
           </h2>
           <p className="text-custom-16 lg:text-custom-24 font-normal text-secondaryDark">
-            Plan Validation {timeline} - {membersCount} {memberType}
+            Plan Validation {timeline}
           </p>
         </div>
         <h2 className="bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold">

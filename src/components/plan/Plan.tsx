@@ -39,7 +39,7 @@ const Plan = () => {
 
   return (
     <section>
-      <Banner title={plan.title} />
+      {/* <Banner title={plan.title} /> */}
       <Hero
         imageSrc={plan.imgSrc}
         planId={plan.id}
@@ -50,17 +50,17 @@ const Plan = () => {
         membersCount={plan.membersCount}
         paymentGatewayLink={plan.paymentGatewayLink}
       />
-      <PlanTitle title={plan.title} />
+      {/* <PlanTitle title={plan.title} /> */}
       <Features
-  planId={plan.id} // Added this line to pass the plan ID
-  membersCount={plan.membersCount}
-  description={plan.description}
-  duration={plan.duration}
-  features={plan.features}
-  memberType={plan.memberType}
-  tamilVideo={plan.videoLinkTamil}
-  englishVideo={plan.videoLinkEnglish}
-/>
+        planId={plan.id} // Added this line to pass the plan ID
+        membersCount={plan.membersCount}
+        description={plan.description}
+        duration={plan.duration}
+        features={plan.features}
+        memberType={plan.memberType}
+        tamilVideo={plan.videoLinkTamil}
+        englishVideo={plan.videoLinkEnglish}
+      />
       <MarqueeTags
         tagClassName="bg-accent-2 px-2"
         className="py-16"

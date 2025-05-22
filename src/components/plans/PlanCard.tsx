@@ -25,9 +25,22 @@ const PlanCard: React.FC<Partial<PlanProps>> = ({
 
   return (
     <div
-      className={`rounded-3xl border-[1px] border-solid border-primary p-4 flex flex-col gap-4 transition-all duration-300 ease-in-out hover:-translate-y-2 bg-transparent`}
+      className={`rounded-3xl border-[1px] border-solid border-primary p-4 flex flex-col gap-2 transition-all duration-300 ease-in-out hover:-translate-y-2 bg-transparent`}
     >
-      <h1 className="text-custom-24 text-primary">{title}</h1>
+      <div className="flex items-center justify-between gap-1">
+        <h1 className="text-custom-24 text-primary">{title}</h1>
+        <p className="flex flex-row gap-2">
+          <Image
+            alt="people-2"
+            width={20}
+            height={20}
+            src={images.svgs.peopleDuo}
+          />
+          <span className="text-custom-14 text-secondaryDark font-bold">
+            {membersCount} {memberType}{" "}
+          </span>
+        </p>
+      </div>
       <p className="text-base font-medium text-secondaryDark md:min-h-[48px]">{tagline}</p>
       <p className="text-custom-14 text-secondaryDark md:min-h-[63px]">{description}</p>
       <div className="flex flex-row justify-between items-center">
@@ -41,17 +54,6 @@ const PlanCard: React.FC<Partial<PlanProps>> = ({
             <span className="text-base text-dark">/{timeline}</span>
           </h1>
         </div>
-        <p className="flex flex-row gap-2">
-          <Image
-            alt="people-2"
-            width={20}
-            height={20}
-            src={images.svgs.peopleDuo}
-          />
-          <span className="text-custom-14 text-secondaryDark">
-            {membersCount} {memberType}{" "}
-          </span>
-        </p>
       </div>
       <a href={paymentGatewayLink}>
         <button className="w-full bg-primary text-white p-3 shadow-double-inset rounded-tl-br-30 transition-all duration-300 ease-in-out hover:bg-transparent hover:text-primary hover:border-primary hover:border-2 hover:shadow-none">

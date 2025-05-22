@@ -39,7 +39,7 @@ const planServices: PlanServices[] = [
               iconSrc: images.pngs.dietian
             },
             {
-              title: "Cashless Medicine Voucher",
+              title: "Free Medicine Voucher",
               description: "One pharmacy voucher worth Rs. 500 to order medicines online.",
               iconSrc: images.pngs.pharmacy
             },
@@ -93,7 +93,7 @@ const planServices: PlanServices[] = [
               iconSrc: images.pngs.nutritionist
             },
             {
-              title: "Cashless Medicine Voucher",
+              title: "Free Medicine Voucher",
               description: "Get a ₹500 voucher to order prescriptions online with free home delivery — convenience at your doorstep.",
               iconSrc: images.pngs.pharmacy
             },
@@ -294,7 +294,7 @@ const planServices: PlanServices[] = [
         services: [
             {
                 title: "Master Health Check-Up",
-                description: "Stay on top of your health with 3 full-body check-ups and cashless blood test vouchers every 4 months – all year long",
+                description: "Stay on top of your health with 3 full-body check-ups and Free blood test vouchers every 4 months – all year long",
                 iconSrc: images.pngs.heartBeatCheck
             },
             {
@@ -416,7 +416,7 @@ const planServices: PlanServices[] = [
             },
             {
                 title: "Pest Control",
-                description: "Protect Your Kitchen from Pests – Cashless Pest Control Service Included",
+                description: "Protect Your Kitchen from Pests – Free Pest Control Service Included",
                 iconSrc: images.pngs.pestControl
             },
             {
@@ -575,7 +575,7 @@ const planServices: PlanServices[] = [
             },
             {
                 title: "Dental Outpatient Consultation",
-                description: "Achieve Your Perfect Smile – 5 In-Person & 5 Virtual Dental Consultations, Fully Cashless with Our Exclusive Voucher",
+                description: "Achieve Your Perfect Smile – 5 In-Person & 5 Virtual Dental Consultations, Fully Free with Our Exclusive Voucher",
                 iconSrc: images.pngs.dentalInsurance
             },
             {
@@ -719,7 +719,7 @@ const planServices: PlanServices[] = [
         services: [
             {
                 title: "Master Health Check-Up ",
-                description: "Unlock Complete Health Coverage – 2 Comprehensive Health Check-Ups with 70+ Tests and 2 Follow-Up Tests (22+ Tests), All Cashless for Ultimate Convenience",
+                description: "Unlock Complete Health Coverage – 2 Comprehensive Health Check-Ups with 70+ Tests and 2 Follow-Up Tests (22+ Tests), All Free for Ultimate Convenience",
                 iconSrc: images.pngs.heartBeatCheck
             },
             {

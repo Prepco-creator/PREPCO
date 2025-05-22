@@ -51,12 +51,12 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
 
           {/* Floating Info Boxes */}
           <div className="hidden sm:block absolute -top-6 -right-6 bg-white p-5 rounded-2xl shadow-xl max-w-[220px] transform hover:-translate-y-1 transition-all duration-300">
-            <p className="text-[#017F7E] font-semibold text-lg">Consultations Available</p>
+            <p className="text-[#017F7E] font-semibold text-lg capitalize"> save upto <br />50k anually </p>
             {/* <p className="text-[#505050] text-sm mt-1">Available 24/7</p> */}
           </div>
 
           <div className="hidden sm:block absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl max-w-[220px] transform hover:-translate-y-1 transition-all duration-300">
-            <p className="text-[#017F7E] font-semibold text-lg">Subsidized costings</p>
+            <p className="text-[#017F7E] font-semibold text-lg capitalize"> starting <br /> from Rs.3838</p>
             {/* <p className="text-[#505050] text-sm mt-1">Schedule in seconds</p> */}
           </div>
         </motion.div>
@@ -115,7 +115,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
             transition={{ delay: 0.6, duration: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
           >
-            <Link href="/plans" passHref>
+            {/* <Link href="/plans" passHref>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -124,12 +124,12 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
                 Tell me how to save
                 <IndianRupee className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </motion.button>
-            </Link>
-            <Link href="/plans" passHref>
+            </Link> */}
+            <Link href="/plans" className="w-full" passHref>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group w-full sm:w-auto px-8 sm:px-10 py-4  bg-white border-2 border-[#D0F2F3] text-[#017F7E] rounded-xl hover:bg-[#E3FFFE] transition-all duration-300 shadow-md flex items-center justify-center gap-2"
+                className="group w-full px-8 sm:px-10 py-4  bg-white border-2 border-[#D0F2F3] text-[#017F7E] rounded-xl hover:bg-[#E3FFFE] transition-all duration-300 shadow-md flex items-center justify-center gap-2"
               >
                 Get Affordable Solutions
                 <Heart className="w-5 h-5 group-hover:text-red-500 transition-colors" />
