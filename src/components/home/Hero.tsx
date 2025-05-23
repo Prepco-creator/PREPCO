@@ -51,7 +51,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
 
           {/* Floating Info Boxes */}
           <div className="hidden sm:block absolute -top-6 -right-6 bg-white p-5 rounded-2xl shadow-xl max-w-[220px] transform hover:-translate-y-1 transition-all duration-300">
-            <p className="text-[#017F7E] font-semibold text-lg capitalize"> save upto <br />50k anually </p>
+            <p className="text-[#017F7E] font-semibold text-lg capitalize"> save upto <br />50,000 anually </p>
             {/* <p className="text-[#505050] text-sm mt-1">Available 24/7</p> */}
           </div>
 
@@ -73,8 +73,9 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
           }}
           className="flex-1 space-y-6 sm:space-y-8 text-center lg:text-left relative"
         >
+
           <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-bold text-[#017F7E] leading-tight">
-            Did you know{" "}
+           Think quality healthcare{" "} <br />
             <motion.span
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%"],
@@ -93,9 +94,9 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
               }}
               className="text-[#00ADA9] bg-gradient-to-r from-[#00ADA9] via-[#017F7E] to-[#00ADA9] bg-size-200 bg-pos-0 bg-clip-text text-transparent"
             >
-              taking care of your health
+              is too expensive?
             </motion.span>{" "}
-            doesn&apos;t have to break the bank?
+            {"Think again"}
           </h1>
 
           {/* <motion.p

@@ -252,13 +252,9 @@ const Features: React.FC<FeaturesProps> = ({
             </button>
           </div>
         )}
-      </div>
 
-      {/* Special Feature Card (only shown when correct code is entered) */}
-
-      <div className="bg-accent-2 px-4 py-16">
         {/* Coupon Code Input Form */}
-        <div className="max-w-md mx-auto mt-12 bg-white p-8 rounded-xl shadow-xl border-2 border-teal-100">
+        <div className="max-w-md mx-auto my-12 bg-white p-8 rounded-xl shadow-xl border-2 border-teal-100">
           <div className="text-center mb-6">
             <h3 className="text-xl font-bold text-teal-700">Enter Voucher Code</h3>
             <p className="text-gray-500 text-sm mt-1">Unlock exclusive offers with your code</p>
@@ -302,6 +298,12 @@ const Features: React.FC<FeaturesProps> = ({
             )}
           </form>
         </div>
+      </div>
+
+      {/* Special Feature Card (only shown when correct code is entered) */}
+
+      <div className="bg-accent-2 px-4 py-16">
+
 
         {/* New Call to Action container */}
         <div className="max-w-7xl mx-auto mt-16 mb-10 relative">
