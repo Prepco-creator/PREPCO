@@ -203,7 +203,7 @@ const Features: React.FC<FeaturesProps> = ({
               className="grid grid-cols-1 lg:grid-cols-2 gap-6"
             >
               {left && (
-                <div className={`${(index < 3 && showMore ? 'linear-gradient-border ' : '')}transform h-[112px] transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
+                <div className={`${(index < 3 && showMore ? 'linear-gradient-border ' : '')}transform h-auto lg:h-[112px] transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
                   <div className="feature-item bg-white p-6 rounded-xl shadow-lg flex items-center gap-4 h-full">
                     <Image
                       unoptimized
@@ -220,7 +220,7 @@ const Features: React.FC<FeaturesProps> = ({
                 </div>
               )}
               {right && (
-                <div className={`${(index < 3 && showMore ? 'linear-gradient-border ' : '')}transform h-[112px] transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
+                <div className={`${(index < 3 && showMore ? 'linear-gradient-border ' : '')}transform h-auto lg:h-[112px] transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
                   <div className="feature-item bg-white p-6 rounded-xl shadow-lg flex items-center gap-4 h-full">
                     <Image
                       unoptimized
