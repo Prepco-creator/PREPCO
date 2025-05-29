@@ -96,7 +96,7 @@ const TermsAndConditions = () => {
                         https://www.Prepcohealthcare.com
                     </a>
                     , together form the binding agreement (referred to as the "Agreement" or
-                    "Terms of Use") between PREPCO Healthcare OPC private limited, with its
+                    "Terms of Use") between PREPCO Healthcare OPC private limited,{"(CIN U86909TN2024OPC175593)"} with its
                     registered office at No. 50, Thirumangalam Road, Anna Nagar West, Chennai -
                     600040, and the user ("Member" or "you"). This Agreement governs the use of
                     services offered by PREPCO Healthcare, including those available to valid,
@@ -205,7 +205,7 @@ const TermsAndConditions = () => {
                     <span style={{ fontFamily: '"Times New Roman","serif"' }}>
                         &nbsp;helpdesk is available daily from 8:00 AM to 8:00 PM, excluding
                         national holidays. Certain Services may be unavailable on Sundays. You can
-                        contact the helpdesk at the phone number - +91 9962107102 . The helpdesk
+                        contact the helpdesk at the phone number - 1800 202 2447 . The helpdesk
                         is your point of contact for queries and support related to the Services.
                         Please ensure that you are aware of the availability schedule to avoid any
                         inconvenience.
