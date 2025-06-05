@@ -31,7 +31,7 @@ const Navbar = () => {
       {/* Navbar */}
       <nav
         className={`transition-[background] shadow-md duration-500 ease-in-out ${isMenuOpen ? "bg-primary text-white" : "bg-white"
-          } rounded-br-3xl rounded-bl-3xl fixed w-full z-20 top-0 start-0 border-none`}
+          } rounded-br-3xl rounded-bl-3xl fixed w-full z-50 top-0 start-0 border-none`}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/about" passHref>

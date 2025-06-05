@@ -6,7 +6,11 @@ import PlanCardGrid from "./PlanCardGrid";
 import mockData from "@/data/plans";
 import FilterPlans from "./FilterPlans";
 import { PlanProps } from "@/types";
+import plansv2 from "@/data/plans.json";
 import Footer from "../comman/Footer";
+import AutoTransposingTable from "../comman/CustomTable";
+import formatToHyphenated from "@/utils/fomatPathName";
+import Link from "next/link";
 
 const Plans = () => {
   const fullCoveragePlanIds = ["plan_7", "plan_8"];
@@ -17,7 +21,7 @@ const Plans = () => {
   }, []); // Empty dependency array means this will only be calculated once
 
   const [filteredPlans, setFilteredPlans] = useState<PlanProps[]>(defaultPlans);
-  
+
   // Track if initial data has been loaded
   const [initialDataLoaded, setInitialDataLoaded] = useState(false);
 
@@ -78,8 +82,57 @@ const Plans = () => {
   return (
     <section>
       <Banner title="Our Plans" />
-      <FilterPlans onFilterChange={handleFilterChange} />
-      <PlanCardGrid plans={filteredPlans} />
+      <AutoTransposingTable
+        data={plansv2}
+        getTitle={(plan) => plan["Plan Title"]}
+        hiddenKeys={[
+          // "Unbeatable Price & Value For Money.price", // hide original rows
+          "Unbeatable Price & Value For Money.actualPrice",
+          "After Discount"
+        ]}
+        additionalRows={[
+          {
+            rowName: "Unbeatable Price & Value For Money",
+            keyOverride: "Unbeatable Price & Value For Money.price", // 👈 replace the flattened key
+            render: (row) => {
+              const value = row["Unbeatable Price & Value For Money"];
+              if (!value) return '-';
+              return (
+                <span>
+                  <s className="text-gray-500 mr-1">₹{value.price}</s>
+                  <span className="text-black font-semibold">₹{value.actualPrice}</span>
+                </span>
+              );
+            },
+          },
+          {
+            rowName: 'To Know More',
+            render: (row) => (
+              <Link
+                href={`/plans/${formatToHyphenated(row['Plan Title'])}`}
+              >
+                <button className="bg-primary text-white rounded-lg border border-primary text-custom-14 p-4 hover:bg-transparent hover:text-primary hover:shadow-md transition duration-300 ease-in-out">
+                  To Know More
+                </button>
+              </Link>
+            ),
+            index: 2, // Insert at row index 2 (optional)
+          },
+          {
+            rowName: 'To Know More',
+            render: (row) => (
+              <Link
+                href={`/plans/${formatToHyphenated(row['Plan Title'])}`}
+              >
+                <button className="bg-primary text-white rounded-lg border border-primary text-custom-14 p-4 hover:bg-transparent hover:text-primary hover:shadow-md transition duration-300 ease-in-out">
+                  To Know More
+                </button>
+              </Link>
+            ),
+          },
+        ]}
+      />
+
       <Footer />
     </section>
   );
