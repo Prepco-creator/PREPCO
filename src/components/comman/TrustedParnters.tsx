@@ -20,6 +20,9 @@ const TrustedPartners = () => {
 
     return (
         <div className="w-full bg-gradient-to-br from-[#E8FDFD] via-[#D9FCFB] to-[#C0F8F7] py-6 space-y-4">
+
+            <h3 className='text-center text-custom-24 lg:text-custom-32 bg-custom-gradient bg-clip-text text-transparent'>Trusted Partners</h3>
+
             <Marquee gradient={false} speed={30}>
                 {partnersLogo.map((src, index) => (
                     <div key={`top-${index}`} className="mx-8 py-12 flex items-center justify-between min-w-[100px] h-[64px]">
