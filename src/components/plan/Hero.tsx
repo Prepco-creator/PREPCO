@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 import { images } from "../../../public/assets";
 import Image from "next/image";
-// import Link from "next/link";
 import { PlanHeroProps } from "@/types";
 import { gsap } from "gsap";
 import Link from "next/link";
 
 // Register ScrollTrigger plugin
 
-const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = "Person", membersCount = 1, imageSrc, paymentGatewayLink }) => {
+const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, tagLine, memberType = "Person", membersCount = 1, imageSrc, paymentGatewayLink, bigDescription }) => {
   const timeline =
     duration === 12 ? "One Year" : duration === 6 ? "6 Months" : "Not - Defined";
 
@@ -34,14 +33,22 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = 
   return (
     <section className="hero-section p-8 lg:p-16 flex flex-col lg:flex-row gap-6 lg:gap-4 justify-between items-start lg:items-center">
       {/* left */}
-      <div className="left-content flex flex-col gap-4">
-        <div>
+      <div className="left-content  lg:w-1/2 flex flex-col gap-4">
+        <div className="space-y-2">
           <h2 className="bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold">
-            {title} - {membersCount} {memberType}
+            {title}
+            <br />
+            {membersCount} {memberType}{membersCount > 1 && memberType == "Person" ? "s" : ""}
           </h2>
           <p className="text-custom-16 lg:text-custom-24 font-normal text-secondaryDark">
             Plan Validation {timeline}
           </p>
+          <p className="text-custom-16 lg:text-custom-20 font-normal text-primaryDark">
+            {tagLine}
+          </p>
+          <span className="text-custom-14 lg:text-custom-16">
+            {bigDescription}
+          </span>
         </div>
         <h2 className="bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold">
           &#8377;{pricing.toFixed(2)}
@@ -59,7 +66,7 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, memberType = 
         </Link> */}
       </div>
       {/* right */}
-      <div className="right-content relative self-center">
+      <div className="right-content lg:w-1/2 lg:flex justify-end relative self-center">
         <Image
           width={600}
           height={600}

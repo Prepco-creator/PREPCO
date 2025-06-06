@@ -50,6 +50,14 @@ import testimonialImage2 from './jpgs/indian_testimonial_2.jpg';
 import minime from "./jpgs/minime.jpg";
 import ultimate from "./jpgs/Ultimate wellness.jpg";
 import complete from "./jpgs/Complete wellness (6).jpg";
+
+import Plan_V2_DiamondHealthPlan from './jpgs/Diamond Health Plan.jpg';
+import Plan_V2_GoldHealthPlan from './jpgs/Gold health plan.jpg';
+import Plan_V2_JustforTwoPLan from './jpgs/Just for two.jpg';
+import Plan_V2_QuadPlan from './jpgs/Quad plan.jpg';
+import Plan_V2_QuadPro from './jpgs/Quad pro.jpg'
+
+
 // PNG
 import aboutHero from './pngs/about-hero.png';
 import walkingCouple from './pngs/walking-couple.png';
@@ -93,8 +101,33 @@ import homeHero2 from './pngs/family-image-2.png'
 
 // WEBP
 
+
+import apolloHospital from "./partners-logos/apollo-hospital.png";
+import drArgawalsLogo from "./partners-logos/dr.-argawals-logo.png";
+import drAravindsIvfLogo from "./partners-logos/dr-aravind_s-ivf-logo.png";
+import hc9cIsr400x400 from "./partners-logos/hc9c-isr_400x400.jpg";
+import kaveriHospital from "./partners-logos/kaveri-hospital.png";
+import lifelineHospitalLogo from "./partners-logos/lifeline-hospital-logo.jpg";
+import medwayHospitalLogo from "./partners-logos/medway-hospital-logo.png";
+import mgmHospital from "./partners-logos/mgm-hospital.jpg";
+import simsLogoNew from "./partners-logos/sims-logo_new.png";
+import sooriyaHospitalLogo from "./partners-logos/sooriya-hospital-logo.png";
+
+
 import homeHero from './webp/family-image.webp'
 
+const partnersLogo = {
+    apolloHospital,
+    drArgawalsLogo,
+    drAravindsIvfLogo,
+    hc9cIsr400x400,
+    kaveriHospital,
+    lifelineHospitalLogo,
+    medwayHospitalLogo,
+    mgmHospital,
+    simsLogoNew,
+    sooriyaHospitalLogo,
+}
 
 const gifs = {
     drink,
@@ -192,7 +225,13 @@ const jpgs = {
     testimonialImage2,
     ultimate,
     complete,
+
+    Plan_V2_DiamondHealthPlan,
+    Plan_V2_GoldHealthPlan,
+    Plan_V2_JustforTwoPLan,
+    Plan_V2_QuadPlan,
+    Plan_V2_QuadPro,
 }
 
 
-export { gifs, svgs, pngs, jpgs, webp };
+export { gifs, svgs, pngs, jpgs, webp, partnersLogo };

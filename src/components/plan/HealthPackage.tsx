@@ -1,10 +1,12 @@
 import { HealthPackageDetails } from "@/types";
-import Image from "next/image";
 import React from "react";
 
 const HealthPackage: React.FC<{ healthPackage: HealthPackageDetails }> = ({
   healthPackage,
 }) => {
+
+  const Icon = healthPackage.iconSrc;
+
   return (
     <div className="relative group min-h-[271px]">
       {/* Stacked Card (background card) */}
@@ -14,14 +16,8 @@ const HealthPackage: React.FC<{ healthPackage: HealthPackageDetails }> = ({
       <div className="p-5 z-[11] relative h-full bg-white shadow-md rounded-[4px] flex flex-col items-center justify-center gap-2 transition-all border-t-primary border-t-[2px] border-t-solid group-hover:bg-primary group-hover:text-white">
         {/* Icon */}
         <div className="relative transition-transform group-hover:-translate-y-2">
-          <div className="flex items-center justify-center w-16 h-16 rounded-full bg-transparent group-hover:bg-white transition-all">
-            <Image
-              src={healthPackage.iconSrc}
-              alt={healthPackage.title}
-              width={40}
-              height={40}
-              className="transition-all"
-            />
+          <div className="flex items-center justify-center w-16 h-16 rounded-full bg-transparent group-hover:bg-white transition-all text-primary group-hover:text-primary">
+            {Icon && <Icon size={36} />}
           </div>
         </div>
 

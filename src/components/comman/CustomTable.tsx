@@ -120,7 +120,7 @@ export default function AutoTransposingTable({
                             {columns.map((col, index) => (
                                 <th
                                     key={index}
-                                    className={`bg-primary text-white p-3 shadow-double-inset border border-black px-6 py-4 ${index === 0
+                                    className={`bg-primary text-center text-white p-3 shadow-double-inset border border-black px-6 py-4 ${index === 0
                                         ? 'sticky top-0 left-0 z-[40]'
                                         : 'sticky top-0 z-[30]'
                                         }`}
@@ -156,7 +156,7 @@ export default function AutoTransposingTable({
                         {columns.map((col, index) => (
                             <th
                                 key={index}
-                                className={`bg-primary sticky top-[70px] text-white p-3 shadow-double-inset border border-black px-6 py-4 ${index === 0
+                                className={`bg-primary text-center sticky top-[70px] text-white p-3 shadow-double-inset border border-black px-6 py-4 ${index === 0
                                     ? 'left-0 z-[40]'
                                     : 'z-[30]'
                                     }`}
@@ -174,7 +174,7 @@ export default function AutoTransposingTable({
                                     key={colIndex}
                                     className={`px-6 py-4 border border-black h-full ${colIndex === 0
                                         ? 'sticky left-0 z-[20] bg-primary text-white p-3 shadow-double-inset'
-                                        : 'bg-white'
+                                        : 'bg-white text-center'
                                         }`}
                                 >
                                     {row[col.key] as React.ReactNode}

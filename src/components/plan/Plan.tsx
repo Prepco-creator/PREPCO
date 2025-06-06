@@ -1,20 +1,18 @@
 "use client";
 
 import React from "react";
-// import Banner from "../comman/Banner";
 import formatToHyphenated from "@/utils/fomatPathName";
-import mockData from "@/data/plans";
-import { PlanProps, PlanServices } from "@/types";
 import Hero from "./Hero";
-// import PlanTitle from "./PlanTitle";
-import Features from "./Features";
 import MarqueeTags from "../comman/MarqueeTags";
 import tags from "@/data/tags";
 import PlanDetail from "./PlanDetail";
 import Footer from "../comman/Footer";
-import planServices from "@/data/planPackages";
 import healthPackageDetails from "@/data/healthPackageDetails";
 import { useParams } from "next/navigation";
+import PlanSecondSection from "./PlanSecondSection";
+import SpecialCTA from "./SpecialCTA";
+import { HealthPlan, plansv2 } from "@/data/plans-v2";
+import { PlanPackagesProps, plans_packages } from "@/data/plans-packages";
 
 const Plan = () => {
 
@@ -22,8 +20,9 @@ const Plan = () => {
 
   const { planName } = params;
 
-  const plan = mockData?.find(
-    (data: PlanProps) => planName === formatToHyphenated(data.title)
+
+  const plan = plansv2?.find(
+    (data: HealthPlan) => planName === formatToHyphenated(data.title)
   );
 
 
@@ -31,9 +30,9 @@ const Plan = () => {
     return <div>Plan not found</div>;
   }
 
-  const servicePackages = planServices.find(
-    (service: PlanServices) => service.planId === plan?.id
-  ) as PlanServices
+  const planPackages = plans_packages.find(
+    (service: PlanPackagesProps) => service.planName === plan?.title
+  ) as PlanPackagesProps;
 
 
 
@@ -41,26 +40,23 @@ const Plan = () => {
     <section>
       {/* <Banner title={plan.title} /> */}
       <Hero
+      tagLine={plan.tagline}
         imageSrc={plan.imgSrc}
-        planId={plan.id}
         title={plan.title}
         duration={plan.duration}
-        pricing={plan.discountPricing}
+        pricing={plan.pricing}
+        bigDescription={plan.description}
         memberType={plan.memberType}
         membersCount={plan.membersCount}
         paymentGatewayLink={plan.paymentGatewayLink}
       />
-      {/* <PlanTitle title={plan.title} /> */}
-      <Features
-        planId={plan.id} // Added this line to pass the plan ID
-        membersCount={plan.membersCount}
-        description={plan.description}
-        duration={plan.duration}
-        features={plan.features}
-        memberType={plan.memberType}
-        tamilVideo={plan.videoLinkTamil}
-        englishVideo={plan.videoLinkEnglish}
+      <PlanSecondSection
+        tamilVideo={plan.ytVideoLinks.tamil}
+        englishVideo={plan.ytVideoLinks.english}
+        keyFeatures={plan.keyFeatures}
+        paymentGatewayLink={plan.paymentGatewayLink}
       />
+      <SpecialCTA />
       <MarqueeTags
         tagClassName="bg-accent-2 px-2"
         className="py-16"
@@ -68,8 +64,8 @@ const Plan = () => {
       />
       <PlanDetail
         title={plan.title}
-        bigDescription={plan.bigDescription as string}
-        healthPackages={servicePackages.services || healthPackageDetails}
+        bigDescription={plan.description as string}
+        healthPackages={planPackages.enhancedFeatures || healthPackageDetails}
       />
       <Footer />
     </section>

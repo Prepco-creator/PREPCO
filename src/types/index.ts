@@ -3,6 +3,7 @@
 import { StaticImageData } from "next/image";
 import React from "react";
 import { FieldValues, Path, UseFormRegister } from "react-hook-form";
+import { IconType } from "react-icons";
 
 
 interface Tags {
@@ -20,7 +21,7 @@ interface HealthPackageDetails {
     id?: string;
     title: string;
     description: string;
-    iconSrc: string | StaticImageData
+    iconSrc: IconType;
 }
 
 interface BannerProps {
@@ -85,7 +86,7 @@ interface PlanProps {
     discountPricing: number;
     isSpecial: boolean; // e.g., true for featured or premium plans
     features: PlanFeature[];
-    bigDescription?: string
+    bigDescription: string
     membersCount?: number;
     memberType?: string;
     featuresDisplay: string[];
@@ -97,13 +98,14 @@ interface PlanProps {
 
 
 interface PlanHeroProps {
+    tagLine:string;
     title: string;
     imageSrc: string | StaticImageData
     duration: number;
+    bigDescription: string;
     pricing: number;
     membersCount?: number;
     memberType?: string;
-    planId: string;
     paymentGatewayLink: string;
 }
 
@@ -119,7 +121,7 @@ interface FeaturesProps {
     memberType?: string;
     tamilVideo: string;
     englishVideo: string;
-    planId:string;
+    planId: string;
 }
 
 interface PlanDetailProps {
@@ -147,7 +149,7 @@ interface PlanServices {
         code: string;
         validityInMinutes: number;
         cooldownInMinutes: number;
-      };
+    };
     services: {
         title: string;
         description: string;
