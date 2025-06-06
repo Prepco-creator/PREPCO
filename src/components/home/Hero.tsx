@@ -8,7 +8,7 @@ import { videos } from "../../../public/assets";
 
 const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
   return (
-    <div className="relative h-full w-full bg-gradient-to-br from-[#E8FDFD] via-[#D9FCFB] to-[#C0F8F7] flex items-center py-16 sm:py-14 md:pt-24 pb-36 overflow-hidden">
+    <div className="relative h-full w-full bg-transparent flex items-center py-16 sm:py-14 md:pt-24 pb-36 overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -50,13 +50,13 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
           </div>
 
           {/* Floating Info Boxes */}
-          <div className="hidden sm:block absolute -top-6 -right-6 bg-white p-5 rounded-2xl shadow-xl max-w-[220px] transform hover:-translate-y-1 transition-all duration-300">
-            <p className="text-[#017F7E] font-semibold text-lg capitalize"> save upto <br />50,000 anually </p>
+          <div className="hidden sm:block absolute -top-6 -right-6 bg-white p-5 rounded-2xl shadow-xl max-w-[300px] transform hover:-translate-y-1 transition-all duration-300">
+            <p className="text-[#017F7E] font-semibold text-lg capitalize"> save upto <br /> Rs.50000/- Annually </p>
             {/* <p className="text-[#505050] text-sm mt-1">Available 24/7</p> */}
           </div>
 
           <div className="hidden sm:block absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl max-w-[220px] transform hover:-translate-y-1 transition-all duration-300">
-            <p className="text-[#017F7E] font-semibold text-lg capitalize"> starting <br /> from Rs.3838</p>
+            <p className="text-[#017F7E] font-semibold text-lg capitalize"> Unlimited Times  <br /> Discount Benefits</p>
             {/* <p className="text-[#505050] text-sm mt-1">Schedule in seconds</p> */}
           </div>
         </motion.div>
@@ -75,7 +75,11 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
         >
 
           <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-bold text-[#017F7E] leading-tight">
-           Think quality healthcare{" "} <br />
+            {/* what affordable care looks like?
+            Get access to expert doctors, health checkups, wellness services, and more—
+            without the heavy price tag.
+            No waiting. No age limits. No stress. Just smarter health. */}
+            Think quality healthcare{" "} <br />
             <motion.span
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%"],
@@ -132,7 +136,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
                 whileTap={{ scale: 0.95 }}
                 className="group w-full px-8 sm:px-10 py-4  bg-white border-2 border-[#D0F2F3] text-[#017F7E] rounded-xl hover:bg-[#E3FFFE] transition-all duration-300 shadow-md flex items-center justify-center gap-2"
               >
-                Get Affordable Solutions
+                Grab it Now
                 <Heart className="w-5 h-5 group-hover:text-red-500 transition-colors" />
               </motion.button>
             </Link>
