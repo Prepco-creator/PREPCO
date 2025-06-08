@@ -2,8 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import mockData from '@/data/plans';
-import { PlanProps } from '@/types';
 import { IndianRupee } from 'lucide-react';
 import { HealthPlan, plansv2 } from '@/data/plans-v2';
 
