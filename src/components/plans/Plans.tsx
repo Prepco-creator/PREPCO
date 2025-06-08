@@ -84,7 +84,8 @@ const Plans = () => {
         getTitle={(plan) => plan["Plan Title"]}
         hiddenKeys={[
           "Unbeatable Price & Value For Money.actualPrice",
-          "After Discount"
+          "After Discount",
+          "planId",
         ]}
         specialRows={[
           { key: "Voucher Benifits", className: "bg-primary text-white font-semibold" },
