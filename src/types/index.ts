@@ -1,5 +1,6 @@
 // Home Page Props 
 
+import { HealthPlan } from "@/data/plans-v2";
 import { StaticImageData } from "next/image";
 import React from "react";
 import { FieldValues, Path, UseFormRegister } from "react-hook-form";
@@ -106,7 +107,7 @@ interface PlanHeroProps {
     pricing: number;
     membersCount?: number;
     memberType?: string;
-    paymentGatewayLink: string;
+    paymentGatewayLink: HealthPlan['paymentGatewayLink'];
 }
 
 interface PlanTitleProps {

@@ -11,7 +11,7 @@ import healthPackageDetails from "@/data/healthPackageDetails";
 import { useParams } from "next/navigation";
 import PlanSecondSection from "./PlanSecondSection";
 import SpecialCTA from "./SpecialCTA";
-import { HealthPlan, plansv2 } from "@/data/plans-v2";
+import { HealthPlan, plans_v2 } from "@/data/plans-v2";
 import { PlanPackagesProps, plans_packages } from "@/data/plans-packages";
 
 const Plan = () => {
@@ -21,7 +21,7 @@ const Plan = () => {
   const { planName } = params;
 
 
-  const plan = plansv2?.find(
+  const plan = plans_v2?.find(
     (data: HealthPlan) => planName === formatToHyphenated(data.title)
   );
 

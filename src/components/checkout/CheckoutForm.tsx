@@ -3,14 +3,14 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { IndianRupee } from 'lucide-react';
-import { HealthPlan, plansv2 } from '@/data/plans-v2';
+import { HealthPlan, plans_v2 } from '@/data/plans-v2';
 
 const CheckoutForm = () => {
     const router = useRouter();
     const searchParams = useSearchParams();
 
     const planId = searchParams.get("planId") as string;
-    const plan = plansv2?.find((data: HealthPlan) => planId === data.planId);
+    const plan = plans_v2?.find((data: HealthPlan) => planId === data.planId);
 
     // Redirect back if plan is not found
     useEffect(() => {

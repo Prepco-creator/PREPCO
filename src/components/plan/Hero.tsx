@@ -3,25 +3,29 @@ import { images } from "../../../public/assets";
 import Image from "next/image";
 import { PlanHeroProps } from "@/types";
 import { gsap } from "gsap";
-import Link from "next/link";
+import RazorpayButton from "../comman/RazorpayButton"; // ✅ Import here
 
-// Register ScrollTrigger plugin
-
-const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, tagLine, memberType = "Person", membersCount = 1, imageSrc, paymentGatewayLink, bigDescription }) => {
+const Hero: React.FC<PlanHeroProps> = ({
+  title,
+  duration,
+  pricing,
+  tagLine,
+  memberType = "Person",
+  membersCount = 1,
+  imageSrc,
+  paymentGatewayLink,
+  bigDescription,
+}) => {
   const timeline =
     duration === 12 ? "One Year" : duration === 6 ? "6 Months" : "Not - Defined";
 
   useEffect(() => {
-    // Ensure animations only run on the client side (after mounting)
     if (typeof window !== "undefined") {
-      // Left content animation (slide from left)
       gsap.fromTo(
         ".left-content",
         { x: "-100%", opacity: 0 },
         { x: "0%", opacity: 1, duration: 1, ease: "power3.out" }
       );
-
-      // Right content animation (slide from right)
       gsap.fromTo(
         ".right-content",
         { x: "100%", opacity: 0 },
@@ -38,7 +42,8 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, tagLine, memb
           <h2 className="bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold">
             {title}
             <br />
-            {membersCount} {memberType}{membersCount > 1 && memberType == "Person" ? "s" : ""}
+            {membersCount} {memberType}
+            {membersCount > 1 && memberType == "Person" ? "s" : ""}
           </h2>
           <p className="text-custom-16 lg:text-custom-24 font-normal text-secondaryDark">
             Plan Validation {timeline}
@@ -46,25 +51,22 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, tagLine, memb
           <p className="text-custom-16 lg:text-custom-20 font-normal text-primaryDark">
             {tagLine}
           </p>
-          <span className="text-custom-14 lg:text-custom-16">
-            {bigDescription}
-          </span>
+          <span className="text-custom-14 lg:text-custom-16">{bigDescription}</span>
         </div>
-        <h2 className="bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold">
-          &#8377;{pricing.toFixed(2)}
-        </h2>
-        <Link href={paymentGatewayLink}>
-          <button className="w-full text-custom-16-bold lg:text-custom-24 bg-primary text-white p-5 shadow-double-inset rounded-tl-br-30 border-2 border-transparent hover:text-primary hover:border-primary hover:shadow-none hover:border-2 hover:bg-transparent active:opacity-70 transition-all">
-            Buy Now
-          </button>
-        </Link>
 
-        {/* <Link href="/testimonials" passHref>
-          <p className="text-center underline text-custom-14 lg:text-custom-16 text-secondaryDark">
-            Here it from our client testimonials
-          </p>
-        </Link> */}
+        <h2 className="bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold">
+          ₹{pricing.toFixed(2)}
+        </h2>
+
+        {paymentGatewayLink?.paymentButtonId ? (
+          <div className="w-full">
+            <RazorpayButton paymentButtonId={paymentGatewayLink.paymentButtonId} />
+          </div>
+        ) : (
+          <p className="text-red-500">Payment not available</p>
+        )}
       </div>
+
       {/* right */}
       <div className="right-content lg:w-1/2 lg:flex justify-end relative self-center">
         <Image
@@ -75,6 +77,7 @@ const Hero: React.FC<PlanHeroProps> = ({ title, duration, pricing, tagLine, memb
           alt="hero-image"
         />
 
+        {/* GIF overlays */}
         <div className="absolute top-3 left-10 bg-white shadow-md rounded-full">
           <Image
             src={images.gifs.yogaUpDown}

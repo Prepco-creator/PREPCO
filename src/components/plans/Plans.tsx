@@ -8,7 +8,8 @@ import AutoTransposingTable from "../comman/CustomTable";
 import formatToHyphenated from "@/utils/fomatPathName";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
-
+import { plans_v2 } from "@/data/plans-v2";
+import RazorpayButton from "../comman/RazorpayButton";
 const Plans = () => {
   // const fullCoveragePlanIds = ["plan_7", "plan_8"];
 
@@ -121,27 +122,26 @@ const Plans = () => {
             index: 3, // Insert at row index 2 (optional)
           },
           {
-            rowName: 'Grab it now',
-            render: (row) => (
-              <div className="flex flex-col gap-8">
-                <Link
-                  href={`/checkout?planId=${row["planId"]}`}
-                >
-                  <button className="bg-primary text-white rounded-lg border border-primary text-custom-14 px-4 py-2 hover:bg-transparent hover:text-primary hover:shadow-md transition duration-300 ease-in-out">
-                    Buy Now
-                  </button>
-                </Link>
-                <Link
-                  href={`/plans/${formatToHyphenated(row['Plan Title'])}`}
-                  passHref
-                  className="text-sm flex items-center justify-start gap-1"
-                >
-                  <span>To Know More</span>
-                  <FaAngleRight />
-                </Link>
-              </div>
-            ),
-          },
+            rowName: 'Buy Now',
+            render: (row) => {
+              const plan = plans_v2.find((plan) => row['Plan Title'] === plan.title);
+              if (!plan || !plan.paymentGatewayLink?.paymentButtonId) return null;
+
+              return (
+                <div className="flex flex-col gap-4">
+                  <RazorpayButton paymentButtonId={plan.paymentGatewayLink.paymentButtonId} />
+                  <Link
+                    href={`/plans/${formatToHyphenated(row['Plan Title'])}`}
+                    passHref
+                    className="text-sm flex items-center justify-start gap-1"
+                  >
+                    <span>To Know More</span>
+                    <FaAngleRight />
+                  </Link>
+                </div>
+              );
+            },
+          }
 
         ]}
       />
