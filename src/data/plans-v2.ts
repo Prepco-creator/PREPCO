@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 import { images } from "../../public/assets";
 
 export interface HealthPlan {
+    planId:string;
     title: string;
     tagline: string;
     description: string;
@@ -20,6 +21,7 @@ export interface HealthPlan {
 
 export const plansv2: HealthPlan[] = [
     {
+        planId:"plan_1",
         title: "Ultimate Health Plan",
         tagline: "Good Health Starts Here!",
         membersCount: 5,
@@ -43,6 +45,7 @@ export const plansv2: HealthPlan[] = [
         pricing: 14999
     },
     {
+        planId:"plan_2",
         title: "Indian Health Plan",
         tagline: "Affordable Health. Assured Care.",
         membersCount: 4,
@@ -65,6 +68,7 @@ export const plansv2: HealthPlan[] = [
         pricing: 9999
     },
     {
+        planId:"plan_3",
         title: "Diamond Health Plan",
         tagline: "Premium Health. Exceptional Value.",
         membersCount: 3,
@@ -87,6 +91,7 @@ export const plansv2: HealthPlan[] = [
         pricing: 7999
     },
     {
+        planId:"plan_4",
         title: "Platinum Health Plan",
         tagline: "Small Family, Stronger Health.",
         membersCount: 2,
@@ -108,6 +113,7 @@ export const plansv2: HealthPlan[] = [
         pricing: 5999
     },
     {
+        planId:"plan_5",
         title: "Gold Health Plan",
         tagline: "Your First Step Towards Preventive Health.",
         membersCount: 1,

@@ -7,6 +7,7 @@ import Footer from "../comman/Footer";
 import AutoTransposingTable from "../comman/CustomTable";
 import formatToHyphenated from "@/utils/fomatPathName";
 import Link from "next/link";
+import { FaAngleRight } from "react-icons/fa";
 
 const Plans = () => {
   // const fullCoveragePlanIds = ["plan_7", "plan_8"];
@@ -85,6 +86,11 @@ const Plans = () => {
           "Unbeatable Price & Value For Money.actualPrice",
           "After Discount"
         ]}
+        specialRows={[
+          { key: "Voucher Benifits", className: "bg-primary text-white font-semibold" },
+          { key: "Membership Card Benifits", className: "bg-primary text-white font-semibold" },
+        ]}
+
         additionalRows={[
           {
             rowName: "Unbeatable Price & Value For Money",
@@ -93,38 +99,49 @@ const Plans = () => {
               const value = row["Unbeatable Price & Value For Money"];
               if (!value) return '-';
               return (
-                <span>
-                  <s className="text-gray-500 mr-1">₹{value.price}</s>
+                <span className="text-lg">
+                  <s className="text-red-500 mr-1">₹{value.price}</s>
                   <span className="text-black font-semibold">₹{value.actualPrice}</span>
                 </span>
               );
             },
           },
           {
-            rowName: 'To Know More',
+            rowName: 'Grab it now',
             render: (row) => (
               <Link
                 href={`/plans/${formatToHyphenated(row['Plan Title'])}`}
               >
                 <button className="bg-primary text-white rounded-lg border border-primary text-custom-14 p-4 hover:bg-transparent hover:text-primary hover:shadow-md transition duration-300 ease-in-out">
-                  To Know More
+                  Grab it now
                 </button>
               </Link>
             ),
-            index: 2, // Insert at row index 2 (optional)
+            index: 3, // Insert at row index 2 (optional)
           },
           {
-            rowName: 'To Know More',
+            rowName: 'Grab it now',
             render: (row) => (
-              <Link
-                href={`/plans/${formatToHyphenated(row['Plan Title'])}`}
-              >
-                <button className="bg-primary text-white rounded-lg border border-primary text-custom-14 p-4 hover:bg-transparent hover:text-primary hover:shadow-md transition duration-300 ease-in-out">
-                  To Know More
-                </button>
-              </Link>
+              <div className="flex flex-col gap-8">
+                <Link
+                  href={`/checkout?planId=${row["planId"]}`}
+                >
+                  <button className="bg-primary text-white rounded-lg border border-primary text-custom-14 px-4 py-2 hover:bg-transparent hover:text-primary hover:shadow-md transition duration-300 ease-in-out">
+                    Buy Now
+                  </button>
+                </Link>
+                <Link
+                  href={`/plans/${formatToHyphenated(row['Plan Title'])}`}
+                  passHref
+                  className="text-sm flex items-center justify-start gap-1"
+                >
+                  <span>To Know More</span>
+                  <FaAngleRight />
+                </Link>
+              </div>
             ),
           },
+
         ]}
       />
 

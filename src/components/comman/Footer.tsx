@@ -7,8 +7,8 @@ import { socialMediaLinksType } from "@/types";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary py-4 text-secondaryLight">
-      <div className="px-4 sm:px-4 lg:px-8 lg:py-7">
+    <footer className="bg-primary py-2 text-secondaryLight">
+      <div className="px-4 sm:px-4 lg:px-8 lg:py-2">
         {/* Links Section */}
         <div className="flex flex-col sm:flex-row gap-4 lg:gap-8">
           <div className="flex-[2] mb-8 flex flex-col gap-2 lg:gap-8">
@@ -139,14 +139,14 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="flex-1 flex flex-col lg:items-center justify-start">
+          {/* <div className="flex-1 flex flex-col lg:items-center justify-start">
             <div className="space-y-3 lg:space-y-6">
               <h3 className="text-lg font-semibold">Open Hours</h3>
               <p>Mon - Sat</p>
               <p>8.00 AM - 6.00 PM</p>
               <p>Sunday: Closed</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom Section */}

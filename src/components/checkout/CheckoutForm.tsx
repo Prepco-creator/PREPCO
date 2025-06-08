@@ -5,13 +5,14 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import mockData from '@/data/plans';
 import { PlanProps } from '@/types';
 import { IndianRupee } from 'lucide-react';
+import { HealthPlan, plansv2 } from '@/data/plans-v2';
 
 const CheckoutForm = () => {
     const router = useRouter();
     const searchParams = useSearchParams();
-    
+
     const planId = searchParams.get("planId") as string;
-    const plan = mockData?.find((data: PlanProps) => planId === data.id);
+    const plan = plansv2?.find((data: HealthPlan) => planId === data.planId);
 
     // Redirect back if plan is not found
     useEffect(() => {
@@ -104,20 +105,19 @@ const CheckoutForm = () => {
                     <div className="flex justify-between">
                         <span>{plan?.title}</span>
                         <span>
-                            <IndianRupee size={18} className="inline" /> {plan?.discountPricing}
+                            <IndianRupee size={18} className="inline" /> {plan?.pricing}
                         </span>
                     </div>
                 </div>
                 <div className="flex justify-between font-bold text-lg">
                     <span>Total</span>
                     <span>
-                        <IndianRupee size={18} className="inline" /> {plan?.discountPricing}
+                        <IndianRupee size={18} className="inline" /> {plan?.pricing}
                     </span>
                 </div>
                 <button
-                    className={`mt-6 w-full text-whit py-3 rounded-lg text-lg font-semibold transition ${
-                        isFormFilled ? 'bg-teal-600 hover:bg-teal-700 text-white' : 'bg-gray cursor-not-allowed'
-                    }`}
+                    className={`mt-6 w-full text-whit py-3 rounded-lg text-lg font-semibold transition ${isFormFilled ? 'bg-teal-600 hover:bg-teal-700 text-white' : 'bg-gray cursor-not-allowed'
+                        }`}
                     disabled={!isFormFilled}
                 >
                     Place Order

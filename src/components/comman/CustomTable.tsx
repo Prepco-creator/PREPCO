@@ -17,11 +17,17 @@ type AdditionalRow<T = GenericObject> = {
     keyOverride?: string;
 };
 
+type SpecialRowsType = {
+    key: string;
+    className: string;
+}
+
 type AutoTransposingTableProps = {
     data: GenericObject[];
     getTitle: (item: GenericObject) => string;
     additionalRows?: AdditionalRow[]; // 👈 New prop
     hiddenKeys?: string[];
+    specialRows?: SpecialRowsType[];
 };
 
 export default function AutoTransposingTable({
@@ -29,6 +35,7 @@ export default function AutoTransposingTable({
     getTitle,
     additionalRows = [],
     hiddenKeys = [],
+    specialRows = [],
 }: AutoTransposingTableProps) {
     if (data.length === 0) return <div>No data</div>;
 
@@ -112,7 +119,7 @@ export default function AutoTransposingTable({
     ];
 
     return (
-        <section className="bg-white px-4 py-2 static lg:relative">
+        <section className="bg-white px-12 rounded-lg py-4 static lg:relative">
             <div className="block lg:hidden relative overflow-auto rounded-lg max-h-[600px]">
                 <table className="w-full text-sm text-left text-gray-700 dark:text-gray-200 border-collapse">
                     <thead className="text-xs uppercase bg-gray-100">
@@ -167,22 +174,28 @@ export default function AutoTransposingTable({
                     </tr>
                 </thead>
                 <tbody>
-                    {rows.map((row, rowIndex) => (
-                        <tr key={rowIndex} className="bg-white h-full">
-                            {columns.map((col, colIndex) => (
-                                <td
-                                    key={colIndex}
-                                    className={`px-6 py-4 border border-black h-full ${colIndex === 0
-                                        ? 'sticky left-0 z-[20] bg-primary text-white p-3 shadow-double-inset'
-                                        : 'bg-white text-center'
-                                        }`}
-                                >
-                                    {row[col.key] as React.ReactNode}
-                                </td>
-                            ))}
-                        </tr>
-                    ))}
+                    {rows.map((row, rowIndex) => {
+                        const specialClass =
+                            specialRows.find((sr) => sr.key === row.feature)?.className || 'bg-white h-full';
+
+                        return (
+                            <tr key={rowIndex} className={specialClass}>
+                                {columns.map((col, colIndex) => (
+                                    <td
+                                        key={colIndex}
+                                        className={`px-6 py-4 border border-black h-full ${colIndex === 0
+                                                ? 'sticky left-0 z-[20] bg-primary text-white p-3 shadow-double-inset'
+                                                : 'bg-transparent'
+                                            }`}
+                                    >
+                                        {row[col.key] as React.ReactNode}
+                                    </td>
+                                ))}
+                            </tr>
+                        );
+                    })}
                 </tbody>
+
             </table>
 
         </section>
