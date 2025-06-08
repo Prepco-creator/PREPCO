@@ -2,6 +2,7 @@ const videos = {
     hero: "/videos/hero_section_2.webm",
     hero2: "/videos/hero_section_1.mp4",
     hero3: "/videos/hero_section_3.mp4",
+    hero4: "/videos/hero_section_4.mp4",
     aboutUsTamil: "https://www.youtube.com/embed/FNNnlUTw0Sg",
     aboutUsEnglish: "https://www.youtube.com/embed/Q2z29RzFfkI",
     ourStoryTamil: "https://www.youtube.com/embed/UcyIOAHbpHY",

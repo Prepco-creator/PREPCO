@@ -5,18 +5,21 @@ import Image from "next/image";
 import { images } from "../../../public/assets";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { FaHome, FaInfoCircle, FaListAlt, FaPhone } from "react-icons/fa";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage mobile menu toggle
 
+
   const navLinks = [
-    { title: "Home", route: "/" },
-    { title: "About Us", route: "/about" },
-    { title: "plans", route: "/plans" },
-    // { title: "testimonials", route: "/testimonials" },
-    { title: "Contact", route: "/contact" }
+    { title: "Home", route: "/", icon: <FaHome /> },
+    { title: "About Us", route: "/about", icon: <FaInfoCircle /> },
+    { title: "Plans", route: "/plans", icon: <FaListAlt /> },
+    // { title: "Testimonials", route: "/testimonials" },
+    { title: "Contact", route: "/contact", icon: <FaPhone /> }
   ];
+
 
   // Toggle menu function
   const toggleMenu = () => {
@@ -46,7 +49,7 @@ const Navbar = () => {
             </div>
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <a target='_blank' href="https://calendly.com/bdm-prepcohealthcare/30min">
+            <a target='_blank' href="https://calendly.com/bdm-prepcohealthcare/30min">
               <button
                 type="button"
                 className="hidden min-[400px]:block p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset hover:bg-none hover:text-primary hover:shadow-none border-primary border-[2px] transition-all duration-300 ease-in-out"
@@ -87,24 +90,26 @@ const Navbar = () => {
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium bg-transparent rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-              {navLinks.map(({ title, route }) => (
+              {navLinks.map(({ title, route, icon }) => (
                 <li key={route}>
                   <Link href={route} passHref>
                     <div
-                      className={`capitalize block py-2 px-3 rounded md:bg-transparent md:p-0 hover:md:text-primary ${pathname === route
-                        ? "text-gray-900 md:text-primary"
-                        : "text-gray-900"
+                      className={`capitalize flex items-center gap-2 py-2 px-3 rounded md:bg-transparent md:p-0 hover:md:text-primary ${pathname === route
+                          ? "text-gray-900 md:text-primary"
+                          : "text-gray-900"
                         }`}
                       aria-current={pathname === route ? "page" : undefined}
                       onClick={() => setIsMenuOpen(false)}
                     >
+                      <span className="text-lg">{icon}</span>
                       {title}
                     </div>
                   </Link>
                 </li>
               ))}
+
               <li>
-              <a target='_blank' href="https://calendly.com/bdm-prepcohealthcare/30min">
+                <a target='_blank' href="https://calendly.com/bdm-prepcohealthcare/30min">
                   <button
                     type="button"
                     className="block min-[400px]:hidden p-2 rounded-lg text-white bg-custom-gradient shadow-double-inset hover:bg-none hover:text-primary hover:shadow-none border-primary border-[2px] transition-all duration-300 ease-in-out"

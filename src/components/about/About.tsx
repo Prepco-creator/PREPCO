@@ -30,9 +30,6 @@ partner in living your healthiest, happiest life."
 
             <Footer />
         </>
-        // our mission & vision
-        // why choose prepco
-        // video + content 
     )
 }
 
