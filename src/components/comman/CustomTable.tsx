@@ -108,7 +108,7 @@ export default function AutoTransposingTable({
     });
 
     const columns = [
-        { key: 'feature', header: 'Feature' },
+        { key: 'feature', header: 'Features' },
         ...data.map((item) => {
             const title = getTitle(item);
             return {
@@ -119,7 +119,7 @@ export default function AutoTransposingTable({
     ];
 
     return (
-        <section className="bg-white px-12 rounded-lg py-4 static lg:relative">
+        <section className="bg-white px-4 lg:px-14 rounded-lg py-4 static lg:relative">
             <div className="block lg:hidden relative overflow-auto rounded-lg max-h-[600px]">
                 <table className="w-full text-sm text-left text-gray-700 dark:text-gray-200 border-collapse">
                     <thead className="text-xs uppercase bg-gray-100">
@@ -183,9 +183,9 @@ export default function AutoTransposingTable({
                                 {columns.map((col, colIndex) => (
                                     <td
                                         key={colIndex}
-                                        className={`px-6 py-4 border border-black h-full ${colIndex === 0
+                                        className={`px-4 py-2 border border-black h-full ${colIndex === 0
                                                 ? 'sticky left-0 z-[20] bg-primary text-white p-3 shadow-double-inset'
-                                                : 'bg-transparent'
+                                                : 'bg-transparent text-center'
                                             }`}
                                     >
                                         {row[col.key] as React.ReactNode}

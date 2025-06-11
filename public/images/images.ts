@@ -57,9 +57,14 @@ import Plan_V2_JustforTwoPLan from './jpgs/Just for two.jpg';
 import Plan_V2_QuadPlan from './jpgs/Quad plan.jpg';
 import Plan_V2_QuadPro from './jpgs/Quad pro.jpg'
 
+import AboutUsBanner from './jpgs/AboutUsBanner.jpg'
+
+import PlansBanner1 from './jpgs/P-Website-01.jpg'
+import PlansBanner2 from './jpgs/P-Website-02.jpg'
+import PlansBanner3 from './jpgs/P-Website-03.jpg'
 
 // PNG
-import aboutHero from './pngs/about-hero.png';
+import aboutHero from './pngs/about-hero-2.png';
 import walkingCouple from './pngs/walking-couple.png';
 import youtubeIcon from './pngs/youtube-icon.png';
 import whatsappIcon from './pngs/whatsapp-icon.png';
@@ -231,6 +236,12 @@ const jpgs = {
     Plan_V2_JustforTwoPLan,
     Plan_V2_QuadPlan,
     Plan_V2_QuadPro,
+
+    AboutUsBanner,
+
+    PlansBanner1,
+    PlansBanner2,
+    PlansBanner3,
 }
 
 

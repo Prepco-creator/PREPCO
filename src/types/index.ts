@@ -99,7 +99,7 @@ interface PlanProps {
 
 
 interface PlanHeroProps {
-    tagLine:string;
+    tagLine: string;
     title: string;
     imageSrc: string | StaticImageData
     duration: number;
@@ -126,8 +126,6 @@ interface FeaturesProps {
 }
 
 interface PlanDetailProps {
-    title: string,
-    bigDescription: string
     healthPackages: HealthPackageDetails[]
 }
 
@@ -184,4 +182,8 @@ export interface socialMediaLinksType {
     name: string;
     link: string;
     iconSrc: StaticImageData | string;
+}
+export interface ImageBannerProps {
+    image: string | StaticImageData;
+    alt?: string;
 }

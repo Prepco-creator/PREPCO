@@ -10,6 +10,8 @@ import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
 import { plans_v2 } from "@/data/plans-v2";
 import RazorpayButton from "../comman/RazorpayButton";
+import ImageBanner from "../comman/ImageBanner";
+import { images } from "../../../public/assets";
 const Plans = () => {
   // const fullCoveragePlanIds = ["plan_7", "plan_8"];
 
@@ -79,7 +81,10 @@ const Plans = () => {
 
   return (
     <section>
-      <Banner title="Our Plans" />
+      <ImageBanner data={[
+        { image: images.jpgs.PlansBanner1, alt: "Plan Banner 1" },
+      ]}
+      />
       <AutoTransposingTable
         data={plansv2}
         getTitle={(plan) => plan["Plan Title"]}
@@ -87,6 +92,7 @@ const Plans = () => {
           "Unbeatable Price & Value For Money.actualPrice",
           "After Discount",
           "planId",
+          "Add On Card Benefit"
         ]}
         specialRows={[
           { key: "Voucher Benifits", className: "bg-primary text-white font-semibold" },
@@ -101,7 +107,7 @@ const Plans = () => {
               const value = row["Unbeatable Price & Value For Money"];
               if (!value) return '-';
               return (
-                <span className="text-lg">
+                <span className="text-lg flex flex-col">
                   <s className="text-red-500 mr-1">₹{value.price}</s>
                   <span className="text-black font-semibold">₹{value.actualPrice}</span>
                 </span>
@@ -109,12 +115,12 @@ const Plans = () => {
             },
           },
           {
-            rowName: 'Grab it now',
+            rowName: 'Click For Best Offers',
             render: (row) => (
               <Link
                 href={`/plans/${formatToHyphenated(row['Plan Title'])}`}
               >
-                <button className="bg-primary text-white rounded-lg border border-primary text-custom-14 p-4 hover:bg-transparent hover:text-primary hover:shadow-md transition duration-300 ease-in-out">
+                <button className="bg-primary text-white shadow-double-inset rounded-lg border border-primary text-custom-14 px-4 py-2 hover:bg-transparent hover:text-primary hover:shadow-md transition duration-300 ease-in-out">
                   Grab it now
                 </button>
               </Link>
@@ -122,7 +128,7 @@ const Plans = () => {
             index: 3, // Insert at row index 2 (optional)
           },
           {
-            rowName: 'Buy Now',
+            rowName: 'Subscribe',
             render: (row) => {
               const plan = plans_v2.find((plan) => row['Plan Title'] === plan.title);
               if (!plan || !plan.paymentGatewayLink?.paymentButtonId) return null;
@@ -133,7 +139,7 @@ const Plans = () => {
                   <Link
                     href={`/plans/${formatToHyphenated(row['Plan Title'])}`}
                     passHref
-                    className="text-sm flex items-center justify-start gap-1"
+                    className="text-sm flex items-center justify-center gap-1"
                   >
                     <span>To Know More</span>
                     <FaAngleRight />

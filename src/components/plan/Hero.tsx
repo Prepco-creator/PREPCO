@@ -10,7 +10,7 @@ const Hero: React.FC<PlanHeroProps> = ({
   duration,
   pricing,
   tagLine,
-  memberType = "Person",
+  memberType = "Member",
   membersCount = 1,
   imageSrc,
   paymentGatewayLink,
@@ -41,12 +41,10 @@ const Hero: React.FC<PlanHeroProps> = ({
         <div className="space-y-2">
           <h2 className="bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold">
             {title}
-            <br />
-            {membersCount} {memberType}
-            {membersCount > 1 && memberType == "Person" ? "s" : ""}
           </h2>
           <p className="text-custom-16 lg:text-custom-24 font-normal text-secondaryDark">
-            Plan Validation {timeline}
+            {membersCount} {memberType}
+            {membersCount > 1 && memberType == "Member" ? "s" : ""} Validity - {timeline}
           </p>
           <p className="text-custom-16 lg:text-custom-20 font-normal text-primaryDark">
             {tagLine}

@@ -29,16 +29,16 @@ const HeroSection = () => {
   return (
     <section className="bg-white flex flex-col-reverse gap-6 lg:flex-row items-center lg:items-start lg:gap-12 px-8 lg:px-16 py-12 lg:h-screen">
       {/* Left Image */}
-      <div className="w-full lg:w-2/5 relative left-content">
+      <div className="w-full lg:w-2/5 relative left-content rounded-xl">
         <Image
           width={undefined}
           height={undefined}
           src={images.pngs.aboutHero}
           alt="Hero Image"
-          className="w-full h-auto object-cover"
+          className="w-full h-auto object-cover rounded-xl"
         />
 
-        <div className="absolute top-0 right-40 lg:top-20 lg:right-52 bg-white rounded-full shadow-md">
+        <div className="absolute -top-4 -left-4 bg-white rounded-full shadow-lg">
           <Image
             src={images.gifs.yogaUpDown}
             width={65}
@@ -47,7 +47,7 @@ const HeroSection = () => {
             unoptimized
           />
         </div>
-        <div className="absolute right-0 bottom-24 lg:bottom-0 lg:right-10 bg-white rounded-full shadow-md">
+        <div className="absolute -right-4 -bottom-4 bg-white rounded-full shadow-lg">
           <Image
             src={images.gifs.runningWoman}
             width={65}

@@ -38,9 +38,8 @@ const Plan = () => {
 
   return (
     <section>
-      {/* <Banner title={plan.title} /> */}
       <Hero
-      tagLine={plan.tagline}
+        tagLine={plan.tagline}
         imageSrc={plan.imgSrc}
         title={plan.title}
         duration={plan.duration}
@@ -63,8 +62,6 @@ const Plan = () => {
         tags={tags}
       />
       <PlanDetail
-        title={plan.title}
-        bigDescription={plan.description as string}
         healthPackages={planPackages.enhancedFeatures || healthPackageDetails}
       />
       <Footer />

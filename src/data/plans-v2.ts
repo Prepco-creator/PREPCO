@@ -22,6 +22,7 @@ export interface HealthPlan {
     pricing: number;
 }
 
+
 export const plans_v2: HealthPlan[] = [
     {
         planId: "plan_1",
@@ -30,7 +31,7 @@ export const plans_v2: HealthPlan[] = [
         membersCount: 5,
         duration: 12,
         imgSrc: images.jpgs.Plan_V2_QuadPro,
-        description: "Say hello to Prepco’s Ultimate Health Plan – your complete, cashless, preventive healthcare package...",
+        description: "Say hello to Prepco’s Ultimate Health Plan – your complete, cashless, preventive healthcare package.",
         keyFeatures: [
             "Save up to 90% annually (> INR 100000)",
             "26 Cashless Vouchers for Preventive Care",
@@ -41,8 +42,8 @@ export const plans_v2: HealthPlan[] = [
             "Rs.2500/- worth Medicines @door step delivery & 3 Cashless Home Based Physio Treatments",
         ],
         ytVideoLinks: {
-            tamil: "",
-            english: ""
+            tamil: "https://www.youtube.com/embed/9vaoy3u5KWc",
+            english: "https://www.youtube.com/embed/dGZBCRa68Ls"
         },
         paymentGatewayLink: {
             paymentButtonId: "pl_Qek3MdYsu4wFgN"
@@ -54,7 +55,7 @@ export const plans_v2: HealthPlan[] = [
         title: "Indian Health Plan",
         tagline: "Affordable Health. Assured Care.",
         membersCount: 4,
-        description: "Presenting the Indian Health Plan by PREPCO – a smart and budget-friendly preventive healthcare package...",
+        description: "Presenting the Indian Health Plan by PREPCO – a smart and budget-friendly preventive healthcare package.",
         keyFeatures: [
             "Save up to 89% annually (INR 48000)",
             "12 Cashless Vouchers for preventive care",
@@ -64,8 +65,8 @@ export const plans_v2: HealthPlan[] = [
             "Unlimited Service Discounts on labs & Rs.1000/- worth Medicines @door step delivery",
         ],
         ytVideoLinks: {
-            tamil: "",
-            english: ""
+            tamil: "https://www.youtube.com/embed/U2G3QUP_3AA",
+            english: "https://www.youtube.com/embed/r1Xsde60AYQ"
         },
         paymentGatewayLink: {
             paymentButtonId: "pl_QemIQ6ycrSHFiv"
@@ -79,7 +80,7 @@ export const plans_v2: HealthPlan[] = [
         title: "Diamond Health Plan",
         tagline: "Premium Health. Exceptional Value.",
         membersCount: 3,
-        description: "Introducing the Diamond Health Plan by PREPCO — a premium preventive healthcare package...",
+        description: "Introducing the Diamond Health Plan by PREPCO — a premium preventive healthcare package.",
         keyFeatures: [
             "Save up to 80% annually (INR 24,000)",
             "20 Cashless Vouchers for preventive health & wellness care",
@@ -89,8 +90,8 @@ export const plans_v2: HealthPlan[] = [
             "Unlimited Laboratory Service & Home-Based Physio Treatment Discounts",
         ],
         ytVideoLinks: {
-            tamil: "",
-            english: ""
+            tamil: "https://www.youtube.com/embed/dHcd1-szJx0",
+            english: "https://www.youtube.com/embed/dSJMgtg2SRI"
         },
         paymentGatewayLink: {
             paymentButtonId: "pl_QemLcFDZKG1nSd"
@@ -104,7 +105,7 @@ export const plans_v2: HealthPlan[] = [
         title: "Platinum Health Plan",
         tagline: "Small Family, Stronger Health.",
         membersCount: 2,
-        description: "Introducing the Platinum Health Plan by PREPCO — your compact yet powerful preventive healthcare package...",
+        description: "Introducing the Platinum Health Plan by PREPCO — your compact yet powerful preventive healthcare package.",
         keyFeatures: [
             "Save up to 77% annually (Approx. ₹16,000 in healthcare savings)",
             "5 Cashless Vouchers for core Preventive Care",
@@ -113,8 +114,8 @@ export const plans_v2: HealthPlan[] = [
             "Unlimited Laboratory Service Discount",
         ],
         ytVideoLinks: {
-            tamil: "",
-            english: ""
+            tamil: "https://www.youtube.com/embed/FTInK-CfUH8",
+            english: " https://www.youtube.com/embed/XRy3auDX8ck"
         },
         paymentGatewayLink: {
             paymentButtonId: "pl_QemObAkT0CjP6s"
@@ -128,7 +129,7 @@ export const plans_v2: HealthPlan[] = [
         title: "Gold Health Plan",
         tagline: "Your First Step Towards Preventive Health.",
         membersCount: 1,
-        description: "Introducing the Gold Health Plan by PREPCO – an essential plan curated for individuals...",
+        description: "Introducing the Gold Health Plan by PREPCO – an essential plan curated for individuals",
         keyFeatures: [
             "Save up to 60% annually (Approx. ₹6,000 in healthcare value)",
             "3 Cashless Vouchers focused on personal preventive care",
@@ -137,8 +138,8 @@ export const plans_v2: HealthPlan[] = [
             "Live Fitness Benefits to support your wellness journey",
         ],
         ytVideoLinks: {
-            tamil: "",
-            english: ""
+            tamil: "https://www.youtube.com/embed/06B3d_5UA0A",
+            english: "https://www.youtube.com/embed/fKICeq8bMyM"
         },
         paymentGatewayLink: {
             paymentButtonId: "pl_QemRTeKwvjJ3Ns"

@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
-import { Heart } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Tags } from "@/types";
 import { videos } from "../../../public/assets";
+import { FaHeart } from "react-icons/fa";
 
 const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
   return (
-    <div className="relative h-full w-full bg-transparent flex items-center py-16 sm:py-14 md:pt-24 pb-36 overflow-hidden">
+    <div className="relative h-full w-full bg-transparent flex items-center pt-16 sm:pt-14 md:pt-16 overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -16,7 +16,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
         className="absolute inset-0 bg-[#00ADA9]/5 blur-3xl z-0"
       />
 
-      <div className="relative w-11/12 mx-auto px-6 sm:px-8 md:pb-20 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-14 lg:gap-16 z-10 mt-14 ">
+      <div className="relative w-11/12 mx-auto px-6 sm:px-8 md:pb-12 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-14 lg:gap-16 z-10 mt-14 ">
 
         {/* Right Content (Video Section) - Now Moved to Left */}
         <motion.div
@@ -28,7 +28,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
             damping: 15,
             duration: 0.8
           }}
-          className="flex-1 relative w-full max-w-lg lg:max-w-none mx-auto"
+          className="w-full lg:w-[60%] relative mx-auto"
         >
           <div className="relative w-full pt-[100%] sm:pt-[80%] lg:pt-[61%]">
             {/* Decorative Circles */}
@@ -71,7 +71,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
             damping: 15,
             duration: 0.8
           }}
-          className="flex-1 space-y-6 sm:space-y-8 text-center lg:text-left relative"
+          className="w-full lg:w-[40%] space-y-6 sm:space-y-8 text-center lg:text-left relative"
         >
 
           <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-bold text-[#017F7E] leading-tight">
@@ -79,7 +79,8 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
             Get access to expert doctors, health checkups, wellness services, and more—
             without the heavy price tag.
             No waiting. No age limits. No stress. Just smarter health. */}
-            Think quality healthcare{" "} <br />
+            Still Thinking Quality ?
+            {" "} <br />
             <motion.span
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%"],
@@ -98,9 +99,9 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
               }}
               className="text-[#00ADA9] bg-gradient-to-r from-[#00ADA9] via-[#017F7E] to-[#00ADA9] bg-size-200 bg-pos-0 bg-clip-text text-transparent"
             >
-              is too expensive?
+              Healthcare Is Too Expensive
             </motion.span>{" "}
-            {"Think again"}
+            {"Not Anymore"}
           </h1>
 
           {/* <motion.p
@@ -134,10 +135,10 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group w-full px-8 sm:px-10 py-4  bg-white border-2 border-[#D0F2F3] text-[#017F7E] rounded-xl hover:bg-[#E3FFFE] transition-all duration-300 shadow-md flex items-center justify-center gap-2"
+                className="group w-full px-8 text-xl font-bold sm:px-10 py-4 bg-white border-2 border-[#D0F2F3] text-[#017F7E] rounded-xl hover:bg-[#E3FFFE] transition-all duration-300 shadow-md flex items-center justify-center gap-2"
               >
                 Grab it Now
-                <Heart className="w-5 h-5 group-hover:text-red-500 transition-colors" />
+                <FaHeart className="w-5 h-5 font-bold group-hover:text-primary transition-colors" />
               </motion.button>
             </Link>
           </motion.div>

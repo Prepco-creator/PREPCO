@@ -1,21 +1,19 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ResponsiveYouTube from "../comman/ResponsiveYoutube";
+import PlanSecondSection, { PlanSecondSectionProps } from "../plan/PlanSecondSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
 interface AboutCTAProps {
   title: string;
   description: string;
-  tamilVideo: string;
-  englishVideo: string;
+  data: PlanSecondSectionProps
 }
 
-const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, englishVideo }) => {
-  const [isTamil, setIsTamil] = useState(false);
+const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, data }) => {
 
   useEffect(() => {
     gsap.fromTo(
@@ -67,43 +65,17 @@ const AboutCTA: React.FC<AboutCTAProps> = ({ title, description, tamilVideo, eng
     );
   }, []);
 
-  const handleLanguageSwitch = (language: boolean) => {
-    setIsTamil(language);
-  };
-
   return (
     <section className="px-4 py-16 lg:px-16 flex flex-col gap-4 bg-accent-2 text-primaryDark">
       <h3 className="cta-text-h3 text-custom-20-bold lg:text-custom-32">{title}</h3>
       <p className="cta-text-p1 text-custom-14 lg:text-custom-20-2">{description}</p>
-      <div className="flex flex-col gap-4 md:flex-row items-center justify-between">
-        <a target='_blank' href="https://calendly.com/bdm-prepcohealthcare/30min">
-          <button className="cta-button w-full md:w-fit p-3 lg:py-3 lg:px-6 bg-custom-gradient shadow-double-inset text-white lg:font-semibold text-custom-16-bold lg:text-lg custom-border-radius">
-            Book a consultation
-          </button>
-        </a>
-        <div className="flex w-full md:w-fit">
-          <button
-            className={`px-6 py-3 font-medium text-sm shadow-lg border-[2px] border-teal-600 transition-all duration-300 transform ${!isTamil ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white shadow-double-inset" : "bg-gray-200 text-primary"
-              } rounded-l-3xl border-r-0 w-1/2 md:w-fit`}
-            onClick={() => handleLanguageSwitch(false)}
-          >
-            English
-          </button>
-          <button
-            className={`px-6 py-3 font-medium text-sm shadow-lg border-[2px] border-teal-600 transition-all duration-300 transform ${isTamil ? "bg-gradient-to-b from-teal-400 to-teal-800 text-white shadow-double-inset" : "bg-gray-200 text-primary"
-              } rounded-r-3xl border-l-0 w-1/2 md:w-fit`}
-            onClick={() => handleLanguageSwitch(true)}
-          >
-            தமிழ்
-          </button>
-        </div>
-      </div>
-      <div className="relative overflow-x-hidden">
-
-        <ResponsiveYouTube
-          videoURL={isTamil ? tamilVideo : englishVideo}
-        />
-      </div>
+      <PlanSecondSection
+        englishVideo={data.englishVideo}
+        tamilVideo={data.tamilVideo}
+        keyFeatures={data.keyFeatures}
+        ctaBtn={data.ctaBtn}
+        className="flex flex-col lg:flex-row gap-6 justify-between"
+      />
     </section>
   );
 };
