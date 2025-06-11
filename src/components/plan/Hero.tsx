@@ -17,7 +17,7 @@ const Hero: React.FC<PlanHeroProps> = ({
   bigDescription,
 }) => {
   const timeline =
-    duration === 12 ? "One Year" : duration === 6 ? "6 Months" : "Not - Defined";
+    duration === 12 ? "1 Year" : duration === 6 ? "6 Months" : "Not - Defined";
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -42,10 +42,15 @@ const Hero: React.FC<PlanHeroProps> = ({
           <h2 className="bg-custom-gradient bg-clip-text text-transparent text-custom-24 lg:text-custom-48-bold">
             {title}
           </h2>
-          <p className="text-custom-16 lg:text-custom-24 font-normal text-secondaryDark">
-            {membersCount} {memberType}
-            {membersCount > 1 && memberType == "Member" ? "s" : ""} Validity - {timeline}
-          </p>
+          <div className="w-fit text-custom-16 lg:text-custom-24 font-normal text-secondaryDark flex justify-between gap-24">
+            <p>
+              {membersCount} {memberType}
+              {membersCount > 1 && memberType == "Member" ? "s" : ""}
+            </p>
+            <p>
+              Validity - {timeline}
+            </p>
+          </div>
           <p className="text-custom-16 lg:text-custom-20 font-normal text-primaryDark">
             {tagLine}
           </p>

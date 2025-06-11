@@ -30,7 +30,6 @@ const PlanSecondSection: React.FC<PlanSecondSectionProps> = ({
 }) => {
     const [isTamil, setIsTamil] = useState<boolean>(false);
 
-    console.log(tamilVideo,englishVideo)
 
     const handleLanguageSwitch = (language: boolean) => {
         setIsTamil(language);

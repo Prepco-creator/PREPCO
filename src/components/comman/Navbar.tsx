@@ -101,8 +101,8 @@ const Navbar = () => {
                       aria-current={pathname === route ? "page" : undefined}
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      <span className="text-lg">{icon}</span>
-                      {title}
+                      <span className="text-xl">{icon}</span>
+                      <span>{title}</span>
                     </div>
                   </Link>
                 </li>

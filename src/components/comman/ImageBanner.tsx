@@ -13,7 +13,7 @@ const ImageBanner: React.FC<{ data: ImageBannerProps[] }> = ({ data }) => {
     if (!isMultiple) {
         const { image, alt = 'banner-image' } = data[0];
         return (
-            <header className='w-full h-auto md:h-[40vh] relative'>
+            <header className='w-full h-auto md:h-[70vh] relative'>
                 <Image
                     src={image}
                     alt={alt}
@@ -25,10 +25,8 @@ const ImageBanner: React.FC<{ data: ImageBannerProps[] }> = ({ data }) => {
         );
     }
 
-    console.log(data)
-
     return (
-        <header className='w-full h-40vh relative'>
+        <header className='w-full h-auto lg:h-[70vh] relative overflow-hidden'>
             <Swiper
                 modules={[Autoplay]}
                 loop={true}
@@ -41,8 +39,9 @@ const ImageBanner: React.FC<{ data: ImageBannerProps[] }> = ({ data }) => {
                             <Image
                                 src={image}
                                 alt={alt}
-                                className='w-full h-full object-center lg:object-cover'
-                                fill
+                                className='w-full h-full object-center object-cover lg:object-contain'
+                                width={1366}
+                                height={455}
                                 priority
                             />
                         </div>

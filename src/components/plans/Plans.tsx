@@ -11,6 +11,8 @@ import { plans_v2 } from "@/data/plans-v2";
 import RazorpayButton from "../comman/RazorpayButton";
 import ImageBanner from "../comman/ImageBanner";
 import { images } from "../../../public/assets";
+import SwiperComponent1 from "../testimonials/SwiperComponent1";
+import { testimonials3 } from "@/data/testimonials";
 const Plans = () => {
   // const fullCoveragePlanIds = ["plan_7", "plan_8"];
 
@@ -82,6 +84,8 @@ const Plans = () => {
     <section>
       <ImageBanner data={[
         { image: images.jpgs.PlansBanner1, alt: "Plan Banner 1" },
+        { image: images.jpgs.PlansBanner2, alt: "Plan Banner 2" },
+        { image: images.jpgs.PlansBanner3, alt: "Plan Banner 3" },
       ]}
       />
       <AutoTransposingTable
@@ -94,8 +98,8 @@ const Plans = () => {
           "Add On Card Benefit"
         ]}
         specialRows={[
-          { key: "Voucher Benifits", className: "bg-primary text-white font-semibold" },
-          { key: "Membership Card Benifits", className: "bg-primary text-white font-semibold" },
+          { key: "Voucher Benefits", className: "bg-primary text-white font-semibold" },
+          { key: "Membership Card Benefits", className: "bg-primary text-white font-semibold" },
         ]}
 
         additionalRows={[
@@ -114,6 +118,18 @@ const Plans = () => {
             },
           },
           {
+            rowName: 'Subscribe',
+            render: (row) => {
+              const plan = plans_v2.find((plan) => row['Plan Title'] === plan.title);
+              if (!plan || !plan.paymentGatewayLink?.paymentButtonId) return null;
+
+              return (
+                <RazorpayButton paymentButtonId={plan.paymentGatewayLink.paymentButtonId} />
+              );
+            },
+            index: 1
+          },
+          {
             rowName: 'Click For Best Offers',
             render: (row) => (
               <Link
@@ -124,7 +140,7 @@ const Plans = () => {
                 </button>
               </Link>
             ),
-            index: 3, // Insert at row index 2 (optional)
+            index: 4, // Insert at row index 2 (optional)
           },
           {
             rowName: 'Subscribe',
@@ -150,6 +166,8 @@ const Plans = () => {
 
         ]}
       />
+
+      <SwiperComponent1 testimonials={testimonials3} />
 
       <Footer />
     </section>

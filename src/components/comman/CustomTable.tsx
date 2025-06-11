@@ -138,21 +138,26 @@ export default function AutoTransposingTable({
                         </tr>
                     </thead>
                     <tbody>
-                        {rows.map((row, rowIndex) => (
-                            <tr key={rowIndex} className="bg-white h-full">
-                                {columns.map((col, colIndex) => (
-                                    <td
-                                        key={colIndex}
-                                        className={`px-6 py-4 border border-black h-full ${colIndex === 0
-                                            ? 'sticky left-0 z-[20] bg-primary text-white p-3 shadow-double-inset'
-                                            : 'bg-white'
-                                            }`}
-                                    >
-                                        {row[col.key] as React.ReactNode}
-                                    </td>
-                                ))}
-                            </tr>
-                        ))}
+                        {rows.map((row, rowIndex) => {
+                            const specialClass =
+                                specialRows.find((sr) => sr.key === row.feature)?.className || 'bg-white h-full';
+
+                            return (
+                                <tr key={rowIndex} className={specialClass}>
+                                    {columns.map((col, colIndex) => (
+                                        <td
+                                            key={colIndex}
+                                            className={`px-4 py-2 border border-black h-full ${colIndex === 0
+                                                ? 'sticky left-0 z-[20] bg-primary text-white p-3 shadow-double-inset'
+                                                : 'bg-transparent text-center'
+                                                }`}
+                                        >
+                                            {row[col.key] as React.ReactNode}
+                                        </td>
+                                    ))}
+                                </tr>
+                            )
+                        })}
                     </tbody>
                 </table>
             </div>
@@ -184,8 +189,8 @@ export default function AutoTransposingTable({
                                     <td
                                         key={colIndex}
                                         className={`px-4 py-2 border border-black h-full ${colIndex === 0
-                                                ? 'sticky left-0 z-[20] bg-primary text-white p-3 shadow-double-inset'
-                                                : 'bg-transparent text-center'
+                                            ? 'sticky left-0 z-[20] bg-primary text-white p-3 shadow-double-inset'
+                                            : 'bg-transparent text-center'
                                             }`}
                                     >
                                         {row[col.key] as React.ReactNode}

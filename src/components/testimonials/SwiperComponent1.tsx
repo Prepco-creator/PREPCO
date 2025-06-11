@@ -15,7 +15,7 @@ const SwiperComponent1: React.FC<SwiperComponent1Props> = ({
   testimonials,
 }) => {
   return (
-    <section className="px-4 py-8 lg:p-16">
+    <section className="px-4 py-8 lg:p-16 overflow-hidden">
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         pagination={{

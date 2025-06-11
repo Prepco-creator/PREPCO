@@ -51,12 +51,12 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
 
           {/* Floating Info Boxes */}
           <div className="hidden sm:block absolute -top-6 -right-6 bg-white p-5 rounded-2xl shadow-xl max-w-[300px] transform hover:-translate-y-1 transition-all duration-300">
-            <p className="text-[#017F7E] font-semibold text-lg capitalize"> save upto <br /> Rs.50000/- Annually </p>
+            <p className="text-[#017F7E] font-semibold text-lg capitalize">Save Minimum <br /> Rs.50000/- Annually </p>
             {/* <p className="text-[#505050] text-sm mt-1">Available 24/7</p> */}
           </div>
 
           <div className="hidden sm:block absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl max-w-[220px] transform hover:-translate-y-1 transition-all duration-300">
-            <p className="text-[#017F7E] font-semibold text-lg capitalize"> Unlimited Times  <br /> Discount Benefits</p>
+            <p className="text-[#017F7E] font-semibold text-lg capitalize">Save Upto 20% On <br /> Surgery Expenses</p>
             {/* <p className="text-[#505050] text-sm mt-1">Schedule in seconds</p> */}
           </div>
         </motion.div>
@@ -79,7 +79,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
             Get access to expert doctors, health checkups, wellness services, and more—
             without the heavy price tag.
             No waiting. No age limits. No stress. Just smarter health. */}
-            Still Thinking Quality ?
+            Still Thinking Quality
             {" "} <br />
             <motion.span
               animate={{
@@ -99,7 +99,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
               }}
               className="text-[#00ADA9] bg-gradient-to-r from-[#00ADA9] via-[#017F7E] to-[#00ADA9] bg-size-200 bg-pos-0 bg-clip-text text-transparent"
             >
-              Healthcare Is Too Expensive
+              Healthcare Is <br /> Too Expensive?
             </motion.span>{" "}
             {"Not Anymore"}
           </h1>
