@@ -1,7 +1,6 @@
 'use client'
 
 import React from "react";
-import Banner from "../comman/Banner";
 import plansv2 from "@/data/plans.json";
 import Footer from "../comman/Footer";
 import AutoTransposingTable from "../comman/CustomTable";
