@@ -30,7 +30,7 @@ const Hero: React.FC<{ tags: Tags[] }> = ({ }) => {
           }}
           className="w-full lg:w-[60%] relative mx-auto"
         >
-          <div className="relative w-full p-24 sm:p-48">
+          <div className="relative w-full p-[28%]">
             {/* Decorative Circles */}
             <div className="absolute -top-10 -right-10 w-36 h-36 bg-[#D0F2F3] rounded-full blur-3xl opacity-40" />
             <div className="absolute -bottom-10 -left-10 w-36 h-36 bg-[#00ADA9] rounded-full blur-3xl opacity-30" />
