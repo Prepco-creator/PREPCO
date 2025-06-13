@@ -117,18 +117,18 @@ const Plans = () => {
               );
             },
           },
-          {
-            rowName: 'Subscribe',
-            render: (row) => {
-              const plan = plans_v2.find((plan) => row['Plan Title'] === plan.title);
-              if (!plan || !plan.paymentGatewayLink?.paymentButtonId) return null;
+          // {
+          //   rowName: 'Subscribe',
+          //   render: (row) => {
+          //     const plan = plans_v2.find((plan) => row['Plan Title'] === plan.title);
+          //     if (!plan || !plan.paymentGatewayLink?.paymentButtonId) return null;
 
-              return (
-                <RazorpayButton paymentButtonId={plan.paymentGatewayLink.paymentButtonId} />
-              );
-            },
-            index: 1
-          },
+          //     return (
+          //       <RazorpayButton paymentButtonId={plan.paymentGatewayLink.paymentButtonId} />
+          //     );
+          //   },
+          //   index: 1
+          // },
           {
             rowName: 'Click For Best Offers',
             render: (row) => (
@@ -140,7 +140,7 @@ const Plans = () => {
                 </button>
               </Link>
             ),
-            index: 4, // Insert at row index 2 (optional)
+            index: 3, // Insert at row index 2 (optional)
           },
           {
             rowName: 'Subscribe',
