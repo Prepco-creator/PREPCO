@@ -13,10 +13,11 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row gap-4 lg:gap-8">
           <div className="flex-[2] mb-8 flex flex-col gap-2 lg:gap-8">
             <Image
-              src={images.svgs.LogoWhite}
+              src={images.pngs.footerLogo}
               alt="prepco"
-              width={172}
-              height={43}
+              width={1266}
+              height={232}
+              className="w-full object-center object-contain"
             />
             <p className="mt-2 lg:text-custom-20-2 text-white">
               At Prepco, we make wellness a lifestyle with proactive, practical,
