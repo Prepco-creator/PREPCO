@@ -92,6 +92,8 @@ import sheroPlan from './pngs/SHERO.png'
 import triMe from './pngs/Tri-me.png';
 import ultimateWellnessPlan from './pngs/ultimatewellness.png';
 
+import footerLogo from './pngs/footer-logo.png'
+
 
 import pharmacy from './pngs/pharmacy.png'
 import dermatology from './pngs/dermatology.png'
@@ -219,6 +221,7 @@ const pngs = {
     homeHero2,
     testimoneeProfile,
     locationIcon,
+    footerLogo,
 }
 
 const webp = {

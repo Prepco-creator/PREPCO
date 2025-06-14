@@ -2,9 +2,11 @@
   "name": "prepco",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "build": "npm run generate-sitemap && next build",
     "start": "next start",
     "lint": "next lint"
   },
