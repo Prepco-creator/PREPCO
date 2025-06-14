@@ -1,22 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
-import { images } from '../../../public/assets';
+import { partnersLogo } from '@/data/trustedPartnersData';
 
 const TrustedPartners = () => {
-    const partnersLogo = [
-        images.partnersLogo.apolloHospital,
-        images.partnersLogo.drArgawalsLogo,
-        images.partnersLogo.drAravindsIvfLogo,
-        images.partnersLogo.hc9cIsr400x400,
-        images.partnersLogo.kaveriHospital,
-        images.partnersLogo.lifelineHospitalLogo,
-        images.partnersLogo.medwayHospitalLogo,
-        images.partnersLogo.mgmHospital,
-        images.partnersLogo.simsLogoNew,
-        images.partnersLogo.sooriyaHospitalLogo,
-    ];
-
 
     return (
         <div className="w-full bg-gradient-to-br from-[#E8FDFD] via-[#D9FCFB] to-[#C0F8F7] py-6 space-y-4">

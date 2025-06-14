@@ -117,31 +117,31 @@ const Plans = () => {
               );
             },
           },
-          // {
-          //   rowName: 'Subscribe',
-          //   render: (row) => {
-          //     const plan = plans_v2.find((plan) => row['Plan Title'] === plan.title);
-          //     if (!plan || !plan.paymentGatewayLink?.paymentButtonId) return null;
-
-          //     return (
-          //       <RazorpayButton paymentButtonId={plan.paymentGatewayLink.paymentButtonId} />
-          //     );
-          //   },
-          //   index: 1
-          // },
           {
             rowName: 'Click For Best Offers',
-            render: (row) => (
-              <Link
-                href={`/plans/${formatToHyphenated(row['Plan Title'])}`}
-              >
-                <button className="bg-primary text-white shadow-double-inset rounded-lg border border-primary text-custom-14 px-4 py-2 hover:bg-transparent hover:text-primary hover:shadow-md transition duration-300 ease-in-out">
-                  Grab it now
-                </button>
-              </Link>
-            ),
-            index: 3, // Insert at row index 2 (optional)
+            render: (row) => {
+              const plan = plans_v2.find((plan) => row['Plan Title'] === plan.title);
+              if (!plan || !plan.paymentGatewayLink?.paymentButtonId) return null;
+
+              return (
+                <RazorpayButton paymentButtonId={plan.paymentGatewayLink.paymentButtonId} />
+              );
+            },
+            index: 3
           },
+          // {
+          //   rowName: 'Click For Best Offers',
+          //   render: (row) => (
+          //     <Link
+          //       href={`/plans/${formatToHyphenated(row['Plan Title'])}`}
+          //     >
+          //       <button className="bg-primary text-white shadow-double-inset rounded-lg border border-primary text-custom-14 px-4 py-2 hover:bg-transparent hover:text-primary hover:shadow-md transition duration-300 ease-in-out">
+          //         Grab it now
+          //       </button>
+          //     </Link>
+          //   ),
+          //   index: 3, // Insert at row index 2 (optional)
+          // },
           {
             rowName: 'Subscribe',
             render: (row) => {
