@@ -4,6 +4,7 @@ import Navbar from "@/components/comman/Navbar";
 import LoadingAnimation from "@/components/loaders/LoadingAnimation";
 import Script from "next/script";
 import { ToastContainer } from "react-toastify";
+import SurveyGameModal from "@/components/comman/SurveyGameModal";
 
 export const metadata: Metadata = {
   title: "PREPCO | Where Care Meets Convenience",
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body className="font-poppins">
         <ToastContainer />
         <LoadingAnimation />
+        <SurveyGameModal />
         <Navbar />
         {children}
       </body>
